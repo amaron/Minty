@@ -187,12 +187,13 @@
 
 
             </div><!--/.well -->
-            <form class="well">
+
+            <form class="well" method="POST" onsubmit="addTweet(this); return false;">
 
 
 
-                <textarea class="span12" id="textarea" rows="2" placeholder="Add a new Minty!"></textarea>
-                <button type="submit" class="btn btn-success">Mintify</button><span class="charleft">128</span>
+                <textarea class="span12" id="tweet" name="tweet" rows="2" placeholder="Add a new Minty!"></textarea>
+                <input type="submit" class="btn btn-success" value="Tweet"><span class="charleft">128</span>
 
             </form>
 
@@ -211,7 +212,7 @@
 
 
 
-                <div class="well">
+                <div class="well" id="tweetList">
 
                     <c:forEach var='item' items='${List}'>
 
