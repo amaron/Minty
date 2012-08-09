@@ -3,23 +3,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script src="/static/js/bootstrapJS/jquery.js"></script>
-    <script src="/static/js/bootstrapJS/bootstrap-transition.js"></script>
-    <script src="/static/js/bootstrapJS/bootstrap-alert.js"></script>
-    <script src="/static/js/bootstrapJS/bootstrap-modal.js"></script>
-    <script src="/static/js/bootstrapJS/bootstrap-dropdown.js"></script>
-    <script src="/static/js/bootstrapJS/bootstrap-scrollspy.js"></script>
-    <script src="/static/js/bootstrapJS/bootstrap-tab.js"></script>
-    <script src="/static/js/bootstrapJS/bootstrap-tooltip.js"></script>
-    <script src="/static/js/bootstrapJS/bootstrap-popover.js"></script>
-    <script src="/static/js/bootstrapJS/bootstrap-button.js"></script>
-    <script src="/static/js/bootstrapJS/bootstrap-collapse.js"></script>
-    <script src="/static/js/bootstrapJS/bootstrap-carousel.js"></script>
-    <script src="/static/js/bootstrapJS/bootstrap-typeahead.js"></script>
-    <script type="text/javascript" src="/static/js/bootstrapJS/jquery.validate.js"></script>
-    <link rel="stylesheet" href="static/css/bootstrap.css">
+    <meta charset="utf-8">
+    <title>Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
     <link rel="stylesheet" href="static/css/easyNotification.css">
-    <link rel="stylesheet" href="static/css/charCount.css">
+
     <script type="text/javascript" src="/static/js/jquery.min.js"></script>
     <script type="text/javascript" src="/static/js/easy.notification.js"></script>
     <script type="text/javascript" src="/static/js/ejs_production.js"></script>
@@ -32,14 +24,7 @@
     <script type="text/javascript" src="/static/js/getMoreTweets.js"></script>
     <script type="text/javascript" src="/static/js/displayNew.js"></script>
     <script type="text/javascript" src="/static/js/escapeHTML.js"></script>
-    <meta charset="utf-8">
-    <title>Bootstrap, from Twitter</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <!-- Le styles -->
-    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="static/css/bootstrap.css" rel="stylesheet">
     <style type="text/css">
         body {
             padding-top: 110px;
@@ -49,7 +34,7 @@
             padding: 9px 0;
         }
     </style>
-    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="static/css/bootstrap-responsive.css" rel="stylesheet">
     <style type="text/css">
 
         .tweet {
@@ -158,7 +143,7 @@
                 <ul class="dropdown-menu">
                     <li><a href="#">Profile</a></li>
                     <li class="divider"></li>
-                    <li><a href="/user/logout">Logout</a></li>
+                    <li><a href="#">Sign Out</a></li>
                 </ul>
             </div>
             <div class="nav-collapse">
@@ -187,13 +172,12 @@
 
 
             </div><!--/.well -->
-
-            <form class="well"  onsubmit="addTweet(this); return false;">
-
+            <form class="well">
 
 
-                <textarea class="span12" id="tweet" name="tweet" rows="2" placeholder="Add a new Minty!"></textarea>
-                <input type="submit" class="btn btn-success" value="Tweet"><span class="charleft">128</span>
+
+                <textarea class="span12" id="textarea" rows="2" placeholder="Add a new Minty!"></textarea>
+                <button type="submit" class="btn btn-success">Mintify</button><span class="charleft">128</span>
 
             </form>
 
@@ -213,14 +197,12 @@
 
 
                 <div class="well" id="tweetList">
-
                     <c:forEach var='item' items='${List}'>
 
                         <script type="text/javascript">
                             appendItem({tweet_id:${item.tweet_id}, tweet:'${item.tweet}', username:'${item.username}', pushtime:'${item.pushtime}'});
                         </script>
                     </c:forEach>
-
 
                     <div class="tweet" onmouseover="document.getElementById('re').style.display = 'block';" onmouseout="document.getElementById('re').style.display = 'none';">
                         <div class="span1"><span class="tweetimage"><img src="img/gaurav.jpg" height="58px" width="58px"/></span></div>
@@ -280,7 +262,20 @@
 <!-- Le javascript
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
-
+<script src="static/js/bootstrap/jquery.js"></script>
+<script src="static/js/bootstrap/bootstrap-transition.js"></script>
+<script src="static/js/bootstrap/bootstrap-alert.js"></script>
+<script src="static/js/bootstrap/bootstrap-modal.js"></script>
+<script src="static/js/bootstrap/bootstrap-dropdown.js"></script>
+<script src="static/js/bootstrap/bootstrap-scrollspy.js"></script>
+<script src="static/js/bootstrap/bootstrap-tab.js"></script>
+<script src="static/js/bootstrap/bootstrap-tooltip.js"></script>
+<script src="static/js/bootstrap/bootstrap-popover.js"></script>
+<script src="static/js/bootstrap/bootstrap-button.js"></script>
+<script src="static/js/bootstrap/bootstrap-collapse.js"></script>
+<script src="static/js/bootstrap/bootstrap-carousel.js"></script>
+<script src="static/js/bootstrap/bootstrap-typeahead.js"></script>
+<script type="text/javascript" src="/static/js/bootstrap/jquery.validate.js"></script>
 
 </body>
 </html>
