@@ -1,6 +1,6 @@
 package TwitMini.controller;
 
-import TwitMini.services.TweetStore;
+import TwitMini.services.TweetService;
 import TwitMini.services.UserService;
 import TwitMini.services.ViewService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -28,12 +28,12 @@ import java.util.logging.Logger;
 public class ProfileViewController {
 
     private final ViewService viewService;
-    private final TweetStore tweetStore;
+    private final TweetService tweetStore;
     private final UserService userService;
     private final Logger logger;
 
     @Autowired
-    public ProfileViewController(ViewService viewService, TweetStore tweetStore, UserService userService, Logger logger) {
+    public ProfileViewController(ViewService viewService, TweetService tweetStore, UserService userService, Logger logger) {
         this.viewService = viewService;
         this.tweetStore=tweetStore;
         this.userService = userService;

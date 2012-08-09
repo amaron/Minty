@@ -20,6 +20,8 @@ public class TweetData {
     private int user_id;
     private String pushtime ="";
 
+
+
     public static final RowMapper<TweetData> rowMapper = new RowMapper<TweetData>() {
         @Override public TweetData mapRow(ResultSet resultSet, int i) throws SQLException {
             return new TweetData(resultSet);
@@ -32,6 +34,7 @@ public class TweetData {
         username = rs.getString("username");
         user_id=rs.getInt("user_id");
         pushtime =rs.getString("pushtime");
+
     }
 
     public TweetData(){};

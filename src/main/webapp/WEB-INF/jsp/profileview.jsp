@@ -11,6 +11,7 @@
     <script type="text/javascript" src="/static/js/getJSTimestamp.js"></script>
     <script type="text/javascript" src="/static/js/easy.notification.js"></script>
     <script type="text/javascript" src='/static/js/follow.js'></script>
+    <script type="text/javascript" src='/static/js/addTweet.js'></script>
     <script type="text/javascript">var num_followers=${User.num_followers};</script>
 
 </head>

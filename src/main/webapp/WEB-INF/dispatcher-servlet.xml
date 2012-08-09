@@ -24,7 +24,10 @@
             <mvc:mapping path="/tweet/*"/>
             <mvc:mapping path="/user/follow/*"/>
             <mvc:mapping path='/user/updates.json'/>
+            <mvc:mapping path='/user/tweet/create.json'/>
+            <mvc:mapping path='/user/{handle}/tweet/{id}/reply'/>
             <mvc:mapping path="/user/unfollow/*"/>
+            <mvc:mapping path="/user/retweet/{id}"/>
 
             <bean class="TwitMini.controller.AuthInterceptor"/>
         </mvc:interceptor>

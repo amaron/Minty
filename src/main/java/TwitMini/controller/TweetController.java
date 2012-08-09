@@ -1,7 +1,7 @@
 package TwitMini.controller;
 
 import TwitMini.model.TweetData;
-import TwitMini.services.TweetStore;
+import TwitMini.services.TweetService;
 import TwitMini.services.ViewService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -29,11 +29,11 @@ import java.util.logging.Logger;
 public class TweetController {
 
     private final ViewService viewService;
-    private final TweetStore tweetStore;
+    private final TweetService tweetStore;
     private final Logger logger;
 
     @Autowired
-    public TweetController(ViewService viewService, TweetStore tweetStore, Logger logger) {
+    public TweetController(ViewService viewService, TweetService tweetStore, Logger logger) {
         this.viewService = viewService;
         this.tweetStore=tweetStore;
         this.logger=logger;
@@ -96,6 +96,7 @@ public class TweetController {
     @RequestMapping(value="/tweet/create.json", method = RequestMethod.POST)
     @ResponseBody
     public TweetData create(TweetData tweet, HttpSession session) {
+
 
         TweetData new_tweet= tweetStore.add(tweet, (String)session.getAttribute("userName"), (Long)session.getAttribute("userID"));
         logger.info("user "+(String)session.getAttribute("userName") +"tweeted " + new_tweet.getTweet_id());

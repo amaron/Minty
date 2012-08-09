@@ -8,6 +8,7 @@
     <script type="text/javascript" src="/static/js/timeDifference.js"></script>
     <script type="text/javascript" src="/static/js/appendItem.js"></script>
     <script type="text/javascript" src="/static/js/getJSTimestamp.js"></script>
+    <script type="text/javascript" src='/static/js/addTweet.js'></script>
 
 
 </head>

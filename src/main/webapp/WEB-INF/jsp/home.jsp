@@ -35,51 +35,14 @@
         var num_tweets=${User.num_tweets};
         var newtweets=0;
 
-        function showReply(id){
-            //alert("entered with" + id);
-            $('#replyform'+id).show();
-            var name='replyform'+id +'.tweet';
-            document.getElementById('replyform'+id).tweet.focus();
-
-        }
-
-        function hideReply(id){
-            //alert("entered with" + id);
-            $('#replyform'+id).hide();
-            var name='replyform'+id +'.tweet';
-            document.getElementById('replyform'+id).tweet.focus();
-
-
-        }
-
-        function callRetweet(id){
-            $.post('/user/retweet/'+id+'.json',function(data) {
-                $('#replyform'+id).show();
-                var is_already_retweet=data[0].tweet.search("via @"+data[0].username);
-                alert(is_already_retweet);
-                if(is_already_retweet!=data[0].tweet.length-("via @"+data[0].username).length)
-                    document.getElementById('replyform'+id).tweet.value= data[0].tweet+ " via @"+data[0].username;
-                else document.getElementById('replyform'+id).tweet.value= data[0].tweet;
-
-
-
-            });
-
-        }
-
-        function Retweet(id,tweet, username){
-            $('#replyform'+id).show();
-            var name='replyform'+id +'.tweet';
-            alert(tweet);
-             //alert(document.getElementById('replyform'+id).tweet.value);
-            var is_already_retweet=tweet.search("via @"+username);
-            alert(is_already_retweet);
-            if(is_already_retweet!=tweet.length-("via @"+username).length)
-            document.getElementById('replyform'+id).tweet.value= tweet+ "via @"+username;
-            else document.getElementById('replyform'+id).tweet.value= tweet;
-            //document.getElementsById('#replyform'+id).tweet.focus();
-             //$('#'+name).text(tweet+ "via @"+username);
-        }
+//        function showReply(id,username){
+//            //alert("entered with" + id);
+//            document.getElementById('replyform'+id).tweet.value="@"+username+": ";
+//            $('#replyform'+id).show();
+//
+//            document.getElementById('replyform'+id).tweet.focus();
+//
+//        }
 
     </script>
 

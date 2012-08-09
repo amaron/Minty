@@ -3,6 +3,42 @@ var lwr = 'abcdefghijklmnopqrstuvwxyz';
 var upr = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
 var alnum=lwr+upr+numb;
 
+
+function showReply(id){
+    $('#retweetform'+id).hide()
+    $('#replyform'+id).show();
+
+}
+
+function hideReply(id){
+    //alert("entered with" + id);
+    $('#replyform'+id).hide();
+
+}
+
+function hideRetweet(id){
+    //alert("entered with" + id);
+    $('#retweetform'+id).hide();
+
+}
+
+function callRetweet(id){
+    $('#replyform'+id).hide();
+
+    $.post('/user/retweet/'+id+'.json',function(data) {
+        $('#retweetform'+id).show();
+        var is_already_retweet=data[0].tweet.search("via @"+data[0].username);
+        //alert(is_already_retweet);
+        if(is_already_retweet!=data[0].tweet.length-("via @"+data[0].username).length)
+            document.getElementById('retweetform'+id).tweet.value= data[0].tweet+ " via @"+data[0].username;
+        else document.getElementById('retweetform'+id).tweet.value= data[0].tweet;
+
+
+
+    });
+
+}
+
 function idFinder(tweet){
     var idList=new Array();
     var count =0;

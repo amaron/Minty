@@ -53,7 +53,11 @@ public class SignupController {
     @ResponseBody
     public Hashtable validateEmail(@PathVariable String email) {
         Hashtable h= new Hashtable();
-        h.put("msg",validatorService.checkEmail(email));
+        try {
+            h.put("msg",validatorService.checkEmail(email));
+        } catch (InterruptedException e) {
+            e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
+        }
         return h;
     }
 

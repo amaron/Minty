@@ -1,7 +1,7 @@
 package TwitMini.controller;
 
 
-import TwitMini.services.TweetStore;
+import TwitMini.services.TweetService;
 import TwitMini.services.UserService;
 import TwitMini.services.ViewService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,13 +18,13 @@ import java.util.logging.Logger;
 public class HomePageController {
 
     private final ViewService viewService;
-    private final TweetStore tweetStore;
+    private final TweetService tweetStore;
     private final UserService userService;
     //private Integer latestTweet;
     private final Logger logger;
 
     @Autowired
-    public HomePageController(TweetStore tweetStore, UserService userService, ViewService viewService, Logger logger) {
+    public HomePageController(TweetService tweetStore, UserService userService, ViewService viewService, Logger logger) {
         this.tweetStore = tweetStore;
         this.userService = userService;
         this.viewService=viewService;
@@ -60,9 +60,9 @@ public class HomePageController {
 
         Integer latestTweet=tweetStore.getLatestTweetId((Long) Session.getAttribute("userID"));
         Session.setAttribute("latestTweet",latestTweet);
-        Session.setAttribute("offset",10);
-        System.out.println("home latest tweet " + Session.getAttribute("userName")+ latestTweet);
-        return new ModelAndView("home"){{
+        Session.setAttribute("offset", 10);
+        System.out.println("home latest tweet " + Session.getAttribute("userName") + latestTweet);
+        return new ModelAndView("randomhome"){{
             addObject("User",userService.getUser((String) Session.getAttribute("userName")));
             addObject("List",tweetStore.listHomePageTweets(10, 0, (Long) Session.getAttribute("userID")));
         }
