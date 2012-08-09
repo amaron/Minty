@@ -6,10 +6,10 @@ setInterval(function(){
         if(result.value=="yes"){
             $('#updateBtn').attr("value", "you have "+ result.number + " new tweets!");
             $('#updateBtn').show();
-            $('#tweetList').easyNotification("New Tweets!");
+           // $('#tweetList').easyNotification("New Tweets!");
 
 
         }
     });
-}, 2000);
+}, 20000);
 

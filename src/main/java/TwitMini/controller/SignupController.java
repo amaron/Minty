@@ -51,7 +51,7 @@ public class SignupController {
 
     @RequestMapping(value = "/user/register/emlchk/{email}.json", method = RequestMethod.POST)
     @ResponseBody
-    public Hashtable validateEmail(@PathVariable String email) {
+    public Hashtable validateEmail(@PathVariable String email) throws InterruptedException {
         Hashtable h= new Hashtable();
         try {
             h.put("msg",validatorService.checkEmail(email));
