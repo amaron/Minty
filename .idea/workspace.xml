@@ -42,8 +42,12 @@
     </TreeState>
   </component>
   <component name="ChangeListManager">
-    <list default="true" readonly="true" id="c784c63d-b7b4-4e4d-a4f9-0fe82e90cf56" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+    <list default="true" readonly="true" id="c784c63d-b7b4-4e4d-a4f9-0fe82e90cf56" name="Default" comment="Quick fixes to the profile page and the login page">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/TwitMini/controller/AppConfig.class" afterPath="$PROJECT_DIR$/target/classes/TwitMini/controller/AppConfig.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/TwitMini/model/User.class" afterPath="$PROJECT_DIR$/target/classes/TwitMini/model/User.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/tmp/jsp/org/apache/jsp/WEB_002dINF/jsp/login_jsp.class" afterPath="$PROJECT_DIR$/target/tmp/jsp/org/apache/jsp/WEB_002dINF/jsp/login_jsp.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/tmp/jsp/org/apache/jsp/WEB_002dINF/jsp/ownprofile_jsp.class" afterPath="$PROJECT_DIR$/target/tmp/jsp/org/apache/jsp/WEB_002dINF/jsp/ownprofile_jsp.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/tmp/jsp/org/apache/jsp/WEB_002dINF/jsp/randomhome_jsp.class" afterPath="$PROJECT_DIR$/target/tmp/jsp/org/apache/jsp/WEB_002dINF/jsp/randomhome_jsp.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="sampleapp2.iws" />
@@ -105,25 +109,25 @@
       <file leaf-file-name="home.jsp" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/home.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="65" column="0" selection-start="2238" selection-end="2417" vertical-scroll-proportion="-2.5">
+            <state line="67" column="18" selection-start="2417" selection-end="2417" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="changesAfterIntegration.txt" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/static/changesAfterIntegration.txt">
+      <file leaf-file-name="randomhome.jsp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/randomhome.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="107" selection-start="105" selection-end="105" vertical-scroll-proportion="0.0">
+            <state line="160" column="57" selection-start="6003" selection-end="6003" vertical-scroll-proportion="-0.625">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="getMoreTweets.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/static/js/getMoreTweets.js">
+      <file leaf-file-name="index.jsp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/index.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="34" selection-start="325" selection-end="325" vertical-scroll-proportion="0.0">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -138,19 +142,37 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="tweet.ejs" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/static/ejs/tweet.ejs">
+      <file leaf-file-name="addTweet.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/static/js/addTweet.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="29" selection-start="532" selection-end="532" vertical-scroll-proportion="0.0">
+            <state line="5" column="26" selection-start="130" selection-end="130" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="randomhome.jsp" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/randomhome.jsp">
+      <file leaf-file-name="profileview.jsp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/profileview.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="194" column="25" selection-start="6981" selection-end="6989" vertical-scroll-proportion="0.5604396">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ownprofile.jsp" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/ownprofile.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="190" column="24" selection-start="6010" selection-end="6043" vertical-scroll-proportion="9.563759">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login.jsp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/login.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="74" column="93" selection-start="2425" selection-end="2425" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -160,33 +182,6 @@
         <entry file="file://$PROJECT_DIR$/src/main/webapp/static/js/getUpdates.js">
           <provider selected="true" editor-type-id="text-editor">
             <state line="13" column="8" selection-start="326" selection-end="326" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SignupController.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/TwitMini/controller/SignupController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="60" column="40" selection-start="2119" selection-end="2119" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="appendItem.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/static/js/appendItem.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="82" column="4" selection-start="1878" selection-end="1878" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="usrnm_chk.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/static/js/usrnm_chk.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="78" selection-start="402" selection-end="442" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -208,13 +203,10 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/TwitMini/controller/ProfileViewController.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/static/js/follow.js" />
         <option value="$PROJECT_DIR$/src/main/java/TwitMini/controller/HomePageController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/static/userActivityLog.log" />
         <option value="$PROJECT_DIR$/src/main/java/TwitMini/controller/LoginController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/static/ejs/newtweet.ejs" />
-        <option value="$PROJECT_DIR$/src/main/webapp/static/js/addTweet.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/static/changesAfterIntegration.txt" />
         <option value="$PROJECT_DIR$/src/main/java/TwitMini/controller/TweetController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/static/js/getMoreTweets.js" />
@@ -223,6 +215,9 @@
         <option value="$PROJECT_DIR$/src/main/java/TwitMini/controller/AppConfig.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/static/ejs/tweet.ejs" />
         <option value="$PROJECT_DIR$/src/main/webapp/static/js/getUpdates.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/static/js/addTweet.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/ownprofile.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/login.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/randomhome.jsp" />
       </list>
     </option>
@@ -345,6 +340,20 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="PackagesPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="speakOUT" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sampleapp2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -571,6 +580,36 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="speakOUT" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Minty" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -611,20 +650,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sampleapp2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TwitMini" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
       <pane id="Scope">
         <subPane subId="Project Files">
           <PATH>
@@ -653,9 +678,9 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="dynamic.classpath" value="false" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
+    <property name="dynamic.classpath" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -671,139 +696,6 @@
       <recent name="$PROJECT_DIR$/src/main/java" />
       <recent name="$PROJECT_DIR$/src/main" />
     </key>
-  </component>
-  <component name="RestoreUpdateTree">
-    <UpdateInfo date="Moments ago" ActionInfo="_Update">
-      <UpdatedFiles>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Updated from server" />
-          <option name="myStatusName" value="Changed on server" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="CHANGED_ON_SERVER" />
-          <FILE-GROUP>
-            <option name="myUpdateName" value="Updated" />
-            <option name="myStatusName" value="Changed" />
-            <option name="mySupportsDeletion" value="false" />
-            <option name="myCanBeAbsent" value="false" />
-            <option name="myId" value="UPDATED" />
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/workspace.xml</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/TwitMini/controller/HomePageController.java</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/TwitMini/controller/ProfileViewController.java</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/TwitMini/controller/SignupController.java</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/TwitMini/controller/TweetController.java</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/TwitMini/model/TweetData.java</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/WEB-INF/dispatcher-servlet.xml</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/home.jsp</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/ownprofile.jsp</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/profileview.jsp</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/static/ejs/newtweet.ejs</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/static/ejs/tweet.ejs</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/static/js/appendItem.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/static/userActivityLog.log</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/target/classes/TwitMini/controller/HomePageController$3.class</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/target/classes/TwitMini/controller/HomePageController.class</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/target/classes/TwitMini/controller/ProfileViewController.class</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/target/classes/TwitMini/controller/SignupController.class</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/target/classes/TwitMini/controller/TweetController.class</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/target/classes/TwitMini/model/TweetData$1.class</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/target/classes/TwitMini/model/TweetData.class</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/target/tmp/jsp/org/apache/jsp/WEB_002dINF/jsp/home_jsp.class</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/target/tmp/jsp/org/apache/jsp/WEB_002dINF/jsp/ownprofile_jsp.class</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/target/tmp/jsp/org/apache/jsp/WEB_002dINF/jsp/profileview_jsp.class</PATH>
-          </FILE-GROUP>
-          <FILE-GROUP>
-            <option name="myUpdateName" value="Created" />
-            <option name="myStatusName" value="Created" />
-            <option name="mySupportsDeletion" value="false" />
-            <option name="myCanBeAbsent" value="false" />
-            <option name="myId" value="CREATED" />
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/TwitMini/services/TweetService.java</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/randomhome.jsp</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/target/classes/TwitMini/services/TweetService.class</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/target/tmp/jsp/org/apache/jsp/WEB_002dINF/jsp/randomhome_jsp.class</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/target/tmp/jsp/org/apache/jsp/WEB_002dINF/jsp/register_jsp.class</PATH>
-          </FILE-GROUP>
-          <FILE-GROUP>
-            <option name="myUpdateName" value="Deleted" />
-            <option name="myStatusName" value="Deleted" />
-            <option name="mySupportsDeletion" value="false" />
-            <option name="myCanBeAbsent" value="true" />
-            <option name="myId" value="REMOVED_FROM_REPOSITORY" />
-          </FILE-GROUP>
-          <FILE-GROUP>
-            <option name="myUpdateName" value="Restored" />
-            <option name="myStatusName" value="Will be restored" />
-            <option name="mySupportsDeletion" value="false" />
-            <option name="myCanBeAbsent" value="false" />
-            <option name="myId" value="RESTORED" />
-          </FILE-GROUP>
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Modified" />
-          <option name="myStatusName" value="Modified" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="MODIFIED" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Skipped" />
-          <option name="myStatusName" value="Skipped" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="SKIPPED" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Merged with conflicts" />
-          <option name="myStatusName" value="Will be merged with conflicts" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="MERGED_WITH_CONFLICTS" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Merged with tree conflicts" />
-          <option name="myStatusName" value="Merged with tree conflicts" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Merged" />
-          <option name="myStatusName" value="Will be merged" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="MERGED" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Not in repository" />
-          <option name="myStatusName" value="Not in repository" />
-          <option name="mySupportsDeletion" value="true" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="UNKNOWN" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Locally added" />
-          <option name="myStatusName" value="Locally added" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="LOCALLY_ADDED" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Locally removed" />
-          <option name="myStatusName" value="Locally removed" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="LOCALLY_REMOVED" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Switched" />
-          <option name="myStatusName" value="Switched" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="SWITCHED" />
-        </FILE-GROUP>
-      </UpdatedFiles>
-    </UpdateInfo>
   </component>
   <component name="RunManager" selected="Maven.sampleapp2 [org.mortbay.jetty:jetty-maven-plugin:7.4.2.v20110526:run]">
     <configuration default="false" name="sampleapp2 [org.mortbay.jetty:jetty-maven-plugin:7.4.2.v20110526:run]" type="MavenRunConfiguration" factoryName="Maven" temporary="true">
@@ -959,6 +851,17 @@
         <option name="PhingTarget" enabled="false" />
       </method>
     </configuration>
+    <configuration default="true" type="JavascriptDebugSession" factoryName="Local">
+      <JSDebuggerConfigurationSettings>
+        <option name="engineId" value="embedded" />
+        <option name="fileUrl" />
+      </JSDebuggerConfigurationSettings>
+      <method>
+        <option name="AntTarget" enabled="false" />
+        <option name="BuildArtifacts" enabled="false" />
+        <option name="Maven.BeforeRunTask" enabled="false" />
+      </method>
+    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <extension name="coverage" enabled="false" merge="false" runner="idea" />
       <module name="" />
@@ -984,17 +887,6 @@
         <option name="Make" enabled="true" />
         <option name="Maven.BeforeRunTask" enabled="false" />
         <option name="PhingTarget" enabled="false" />
-      </method>
-    </configuration>
-    <configuration default="true" type="JavascriptDebugSession" factoryName="Local">
-      <JSDebuggerConfigurationSettings>
-        <option name="engineId" value="embedded" />
-        <option name="fileUrl" />
-      </JSDebuggerConfigurationSettings>
-      <method>
-        <option name="AntTarget" enabled="false" />
-        <option name="BuildArtifacts" enabled="false" />
-        <option name="Maven.BeforeRunTask" enabled="false" />
       </method>
     </configuration>
     <list size="2">
@@ -1048,7 +940,15 @@
       <created>1344530376126</created>
       <updated>1344530376126</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Home page tweets working not the AJAX though">
+      <created>1344530455817</created>
+      <updated>1344530455817</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Quick fixes to the profile page and the login page">
+      <created>1344532619412</created>
+      <updated>1344532619412</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1073,7 +973,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="24" width="1368" height="720" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
@@ -1082,17 +982,16 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39974126" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32864675" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32864675" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.20779915" sideWeight="0.19255456" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32864675" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32864675" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.0" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1616085" sideWeight="0.6713533" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29666162" sideWeight="0.6713533" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29666162" sideWeight="0.6713533" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31810194" sideWeight="0.9886018" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Phing Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1100,6 +999,7 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32729626" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="TeamCity" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32864675" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="EJB" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1142,7 +1042,7 @@
     <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Home page tweets working not the AJAX though" />
+    <option name="LAST_COMMIT_MESSAGE" value="Quick fixes to the profile page and the login page" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -1157,6 +1057,7 @@
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
     <MESSAGE value="First push of Minty" />
     <MESSAGE value="Home page tweets working not the AJAX though" />
+    <MESSAGE value="Quick fixes to the profile page and the login page" />
   </component>
   <component name="VssConfiguration">
     <option name="CLIENT_PATH" value="" />
@@ -1200,38 +1101,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/userActivityLog.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="69" selection-start="2613" selection-end="2613" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/TwitMini/controller/LoginController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="84" column="74" selection-start="2530" selection-end="2530" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/js/follow.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="11" selection-start="503" selection-end="503" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/ejs/newtweet.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="19" selection-start="229" selection-end="229" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/js/addTweet.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="10" selection-start="32" selection-end="154" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/TwitMini/controller/TweetController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="64" column="30" selection-start="1806" selection-end="1806" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/static/changesAfterIntegration.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="107" selection-start="105" selection-end="105" vertical-scroll-proportion="0.0" />
@@ -1244,9 +1113,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/static/js/appendItem.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="82" column="4" selection-start="1878" selection-end="1878" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="82" column="4" selection-start="1878" selection-end="1878" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/static/js/usrnm_chk.js">
@@ -1256,42 +1123,70 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/TwitMini/controller/SignupController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="60" column="40" selection-start="2119" selection-end="2119" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/TwitMini/controller/AppConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="144" column="40" selection-start="5729" selection-end="5729" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="60" column="40" selection-start="2119" selection-end="2119" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/static/ejs/tweet.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="29" selection-start="532" selection-end="532" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="6" column="29" selection-start="532" selection-end="532" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/js/bootstrapJS/jquery.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5664" column="4" selection-start="150153" selection-end="150153" vertical-scroll-proportion="0.19254659" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/home.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="65" column="0" selection-start="2238" selection-end="2417" vertical-scroll-proportion="-2.5">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/js/getUpdates.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="8" selection-start="326" selection-end="326" vertical-scroll-proportion="0.0">
+        <state line="67" column="18" selection-start="2417" selection-end="2417" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/randomhome.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="194" column="25" selection-start="6981" selection-end="6989" vertical-scroll-proportion="0.5604396">
+        <state line="160" column="57" selection-start="6003" selection-end="6003" vertical-scroll-proportion="-0.625">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/TwitMini/controller/AppConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="144" column="40" selection-start="5729" selection-end="5729" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/js/addTweet.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="26" selection-start="130" selection-end="130" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/profileview.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/login.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="74" column="93" selection-start="2425" selection-end="2425" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/js/getUpdates.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="8" selection-start="326" selection-end="326" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/ownprofile.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="190" column="24" selection-start="6010" selection-end="6043" vertical-scroll-proportion="9.563759">
           <folding />
         </state>
       </provider>
