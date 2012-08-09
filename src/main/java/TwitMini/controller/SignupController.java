@@ -36,8 +36,11 @@ public class SignupController {
 
 
     @RequestMapping(value = "/user/register", method = RequestMethod.GET)
-    public String RegistrationForm() {
-        return "register";  // will change it to specific register page with only register
+    public ModelAndView RegistrationForm(HttpSession Session) {
+        String userName = (String) Session.getAttribute("userName");
+        if(userName==null)
+        return new ModelAndView("register");  // will change it to specific register page with only register
+        else return new ModelAndView("redirect:/home");
     }
 
     @RequestMapping(value = "/user/register/usrchk/{username}.json", method = RequestMethod.POST)
