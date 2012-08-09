@@ -158,7 +158,7 @@
                 <ul class="dropdown-menu">
                     <li><a href="#">Profile</a></li>
                     <li class="divider"></li>
-                    <li><a href="#">Sign Out</a></li>
+                    <li><a href="/user/logout">Logout</a></li>
                 </ul>
             </div>
             <div class="nav-collapse">
@@ -188,7 +188,7 @@
 
             </div><!--/.well -->
 
-            <form class="well" method="POST" onsubmit="addTweet(this); return false;">
+            <form class="well"  onsubmit="addTweet(this); return false;">
 
 
 
