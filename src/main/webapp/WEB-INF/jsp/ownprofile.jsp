@@ -335,19 +335,19 @@ User ${handle}'s Tweets ${User.num_tweets}
 <!-- Le javascript
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
-<script src="/static/js/bootstrapJS/jquery.js"></script>
-<script src="/static/js/bootstrapJS/bootstrap-transition.js"></script>
-<script src="/static/js/bootstrapJS/bootstrap-alert.js"></script>
-<script src="/static/js/bootstrapJS/bootstrap-modal.js"></script>
-<script src="/static/js/bootstrapJS/bootstrap-dropdown.js"></script>
-<script src="/static/js/bootstrapJS/bootstrap-scrollspy.js"></script>
-<script src="/static/js/bootstrapJS/bootstrap-tab.js"></script>
-<script src="/static/js/bootstrapJS/bootstrap-tooltip.js"></script>
-<script src="/static/js/bootstrapJS/bootstrap-popover.js"></script>
-<script src="/static/js/bootstrapJS/bootstrap-button.js"></script>
-<script src="/static/js/bootstrapJS/bootstrap-collapse.js"></script>
-<script src="/static/js/bootstrapJS/bootstrap-carousel.js"></script>
-<script src="/static/js/bootstrapJS/bootstrap-typeahead.js"></script>
+<script src="/static/js/bootstrap/jquery.js"></script>
+<script src="/static/js/bootstrap/bootstrap-transition.js"></script>
+<script src="/static/js/bootstrap/bootstrap-alert.js"></script>
+<script src="/static/js/bootstrap/bootstrap-modal.js"></script>
+<script src="/static/js/bootstrap/bootstrap-dropdown.js"></script>
+<script src="/static/js/bootstrap/bootstrap-scrollspy.js"></script>
+<script src="/static/js/bootstrap/bootstrap-tab.js"></script>
+<script src="/static/js/bootstrap/bootstrap-tooltip.js"></script>
+<script src="/static/js/bootstrap/bootstrap-popover.js"></script>
+<script src="/static/js/bootstrap/bootstrap-button.js"></script>
+<script src="/static/js/bootstrap/bootstrap-collapse.js"></script>
+<script src="/static/js/bootstrap/bootstrap-carousel.js"></script>
+<script src="/static/js/bootstrap/bootstrap-typeahead.js"></script>
 
 </body>
 </html>
