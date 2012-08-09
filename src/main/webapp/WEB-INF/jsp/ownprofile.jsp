@@ -39,7 +39,7 @@ User ${handle}'s Tweets ${User.num_tweets}
 
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
 <head>
     <link rel="stylesheet" href="/static/css/bootstrap.css">
     <script type="text/javascript" src="/static/js/jquery.min.js"></script>
