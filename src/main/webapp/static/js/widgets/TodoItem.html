@@ -1,0 +1,10 @@
+<li>
+  <span tweet_id="itemName${itemID}">${description}</span> |
+  <a href="javascript: void(0);" dojoAttachEvent="click: deleteItem">delete</a> |
+  <form style="display:inline;" action="/todo/update" dojoAttachEvent="submit: updateItem"
+        onsubmit="; return false;">
+    <input type="hidden" description="tweet_id" value="${itemID}"/>
+    <input tweet_id="updateItemName${itemID}" type="text" description="description" value="${description}"/>
+    <input type="submit" value="Save Changes"/>
+  </form>
+</li>

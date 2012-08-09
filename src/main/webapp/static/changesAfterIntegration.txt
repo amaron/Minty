@@ -1,0 +1,5 @@
+numtweets variable to keep track offset
+
+
+TODO:
+make get tweet return tweetdata and not list of tweetdata

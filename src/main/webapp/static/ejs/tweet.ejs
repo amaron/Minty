@@ -1,0 +1,16 @@
+<li id="tweetItem<%=tweet_id%>">
+  <blockquote>
+  <big><span id="itemName<%=tweet_id%>"><%=tweet%></span></big>                               <%=timeDiff%>
+
+  <small><a href="/user/<%=username%>"><%=username%></a></small> <small><a href=# onclick='showReply(<%=tweet_id%>)' id='replylink<%=tweet_id%>'>reply</a></small>
+
+  <small><a href=# onclick='callRetweet(<%=tweet_id%>)' id='retweetlink<%=tweet_id%>'> retweet</a></small>
+
+  <small><a href="/user/<%=username%>/tweet/<%=tweet_id%>"><%=pushtime%></a></small>
+
+  <form action="" id='replyform<%=tweet_id%>' name='replyform<%=tweet_id%>' style='display:none' name='replyform' onsubmit='addTweetThenHide(this,<%=tweet_id%>);return false;'>
+  <textarea id='tweet' name='tweet' >@<%=username%>: </textarea>
+  <input type='submit' value='submit'/> <small><a href=# onclick='hideReply(<%=tweet_id%>)' id='hidelink<%=tweet_id%>'>nevermind</a></small>
+  </form>
+  </blockquote>
+</li>
