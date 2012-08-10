@@ -131,7 +131,7 @@
 <script src="/static/js/bootstrap/bootstrap-collapse.js"></script>
 <script src="/static/js/bootstrap/bootstrap-carousel.js"></script>
 <script src="/static/js/bootstrap/bootstrap-typeahead.js"></script>
-<script type="text/javascript" src="/static/js/bootstrapJS/jquery.validate.js"></script>
+<script type="text/javascript" src="/static/js/bootstrap/jquery.validate.js"></script>
 <script type="text/javascript">
 
     function checkpassword(){

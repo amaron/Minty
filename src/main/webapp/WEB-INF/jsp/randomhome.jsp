@@ -24,6 +24,19 @@
     <script type="text/javascript" src="/static/js/getMoreTweets.js"></script>
     <script type="text/javascript" src="/static/js/displayNew.js"></script>
     <script type="text/javascript" src="/static/js/escapeHTML.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function(){
+
+    //custom usage
+    $("#tweet").charCount({
+    allowed: 128,
+    warning: 20,
+    counterText: 'Characters left: '
+    });
+    });
+    var num_tweets=${User.num_tweets};
+    var newtweets=0;
+    </script>
     <link href="static/css/bootstrap.css" rel="stylesheet">
     <style type="text/css">
         body {
@@ -141,16 +154,16 @@
                     <span class="caret"></span>
                 </a>
                 <ul class="dropdown-menu">
-                    <li><a href="#">Profile</a></li>
+                    <li><a href="/user/${User.username}">Profile</a></li>
                     <li class="divider"></li>
-                    <li><a href="#">Sign Out</a></li>
+                    <li><a href="/user/logout">Sign Out</a></li>
                 </ul>
             </div>
             <div class="nav-collapse">
                 <ul class="nav">
-                    <li class="active"><a href="#">Home</a></li>
-                    <li><a href="#about">Mentions</a></li>
-                    <li><a href="#contact">Public</a></li>
+                    <li class="active"><a href="/home">Home</a></li>
+                    <li><a href="/user/${User.username}/mentions">Mentions</a></li>
+                    <li><a href="/public">Public</a></li>
                 </ul>
             </div><!--/.nav-collapse -->
         </div>
@@ -172,12 +185,13 @@
 
 
             </div><!--/.well -->
-            <form class="well">
 
 
+            <form class="well" onsubmit="addTweet(this); return false;">
 
-                <textarea class="span12" id="textarea" rows="2" placeholder="Add a new Minty!"></textarea>
-                <button type="submit" class="btn btn-success">Mintify</button><span class="charleft">128</span>
+
+                <textarea class="span12" id="tweet" name ="tweet" rows="2" placeholder="Add a new Minty!" maxlength="128" > </textarea>
+                <button type="submit" class="span9" name="Mintify">Mintify</button><span class="charleft">128</span>
 
             </form>
 
@@ -191,9 +205,12 @@
 
 
         <div class="span9">
+
             <div class="row-fluid">
 
-
+                <form class="well" action="/user/getNewTweet.json" onsubmit="displayNew(this);return false">
+                    <input type="submit" style="display:none" value="you have new tweets!" id="updateBtn"/>
+                </form>
 
 
                 <div class="well" id="tweetList">
@@ -204,50 +221,13 @@
                         </script>
                     </c:forEach>
 
-                    <div class="tweet" onmouseover="document.getElementById('re').style.display = 'block';" onmouseout="document.getElementById('re').style.display = 'none';">
-                        <div class="span1"><span class="tweetimage"><img src="img/gaurav.jpg" height="58px" width="58px"/></span></div>
-                        <div class="span11">
-                            <span class="time">5 mins ago</span>
-
-                            <span class="tweetheader">Gaurav Munjal</span><br>
-                            <span class="tweettext">Hey, we are here to create a dent in the universe, otherwise, why even be here. And by the way who the fuck is John Galt? Err what the hell you are saying man!</span>
-                            <span class="reply"><a id="re" href="#" style="display: none;">Reply</a></span>
-                        </div>
-                    </div>
-                    <div class="tweet" onmouseover="this.getElementById('re').style.display = 'block';" onmouseout="this.getElementById('re').style.display = 'none';">
-                        <div class="span1"><span class="tweetimage"><img src="img/gaurav.jpg" height="58px" width="58px"/></span></div>
-                        <div class="span11">
-                            <span class="time">5 mins ago</span>
-
-                            <span class="tweetheader">Gaurav Munjal</span><br>
-                            <span class="tweettext">Hey, we are here to create a dent in the universe, otherwise, why even be here. And by the way who the fuck is John Galt? Err what the hell you are saying man!</span>
-                            <span class="reply"><a id="re" href="#" style="display: none;">Reply</a></span>
-                        </div>
-                    </div>
-
-                    <!-- 				<form class="well form-inline" id="replyform">
-
-                         Reply to @gauravmunjal <input type="text" class="input-xxlarge"/>
-                         <input type="submit" class="btn-success" value="Reply"/>
-                         <input type="submit" class="btn-inverse" value="Nevermind"/>
-
-         </form>-->
-
-                    <div class="tweet" onmouseover="document.getElementById('re').style.display = 'block';" onmouseout="document.getElementById('re').style.display = 'none';">
-                        <div class="span1"><span class="tweetimage"><img src="img/gaurav.jpg" height="58px" width="58px"/></span></div>
-                        <div class="span11">
-                            <span class="time">5 mins ago</span>
-
-                            <span class="tweetheader">Gaurav Munjal</span><br>
-                            <span class="tweettext">Hey, we are here to create a dent in the universe, otherwise, why even be here. And by the way who the fuck is John Galt? Err what the hell you are saying man!</span>
-                            <span class="reply"><a id="re" href="#" style="display: none;">Reply</a></span>
-                        </div>
-                    </div>
                 </div><!--/span-->
             </div>
         </div>
 
-
+        <div class="span9">
+        <button class="btn btn-success" id="moreTweetsBtn" onclick="getMoreTweets(this);return false">load more...</button>
+        </div>
 
 
     </div>

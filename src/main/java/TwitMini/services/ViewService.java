@@ -35,6 +35,11 @@ public class ViewService {
         return db.query("select * from TWEETS where tweet like ?",TweetData.rowMapper,"%"+string+"%");
     }
 
+    public List<TweetData> listUserMentions(String handle) {
+        return db.query("select * from TWEETS where tweet like ?",TweetData.rowMapper,"%@"+handle+"%");
+
+    }
+
     public List<Map<String,Object>> getFollowers(String handle){
      Long id=getUserId(handle);
      return db.queryForList("select username from users where user_id in (select following.user_id from following where following_id=? and following.user_id!=?)",id,id);

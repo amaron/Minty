@@ -1,16 +1,20 @@
 package TwitMini.controller;
 
 
+import TwitMini.model.TweetData;
 import TwitMini.services.TweetService;
 import TwitMini.services.UserService;
 import TwitMini.services.ViewService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpSession;
+import java.util.List;
 import java.util.logging.Logger;
 
 @Controller
@@ -20,7 +24,6 @@ public class HomePageController {
     private final ViewService viewService;
     private final TweetService tweetStore;
     private final UserService userService;
-    //private Integer latestTweet;
     private final Logger logger;
 
     @Autowired
@@ -54,6 +57,20 @@ public class HomePageController {
 
     }
 
+    @RequestMapping(value="/public",method=RequestMethod.GET)
+    public ModelAndView allTweets(){
+        return new ModelAndView("public"){{
+            addObject("List",tweetStore.listAllTweets(0));
+        }};
+
+    }
+
+    @RequestMapping(value="/getMorePublicTweets.json", method= RequestMethod.GET)
+    @ResponseBody
+    public List<TweetData> getMorePublicTweets(@RequestParam final int offset){
+        return tweetStore.listAllTweets(10);
+
+    }
 
     @RequestMapping("/home")
     public ModelAndView home(final HttpSession Session){

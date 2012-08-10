@@ -21,6 +21,7 @@ public class TweetService {
     }
 
 
+
     public List<TweetData> listHomePageTweets(int limit, int offset, Long id) {
         return db.query("select * from tweets where tweet_id in (select tweet_id from USERFEED where user_id=?)  order by tweet_id desc limit ? offset ?",
                 TweetData.rowMapper,id,limit,offset
@@ -30,6 +31,11 @@ public class TweetService {
     public List<TweetData> getTweet(int id){
         return db.query("select * from tweets where tweet_id=?",TweetData.rowMapper,id);
     }
+
+    public List<TweetData> listAllTweets(int offset){
+        return db.query("select * from tweets order by tweet_id desc limit 10 offset ?",TweetData.rowMapper, offset);
+    }
+
 
 
     public List<TweetData> getNewTweets(Integer cur, Integer curmax, Long id) {

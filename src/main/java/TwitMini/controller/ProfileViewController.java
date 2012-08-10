@@ -1,6 +1,5 @@
 package TwitMini.controller;
 
-import TwitMini.model.User;
 import TwitMini.services.TweetService;
 import TwitMini.services.UserService;
 import TwitMini.services.ViewService;
@@ -52,9 +51,8 @@ public class ProfileViewController {
         }};
         }
 
-        final User user=  userService.getUser("handle");
-        HttpSession session = request.getSession(false);
 
+        HttpSession session = request.getSession(false);
         if(session!=null) {
 
 
@@ -67,7 +65,6 @@ public class ProfileViewController {
                 mv.addObject("handle",handle);
                 mv.addObject("User",userService.getUser(handle));
                 mv.addObject("List", viewService.listUserTweets(handle));
-                mv.addObject("User",user);
                 return mv;
             }
 
@@ -79,7 +76,6 @@ public class ProfileViewController {
         mv.addObject("User",userService.getUser(handle));
         mv.addObject("handle",handle);
         mv.addObject("List", viewService.listUserTweets(handle));
-        mv.addObject("User",user);
 
             logger.info("user "+userName + " visited " + handle + "'s profile");
 
@@ -90,11 +86,22 @@ public class ProfileViewController {
 
             return new ModelAndView("profileview-public"){{
                 addObject("List",viewService.listUserTweets(handle));
-                addObject("User",user);
+                addObject("User",userService.getUser(handle));
 
             }};
 
 
+    }
+
+    @RequestMapping("/{handle}/mentions")
+    public ModelAndView mentions(@PathVariable final String handle)
+    {
+
+        return new ModelAndView("mentions"){{
+            addObject("User",userService.getUser(handle));
+            addObject("List",viewService.listUserMentions(handle));
+        }
+        };
     }
 
 

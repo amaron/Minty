@@ -28,7 +28,7 @@ import java.util.logging.SimpleFormatter;
             dataSource.setUrl("jdbc:postgresql://127.0.0.1:5432/mydb2");
             dataSource.setDriverClassName("org.postgresql.Driver");
             dataSource.setUsername("postgres");
-            dataSource.setPassword("crossword");
+            dataSource.setPassword("postgres");
             JdbcTemplate db = new JdbcTemplate(dataSource);
 
 
