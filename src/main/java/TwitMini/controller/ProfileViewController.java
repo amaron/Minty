@@ -63,7 +63,7 @@ public class ProfileViewController {
                 ModelAndView mv= new ModelAndView("ownprofile");
                 mv.addObject("handle",handle);
                 mv.addObject("User",userService.getUser(handle));
-                mv.addObject("List", viewService.listFollowingTweets(handle));
+                mv.addObject("List", viewService.listUserTweets(handle));
                 return mv;
             }
 
@@ -74,7 +74,7 @@ public class ProfileViewController {
 
         mv.addObject("User",userService.getUser(handle));
         mv.addObject("handle",handle);
-        mv.addObject("List", viewService.listFollowingTweets(handle));
+        mv.addObject("List", viewService.listUserTweets(handle));
 
         logger.info("user "+userName + " visited " + handle + "'s profile");
 

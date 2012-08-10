@@ -28,7 +28,7 @@ import java.util.logging.SimpleFormatter;
             dataSource.setUrl("jdbc:postgresql://127.0.0.1:5432/mydb2");
             dataSource.setDriverClassName("org.postgresql.Driver");
             dataSource.setUsername("postgres");
-            dataSource.setPassword("crossword");
+            dataSource.setPassword("postgres");
             JdbcTemplate db = new JdbcTemplate(dataSource);
 
 
@@ -142,7 +142,7 @@ import java.util.logging.SimpleFormatter;
         try {
 
             // This block configure the logger with handler and formatter
-            fh = new FileHandler("/home/userActivityLog.log",true);
+            fh = new FileHandler("/home/kunjan/Karthik/speakOUT/src/main/webapp/static/userActivityLog.log",true);
             logger.addHandler(fh);
             //logger.setLevel(Level.ALL);
             SimpleFormatter formatter = new SimpleFormatter();
