@@ -93,18 +93,19 @@ function preComputeOnTweet(data){
 
 }
 function appendItem(data) {
-    var list=idFinder(data.tweet);
-    data.tweet= strip(data.tweet);
-    data.tweet=htmlAdder(data.tweet,list);
-    var month_names_short= ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
-    var timeObject = getJsTimestamp( String(data.pushtime) );
-    var stamp =  new Date(timeObject.year, Number(timeObject.month)-1, timeObject.day, timeObject.hour, timeObject.minute, timeObject.second);
-    //alert(jQuery.timeago(stamp));
-    var timeDiff= timeDifference((new Date()).getTime(),stamp.getTime());
-    data["timeDiff"]=timeDiff;
-    data.pushtime =month_names_short[Number(timeObject.month)-1]+" "+ timeObject.day +" " + timeObject.year + " at " + timeObject.hour+":"+timeObject.minute;
+//    var list=idFinder(data.tweet);
+//    data.tweet= strip(data.tweet);
+//    data.tweet=htmlAdder(data.tweet,list);
+//    var month_names_short= ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+//    var timeObject = getJsTimestamp( String(data.pushtime) );
+//    var stamp =  new Date(timeObject.year, Number(timeObject.month)-1, timeObject.day, timeObject.hour, timeObject.minute, timeObject.second);
+//    //alert(jQuery.timeago(stamp));
+//    var timeDiff= timeDifference((new Date()).getTime(),stamp.getTime());
+//    data["timeDiff"]=timeDiff;
+//    data.pushtime =month_names_short[Number(timeObject.month)-1]+" "+ timeObject.day +" " + timeObject.year + " at " + timeObject.hour+":"+timeObject.minute;
 
-    var tweetItemLI = $(new EJS({url: '/static/ejs/tweet.ejs'}).render(data)).data("tweetID", data.tweet_id);
+
+    var tweetItemLI =preComputeOnTweet(data);
 
     $('#tweetList').append(tweetItemLI);
 }

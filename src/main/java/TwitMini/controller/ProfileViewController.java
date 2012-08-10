@@ -55,7 +55,6 @@ public class ProfileViewController {
         HttpSession session = request.getSession(false);
         if(session!=null) {
 
-
         String userName = (String) session.getAttribute("userName");
 
         if (userName != null) {
@@ -68,7 +67,8 @@ public class ProfileViewController {
                 return mv;
             }
 
-        boolean isfollow=viewService.isFollowing(handle);
+        boolean isfollow=viewService.isFollowing((Long)session.getAttribute("userID"),handle);
+
         ModelAndView mv= new ModelAndView("profileview");
         if(isfollow==true){mv.addObject("message","unfollow");}
         else mv.addObject("message","follow");
@@ -77,14 +77,14 @@ public class ProfileViewController {
         mv.addObject("handle",handle);
         mv.addObject("List", viewService.listUserTweets(handle));
 
-            logger.info("user "+userName + " visited " + handle + "'s profile");
+        logger.info("user "+userName + " visited " + handle + "'s profile");
 
         return mv;
         }
 
         }
 
-            return new ModelAndView("profileview-public"){{
+         return new ModelAndView("profileview-public"){{
                 addObject("List",viewService.listUserTweets(handle));
                 addObject("User",userService.getUser(handle));
 
@@ -93,7 +93,7 @@ public class ProfileViewController {
 
     }
 
-    @RequestMapping("/{handle}/mentions")
+    @RequestMapping("/user/{handle}/mentions")
     public ModelAndView mentions(@PathVariable final String handle)
     {
 
@@ -105,7 +105,7 @@ public class ProfileViewController {
     }
 
 
-    @RequestMapping("getfollowers/{handle}")
+    @RequestMapping("{handle}/followers")
     public ModelAndView getFollowers(@PathVariable final String handle,HttpSession Session){
         ModelAndView mv= new ModelAndView("userlist");
         mv.addObject("label","Users "+ "that follow " + handle);
@@ -116,7 +116,7 @@ public class ProfileViewController {
         return mv;
     }
 
-    @RequestMapping("getfollowing/{handle}")
+    @RequestMapping("{handle}/following")
     public ModelAndView getFollowering(@PathVariable final String handle,HttpSession Session){
         ModelAndView mv= new ModelAndView("userlist");
         mv.addObject("label","Users "+ handle+ " follows");
@@ -133,7 +133,7 @@ public class ProfileViewController {
         Hashtable h= new Hashtable();
         h.put("status","success");
         h.put("name",handle);
-        if(viewService.isFollowing(handle)==true){
+        if(viewService.isFollowing((Long)Session.getAttribute("userID"),handle)==true){
 
                  h.put("value","unfollow");
                  h.put("displayvalue","follow");

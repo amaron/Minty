@@ -44,14 +44,20 @@ public class HomePageController {
         };
     }
 
+    @RequestMapping(value="/search/moreSearchTweets.json", method=RequestMethod.GET)
+    @ResponseBody
+    public List<TweetData> moreSearchResults(@RequestParam String searchtext, @RequestParam int offset){
+        return viewService.searchTweets(searchtext,offset);
+    }
+
     @RequestMapping("/search")
     public ModelAndView Search(@RequestParam final String searchtext, HttpSession Session){
 
         logger.info("User " + (String)Session.getAttribute("userName") + " searched for "+ searchtext );
         return new ModelAndView("search"){{
-
+            addObject("searchtext",searchtext);
             addObject("UserList", viewService.searchUsers(searchtext));
-            addObject("TweetList", viewService.searchTweets(searchtext));
+            addObject("TweetList", viewService.searchTweets(searchtext,0));
         }
         };
 

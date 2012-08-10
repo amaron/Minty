@@ -31,8 +31,8 @@ public class ViewService {
         return db.query("select * from USERS where username like ?",User.rowMapper,"%"+string+"%");
     }
 
-    public List<TweetData> searchTweets(String string){
-        return db.query("select * from TWEETS where tweet like ?",TweetData.rowMapper,"%"+string+"%");
+    public List<TweetData> searchTweets(String string, int offset){
+        return db.query("select * from TWEETS where tweet like ? order by tweet_id desc offset ? limit 10",TweetData.rowMapper,"%"+string+"%",offset);
     }
 
     public List<TweetData> listUserMentions(String handle) {
@@ -51,10 +51,10 @@ public class ViewService {
     }
 
 
-    public boolean isFollowing(String handle){
+    public boolean isFollowing(long user_id, String handle){
 
-        Long l=getUserId(handle);
-      Integer l1=db.queryForInt("select count(*) from following where user_id =? and following_id=?",userID.get(),l);
+      Long user_id_handle=getUserId(handle);
+      Integer l1=db.queryForInt("select count(*) from following where user_id =? and following_id=?",user_id,user_id_handle);
         System.out.println("is following? "+l1);
         if(l1==0)return false;
         return true;
@@ -70,11 +70,12 @@ public class ViewService {
     public boolean isUserHimself(Long id){
         return id.equals(userID.get());
     }
+
     public void followUser(String handle){
 
         Long l=getUserId(handle);
         if(userID.get()==l)   return;
-        if(isFollowing(handle)){unfollowUser(l);return;}
+        if(isFollowing(userID.get(),handle)){unfollowUser(l);return;}
 /*
         db.update("insert into following values(?,?)",userID.get(), l);
         db.update("update users set num_following=num_following+1 where user_id=?",userID.get());
