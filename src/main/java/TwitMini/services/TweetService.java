@@ -40,8 +40,8 @@ public class TweetService {
 
     public List<TweetData> getNewTweets(Integer cur, Integer curmax, Long id) {
      System.out.println("cur and curmax" + cur + " " + curmax);
-        return db.query("select * from tweets where tweets.tweet_id in ( select tweet_id from USERFEED where USERFEED.user_id= ? and USERFEED.tweet_id > ? and USERFEED.tweet_id <= ?) order by tweet_id asc",
-                TweetData.rowMapper,id,cur,curmax
+        return db.query("select * from tweets where tweets.tweet_id in ( select tweet_id from USERFEED where USERFEED.user_id= ? and USERFEED.tweet_id > ? and USERFEED.tweet_id <= ? and USERFEED.tweet_id not in (select tweet_id from tweets where user_id=? and tweet_id>?)) order by tweet_id asc",
+                TweetData.rowMapper,id,cur,curmax,id,cur
         );
     }
 
@@ -51,10 +51,10 @@ public class TweetService {
                 );
     }
 
-    public Integer getLatestTweetId(Long id){
+    public Integer getLatestTweetId(Long id, int cur){
 
         System.out.println(db.queryForInt("select max(tempMax.tweet_id) as maxval from (select tweet_id from USERFEED where user_id=?) AS tempMax",id));
-        return db.queryForInt("select max(tempMax.tweet_id) as maxval from (select tweet_id from USERFEED where user_id=?) AS tempMax",id);
+        return db.queryForInt("select max(tempMax.tweet_id) as maxval from (select tweet_id from USERFEED where user_id=? and USERFEED.tweet_id not in (select tweet_id from tweets where user_id=? and tweet_id>?)) AS tempMax",id,id,cur);
     }
 
     public void addUserFeed(Integer id, Long user_id){

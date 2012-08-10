@@ -20,6 +20,7 @@
     <script type="text/javascript" src="/static/js/getJSTimestamp.js"></script>
     <script type="text/javascript" src="/static/js/getUpdates.js"></script>
     <script type="text/javascript" src="/static/js/addTweet.js"></script>
+    <script type="text/javascript" src="/static/js/addTweetNow.js"></script>
     <script type="text/javascript" src="/static/js/appendItem.js"></script>
     <script type="text/javascript" src="/static/js/getMoreTweets.js"></script>
     <script type="text/javascript" src="/static/js/displayNew.js"></script>
@@ -187,7 +188,7 @@
             </div><!--/.well -->
 
 
-            <form class="well" onsubmit="addTweet(this); return false;">
+            <form class="well" onsubmit="addTweetNow(this); return false;">
 
 
                 <textarea class="span12" id="tweet" name ="tweet" rows="2" placeholder="Add a new Minty!" maxlength="128" > </textarea>

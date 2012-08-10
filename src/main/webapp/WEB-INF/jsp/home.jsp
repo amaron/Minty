@@ -68,7 +68,7 @@ Hello <a href ="/user/${sessionScope.userName}">${sessionScope.userName}</a>  <a
 </form>
 
 
-<form action="/user/tweet/create.json" onsubmit="addTweet(this); return false;">
+<form action="/user/tweet/create.json" onsubmit="addTweetNow(this); return false;">
 
     <div>
         <label for="tweet">Tweet! <small>128 character limit</small></label>

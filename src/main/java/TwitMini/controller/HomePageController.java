@@ -75,7 +75,7 @@ public class HomePageController {
     @RequestMapping("/home")
     public ModelAndView home(final HttpSession Session){
 
-        Integer latestTweet=tweetStore.getLatestTweetId((Long) Session.getAttribute("userID"));
+        Integer latestTweet=tweetStore.getLatestTweetId((Long) Session.getAttribute("userID"),0);
         Session.setAttribute("latestTweet",latestTweet);
         Session.setAttribute("offset", 10);
         System.out.println("home latest tweet " + Session.getAttribute("userName") + latestTweet);

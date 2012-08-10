@@ -4,6 +4,7 @@
 function addTweet(form) {
     $.post('/user/tweet/create.json', $(form).serialize(),function(data) {
         $('#numTweets').text(num_tweets);
+        appendItem(data);
     });
     //alert("Hello");
     newtweets++;

@@ -111,7 +111,7 @@ public class TweetController {
         Integer latestTweet= (Integer) Session.getAttribute("latestTweet");
         Hashtable h= new Hashtable();
        // return h;
-        Integer update=tweetStore.getLatestTweetId((Long) Session.getAttribute("userID"));
+        Integer update=tweetStore.getLatestTweetId((Long) Session.getAttribute("userID"), latestTweet);
         System.out.println("latest tweet " + Session.getAttribute("userName")+ update);
         if(update>latestTweet){
 
