@@ -1,5 +1,6 @@
 package TwitMini.controller;
 
+import TwitMini.model.User;
 import TwitMini.services.TweetService;
 import TwitMini.services.UserService;
 import TwitMini.services.ViewService;
@@ -44,12 +45,14 @@ public class ProfileViewController {
     @RequestMapping("{handle}")
     public ModelAndView ViewUser(@PathVariable final String handle, HttpServletRequest request) {
 
+
         boolean isUser=viewService.isUserExists(handle);
         if(!isUser){ return new ModelAndView("errorpage") {{
             addObject("message","user "+ handle+ " doesnt exist!");
         }};
         }
 
+        final User user=  userService.getUser("handle");
         HttpSession session = request.getSession(false);
 
         if(session!=null) {
@@ -64,6 +67,7 @@ public class ProfileViewController {
                 mv.addObject("handle",handle);
                 mv.addObject("User",userService.getUser(handle));
                 mv.addObject("List", viewService.listUserTweets(handle));
+                mv.addObject("User",user);
                 return mv;
             }
 
@@ -75,8 +79,9 @@ public class ProfileViewController {
         mv.addObject("User",userService.getUser(handle));
         mv.addObject("handle",handle);
         mv.addObject("List", viewService.listUserTweets(handle));
+        mv.addObject("User",user);
 
-        logger.info("user "+userName + " visited " + handle + "'s profile");
+            logger.info("user "+userName + " visited " + handle + "'s profile");
 
         return mv;
         }
@@ -85,6 +90,8 @@ public class ProfileViewController {
 
             return new ModelAndView("profileview-public"){{
                 addObject("List",viewService.listUserTweets(handle));
+                addObject("User",user);
+
             }};
 
 
