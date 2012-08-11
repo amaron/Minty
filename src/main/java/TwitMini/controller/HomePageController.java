@@ -47,7 +47,7 @@ public class HomePageController {
     @RequestMapping(value="/search/moreSearchTweets.json", method=RequestMethod.GET)
     @ResponseBody
     public List<TweetData> moreSearchResults(@RequestParam String searchtext, @RequestParam int offset){
-        return viewService.searchTweets(searchtext,offset);
+        return viewService.searchTweets(searchtext,offset,10);
     }
 
     @RequestMapping("/search")
@@ -56,8 +56,8 @@ public class HomePageController {
         logger.info("User " + (String)Session.getAttribute("userName") + " searched for "+ searchtext );
         return new ModelAndView("search"){{
             addObject("searchtext",searchtext);
-            addObject("UserList", viewService.searchUsers(searchtext));
-            addObject("TweetList", viewService.searchTweets(searchtext,0));
+            addObject("UserList", viewService.searchUsers(searchtext,0,1000));
+            addObject("TweetList", viewService.searchTweets(searchtext,0,10));
         }
         };
 
@@ -66,15 +66,15 @@ public class HomePageController {
     @RequestMapping(value="/public",method=RequestMethod.GET)
     public ModelAndView allTweets(){
         return new ModelAndView("public"){{
-            addObject("List",tweetStore.listAllTweets(0));
+            addObject("List",tweetStore.listAllTweets(0,10));
         }};
 
     }
 
     @RequestMapping(value="/getMorePublicTweets.json", method= RequestMethod.GET)
     @ResponseBody
-    public List<TweetData> getMorePublicTweets(@RequestParam final int offset){
-        return tweetStore.listAllTweets(10);
+    public List<TweetData> getMorePublicTweets(@RequestParam final int offset, @RequestParam final int limit){
+        return tweetStore.listAllTweets(offset,limit);
 
     }
 

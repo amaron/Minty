@@ -61,7 +61,7 @@ public class ProfileViewController {
                 ModelAndView mv= new ModelAndView("ownprofile");
                 mv.addObject("handle",handle);
                 mv.addObject("User",userService.getUser(handle));
-                mv.addObject("List", viewService.listUserTweets(handle));
+                mv.addObject("List", viewService.listUserTweets(handle,0,10));
                 return mv;
             }
 
@@ -73,7 +73,7 @@ public class ProfileViewController {
 
         mv.addObject("User",userService.getUser(handle));
         mv.addObject("handle",handle);
-        mv.addObject("List", viewService.listUserTweets(handle));
+        mv.addObject("List", viewService.listUserTweets(handle,0,10));
 
         logger.info("user "+userName + " visited " + handle + "'s profile");
 
@@ -83,7 +83,7 @@ public class ProfileViewController {
         }
 
          return new ModelAndView("profileview-public"){{
-                addObject("List",viewService.listUserTweets(handle));
+                addObject("List",viewService.listUserTweets(handle,0,10));
                 addObject("User",userService.getUser(handle));
 
             }};
@@ -97,10 +97,11 @@ public class ProfileViewController {
 
         return new ModelAndView("mentions"){{
             addObject("User",userService.getUser(handle));
-            addObject("List",viewService.listUserMentions(handle));
+            addObject("List",viewService.listUserMentions(handle,0,10));
         }
         };
     }
+
 
 
     @RequestMapping("{handle}/followers")

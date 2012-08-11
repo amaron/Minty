@@ -8,7 +8,6 @@ import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-import java.util.Map;
 
 @Service
 public class ViewService {
@@ -27,27 +26,27 @@ public class ViewService {
 
     }
 
-    public List<User> searchUsers(String string){
-        return db.query("select * from USERS where username like ?",User.rowMapper,"%"+string+"%");
+    public List<User> searchUsers(String string, int offset, int limit){
+        return db.query("select * from USERS where username like ? order by username desc offset ? limit ?",User.rowMapper,"%"+string+"%", offset, limit);
     }
 
-    public List<TweetData> searchTweets(String string, int offset){
-        return db.query("select * from TWEETS where tweet like ? order by tweet_id desc offset ? limit 10",TweetData.rowMapper,"%"+string+"%",offset);
+    public List<TweetData> searchTweets(String string, int offset, int limit){
+        return db.query("select * from TWEETS where tweet like ? order by tweet_id desc offset ? limit ?",TweetData.rowMapper,"%"+string+"%",offset,limit);
     }
 
-    public List<TweetData> listUserMentions(String handle) {
-        return db.query("select * from TWEETS where tweet like ?",TweetData.rowMapper,"%@"+handle+"%");
+    public List<TweetData> listUserMentions(String handle, int offset, int limit) {
+        return db.query("select * from TWEETS where tweet like ? order by tweet_id desc offset ? limit ?",TweetData.rowMapper,"%@"+handle+"%",offset,limit);
 
     }
 
-    public List<Map<String,Object>> getFollowers(String handle){
+    public List<User> getFollowers(String handle){
      Long id=getUserId(handle);
-     return db.queryForList("select username from users where user_id in (select following.user_id from following where following_id=? and following.user_id!=?)",id,id);
+     return db.query("select * from users where user_id in (select following.user_id from following where following_id=? and following.user_id!=?)",User.rowMapper,id,id);
     }
 
-    public List<Map<String,Object>> getFollowing(String handle){
+    public List<User> getFollowing(String handle){
         Long id=getUserId(handle);
-        return db.queryForList("select username from users where user_id in (select following_id from following where following.user_id=? and following.following_id!=?)",id,id);
+        return db.query("select * from users where user_id in (select following_id from following where following.user_id=? and following.following_id!=?)",User.rowMapper,id,id);
     }
 
 
@@ -95,17 +94,17 @@ public class ViewService {
         db.update("update users set num_followers=num_followers-1 where user_id=?",l);
     }
 
-    public List<TweetData> listFollowingTweets(String handle) {
-        Long l=getUserId(handle);
-        return db.query("select * from tweets where tweets.tweet_id in (select USERFEED.tweet_id from USERFEED where USERFEED.user_id=?) order by tweets.tweet_id desc",
-                TweetData.rowMapper,l
-        );
+    public List<TweetData> listUserFeed(String handle, int offset, int limit) {
+        Long id=getUserId(handle);
+        return db.query("select * from tweets where tweet_id in (select tweet_id from USERFEED where user_id=?)  order by tweet_id desc limit ? offset ?",
+                TweetData.rowMapper,id,limit,offset);
+
     }
 
-    public List<TweetData> listUserTweets(String handle) {
+    public List<TweetData> listUserTweets(String handle, int offset, int limit) {
 
-        return db.query("select * from tweets where username=? order by tweet_id desc",
-                TweetData.rowMapper,handle
+        return db.query("select * from tweets where username=? order by tweet_id desc offset ? limit ?",
+                TweetData.rowMapper,handle,offset, limit
         );
     }
 
