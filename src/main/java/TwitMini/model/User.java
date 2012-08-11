@@ -18,7 +18,9 @@ public class User {
     private String username;
     private String user_password;
     private int user_id;
-
+    private String bio;
+    private String place;
+    private String website;
     private int num_followers;
     private int num_tweets;
     private int num_following;
@@ -41,6 +43,9 @@ public class User {
         num_followers=resultSet.getInt("num_followers");
         num_tweets=resultSet.getInt("num_tweets");
         num_following=resultSet.getInt("num_following");
+        bio=resultSet.getString("bio");
+        website=resultSet.getString("website");
+        place=resultSet.getString("place");
 
     }
 
@@ -109,5 +114,29 @@ public class User {
 
     public void setNum_followers(int num_followers) {
         this.num_followers = num_followers;
+    }
+
+    public String getBio() {
+        return bio;
+    }
+
+    public void setBio(String bio) {
+        this.bio = bio;
+    }
+
+    public String getPlace() {
+        return place;
+    }
+
+    public void setPlace(String place) {
+        this.place = place;
+    }
+
+    public String getWebsite() {
+        return website;
+    }
+
+    public void setWebsite(String website) {
+        this.website = website;
     }
 }

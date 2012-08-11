@@ -37,7 +37,7 @@ public class LoginController {
     public ModelAndView index(HttpSession Session) {
         String userName = (String) Session.getAttribute("userName");
         if(userName==null)
-            return new ModelAndView("index");  // will change it to specific register page with only register
+            return new ModelAndView("index-Karthik");  // will change it to specific register page with only register
         else return new ModelAndView("redirect:/home");
 
     }

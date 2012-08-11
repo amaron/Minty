@@ -12,14 +12,18 @@ import TwitMini.model.User;
 import TwitMini.services.EmailValidator;
 import TwitMini.services.UserService;
 import TwitMini.services.ValidatorService;
+import net.tanesha.recaptcha.ReCaptchaImpl;
+import net.tanesha.recaptcha.ReCaptchaResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
+import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 import java.util.Hashtable;
+
 
 
 @Controller
@@ -32,6 +36,30 @@ public class SignupController {
         this.db = db;
         this.userService=userService;
         this.validatorService=validatorService;
+    }
+
+
+    @RequestMapping(value="/captcha.json", method=RequestMethod.POST)
+    @ResponseBody
+    public String checkCaptcha( @RequestParam String challenge,
+                                @RequestParam String response, HttpServletRequest request)
+    {
+        // Validate the reCAPTCHA
+        String remoteAddr = request.getRemoteAddr();
+        ReCaptchaImpl reCaptcha = new ReCaptchaImpl();
+
+        // Probably don't want to hardcode your private key here but
+        // just to get it working is OK...
+        reCaptcha.setPrivateKey("6LepJNUSAAAAABKmm-ELb7dLNrHXmvHCrFPMNcMH ");
+
+        ReCaptchaResponse reCaptchaResponse =
+                reCaptcha.checkAnswer(remoteAddr, challenge, response);
+
+        if (!reCaptchaResponse.isValid()) {
+            return "no";
+
+        }
+        else return "yes";
     }
 
 

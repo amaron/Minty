@@ -38,17 +38,25 @@ import java.util.logging.SimpleFormatter;
             catch (Exception e) {
                 //TODO:Remove Sysout
                 System.out.print(e.toString());
-                db.update("CREATE TABLE USERS (" +
-                        "user_id SERIAL," +
-                        "PRIMARY KEY(user_id)," +
-                        "realname varchar(30) NOT NULL," +
-                        "email varchar(40) NOT NULL," +
-                        "username varchar(40) NOT NULL," +
-                        "user_password varchar(40) NOT NULL," +
-                        "num_followers INTEGER DEFAULT 0," +
-                        "num_following INTEGER DEFAULT 0," +
-                        "num_tweets INTEGER DEFAULT 0" +
-                        ");");
+                db.update("CREATE TABLE users\n" +
+                        "(\n" +
+                        "  user_id serial NOT NULL,\n" +
+                        "  realname character varying(30) NOT NULL,\n" +
+                        "  email character varying(40) NOT NULL,\n" +
+                        "  username character varying(40) NOT NULL,\n" +
+                        "  user_password character varying(40) NOT NULL,\n" +
+                        "  num_followers integer DEFAULT 0,\n" +
+                        "  num_following integer DEFAULT 0,\n" +
+                        "  num_tweets integer DEFAULT 0,\n" +
+                        "  bio character varying(150) DEFAULT 'Severly Cool. Totally Rad. Seriously Funny. Clearly Vague.'::character varying,\n" +
+                        "  place character varying(30) DEFAULT 'World Citizen'::character varying,\n" +
+                        "  website character varying(100) DEFAULT 'me@example.com'::character varying,\n" +
+                        "  CONSTRAINT users_pkey PRIMARY KEY (user_id)\n" +
+                        ")\n" +
+                        "WITH (\n" +
+                        "  OIDS=FALSE\n" +
+                        ");\n" +
+                        "ALTER TABLE users OWNER TO postgres;\n");
             }
 
 

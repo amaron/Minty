@@ -586,3 +586,105 @@ INFO: User null searched for kdude
 INFO: User null searched for as
 11 Aug, 2012 12:52:42 AM TwitMini.controller.HomePageController Search
 INFO: User null searched for as
+11 Aug, 2012 2:26:42 AM TwitMini.controller.AppConfig logger
+INFO: -------------------------------------------------------------------------------------------
+11 Aug, 2012 2:26:42 AM TwitMini.controller.AppConfig logger
+INFO: -------------------------------------------------------------------------------------------
+11 Aug, 2012 2:26:42 AM TwitMini.controller.AppConfig logger
+INFO: Minty Server log
+11 Aug, 2012 3:05:49 AM TwitMini.controller.AppConfig logger
+INFO: -------------------------------------------------------------------------------------------
+11 Aug, 2012 3:05:49 AM TwitMini.controller.AppConfig logger
+INFO: -------------------------------------------------------------------------------------------
+11 Aug, 2012 3:05:49 AM TwitMini.controller.AppConfig logger
+INFO: Minty Server log
+11 Aug, 2012 3:13:24 AM TwitMini.controller.AppConfig logger
+INFO: -------------------------------------------------------------------------------------------
+11 Aug, 2012 3:13:24 AM TwitMini.controller.AppConfig logger
+INFO: -------------------------------------------------------------------------------------------
+11 Aug, 2012 3:13:24 AM TwitMini.controller.AppConfig logger
+INFO: Minty Server log
+11 Aug, 2012 3:13:43 AM TwitMini.controller.AppConfig logger
+INFO: -------------------------------------------------------------------------------------------
+11 Aug, 2012 3:13:43 AM TwitMini.controller.AppConfig logger
+INFO: -------------------------------------------------------------------------------------------
+11 Aug, 2012 3:13:43 AM TwitMini.controller.AppConfig logger
+INFO: Minty Server log
+11 Aug, 2012 3:27:00 AM TwitMini.controller.AppConfig logger
+INFO: -------------------------------------------------------------------------------------------
+11 Aug, 2012 3:27:00 AM TwitMini.controller.AppConfig logger
+INFO: -------------------------------------------------------------------------------------------
+11 Aug, 2012 3:27:00 AM TwitMini.controller.AppConfig logger
+INFO: Minty Server log
+11 Aug, 2012 3:27:11 AM TwitMini.controller.AppConfig logger
+INFO: -------------------------------------------------------------------------------------------
+11 Aug, 2012 3:27:11 AM TwitMini.controller.AppConfig logger
+INFO: -------------------------------------------------------------------------------------------
+11 Aug, 2012 3:27:11 AM TwitMini.controller.AppConfig logger
+INFO: Minty Server log
+11 Aug, 2012 3:27:47 AM TwitMini.controller.AppConfig logger
+INFO: -------------------------------------------------------------------------------------------
+11 Aug, 2012 3:27:47 AM TwitMini.controller.AppConfig logger
+INFO: -------------------------------------------------------------------------------------------
+11 Aug, 2012 3:27:47 AM TwitMini.controller.AppConfig logger
+INFO: Minty Server log
+11 Aug, 2012 11:10:13 AM TwitMini.controller.AppConfig logger
+INFO: -------------------------------------------------------------------------------------------
+11 Aug, 2012 11:10:13 AM TwitMini.controller.AppConfig logger
+INFO: -------------------------------------------------------------------------------------------
+11 Aug, 2012 11:10:13 AM TwitMini.controller.AppConfig logger
+INFO: Minty Server log
+11 Aug, 2012 11:23:05 AM TwitMini.controller.LoginController logout
+INFO: user e logged out successfully
+11 Aug, 2012 3:34:50 PM TwitMini.controller.TweetController create
+INFO: user amarontweeted 147
+11 Aug, 2012 3:35:05 PM TwitMini.controller.ProfileViewController ViewUser
+INFO: user amaron visited a's profile
+11 Aug, 2012 3:35:20 PM TwitMini.controller.ProfileViewController FollowuserJSON
+INFO: user amaron followed a
+11 Aug, 2012 3:35:30 PM TwitMini.controller.ProfileViewController ViewUser
+INFO: user amaron visited gv's profile
+11 Aug, 2012 3:35:40 PM TwitMini.controller.ProfileViewController FollowuserJSON
+INFO: user amaron followed gv
+11 Aug, 2012 3:35:48 PM TwitMini.controller.ProfileViewController ViewUser
+INFO: user amaron visited a's profile
+11 Aug, 2012 3:36:01 PM TwitMini.controller.ProfileViewController ViewUser
+INFO: user amaron visited b's profile
+11 Aug, 2012 3:36:12 PM TwitMini.controller.ProfileViewController ViewUser
+INFO: user amaron visited gv's profile
+11 Aug, 2012 3:49:13 PM TwitMini.controller.AppConfig logger
+INFO: -------------------------------------------------------------------------------------------
+11 Aug, 2012 3:49:13 PM TwitMini.controller.AppConfig logger
+INFO: -------------------------------------------------------------------------------------------
+11 Aug, 2012 3:49:13 PM TwitMini.controller.AppConfig logger
+INFO: Minty Server log
+11 Aug, 2012 4:49:45 PM TwitMini.controller.AppConfig logger
+INFO: -------------------------------------------------------------------------------------------
+11 Aug, 2012 4:49:46 PM TwitMini.controller.AppConfig logger
+INFO: -------------------------------------------------------------------------------------------
+11 Aug, 2012 4:49:46 PM TwitMini.controller.AppConfig logger
+INFO: Minty Server log
+11 Aug, 2012 4:51:33 PM TwitMini.controller.TweetController create
+INFO: user amarontweeted 1
+11 Aug, 2012 4:56:06 PM TwitMini.controller.LoginController logout
+INFO: user amaron logged out successfully
+11 Aug, 2012 4:59:36 PM TwitMini.controller.TweetController create
+INFO: user kdudetweeted 2
+11 Aug, 2012 4:59:36 PM TwitMini.controller.TweetController create
+INFO: user kdudetweeted 3
+11 Aug, 2012 4:59:46 PM TwitMini.controller.ProfileViewController ViewUser
+INFO: user kdude visited amaron's profile
+11 Aug, 2012 5:00:16 PM TwitMini.controller.ProfileViewController FollowuserJSON
+INFO: user kdude followed amaron
+11 Aug, 2012 5:01:09 PM TwitMini.controller.LoginController login
+INFO: user amaronlogged in successfully
+11 Aug, 2012 5:01:18 PM TwitMini.controller.TweetController create
+INFO: user amarontweeted 4
+11 Aug, 2012 5:01:50 PM TwitMini.controller.TweetController create
+INFO: user kdudetweeted 5
+11 Aug, 2012 5:01:54 PM TwitMini.controller.ProfileViewController ViewUser
+INFO: user kdude visited amaron's profile
+11 Aug, 2012 5:04:08 PM TwitMini.controller.LoginController logout
+INFO: user kdude logged out successfully
+11 Aug, 2012 5:04:17 PM TwitMini.controller.LoginController logout
+INFO: user amaron logged out successfully

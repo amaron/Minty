@@ -22,6 +22,11 @@ public class UserService {
         this.db = db;
     }
 
+    public int updateUser(User user) {
+        return db.update("UPDATE USERS SET bio=? website=? place=?  where username=?", user.getBio(), user.getWebsite(), user.getPlace(), user.getUsername());
+
+    }
+
     public int addUser(User user) {
         return db.queryForInt("INSERT INTO USERS ( realname, email, username, user_password) values(?,?,?,?) RETURNING user_id", user.getRealname(), user.getEmail(), user.getUsername(), user.getUser_password());
 

@@ -1,14 +1,12 @@
 package TwitMini.controller;
 
+import TwitMini.model.User;
 import TwitMini.services.TweetService;
 import TwitMini.services.UserService;
 import TwitMini.services.ViewService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpServletRequest;
@@ -93,7 +91,7 @@ public class ProfileViewController {
 
     }
 
-    @RequestMapping("/user/{handle}/mentions")
+    @RequestMapping("{handle}/mentions")
     public ModelAndView mentions(@PathVariable final String handle)
     {
 
@@ -115,6 +113,20 @@ public class ProfileViewController {
 
         return mv;
     }
+
+    @RequestMapping(value="/edit", method=RequestMethod.GET)
+    public ModelAndView editProfile(final HttpSession Session){
+        return new ModelAndView("editprofile"){{
+             addObject("User",userService.getUser((String) Session.getAttribute("userName")));
+        }};
+    }
+
+    @RequestMapping(value="/edit", method=RequestMethod.POST)
+    public ModelAndView saveEditProfile(User user, final HttpSession Session){
+        userService.updateUser(user);
+        return new ModelAndView("redirect:/home");
+    }
+
 
     @RequestMapping("{handle}/following")
     public ModelAndView getFollowering(@PathVariable final String handle,HttpSession Session){
