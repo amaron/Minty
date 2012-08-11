@@ -1,5 +1,6 @@
 package TwitMini.controller;
 
+import TwitMini.model.TweetData;
 import TwitMini.model.User;
 import TwitMini.services.TweetService;
 import TwitMini.services.UserService;
@@ -12,6 +13,7 @@ import org.springframework.web.servlet.ModelAndView;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 import java.util.Hashtable;
+import java.util.List;
 import java.util.logging.Logger;
 
 /**
@@ -100,6 +102,23 @@ public class ProfileViewController {
             addObject("List",viewService.listUserMentions(handle,0,10));
         }
         };
+    }
+
+    @RequestMapping(value="{handle}/getMoreMentions.json", method=RequestMethod.GET)
+    @ResponseBody
+    public List<TweetData> moreMentions(@PathVariable final String handle, @RequestParam final int offset)
+    {
+
+        return viewService.listUserMentions(handle,offset,10);
+    }
+
+
+    @RequestMapping(value="{handle}/getMoreUserTweets.json", method=RequestMethod.GET)
+    @ResponseBody
+    public List<TweetData> moreUserTwees(@PathVariable final String handle, @RequestParam final int offset)
+    {
+
+        return viewService.listUserTweets(handle,offset,10);
     }
 
 

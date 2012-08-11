@@ -724,3 +724,97 @@ INFO: --------------------------------------------------------------------------
 INFO: -------------------------------------------------------------------------------------------
 11 Aug, 2012 9:14:08 PM TwitMini.controller.AppConfig logger
 INFO: Minty Server log
+12 Aug, 2012 12:05:46 AM TwitMini.controller.AppConfig logger
+INFO: -------------------------------------------------------------------------------------------
+12 Aug, 2012 12:05:46 AM TwitMini.controller.AppConfig logger
+INFO: -------------------------------------------------------------------------------------------
+12 Aug, 2012 12:05:46 AM TwitMini.controller.AppConfig logger
+INFO: Minty Server log
+12 Aug, 2012 12:17:49 AM TwitMini.controller.HomePageController Search
+INFO: User null searched for a
+12 Aug, 2012 12:24:53 AM TwitMini.controller.AppConfig logger
+INFO: -------------------------------------------------------------------------------------------
+12 Aug, 2012 12:24:53 AM TwitMini.controller.AppConfig logger
+INFO: -------------------------------------------------------------------------------------------
+12 Aug, 2012 12:24:53 AM TwitMini.controller.AppConfig logger
+INFO: Minty Server log
+12 Aug, 2012 12:25:12 AM TwitMini.controller.HomePageController Search
+INFO: User null searched for a
+12 Aug, 2012 12:26:29 AM TwitMini.controller.LoginController login
+INFO: user amaronlogged in successfully
+12 Aug, 2012 12:26:43 AM TwitMini.controller.TweetController create
+INFO: user amarontweeted 6
+12 Aug, 2012 12:26:49 AM TwitMini.controller.TweetController create
+INFO: user amarontweeted 7
+12 Aug, 2012 12:27:36 AM TwitMini.controller.LoginController login
+INFO: user kdudelogged in successfully
+12 Aug, 2012 12:27:46 AM TwitMini.controller.TweetController create
+INFO: user kdudetweeted 8
+12 Aug, 2012 12:28:00 AM TwitMini.controller.TweetController create
+INFO: user amarontweeted 9
+12 Aug, 2012 12:28:20 AM TwitMini.controller.ProfileViewController ViewUser
+INFO: user amaron visited kdude's profile
+12 Aug, 2012 12:28:30 AM TwitMini.controller.ProfileViewController FollowuserJSON
+INFO: user amaron followed kdude
+12 Aug, 2012 12:28:54 AM TwitMini.controller.TweetController create
+INFO: user kdudetweeted 10
+12 Aug, 2012 12:29:05 AM TwitMini.controller.TweetController create
+INFO: user kdudetweeted 11
+12 Aug, 2012 12:34:39 AM TwitMini.controller.TweetController create
+INFO: user kdudetweeted 12
+12 Aug, 2012 12:35:29 AM TwitMini.controller.TweetController create
+INFO: user amarontweeted 13
+12 Aug, 2012 12:36:09 AM TwitMini.controller.LoginController logout
+INFO: user kdude logged out successfully
+12 Aug, 2012 12:45:04 AM TwitMini.controller.TweetController create
+INFO: user amarontweeted 14
+12 Aug, 2012 12:45:46 AM TwitMini.controller.HomePageController Search
+INFO: User amaron searched for a
+12 Aug, 2012 12:47:17 AM TwitMini.controller.HomePageController Search
+INFO: User amaron searched for a
+12 Aug, 2012 12:53:52 AM TwitMini.controller.HomePageController Search
+INFO: User amaron searched for a
+12 Aug, 2012 12:54:30 AM TwitMini.controller.HomePageController Search
+INFO: User amaron searched for a
+12 Aug, 2012 12:56:04 AM TwitMini.controller.HomePageController Search
+INFO: User amaron searched for a
+12 Aug, 2012 12:57:12 AM TwitMini.controller.HomePageController Search
+INFO: User amaron searched for a
+12 Aug, 2012 12:59:38 AM TwitMini.controller.HomePageController Search
+INFO: User amaron searched for a
+12 Aug, 2012 1:00:17 AM TwitMini.controller.HomePageController Search
+INFO: User amaron searched for a
+12 Aug, 2012 1:00:27 AM TwitMini.controller.HomePageController Search
+INFO: User amaron searched for a
+12 Aug, 2012 1:01:14 AM TwitMini.controller.HomePageController Search
+INFO: User amaron searched for a
+12 Aug, 2012 1:02:08 AM TwitMini.controller.HomePageController Search
+INFO: User amaron searched for a
+12 Aug, 2012 1:30:16 AM TwitMini.controller.AppConfig logger
+INFO: -------------------------------------------------------------------------------------------
+12 Aug, 2012 1:30:16 AM TwitMini.controller.AppConfig logger
+INFO: -------------------------------------------------------------------------------------------
+12 Aug, 2012 1:30:16 AM TwitMini.controller.AppConfig logger
+INFO: Minty Server log
+12 Aug, 2012 1:32:22 AM TwitMini.controller.LoginController login
+INFO: user amaronlogged in successfully
+12 Aug, 2012 1:35:02 AM TwitMini.controller.TweetController create
+INFO: user amarontweeted 15
+12 Aug, 2012 1:35:11 AM TwitMini.controller.TweetController create
+INFO: user amarontweeted 16
+12 Aug, 2012 1:35:18 AM TwitMini.controller.TweetController create
+INFO: user amarontweeted 17
+12 Aug, 2012 1:35:18 AM TwitMini.controller.TweetController create
+INFO: user amarontweeted 18
+12 Aug, 2012 1:35:30 AM TwitMini.controller.TweetController create
+INFO: user amarontweeted 19
+12 Aug, 2012 1:35:31 AM TwitMini.controller.TweetController create
+INFO: user amarontweeted 20
+12 Aug, 2012 1:37:26 AM TwitMini.controller.LoginController logout
+INFO: user amaron logged out successfully
+12 Aug, 2012 1:38:11 AM TwitMini.controller.LoginController login
+INFO: user aalogged in successfully
+12 Aug, 2012 1:39:10 AM TwitMini.controller.TweetController create
+INFO: user aatweeted 21
+12 Aug, 2012 1:39:23 AM TwitMini.controller.ProfileViewController ViewUser
+INFO: user aa visited amaron's profile

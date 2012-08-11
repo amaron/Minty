@@ -10,8 +10,6 @@
     <meta name="author" content="">
 
     <!-- Le styles -->
-    <link rel="stylesheet" href="static/css/easyNotification.css">
-
     <script type="text/javascript" src="/static/js/jquery.min.js"></script>
     <script type="text/javascript" src="/static/js/easy.notification.js"></script>
     <script type="text/javascript" src="/static/js/ejs_production.js"></script>

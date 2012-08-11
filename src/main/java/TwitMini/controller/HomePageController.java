@@ -2,6 +2,7 @@ package TwitMini.controller;
 
 
 import TwitMini.model.TweetData;
+import TwitMini.model.User;
 import TwitMini.services.TweetService;
 import TwitMini.services.UserService;
 import TwitMini.services.ViewService;
@@ -46,18 +47,30 @@ public class HomePageController {
 
     @RequestMapping(value="/search/moreSearchTweets.json", method=RequestMethod.GET)
     @ResponseBody
-    public List<TweetData> moreSearchResults(@RequestParam String searchtext, @RequestParam int offset){
+    public List<TweetData> moreSearchResultsTweets(@RequestParam String searchtext, @RequestParam int offset){
         return viewService.searchTweets(searchtext,offset,10);
+    }
+
+    @RequestMapping(value="/search/moreSearchUsers.json", method=RequestMethod.GET)
+    @ResponseBody
+    public List<User> moreSearchResultsUsers(@RequestParam String searchtext, @RequestParam int offset){
+        return viewService.searchUsers(searchtext, offset, 10);
     }
 
     @RequestMapping("/search")
     public ModelAndView Search(@RequestParam final String searchtext, HttpSession Session){
 
         logger.info("User " + (String)Session.getAttribute("userName") + " searched for "+ searchtext );
+
+       final  List<TweetData> tweet_list= viewService.searchTweets(searchtext,0,10);
+       final List<User> user_list =  viewService.searchUsers(searchtext,0,10);
+
         return new ModelAndView("search"){{
             addObject("searchtext",searchtext);
-            addObject("UserList", viewService.searchUsers(searchtext,0,1000));
-            addObject("TweetList", viewService.searchTweets(searchtext,0,10));
+            addObject("UserList", user_list);
+            addObject("TweetList", tweet_list );
+            addObject("UserListSize",user_list.size());
+            addObject("TweetListSize",tweet_list.size());
         }
         };
 

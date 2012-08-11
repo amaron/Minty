@@ -1,63 +1,5 @@
-<!--<%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<html>
-<head>
-<link rel="stylesheet" href="/static/css/bootstrap.css">
-<script type="text/javascript" src="/static/js/jquery.min.js"></script>
-<script type="text/javascript" src="/static/js/ejs_production.js"></script>
-<script type="text/javascript" src="/static/js/timeDifference.js"></script>
-<script type="text/javascript" src="/static/js/appendItem.js"></script>
-<script type="text/javascript" src="/static/js/getJSTimestamp.js"></script>
-
-</head>
-<body>
-Hello, Y U No Signup?! <a href="/user/register">Signup!</a>
-<a href="/user/login">login</a>
-
-<h2>SpeakOUT!</h2>
-
-<h1> ${List[0].username}'s Profile</h1>
-<ul id="tweetList">
-User ${List[0].username}'s Tweets
-<c:forEach var='item' items='${List}'>
-    <script type="text/javascript">
-    appendItem({tweet_id:${item.tweet_id}, tweet:'${item.tweet}', username:'${item.username}', pushtime:'${item.pushtime}'})
-    </script>
-</c:forEach>
-</ul>
-</body>
-</html>
-
-
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<html>
-<head>
-
-
-</head>
-<body>
-Hello <a href ="/user/${sessionScope.userName}">${sessionScope.userName}</a> <a href="/user/logout">Logout</a>
-<h1><a href="/home">My Homepage</a></h1>
-
-
-
-
-<h1> ${handle}'s Profile</h1>
-
-<li id='numFollowers'><a href="/user/getfollowers/${handle}">followers: <span id="num_followers">${User.num_followers}</span></a></li>
-<li><a href="/user/getfollowing/${handle}">following: ${User.num_following}</a></li>
-
-User ${handle}'s Tweets   ${User.num_tweets}
-<ul id="tweetList">
-<c:forEach var='item' items='${List}'>
-    <script type="text/javascript">
-    appendItem({tweet_id:${item.tweet_id}, tweet:'${item.tweet}', username:'${item.username}', pushtime:'${item.pushtime}'})
-    </script>
-</c:forEach>
-</ul>
-</body>
-</html>-->
 
 
 <!DOCTYPE html>
@@ -188,6 +130,26 @@ User ${handle}'s Tweets   ${User.num_tweets}
     <script type="text/javascript" src='/static/js/follow.js'></script>
     <script type="text/javascript" src='/static/js/addTweet.js'></script>
     <script type="text/javascript">var num_followers=${User.num_followers};</script>
+    <script type="text/javascript">
+        var cur_offset_tweets=10;
+        var cur_handle='${User.username}';
+        function getMoreMentions(){
+
+            $.ajax({
+                type: 'GET',
+                url: '/user/'+cur_handle+'/getMoreMentions.json',
+                data: $.param({ offset: cur_offset_tweets, handle: cur_handle}),
+                success: function(data) {
+                    if(data.length==0) $('#moreTweetsBtn').hide();
+                    for(var k=0;k<data.length;k++){
+                        //alert(JSON.stringify(data.List[k]));
+                        appendItem(data[k]);
+                    }
+                    cur_offset_tweets+=data.length;
+                }
+            });
+       }
+     </script>
     <link rel="shortcut icon" href="../assets/ico/favicon.ico">
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
@@ -290,7 +252,9 @@ User ${handle}'s Tweets   ${User.num_tweets}
             </div>
         </div>
 
-
+        <div class="span9">
+            <button class="btn btn-success" id="moreTweetsBtn" onclick="getMoreMentions();return false">load more...</button>
+        </div>
 
 
     </div>

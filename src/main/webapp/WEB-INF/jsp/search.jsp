@@ -9,23 +9,46 @@
     <script type="text/javascript" src="/static/js/appendItem.js"></script>
     <script type="text/javascript" src="/static/js/getJSTimestamp.js"></script>
     <script type="text/javascript">
-    var cur_offset=10;
+    var cur_offset_tweets=${TweetListSize};
     var cur_searchtext='${searchtext}';
     function getMoreSearchTweets(){
 
     $.ajax({
     type: 'GET',
     url: '/search/moreSearchTweets.json',
-    data: $.param({ offset: cur_offset, searchtext: cur_searchtext}),
+    data: $.param({ offset: cur_offset_tweets, searchtext: cur_searchtext}),
     success: function(data) {
     if(data.length==0) $('#moreTweetsBtn').hide();
     for(var k=0;k<data.length;k++){
     //alert(JSON.stringify(data.List[k]));
     appendItem(data[k]);
     }
+        cur_offset_tweets+=data.length;
     }
     });
-    cur_offset+=10;
+
+
+
+    }
+    var cur_offset_users=${UserListSize};
+
+    function getMoreSearchUsers(){
+
+        $.ajax({
+            type: 'GET',
+            url: '/search/moreSearchUsers.json',
+            data: $.param({ offset: cur_offset_users, searchtext: cur_searchtext}),
+            success: function(data) {
+                if(data.length==0) $('#moreUsersBtn').hide();
+                for(var k=0;k<data.length;k++){
+                    //alert(JSON.stringify(data.List[k]));
+                    var node=$("<li><blockquote><a href='/user/"+data[k].username+"'>"+data[k].username+"</a></blockquote></li>");
+                   $('#userList').append(node);
+                }
+                cur_offset_users+=data.length;
+            }
+        });
+
 
 
     }
@@ -48,6 +71,12 @@ Hello <a href="/user/${sessionScope.userName}"> ${sessionScope.userName} </a><a 
     </c:forEach>
 </ul>
 
+
+<form action="/search/moreSearchUsers.json" onsubmit="getMoreSearchUsers();return false">
+    <input type="submit"  value="Load More Results" id="moreUsersBtn"/>
+</form>
+
+====================================================================================================================
 
 <h2>TweetList</h2>
 <ul id="tweetList">

@@ -130,6 +130,29 @@
     <script type="text/javascript" src='/static/js/follow.js'></script>
     <script type="text/javascript" src='/static/js/addTweet.js'></script>
     <script type="text/javascript">var num_followers=${User.num_followers};</script>
+    <script type="text/javascript">
+        var cur_offset_tweets=10;
+        var cur_handle='${User.username}';
+        function getMoreMentions(){
+
+            $.ajax({
+                type: 'GET',
+                url: '/user/'+cur_handle+'/getMoreUserTweets.json',
+                data: $.param({ offset: cur_offset_tweets, handle: cur_handle}),
+                success: function(data) {
+                    if(data.length==0) $('#moreTweetsBtn').hide();
+                    for(var k=0;k<data.length;k++){
+                        //alert(JSON.stringify(data.List[k]));
+                        appendItem(data[k]);
+                    }
+                    cur_offset_tweets+=data.length;
+                }
+            });
+        }
+    </script>
+
+
+
     <link rel="shortcut icon" href="../assets/ico/favicon.ico">
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
@@ -291,7 +314,9 @@
             </div>
         </div>
 
-
+        <div class="span9">
+            <button class="btn btn-success" id="moreTweetsBtn" onclick="getMoreMentions();return false">load more...</button>
+        </div>
 
 
     </div>
