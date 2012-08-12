@@ -1,4 +1,4 @@
-package TwitMini.controller;
+package TwitMini.configuration;
 
 import org.apache.commons.dbcp.BasicDataSource;
 import org.springframework.context.annotation.Bean;
@@ -20,7 +20,7 @@ import java.util.logging.SimpleFormatter;
 
 
     @Configuration
-    public class AppConfig {
+    public class MintyConfig {
 
         @Bean
         public JdbcTemplate jdbcTemplate() {

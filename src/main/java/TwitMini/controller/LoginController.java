@@ -34,28 +34,26 @@ public class LoginController {
     }
 
     @RequestMapping("/")
-    public ModelAndView index(HttpSession Session) {
-        String userName = (String) Session.getAttribute("userName");
-        if(userName==null)
+    public ModelAndView index() {
+
             return new ModelAndView("index");  // will change it to specific register page with only register
-        else return new ModelAndView("redirect:/home");
+
 
     }
 
     @RequestMapping("/index")
-    public ModelAndView indexHome(HttpSession Session) {
-        String userName = (String) Session.getAttribute("userName");
-        if(userName==null)
+    public ModelAndView indexHome() {
+
             return new ModelAndView("index");  // will change it to specific register page with only register
-        else return new ModelAndView("redirect:/home");
+
 
     }
+
     @RequestMapping(value = "/user/login", method = RequestMethod.GET)
-    public ModelAndView loginForm(HttpSession Session) {
-        String userName = (String) Session.getAttribute("userName");
-        if(userName==null)
+    public ModelAndView loginForm() {
+
             return new ModelAndView("login");  // will change it to specific register page with only register
-        else return new ModelAndView("redirect:/home");
+
     }
 
 

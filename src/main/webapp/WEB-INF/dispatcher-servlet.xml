@@ -29,7 +29,14 @@
             <mvc:mapping path="/user/unfollow/*"/>
             <mvc:mapping path="/user/retweet/{id}"/>
 
-            <bean class="TwitMini.controller.AuthInterceptor"/>
+            <bean class="TwitMini.interceptor.AuthInterceptor"/>
+        </mvc:interceptor>
+        <mvc:interceptor>
+            <mvc:mapping path="/index"/>
+            <mvc:mapping path="/"/>
+            <mvc:mapping path="/user/login"/>
+            <mvc:mapping path="/user/register"/>
+            <bean class="TwitMini.interceptor.HomeInterceptor"/>
         </mvc:interceptor>
     </mvc:interceptors>
 

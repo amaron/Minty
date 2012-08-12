@@ -86,8 +86,8 @@ public class HomePageController {
 
     @RequestMapping(value="/getMorePublicTweets.json", method= RequestMethod.GET)
     @ResponseBody
-    public List<TweetData> getMorePublicTweets(@RequestParam final int offset, @RequestParam final int limit){
-        return tweetStore.listAllTweets(offset,limit);
+    public List<TweetData> getMorePublicTweets(@RequestParam final int offset){
+        return tweetStore.listAllTweets(offset,10);
 
     }
 

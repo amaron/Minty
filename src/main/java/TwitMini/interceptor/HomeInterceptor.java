@@ -1,4 +1,4 @@
-package TwitMini.controller;
+package TwitMini.interceptor;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -9,14 +9,14 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 
-public class AuthInterceptor extends HandlerInterceptorAdapter {
+public class HomeInterceptor extends HandlerInterceptorAdapter {
 
     private final ThreadLocal<Long> userID;
 
 
 
     @Autowired
-    public AuthInterceptor(@Qualifier("userID") ThreadLocal<Long> userID) {
+    public HomeInterceptor(@Qualifier("userID") ThreadLocal<Long> userID) {
         this.userID = userID;
     }
 
@@ -28,11 +28,12 @@ public class AuthInterceptor extends HandlerInterceptorAdapter {
             String userName = (String) session.getAttribute("userName");
             if (userName != null) {
                 userID.set((Long) session.getAttribute("userID"));
-                System.out.println("checking if authinterceptor works, user id is "+ userID + request.getRequestURL()+" with value:"+userID.get());
-                return true;
+                System.out.println("checking if homeinterceptor works, user id is "+ userID + request.getRequestURL()+" with value:"+userID.get());
+                response.sendRedirect("/home");
+                return false;
             }
         }
-        response.sendRedirect("/");
-        return false;
+
+        return true;
     }
 }

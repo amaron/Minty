@@ -133,7 +133,7 @@
     <script type="text/javascript">
         var cur_offset_tweets=10;
         var cur_handle='${User.username}';
-        function getMoreMentions(){
+        function getMoreUserTweets(){
 
             $.ajax({
                 type: 'GET',
@@ -315,7 +315,7 @@
         </div>
 
         <div class="span9">
-            <button class="btn btn-success" id="moreTweetsBtn" onclick="getMoreMentions();return false">load more...</button>
+            <button class="btn btn-success" id="moreTweetsBtn" onclick="getMoreUserTweets();return false">load more...</button>
         </div>
 
 
