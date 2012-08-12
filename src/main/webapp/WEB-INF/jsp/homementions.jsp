@@ -24,19 +24,19 @@
     <script type="text/javascript" src="/static/js/displayNew.js"></script>
     <script type="text/javascript" src="/static/js/escapeHTML.js"></script>
     <script type="text/javascript">
-    $(document).ready(function(){
+        $(document).ready(function(){
 
-    //custom usage
-    $("#tweet").charCount({
-    allowed: 128,
-    warning: 20,
-    counterText: 'Characters left: '
-    });
-    });
-    var num_tweets=${User.num_tweets};
-    var newtweets=0;
+            //custom usage
+            $("#tweet").charCount({
+                allowed: 128,
+                warning: 20,
+                counterText: 'Characters left: '
+            });
+        });
+        var num_tweets=${User.num_tweets};
+        var newtweets=0;
     </script>
-    <link href="static/css/bootstrap.css" rel="stylesheet">
+    <link href="/static/css/bootstrap.css" rel="stylesheet">
     <style type="text/css">
         body {
             padding-top: 110px;
@@ -46,7 +46,7 @@
             padding: 9px 0;
         }
     </style>
-    <link href="static/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="/static/css/bootstrap-responsive.css" rel="stylesheet">
     <style type="text/css">
 
         .tweet {
@@ -160,8 +160,8 @@
             </div>
             <div class="nav-collapse">
                 <ul class="nav">
-                    <li class="active"><a href="/home">Home</a></li>
-                    <li><a href="/mentions">Mentions</a></li>
+                    <li><a href="/home">Home</a></li>
+                    <li class="active"><a href="/user/${User.username}/mentions">Mentions</a></li>
                     <li><a href="/public">Public</a></li>
                 </ul>
             </div><!--/.nav-collapse -->
@@ -227,7 +227,7 @@
         </div>
 
         <div class="span9">
-        <button class="btn btn-success" id="moreTweetsBtn" onclick="getMoreTweets(this);return false">load more...</button>
+            <button class="btn btn-success" id="moreTweetsBtn" onclick="getMoreTweets(this);return false">load more...</button>
         </div>
 
 
@@ -243,19 +243,19 @@
 <!-- Le javascript
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
-<script src="static/js/bootstrap/jquery.js"></script>
-<script src="static/js/bootstrap/bootstrap-transition.js"></script>
-<script src="static/js/bootstrap/bootstrap-alert.js"></script>
-<script src="static/js/bootstrap/bootstrap-modal.js"></script>
-<script src="static/js/bootstrap/bootstrap-dropdown.js"></script>
-<script src="static/js/bootstrap/bootstrap-scrollspy.js"></script>
-<script src="static/js/bootstrap/bootstrap-tab.js"></script>
-<script src="static/js/bootstrap/bootstrap-tooltip.js"></script>
-<script src="static/js/bootstrap/bootstrap-popover.js"></script>
-<script src="static/js/bootstrap/bootstrap-button.js"></script>
-<script src="static/js/bootstrap/bootstrap-collapse.js"></script>
-<script src="static/js/bootstrap/bootstrap-carousel.js"></script>
-<script src="static/js/bootstrap/bootstrap-typeahead.js"></script>
+<script src="/static/js/bootstrap/jquery.js"></script>
+<script src="/static/js/bootstrap/bootstrap-transition.js"></script>
+<script src="/static/js/bootstrap/bootstrap-alert.js"></script>
+<script src="/static/js/bootstrap/bootstrap-modal.js"></script>
+<script src="/static/js/bootstrap/bootstrap-dropdown.js"></script>
+<script src="/static/js/bootstrap/bootstrap-scrollspy.js"></script>
+<script src="/static/js/bootstrap/bootstrap-tab.js"></script>
+<script src="/static/js/bootstrap/bootstrap-tooltip.js"></script>
+<script src="/static/js/bootstrap/bootstrap-popover.js"></script>
+<script src="/static/js/bootstrap/bootstrap-button.js"></script>
+<script src="/static/js/bootstrap/bootstrap-collapse.js"></script>
+<script src="/static/js/bootstrap/bootstrap-carousel.js"></script>
+<script src="/static/js/bootstrap/bootstrap-typeahead.js"></script>
 <script type="text/javascript" src="/static/js/bootstrap/jquery.validate.js"></script>
 
 </body>
