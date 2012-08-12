@@ -1082,3 +1082,5 @@ INFO: --------------------------------------------------------------------------
 INFO: -------------------------------------------------------------------------------------------
 12 Aug, 2012 9:50:25 PM Minty.configuration.MintyConfig logger
 INFO: Minty Server log
+12 Aug, 2012 10:14:17 PM Minty.controller.LoginController login
+INFO: user amaronlogged in successfully

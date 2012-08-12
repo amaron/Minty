@@ -24,7 +24,9 @@ public class ViewService {
         Long l=null;
         try{
         l=  db.queryForLong("SELECT user_id FROM users WHERE username=? ",handle);
-        }catch(Exception e){}
+        }catch(Exception e){
+            return l;
+        }
         return l;
 
     }

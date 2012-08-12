@@ -2,11 +2,14 @@ package Minty.controller;
 
 import Minty.model.TweetData;
 import Minty.model.User;
+import Minty.services.RESTHelper;
 import Minty.services.TweetService;
+import Minty.services.UserService;
 import Minty.services.ViewService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.servlet.ModelAndView;
 
 import java.util.Hashtable;
 import java.util.List;
@@ -26,12 +29,16 @@ public class RESTController {
     private final ViewService viewService;
     private final TweetService tweetStore;
     private final Logger logger;
+    private  final RESTHelper restHelper;
+    private final UserService userService;
 
     @Autowired
-    public RESTController(ViewService viewService, TweetService tweetStore, Logger logger) {
+    public RESTController(ViewService viewService, TweetService tweetStore, Logger logger, RESTHelper restValidator, UserService userService) {
         this.viewService = viewService;
         this.tweetStore=tweetStore;
         this.logger=logger;
+        this.restHelper =restValidator;
+        this.userService=userService;
     }
 
     @RequestMapping(value="{handle}/mentions.json", method=RequestMethod.GET)
@@ -100,7 +107,7 @@ public class RESTController {
     }
 
 
-    @RequestMapping(value="{handle}/following.json", method=RequestMethod.GET)
+    @RequestMapping(value="{handle}/following", method=RequestMethod.GET)
     @ResponseBody
     public Hashtable getFollowing(@PathVariable final String handle){
         Hashtable h_send=new Hashtable();
@@ -114,5 +121,57 @@ public class RESTController {
         return h_send;
     }
 
+    @RequestMapping(value="/error", method=RequestMethod.GET)
+    @ResponseBody
+    public String errorMessage(){
+        return "Improper Request";
+    }
 
+    @RequestMapping(value="/login", method=RequestMethod.GET)
+    public ModelAndView getRESTlogin(){
+           return new ModelAndView("index");
+    }
+
+    @RequestMapping(value="/login", method=RequestMethod.POST)
+    @ResponseBody
+    public String postRESTlogin(@RequestParam String cb_url, User user){
+        int userID;
+        User userData = userService.getUser(user.getUsername());
+        String post_data;
+        if(userData==null){
+            post_data= " provided username/email id " + user.getUsername() +" does not exist, please register";
+
+        }
+
+        else if (!userData.equals(null) && !userData.getUser_password().equals(user.getUser_password())) {
+            post_data= "Invalid password";
+
+        }
+        else{
+                post_data= restHelper.registerRESTUser(userData.getUsername());
+        }
+
+        if(restHelper.sendKeyTo3rdParty(cb_url,post_data))
+        return "done";
+        else return "Failed to connect to cb_url" + cb_url;
+
+    }
+
+    @RequestMapping(value="/user/{handle}/createTweet.json", method=RequestMethod.POST)
+    @ResponseBody
+    public Hashtable createTweet(@PathVariable String handle, @RequestParam String Secret, @RequestParam String Tweet, @RequestParam final long user_id, @RequestParam final String username){
+
+       final TweetData tweet=new TweetData();
+       tweet.setTweet(Tweet);
+
+       final String result = restHelper.validate(Secret, username);
+       if(result.equals("success")){
+       return new Hashtable(){{
+           put("Tweet",tweetStore.add(tweet,username,user_id));
+       }};
+       }else{ return new Hashtable(){{
+           put("Error",result);
+       }};
+       }
+    }
 }
