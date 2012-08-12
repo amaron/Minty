@@ -19,7 +19,6 @@ function addTweetThenHide(form,id) {
         hideReply(id);
     });
 
-
     newtweets++;
     num_tweets++;
 
