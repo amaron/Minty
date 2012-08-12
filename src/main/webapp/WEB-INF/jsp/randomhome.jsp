@@ -173,6 +173,7 @@
     <div class="row-fluid">
         <div class="span3">
             <div class="well sidebar-nav">
+
                 <ul class="nav nav-list">
 
                     <legend>Gaurav Munjal<span class="smalltext"><a href="View my profile">View my profile</a></span></legend></li>
@@ -190,7 +191,7 @@
 
 
                 <textarea class="span12" id="tweet" name ="tweet" rows="2" placeholder="Add a new Minty!" maxlength="128" > </textarea>
-                <button type="submit" class="span9" name="Mintify">Mintify</button><span class="charleft">128</span>
+                <button type="submit" class="btn" name="Mintify">Mintify</button><span class="charleft">128</span>
 
             </form>
 
@@ -207,12 +208,13 @@
 
             <div class="row-fluid">
 
-                <form class="well" action="/user/getNewTweet.json" onsubmit="displayNew(this);return false">
-                    <input type="submit" style="display:none" value="you have new tweets!" id="updateBtn"/>
-                </form>
+
 
 
                 <div class="well" id="tweetList">
+                    <form action="/user/getNewTweet.json" onsubmit="displayNew(this);return false">
+                        <input type="submit" style="display:none" value="you have new tweets!" id="updateBtn"/>
+                    </form>
                     <c:forEach var='item' items='${List}'>
 
                         <script type="text/javascript">
