@@ -13,9 +13,9 @@
     <mvc:annotation-driven/>
 
 
-    <context:component-scan base-package="TwitMini"/>
+    <context:component-scan base-package="Minty"/>
 
-    <context:component-scan base-package="TwitMini.controller"/>
+    <context:component-scan base-package="Minty.controller"/>
     <mvc:interceptors>
         <mvc:interceptor>
             <mvc:mapping path="/home/*"/>
@@ -29,14 +29,14 @@
             <mvc:mapping path="/user/unfollow/*"/>
             <mvc:mapping path="/user/retweet/{id}"/>
 
-            <bean class="TwitMini.interceptor.AuthInterceptor"/>
+            <bean class="Minty.interceptor.AuthInterceptor"/>
         </mvc:interceptor>
         <mvc:interceptor>
             <mvc:mapping path="/index"/>
             <mvc:mapping path="/"/>
             <mvc:mapping path="/user/login"/>
             <mvc:mapping path="/user/register"/>
-            <bean class="TwitMini.interceptor.HomeInterceptor"/>
+            <bean class="Minty.interceptor.HomeInterceptor"/>
         </mvc:interceptor>
     </mvc:interceptors>
 

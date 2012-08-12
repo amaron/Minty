@@ -1,902 +1,1064 @@
-8 Aug, 2012 5:14:17 PM TwitMini.configuration.AppConfig logger
+8 Aug, 2012 5:14:17 PM Minty.configuration.AppConfig logger
 INFO: Minty Server log
-8 Aug, 2012 5:14:17 PM TwitMini.configuration.AppConfig logger
+8 Aug, 2012 5:14:17 PM Minty.configuration.AppConfig logger
 INFO: Log Test
-8 Aug, 2012 5:15:08 PM TwitMini.controller.HomePageController Search
+8 Aug, 2012 5:15:08 PM Minty.controller.HomePageController Search
 INFO: User null searched for asdfdd
-8 Aug, 2012 5:15:16 PM TwitMini.controller.HomePageController Search
+8 Aug, 2012 5:15:16 PM Minty.controller.HomePageController Search
 INFO: User null searched for asedfdd
-8 Aug, 2012 5:53:15 PM TwitMini.configuration.AppConfig logger
+8 Aug, 2012 5:53:15 PM Minty.configuration.AppConfig logger
 INFO: Minty Server log
-8 Aug, 2012 5:54:50 PM TwitMini.controller.HomePageController home
+8 Aug, 2012 5:54:50 PM Minty.controller.HomePageController home
 INFO: user gvlogged in succesfully
-8 Aug, 2012 5:55:15 PM TwitMini.controller.HomePageController Search
+8 Aug, 2012 5:55:15 PM Minty.controller.HomePageController Search
 INFO: User gv searched for asd
-8 Aug, 2012 5:55:19 PM TwitMini.controller.HomePageController home
+8 Aug, 2012 5:55:19 PM Minty.controller.HomePageController home
 INFO: user gvlogged in succesfully
-8 Aug, 2012 5:55:26 PM TwitMini.controller.ProfileViewController ViewUser
+8 Aug, 2012 5:55:26 PM Minty.controller.ProfileViewController ViewUser
 INFO: user gv visited b's profile
-8 Aug, 2012 5:55:29 PM TwitMini.controller.ProfileViewController FollowuserJSON
+8 Aug, 2012 5:55:29 PM Minty.controller.ProfileViewController FollowuserJSON
 INFO: user gv followed b
-8 Aug, 2012 5:55:37 PM TwitMini.controller.ProfileViewController ViewUser
+8 Aug, 2012 5:55:37 PM Minty.controller.ProfileViewController ViewUser
 INFO: user gv visited b's profile
-8 Aug, 2012 5:56:50 PM TwitMini.controller.ProfileViewController ViewUser
+8 Aug, 2012 5:56:50 PM Minty.controller.ProfileViewController ViewUser
 INFO: user gv visited b's profile
-8 Aug, 2012 5:56:54 PM TwitMini.controller.ProfileViewController FollowuserJSON
+8 Aug, 2012 5:56:54 PM Minty.controller.ProfileViewController FollowuserJSON
 INFO: user gv unfollowed b
-8 Aug, 2012 5:56:58 PM TwitMini.controller.ProfileViewController FollowuserJSON
+8 Aug, 2012 5:56:58 PM Minty.controller.ProfileViewController FollowuserJSON
 INFO: user gv followed b
-8 Aug, 2012 5:57:03 PM TwitMini.controller.HomePageController home
+8 Aug, 2012 5:57:03 PM Minty.controller.HomePageController home
 INFO: user gvlogged in succesfully
-8 Aug, 2012 5:57:08 PM TwitMini.controller.TweetController create
+8 Aug, 2012 5:57:08 PM Minty.controller.TweetController create
 INFO: user gvtweeted 104
-8 Aug, 2012 6:10:15 PM TwitMini.configuration.AppConfig logger
+8 Aug, 2012 6:10:15 PM Minty.configuration.AppConfig logger
 INFO: -------------------------------------------------------------------------------------------
-8 Aug, 2012 6:10:15 PM TwitMini.configuration.AppConfig logger
+8 Aug, 2012 6:10:15 PM Minty.configuration.AppConfig logger
 INFO: -------------------------------------------------------------------------------------------
-8 Aug, 2012 6:10:15 PM TwitMini.configuration.AppConfig logger
+8 Aug, 2012 6:10:15 PM Minty.configuration.AppConfig logger
 INFO: Minty Server log
-8 Aug, 2012 6:11:41 PM TwitMini.controller.LoginController login
+8 Aug, 2012 6:11:41 PM Minty.controller.LoginController login
 INFO: user alogged in succesfully
-8 Aug, 2012 6:11:47 PM TwitMini.controller.ProfileViewController ViewUser
+8 Aug, 2012 6:11:47 PM Minty.controller.ProfileViewController ViewUser
 INFO: user a visited b's profile
-8 Aug, 2012 6:11:49 PM TwitMini.controller.ProfileViewController FollowuserJSON
+8 Aug, 2012 6:11:49 PM Minty.controller.ProfileViewController FollowuserJSON
 INFO: user a unfollowed b
-8 Aug, 2012 6:11:57 PM TwitMini.controller.ProfileViewController ViewUser
+8 Aug, 2012 6:11:57 PM Minty.controller.ProfileViewController ViewUser
 INFO: user a visited b's profile
-8 Aug, 2012 6:12:00 PM TwitMini.controller.ProfileViewController FollowuserJSON
+8 Aug, 2012 6:12:00 PM Minty.controller.ProfileViewController FollowuserJSON
 INFO: user a followed b
-8 Aug, 2012 6:12:05 PM TwitMini.controller.LoginController logout
+8 Aug, 2012 6:12:05 PM Minty.controller.LoginController logout
 INFO: user alogged out succesfully
-8 Aug, 2012 7:38:23 PM TwitMini.configuration.AppConfig logger
+8 Aug, 2012 7:38:23 PM Minty.configuration.AppConfig logger
 INFO: -------------------------------------------------------------------------------------------
-8 Aug, 2012 7:38:23 PM TwitMini.configuration.AppConfig logger
+8 Aug, 2012 7:38:23 PM Minty.configuration.AppConfig logger
 INFO: -------------------------------------------------------------------------------------------
-8 Aug, 2012 7:38:23 PM TwitMini.configuration.AppConfig logger
+8 Aug, 2012 7:38:23 PM Minty.configuration.AppConfig logger
 INFO: Minty Server log
-8 Aug, 2012 7:38:43 PM TwitMini.controller.LoginController login
+8 Aug, 2012 7:38:43 PM Minty.controller.LoginController login
 INFO: user alogged in successfully
-8 Aug, 2012 7:41:20 PM TwitMini.controller.LoginController login
+8 Aug, 2012 7:41:20 PM Minty.controller.LoginController login
 INFO: user alogged in successfully
-8 Aug, 2012 7:46:16 PM TwitMini.controller.LoginController login
+8 Aug, 2012 7:46:16 PM Minty.controller.LoginController login
 INFO: user alogged in successfully
-8 Aug, 2012 7:46:42 PM TwitMini.controller.TweetController create
+8 Aug, 2012 7:46:42 PM Minty.controller.TweetController create
 INFO: user atweeted 105
-8 Aug, 2012 7:48:35 PM TwitMini.controller.LoginController login
+8 Aug, 2012 7:48:35 PM Minty.controller.LoginController login
 INFO: user blogged in successfully
-8 Aug, 2012 7:53:36 PM TwitMini.controller.LoginController login
+8 Aug, 2012 7:53:36 PM Minty.controller.LoginController login
 INFO: user blogged in successfully
-8 Aug, 2012 7:54:42 PM TwitMini.controller.TweetController create
+8 Aug, 2012 7:54:42 PM Minty.controller.TweetController create
 INFO: user btweeted 106
-8 Aug, 2012 7:57:24 PM TwitMini.controller.LoginController login
+8 Aug, 2012 7:57:24 PM Minty.controller.LoginController login
 INFO: user blogged in successfully
-8 Aug, 2012 7:57:42 PM TwitMini.controller.TweetController create
+8 Aug, 2012 7:57:42 PM Minty.controller.TweetController create
 INFO: user btweeted 107
-8 Aug, 2012 8:01:54 PM TwitMini.controller.LoginController login
+8 Aug, 2012 8:01:54 PM Minty.controller.LoginController login
 INFO: user blogged in successfully
-8 Aug, 2012 8:02:23 PM TwitMini.controller.TweetController create
+8 Aug, 2012 8:02:23 PM Minty.controller.TweetController create
 INFO: user btweeted 108
-8 Aug, 2012 8:03:33 PM TwitMini.controller.TweetController create
+8 Aug, 2012 8:03:33 PM Minty.controller.TweetController create
 INFO: user btweeted 109
-8 Aug, 2012 8:03:39 PM TwitMini.controller.TweetController create
+8 Aug, 2012 8:03:39 PM Minty.controller.TweetController create
 INFO: user btweeted 110
-8 Aug, 2012 8:05:44 PM TwitMini.controller.LoginController login
+8 Aug, 2012 8:05:44 PM Minty.controller.LoginController login
 INFO: user blogged in successfully
-8 Aug, 2012 8:06:11 PM TwitMini.controller.TweetController create
+8 Aug, 2012 8:06:11 PM Minty.controller.TweetController create
 INFO: user btweeted 111
-8 Aug, 2012 8:06:27 PM TwitMini.controller.TweetController create
+8 Aug, 2012 8:06:27 PM Minty.controller.TweetController create
 INFO: user btweeted 112
-8 Aug, 2012 8:07:57 PM TwitMini.controller.TweetController create
+8 Aug, 2012 8:07:57 PM Minty.controller.TweetController create
 INFO: user btweeted 113
-8 Aug, 2012 8:09:00 PM TwitMini.controller.TweetController create
+8 Aug, 2012 8:09:00 PM Minty.controller.TweetController create
 INFO: user btweeted 114
-8 Aug, 2012 8:18:26 PM TwitMini.controller.LoginController login
+8 Aug, 2012 8:18:26 PM Minty.controller.LoginController login
 INFO: user blogged in successfully
-8 Aug, 2012 8:18:54 PM TwitMini.controller.TweetController create
+8 Aug, 2012 8:18:54 PM Minty.controller.TweetController create
 INFO: user btweeted 115
-8 Aug, 2012 8:22:38 PM TwitMini.controller.LoginController login
+8 Aug, 2012 8:22:38 PM Minty.controller.LoginController login
 INFO: user blogged in successfully
-8 Aug, 2012 8:40:40 PM TwitMini.controller.LoginController login
+8 Aug, 2012 8:40:40 PM Minty.controller.LoginController login
 INFO: user blogged in successfully
-8 Aug, 2012 8:42:03 PM TwitMini.controller.TweetController create
+8 Aug, 2012 8:42:03 PM Minty.controller.TweetController create
 INFO: user btweeted 118
-8 Aug, 2012 9:28:44 PM TwitMini.configuration.AppConfig logger
+8 Aug, 2012 9:28:44 PM Minty.configuration.AppConfig logger
 INFO: -------------------------------------------------------------------------------------------
-8 Aug, 2012 9:28:45 PM TwitMini.configuration.AppConfig logger
+8 Aug, 2012 9:28:45 PM Minty.configuration.AppConfig logger
 INFO: -------------------------------------------------------------------------------------------
-8 Aug, 2012 9:28:45 PM TwitMini.configuration.AppConfig logger
+8 Aug, 2012 9:28:45 PM Minty.configuration.AppConfig logger
 INFO: Minty Server log
-8 Aug, 2012 9:29:29 PM TwitMini.controller.LoginController login
+8 Aug, 2012 9:29:29 PM Minty.controller.LoginController login
 INFO: user blogged in successfully
-8 Aug, 2012 9:38:28 PM TwitMini.controller.LoginController login
+8 Aug, 2012 9:38:28 PM Minty.controller.LoginController login
 INFO: user blogged in successfully
-8 Aug, 2012 9:42:57 PM TwitMini.controller.LoginController login
+8 Aug, 2012 9:42:57 PM Minty.controller.LoginController login
 INFO: user blogged in successfully
-8 Aug, 2012 9:51:31 PM TwitMini.controller.LoginController login
+8 Aug, 2012 9:51:31 PM Minty.controller.LoginController login
 INFO: user blogged in successfully
-8 Aug, 2012 10:00:38 PM TwitMini.controller.LoginController login
+8 Aug, 2012 10:00:38 PM Minty.controller.LoginController login
 INFO: user blogged in successfully
-8 Aug, 2012 10:33:25 PM TwitMini.controller.LoginController login
+8 Aug, 2012 10:33:25 PM Minty.controller.LoginController login
 INFO: user blogged in successfully
-8 Aug, 2012 10:36:50 PM TwitMini.configuration.AppConfig logger
+8 Aug, 2012 10:36:50 PM Minty.configuration.AppConfig logger
 INFO: -------------------------------------------------------------------------------------------
-8 Aug, 2012 10:36:50 PM TwitMini.configuration.AppConfig logger
+8 Aug, 2012 10:36:50 PM Minty.configuration.AppConfig logger
 INFO: -------------------------------------------------------------------------------------------
-8 Aug, 2012 10:36:50 PM TwitMini.configuration.AppConfig logger
+8 Aug, 2012 10:36:50 PM Minty.configuration.AppConfig logger
 INFO: Minty Server log
-8 Aug, 2012 10:38:39 PM TwitMini.controller.LoginController login
+8 Aug, 2012 10:38:39 PM Minty.controller.LoginController login
 INFO: user blogged in successfully
-8 Aug, 2012 10:38:52 PM TwitMini.controller.TweetController create
+8 Aug, 2012 10:38:52 PM Minty.controller.TweetController create
 INFO: user btweeted 119
-8 Aug, 2012 10:41:14 PM TwitMini.controller.LoginController logout
+8 Aug, 2012 10:41:14 PM Minty.controller.LoginController logout
 INFO: user b logged out successfully
-8 Aug, 2012 10:41:17 PM TwitMini.controller.LoginController login
+8 Aug, 2012 10:41:17 PM Minty.controller.LoginController login
 INFO: user alogged in successfully
-8 Aug, 2012 10:57:18 PM TwitMini.controller.LoginController login
+8 Aug, 2012 10:57:18 PM Minty.controller.LoginController login
 INFO: user blogged in successfully
-8 Aug, 2012 11:09:33 PM TwitMini.controller.LoginController logout
+8 Aug, 2012 11:09:33 PM Minty.controller.LoginController logout
 INFO: user b logged out successfully
-8 Aug, 2012 11:09:37 PM TwitMini.controller.LoginController login
+8 Aug, 2012 11:09:37 PM Minty.controller.LoginController login
 INFO: user alogged in successfully
-8 Aug, 2012 11:17:59 PM TwitMini.controller.LoginController logout
+8 Aug, 2012 11:17:59 PM Minty.controller.LoginController logout
 INFO: user a logged out successfully
-8 Aug, 2012 11:18:08 PM TwitMini.controller.LoginController login
+8 Aug, 2012 11:18:08 PM Minty.controller.LoginController login
 INFO: user blogged in successfully
-8 Aug, 2012 11:55:48 PM TwitMini.controller.TweetController create
+8 Aug, 2012 11:55:48 PM Minty.controller.TweetController create
 INFO: user btweeted 120
-8 Aug, 2012 11:56:58 PM TwitMini.controller.TweetController create
+8 Aug, 2012 11:56:58 PM Minty.controller.TweetController create
 INFO: user btweeted 121
-9 Aug, 2012 2:23:51 PM TwitMini.configuration.AppConfig logger
+9 Aug, 2012 2:23:51 PM Minty.configuration.AppConfig logger
 INFO: -------------------------------------------------------------------------------------------
-9 Aug, 2012 2:23:51 PM TwitMini.configuration.AppConfig logger
+9 Aug, 2012 2:23:51 PM Minty.configuration.AppConfig logger
 INFO: -------------------------------------------------------------------------------------------
-9 Aug, 2012 2:23:51 PM TwitMini.configuration.AppConfig logger
+9 Aug, 2012 2:23:51 PM Minty.configuration.AppConfig logger
 INFO: Minty Server log
-9 Aug, 2012 2:24:21 PM TwitMini.controller.LoginController login
+9 Aug, 2012 2:24:21 PM Minty.controller.LoginController login
 INFO: user alogged in successfully
-9 Aug, 2012 2:25:15 PM TwitMini.controller.ProfileViewController ViewUser
+9 Aug, 2012 2:25:15 PM Minty.controller.ProfileViewController ViewUser
 INFO: user a visited b's profile
-9 Aug, 2012 2:25:25 PM TwitMini.controller.ProfileViewController ViewUser
+9 Aug, 2012 2:25:25 PM Minty.controller.ProfileViewController ViewUser
 INFO: user a visited gv's profile
-9 Aug, 2012 2:25:55 PM TwitMini.controller.ProfileViewController FollowuserJSON
+9 Aug, 2012 2:25:55 PM Minty.controller.ProfileViewController FollowuserJSON
 INFO: user a followed gv
-9 Aug, 2012 2:30:04 PM TwitMini.controller.TweetController create
+9 Aug, 2012 2:30:04 PM Minty.controller.TweetController create
 INFO: user atweeted 122
-9 Aug, 2012 3:05:34 PM TwitMini.configuration.AppConfig logger
+9 Aug, 2012 3:05:34 PM Minty.configuration.AppConfig logger
 INFO: -------------------------------------------------------------------------------------------
-9 Aug, 2012 3:05:34 PM TwitMini.configuration.AppConfig logger
+9 Aug, 2012 3:05:34 PM Minty.configuration.AppConfig logger
 INFO: -------------------------------------------------------------------------------------------
-9 Aug, 2012 3:05:34 PM TwitMini.configuration.AppConfig logger
+9 Aug, 2012 3:05:34 PM Minty.configuration.AppConfig logger
 INFO: Minty Server log
-9 Aug, 2012 3:06:14 PM TwitMini.controller.LoginController login
+9 Aug, 2012 3:06:14 PM Minty.controller.LoginController login
 INFO: user blogged in successfully
-9 Aug, 2012 4:11:22 PM TwitMini.configuration.AppConfig logger
+9 Aug, 2012 4:11:22 PM Minty.configuration.AppConfig logger
 INFO: -------------------------------------------------------------------------------------------
-9 Aug, 2012 4:11:22 PM TwitMini.configuration.AppConfig logger
+9 Aug, 2012 4:11:22 PM Minty.configuration.AppConfig logger
 INFO: -------------------------------------------------------------------------------------------
-9 Aug, 2012 4:11:22 PM TwitMini.configuration.AppConfig logger
+9 Aug, 2012 4:11:22 PM Minty.configuration.AppConfig logger
 INFO: Minty Server log
-9 Aug, 2012 4:14:32 PM TwitMini.configuration.AppConfig logger
+9 Aug, 2012 4:14:32 PM Minty.configuration.AppConfig logger
 INFO: -------------------------------------------------------------------------------------------
-9 Aug, 2012 4:14:32 PM TwitMini.configuration.AppConfig logger
+9 Aug, 2012 4:14:32 PM Minty.configuration.AppConfig logger
 INFO: -------------------------------------------------------------------------------------------
-9 Aug, 2012 4:14:32 PM TwitMini.configuration.AppConfig logger
+9 Aug, 2012 4:14:32 PM Minty.configuration.AppConfig logger
 INFO: Minty Server log
-9 Aug, 2012 4:14:56 PM TwitMini.controller.LoginController login
+9 Aug, 2012 4:14:56 PM Minty.controller.LoginController login
 INFO: user blogged in successfully
-9 Aug, 2012 4:15:09 PM TwitMini.controller.TweetController create
+9 Aug, 2012 4:15:09 PM Minty.controller.TweetController create
 INFO: user btweeted 123
-9 Aug, 2012 4:15:26 PM TwitMini.controller.TweetController create
+9 Aug, 2012 4:15:26 PM Minty.controller.TweetController create
 INFO: user btweeted 124
-9 Aug, 2012 4:21:09 PM TwitMini.controller.LoginController logout
+9 Aug, 2012 4:21:09 PM Minty.controller.LoginController logout
 INFO: user b logged out successfully
-9 Aug, 2012 4:21:18 PM TwitMini.controller.LoginController login
+9 Aug, 2012 4:21:18 PM Minty.controller.LoginController login
 INFO: user alogged in successfully
-9 Aug, 2012 4:23:30 PM TwitMini.controller.LoginController logout
+9 Aug, 2012 4:23:30 PM Minty.controller.LoginController logout
 INFO: user a logged out successfully
-9 Aug, 2012 4:24:28 PM TwitMini.controller.LoginController login
+9 Aug, 2012 4:24:28 PM Minty.controller.LoginController login
 INFO: user blogged in successfully
-9 Aug, 2012 4:29:48 PM TwitMini.controller.LoginController login
+9 Aug, 2012 4:29:48 PM Minty.controller.LoginController login
 INFO: user blogged in successfully
-9 Aug, 2012 4:30:38 PM TwitMini.controller.LoginController login
+9 Aug, 2012 4:30:38 PM Minty.controller.LoginController login
 INFO: user blogged in successfully
-9 Aug, 2012 4:37:19 PM TwitMini.controller.LoginController login
+9 Aug, 2012 4:37:19 PM Minty.controller.LoginController login
 INFO: user blogged in successfully
-9 Aug, 2012 4:40:02 PM TwitMini.controller.ProfileViewController ViewUser
+9 Aug, 2012 4:40:02 PM Minty.controller.ProfileViewController ViewUser
 INFO: user b visited a's profile
-9 Aug, 2012 4:41:08 PM TwitMini.controller.LoginController login
+9 Aug, 2012 4:41:08 PM Minty.controller.LoginController login
 INFO: user blogged in successfully
-9 Aug, 2012 4:43:51 PM TwitMini.controller.ProfileViewController ViewUser
+9 Aug, 2012 4:43:51 PM Minty.controller.ProfileViewController ViewUser
 INFO: user b visited a's profile
-9 Aug, 2012 4:45:27 PM TwitMini.controller.ProfileViewController ViewUser
+9 Aug, 2012 4:45:27 PM Minty.controller.ProfileViewController ViewUser
 INFO: user b visited a's profile
-9 Aug, 2012 4:47:51 PM TwitMini.controller.ProfileViewController ViewUser
+9 Aug, 2012 4:47:51 PM Minty.controller.ProfileViewController ViewUser
 INFO: user b visited a's profile
-9 Aug, 2012 4:52:40 PM TwitMini.controller.ProfileViewController ViewUser
+9 Aug, 2012 4:52:40 PM Minty.controller.ProfileViewController ViewUser
 INFO: user b visited a's profile
-9 Aug, 2012 5:03:35 PM TwitMini.controller.LoginController login
+9 Aug, 2012 5:03:35 PM Minty.controller.LoginController login
 INFO: user blogged in successfully
-9 Aug, 2012 5:12:13 PM TwitMini.controller.LoginController logout
+9 Aug, 2012 5:12:13 PM Minty.controller.LoginController logout
 INFO: user null logged out successfully
-9 Aug, 2012 5:12:16 PM TwitMini.controller.LoginController login
+9 Aug, 2012 5:12:16 PM Minty.controller.LoginController login
 INFO: user blogged in successfully
-9 Aug, 2012 5:13:42 PM TwitMini.controller.LoginController logout
+9 Aug, 2012 5:13:42 PM Minty.controller.LoginController logout
 INFO: user null logged out successfully
-9 Aug, 2012 5:13:45 PM TwitMini.controller.LoginController login
+9 Aug, 2012 5:13:45 PM Minty.controller.LoginController login
 INFO: user blogged in successfully
-9 Aug, 2012 5:16:52 PM TwitMini.controller.LoginController logout
+9 Aug, 2012 5:16:52 PM Minty.controller.LoginController logout
 INFO: user null logged out successfully
-9 Aug, 2012 5:16:55 PM TwitMini.controller.LoginController login
+9 Aug, 2012 5:16:55 PM Minty.controller.LoginController login
 INFO: user blogged in successfully
-9 Aug, 2012 5:18:12 PM TwitMini.controller.ProfileViewController ViewUser
+9 Aug, 2012 5:18:12 PM Minty.controller.ProfileViewController ViewUser
 INFO: user b visited a's profile
-9 Aug, 2012 5:18:27 PM TwitMini.controller.TweetController create
+9 Aug, 2012 5:18:27 PM Minty.controller.TweetController create
 INFO: user btweeted 125
-9 Aug, 2012 5:18:27 PM TwitMini.controller.ProfileViewController ViewUser
+9 Aug, 2012 5:18:27 PM Minty.controller.ProfileViewController ViewUser
 INFO: user b visited a's profile
-9 Aug, 2012 5:18:53 PM TwitMini.controller.TweetController create
+9 Aug, 2012 5:18:53 PM Minty.controller.TweetController create
 INFO: user btweeted 126
-9 Aug, 2012 5:18:53 PM TwitMini.controller.ProfileViewController ViewUser
+9 Aug, 2012 5:18:53 PM Minty.controller.ProfileViewController ViewUser
 INFO: user b visited a's profile
-9 Aug, 2012 5:19:19 PM TwitMini.controller.TweetController create
+9 Aug, 2012 5:19:19 PM Minty.controller.TweetController create
 INFO: user btweeted 127
-9 Aug, 2012 5:19:30 PM TwitMini.controller.LoginController logout
+9 Aug, 2012 5:19:30 PM Minty.controller.LoginController logout
 INFO: user b logged out successfully
-9 Aug, 2012 5:25:05 PM TwitMini.configuration.AppConfig logger
+9 Aug, 2012 5:25:05 PM Minty.configuration.AppConfig logger
 INFO: -------------------------------------------------------------------------------------------
-9 Aug, 2012 5:25:05 PM TwitMini.configuration.AppConfig logger
+9 Aug, 2012 5:25:05 PM Minty.configuration.AppConfig logger
 INFO: -------------------------------------------------------------------------------------------
-9 Aug, 2012 5:25:05 PM TwitMini.configuration.AppConfig logger
+9 Aug, 2012 5:25:05 PM Minty.configuration.AppConfig logger
 INFO: Minty Server log
-9 Aug, 2012 5:25:52 PM TwitMini.controller.LoginController login
+9 Aug, 2012 5:25:52 PM Minty.controller.LoginController login
 INFO: user blogged in successfully
-9 Aug, 2012 5:27:09 PM TwitMini.controller.TweetController create
+9 Aug, 2012 5:27:09 PM Minty.controller.TweetController create
 INFO: user btweeted 128
-9 Aug, 2012 5:29:18 PM TwitMini.controller.LoginController logout
+9 Aug, 2012 5:29:18 PM Minty.controller.LoginController logout
 INFO: user b logged out successfully
-9 Aug, 2012 5:37:33 PM TwitMini.configuration.AppConfig logger
+9 Aug, 2012 5:37:33 PM Minty.configuration.AppConfig logger
 INFO: -------------------------------------------------------------------------------------------
-9 Aug, 2012 5:37:33 PM TwitMini.configuration.AppConfig logger
+9 Aug, 2012 5:37:33 PM Minty.configuration.AppConfig logger
 INFO: -------------------------------------------------------------------------------------------
-9 Aug, 2012 5:37:33 PM TwitMini.configuration.AppConfig logger
+9 Aug, 2012 5:37:33 PM Minty.configuration.AppConfig logger
 INFO: Minty Server log
-9 Aug, 2012 5:42:12 PM TwitMini.controller.LoginController login
+9 Aug, 2012 5:42:12 PM Minty.controller.LoginController login
 INFO: user blogged in successfully
-9 Aug, 2012 5:44:32 PM TwitMini.controller.HomePageController Search
+9 Aug, 2012 5:44:32 PM Minty.controller.HomePageController Search
 INFO: User b searched for fs
-9 Aug, 2012 5:45:18 PM TwitMini.controller.TweetController create
+9 Aug, 2012 5:45:18 PM Minty.controller.TweetController create
 INFO: user btweeted 129
-9 Aug, 2012 5:45:51 PM TwitMini.controller.TweetController create
+9 Aug, 2012 5:45:51 PM Minty.controller.TweetController create
 INFO: user btweeted 130
-9 Aug, 2012 5:57:35 PM TwitMini.controller.LoginController login
+9 Aug, 2012 5:57:35 PM Minty.controller.LoginController login
 INFO: user blogged in successfully
-9 Aug, 2012 9:02:14 PM TwitMini.configuration.AppConfig logger
+9 Aug, 2012 9:02:14 PM Minty.configuration.AppConfig logger
 INFO: -------------------------------------------------------------------------------------------
-9 Aug, 2012 9:02:14 PM TwitMini.configuration.AppConfig logger
+9 Aug, 2012 9:02:14 PM Minty.configuration.AppConfig logger
 INFO: -------------------------------------------------------------------------------------------
-9 Aug, 2012 9:02:14 PM TwitMini.configuration.AppConfig logger
+9 Aug, 2012 9:02:14 PM Minty.configuration.AppConfig logger
 INFO: Minty Server log
-9 Aug, 2012 9:03:38 PM TwitMini.controller.LoginController login
+9 Aug, 2012 9:03:38 PM Minty.controller.LoginController login
 INFO: user blogged in successfully
-9 Aug, 2012 9:14:22 PM TwitMini.configuration.AppConfig logger
+9 Aug, 2012 9:14:22 PM Minty.configuration.AppConfig logger
 INFO: -------------------------------------------------------------------------------------------
-9 Aug, 2012 9:14:23 PM TwitMini.configuration.AppConfig logger
+9 Aug, 2012 9:14:23 PM Minty.configuration.AppConfig logger
 INFO: -------------------------------------------------------------------------------------------
-9 Aug, 2012 9:14:23 PM TwitMini.configuration.AppConfig logger
+9 Aug, 2012 9:14:23 PM Minty.configuration.AppConfig logger
 INFO: Minty Server log
-9 Aug, 2012 9:14:46 PM TwitMini.controller.LoginController login
+9 Aug, 2012 9:14:46 PM Minty.controller.LoginController login
 INFO: user blogged in successfully
-9 Aug, 2012 9:16:34 PM TwitMini.controller.LoginController login
+9 Aug, 2012 9:16:34 PM Minty.controller.LoginController login
 INFO: user blogged in successfully
-9 Aug, 2012 9:26:20 PM TwitMini.configuration.AppConfig logger
+9 Aug, 2012 9:26:20 PM Minty.configuration.AppConfig logger
 INFO: -------------------------------------------------------------------------------------------
-9 Aug, 2012 9:26:20 PM TwitMini.configuration.AppConfig logger
+9 Aug, 2012 9:26:20 PM Minty.configuration.AppConfig logger
 INFO: -------------------------------------------------------------------------------------------
-9 Aug, 2012 9:26:20 PM TwitMini.configuration.AppConfig logger
+9 Aug, 2012 9:26:20 PM Minty.configuration.AppConfig logger
 INFO: Minty Server log
-9 Aug, 2012 9:27:04 PM TwitMini.controller.LoginController login
+9 Aug, 2012 9:27:04 PM Minty.controller.LoginController login
 INFO: user blogged in successfully
-9 Aug, 2012 9:27:32 PM TwitMini.controller.LoginController login
+9 Aug, 2012 9:27:32 PM Minty.controller.LoginController login
 INFO: user blogged in successfully
-10 Aug, 2012 2:34:00 AM TwitMini.configuration.AppConfig logger
+10 Aug, 2012 2:34:00 AM Minty.configuration.AppConfig logger
 INFO: -------------------------------------------------------------------------------------------
-10 Aug, 2012 2:34:00 AM TwitMini.configuration.AppConfig logger
+10 Aug, 2012 2:34:00 AM Minty.configuration.AppConfig logger
 INFO: -------------------------------------------------------------------------------------------
-10 Aug, 2012 2:34:00 AM TwitMini.configuration.AppConfig logger
+10 Aug, 2012 2:34:00 AM Minty.configuration.AppConfig logger
 INFO: Minty Server log
-10 Aug, 2012 2:36:03 AM TwitMini.controller.LoginController login
+10 Aug, 2012 2:36:03 AM Minty.controller.LoginController login
 INFO: user blogged in successfully
-10 Aug, 2012 2:47:33 AM TwitMini.configuration.AppConfig logger
+10 Aug, 2012 2:47:33 AM Minty.configuration.AppConfig logger
 INFO: -------------------------------------------------------------------------------------------
-10 Aug, 2012 2:47:33 AM TwitMini.configuration.AppConfig logger
+10 Aug, 2012 2:47:33 AM Minty.configuration.AppConfig logger
 INFO: -------------------------------------------------------------------------------------------
-10 Aug, 2012 2:47:33 AM TwitMini.configuration.AppConfig logger
+10 Aug, 2012 2:47:33 AM Minty.configuration.AppConfig logger
 INFO: Minty Server log
-10 Aug, 2012 2:48:35 AM TwitMini.controller.LoginController login
+10 Aug, 2012 2:48:35 AM Minty.controller.LoginController login
 INFO: user blogged in successfully
-10 Aug, 2012 1:22:59 PM TwitMini.configuration.AppConfig logger
+10 Aug, 2012 1:22:59 PM Minty.configuration.AppConfig logger
 INFO: -------------------------------------------------------------------------------------------
-10 Aug, 2012 1:22:59 PM TwitMini.configuration.AppConfig logger
+10 Aug, 2012 1:22:59 PM Minty.configuration.AppConfig logger
 INFO: -------------------------------------------------------------------------------------------
-10 Aug, 2012 1:22:59 PM TwitMini.configuration.AppConfig logger
+10 Aug, 2012 1:22:59 PM Minty.configuration.AppConfig logger
 INFO: Minty Server log
-10 Aug, 2012 1:26:10 PM TwitMini.configuration.AppConfig logger
+10 Aug, 2012 1:26:10 PM Minty.configuration.AppConfig logger
 INFO: -------------------------------------------------------------------------------------------
-10 Aug, 2012 1:26:10 PM TwitMini.configuration.AppConfig logger
+10 Aug, 2012 1:26:10 PM Minty.configuration.AppConfig logger
 INFO: -------------------------------------------------------------------------------------------
-10 Aug, 2012 1:26:10 PM TwitMini.configuration.AppConfig logger
+10 Aug, 2012 1:26:10 PM Minty.configuration.AppConfig logger
 INFO: Minty Server log
-10 Aug, 2012 1:26:52 PM TwitMini.configuration.AppConfig logger
+10 Aug, 2012 1:26:52 PM Minty.configuration.AppConfig logger
 INFO: -------------------------------------------------------------------------------------------
-10 Aug, 2012 1:26:52 PM TwitMini.configuration.AppConfig logger
+10 Aug, 2012 1:26:52 PM Minty.configuration.AppConfig logger
 INFO: -------------------------------------------------------------------------------------------
-10 Aug, 2012 1:26:52 PM TwitMini.configuration.AppConfig logger
+10 Aug, 2012 1:26:52 PM Minty.configuration.AppConfig logger
 INFO: Minty Server log
-10 Aug, 2012 1:29:27 PM TwitMini.configuration.AppConfig logger
+10 Aug, 2012 1:29:27 PM Minty.configuration.AppConfig logger
 INFO: -------------------------------------------------------------------------------------------
-10 Aug, 2012 1:29:27 PM TwitMini.configuration.AppConfig logger
+10 Aug, 2012 1:29:27 PM Minty.configuration.AppConfig logger
 INFO: -------------------------------------------------------------------------------------------
-10 Aug, 2012 1:29:27 PM TwitMini.configuration.AppConfig logger
+10 Aug, 2012 1:29:27 PM Minty.configuration.AppConfig logger
 INFO: Minty Server log
-10 Aug, 2012 1:32:07 PM TwitMini.controller.LoginController login
+10 Aug, 2012 1:32:07 PM Minty.controller.LoginController login
 INFO: user blogged in successfully
-10 Aug, 2012 1:49:30 PM TwitMini.controller.LoginController logout
+10 Aug, 2012 1:49:30 PM Minty.controller.LoginController logout
 INFO: user b logged out successfully
-10 Aug, 2012 2:07:50 PM TwitMini.configuration.AppConfig logger
+10 Aug, 2012 2:07:50 PM Minty.configuration.AppConfig logger
 INFO: -------------------------------------------------------------------------------------------
-10 Aug, 2012 2:07:50 PM TwitMini.configuration.AppConfig logger
+10 Aug, 2012 2:07:50 PM Minty.configuration.AppConfig logger
 INFO: -------------------------------------------------------------------------------------------
-10 Aug, 2012 2:07:50 PM TwitMini.configuration.AppConfig logger
+10 Aug, 2012 2:07:50 PM Minty.configuration.AppConfig logger
 INFO: Minty Server log
-10 Aug, 2012 2:12:54 PM TwitMini.configuration.AppConfig logger
+10 Aug, 2012 2:12:54 PM Minty.configuration.AppConfig logger
 INFO: -------------------------------------------------------------------------------------------
-10 Aug, 2012 2:12:54 PM TwitMini.configuration.AppConfig logger
+10 Aug, 2012 2:12:54 PM Minty.configuration.AppConfig logger
 INFO: -------------------------------------------------------------------------------------------
-10 Aug, 2012 2:12:54 PM TwitMini.configuration.AppConfig logger
+10 Aug, 2012 2:12:54 PM Minty.configuration.AppConfig logger
 INFO: Minty Server log
-10 Aug, 2012 2:14:11 PM TwitMini.configuration.AppConfig logger
+10 Aug, 2012 2:14:11 PM Minty.configuration.AppConfig logger
 INFO: -------------------------------------------------------------------------------------------
-10 Aug, 2012 2:14:11 PM TwitMini.configuration.AppConfig logger
+10 Aug, 2012 2:14:11 PM Minty.configuration.AppConfig logger
 INFO: -------------------------------------------------------------------------------------------
-10 Aug, 2012 2:14:11 PM TwitMini.configuration.AppConfig logger
+10 Aug, 2012 2:14:11 PM Minty.configuration.AppConfig logger
 INFO: Minty Server log
-10 Aug, 2012 2:59:20 PM TwitMini.configuration.AppConfig logger
+10 Aug, 2012 2:59:20 PM Minty.configuration.AppConfig logger
 INFO: -------------------------------------------------------------------------------------------
-10 Aug, 2012 2:59:20 PM TwitMini.configuration.AppConfig logger
+10 Aug, 2012 2:59:20 PM Minty.configuration.AppConfig logger
 INFO: -------------------------------------------------------------------------------------------
-10 Aug, 2012 2:59:20 PM TwitMini.configuration.AppConfig logger
+10 Aug, 2012 2:59:20 PM Minty.configuration.AppConfig logger
 INFO: Minty Server log
-10 Aug, 2012 3:01:22 PM TwitMini.configuration.AppConfig logger
+10 Aug, 2012 3:01:22 PM Minty.configuration.AppConfig logger
 INFO: -------------------------------------------------------------------------------------------
-10 Aug, 2012 3:01:22 PM TwitMini.configuration.AppConfig logger
+10 Aug, 2012 3:01:22 PM Minty.configuration.AppConfig logger
 INFO: -------------------------------------------------------------------------------------------
-10 Aug, 2012 3:01:22 PM TwitMini.configuration.AppConfig logger
+10 Aug, 2012 3:01:22 PM Minty.configuration.AppConfig logger
 INFO: Minty Server log
-10 Aug, 2012 3:04:12 PM TwitMini.configuration.AppConfig logger
+10 Aug, 2012 3:04:12 PM Minty.configuration.AppConfig logger
 INFO: -------------------------------------------------------------------------------------------
-10 Aug, 2012 3:04:12 PM TwitMini.configuration.AppConfig logger
+10 Aug, 2012 3:04:12 PM Minty.configuration.AppConfig logger
 INFO: -------------------------------------------------------------------------------------------
-10 Aug, 2012 3:04:12 PM TwitMini.configuration.AppConfig logger
+10 Aug, 2012 3:04:12 PM Minty.configuration.AppConfig logger
 INFO: Minty Server log
-10 Aug, 2012 3:06:33 PM TwitMini.configuration.AppConfig logger
+10 Aug, 2012 3:06:33 PM Minty.configuration.AppConfig logger
 INFO: -------------------------------------------------------------------------------------------
-10 Aug, 2012 3:06:33 PM TwitMini.configuration.AppConfig logger
+10 Aug, 2012 3:06:33 PM Minty.configuration.AppConfig logger
 INFO: -------------------------------------------------------------------------------------------
-10 Aug, 2012 3:06:33 PM TwitMini.configuration.AppConfig logger
+10 Aug, 2012 3:06:33 PM Minty.configuration.AppConfig logger
 INFO: Minty Server log
-10 Aug, 2012 3:08:56 PM TwitMini.controller.LoginController login
+10 Aug, 2012 3:08:56 PM Minty.controller.LoginController login
 INFO: user blogged in successfully
-10 Aug, 2012 3:15:48 PM TwitMini.configuration.AppConfig logger
+10 Aug, 2012 3:15:48 PM Minty.configuration.AppConfig logger
 INFO: -------------------------------------------------------------------------------------------
-10 Aug, 2012 3:15:48 PM TwitMini.configuration.AppConfig logger
+10 Aug, 2012 3:15:48 PM Minty.configuration.AppConfig logger
 INFO: -------------------------------------------------------------------------------------------
-10 Aug, 2012 3:15:48 PM TwitMini.configuration.AppConfig logger
+10 Aug, 2012 3:15:48 PM Minty.configuration.AppConfig logger
 INFO: Minty Server log
-10 Aug, 2012 3:25:59 PM TwitMini.controller.LoginController logout
+10 Aug, 2012 3:25:59 PM Minty.controller.LoginController logout
 INFO: user asdf logged out successfully
-10 Aug, 2012 3:26:06 PM TwitMini.controller.LoginController login
+10 Aug, 2012 3:26:06 PM Minty.controller.LoginController login
 INFO: user blogged in successfully
-10 Aug, 2012 3:33:29 PM TwitMini.controller.TweetController create
+10 Aug, 2012 3:33:29 PM Minty.controller.TweetController create
 INFO: user btweeted 131
-10 Aug, 2012 3:36:39 PM TwitMini.controller.TweetController create
+10 Aug, 2012 3:36:39 PM Minty.controller.TweetController create
 INFO: user btweeted 132
-10 Aug, 2012 3:39:58 PM TwitMini.controller.TweetController create
+10 Aug, 2012 3:39:58 PM Minty.controller.TweetController create
 INFO: user btweeted 133
-10 Aug, 2012 3:41:56 PM TwitMini.controller.LoginController login
+10 Aug, 2012 3:41:56 PM Minty.controller.LoginController login
 INFO: user blogged in successfully
-10 Aug, 2012 3:42:11 PM TwitMini.controller.TweetController create
+10 Aug, 2012 3:42:11 PM Minty.controller.TweetController create
 INFO: user btweeted 134
-10 Aug, 2012 5:55:51 PM TwitMini.configuration.AppConfig logger
+10 Aug, 2012 5:55:51 PM Minty.configuration.AppConfig logger
 INFO: -------------------------------------------------------------------------------------------
-10 Aug, 2012 5:55:51 PM TwitMini.configuration.AppConfig logger
+10 Aug, 2012 5:55:51 PM Minty.configuration.AppConfig logger
 INFO: -------------------------------------------------------------------------------------------
-10 Aug, 2012 5:55:51 PM TwitMini.configuration.AppConfig logger
+10 Aug, 2012 5:55:51 PM Minty.configuration.AppConfig logger
 INFO: Minty Server log
-10 Aug, 2012 5:56:46 PM TwitMini.controller.LoginController login
+10 Aug, 2012 5:56:46 PM Minty.controller.LoginController login
 INFO: user blogged in successfully
-10 Aug, 2012 5:57:51 PM TwitMini.controller.LoginController login
+10 Aug, 2012 5:57:51 PM Minty.controller.LoginController login
 INFO: user alogged in successfully
-10 Aug, 2012 5:58:15 PM TwitMini.controller.TweetController create
+10 Aug, 2012 5:58:15 PM Minty.controller.TweetController create
 INFO: user atweeted 135
-10 Aug, 2012 5:59:43 PM TwitMini.controller.TweetController create
+10 Aug, 2012 5:59:43 PM Minty.controller.TweetController create
 INFO: user atweeted 136
-10 Aug, 2012 6:03:04 PM TwitMini.controller.TweetController create
+10 Aug, 2012 6:03:04 PM Minty.controller.TweetController create
 INFO: user atweeted 137
-10 Aug, 2012 6:11:23 PM TwitMini.controller.TweetController create
+10 Aug, 2012 6:11:23 PM Minty.controller.TweetController create
 INFO: user atweeted 138
-10 Aug, 2012 6:15:48 PM TwitMini.configuration.AppConfig logger
+10 Aug, 2012 6:15:48 PM Minty.configuration.AppConfig logger
 INFO: -------------------------------------------------------------------------------------------
-10 Aug, 2012 6:15:48 PM TwitMini.configuration.AppConfig logger
+10 Aug, 2012 6:15:48 PM Minty.configuration.AppConfig logger
 INFO: -------------------------------------------------------------------------------------------
-10 Aug, 2012 6:15:48 PM TwitMini.configuration.AppConfig logger
+10 Aug, 2012 6:15:48 PM Minty.configuration.AppConfig logger
 INFO: Minty Server log
-10 Aug, 2012 6:17:19 PM TwitMini.controller.LoginController login
+10 Aug, 2012 6:17:19 PM Minty.controller.LoginController login
 INFO: user blogged in successfully
-10 Aug, 2012 6:19:07 PM TwitMini.configuration.AppConfig logger
+10 Aug, 2012 6:19:07 PM Minty.configuration.AppConfig logger
 INFO: -------------------------------------------------------------------------------------------
-10 Aug, 2012 6:19:07 PM TwitMini.configuration.AppConfig logger
+10 Aug, 2012 6:19:07 PM Minty.configuration.AppConfig logger
 INFO: -------------------------------------------------------------------------------------------
-10 Aug, 2012 6:19:07 PM TwitMini.configuration.AppConfig logger
+10 Aug, 2012 6:19:07 PM Minty.configuration.AppConfig logger
 INFO: Minty Server log
-10 Aug, 2012 6:19:21 PM TwitMini.controller.LoginController login
+10 Aug, 2012 6:19:21 PM Minty.controller.LoginController login
 INFO: user alogged in successfully
-10 Aug, 2012 6:19:31 PM TwitMini.controller.LoginController login
+10 Aug, 2012 6:19:31 PM Minty.controller.LoginController login
 INFO: user blogged in successfully
-10 Aug, 2012 6:19:50 PM TwitMini.controller.TweetController create
+10 Aug, 2012 6:19:50 PM Minty.controller.TweetController create
 INFO: user atweeted 139
-10 Aug, 2012 6:20:34 PM TwitMini.controller.TweetController create
+10 Aug, 2012 6:20:34 PM Minty.controller.TweetController create
 INFO: user btweeted 140
-10 Aug, 2012 9:51:24 PM TwitMini.controller.LoginController login
+10 Aug, 2012 9:51:24 PM Minty.controller.LoginController login
 INFO: user blogged in successfully
-10 Aug, 2012 9:51:54 PM TwitMini.controller.LoginController logout
+10 Aug, 2012 9:51:54 PM Minty.controller.LoginController logout
 INFO: user b logged out successfully
-10 Aug, 2012 9:57:25 PM TwitMini.controller.LoginController login
+10 Aug, 2012 9:57:25 PM Minty.controller.LoginController login
 INFO: user blogged in successfully
-10 Aug, 2012 9:57:33 PM TwitMini.controller.TweetController create
+10 Aug, 2012 9:57:33 PM Minty.controller.TweetController create
 INFO: user btweeted 141
-10 Aug, 2012 9:58:14 PM TwitMini.controller.LoginController logout
+10 Aug, 2012 9:58:14 PM Minty.controller.LoginController logout
 INFO: user b logged out successfully
-10 Aug, 2012 9:58:19 PM TwitMini.controller.LoginController login
+10 Aug, 2012 9:58:19 PM Minty.controller.LoginController login
 INFO: user alogged in successfully
-10 Aug, 2012 9:58:24 PM TwitMini.controller.TweetController create
+10 Aug, 2012 9:58:24 PM Minty.controller.TweetController create
 INFO: user atweeted 142
-10 Aug, 2012 10:17:47 PM TwitMini.controller.LoginController logout
+10 Aug, 2012 10:17:47 PM Minty.controller.LoginController logout
 INFO: user a logged out successfully
-10 Aug, 2012 11:31:36 PM TwitMini.configuration.AppConfig logger
+10 Aug, 2012 11:31:36 PM Minty.configuration.AppConfig logger
 INFO: -------------------------------------------------------------------------------------------
-10 Aug, 2012 11:31:36 PM TwitMini.configuration.AppConfig logger
+10 Aug, 2012 11:31:36 PM Minty.configuration.AppConfig logger
 INFO: -------------------------------------------------------------------------------------------
-10 Aug, 2012 11:31:36 PM TwitMini.configuration.AppConfig logger
+10 Aug, 2012 11:31:36 PM Minty.configuration.AppConfig logger
 INFO: Minty Server log
-10 Aug, 2012 11:33:08 PM TwitMini.controller.LoginController login
+10 Aug, 2012 11:33:08 PM Minty.controller.LoginController login
 INFO: user blogged in successfully
-10 Aug, 2012 11:33:20 PM TwitMini.controller.ProfileViewController ViewUser
+10 Aug, 2012 11:33:20 PM Minty.controller.ProfileViewController ViewUser
 INFO: user b visited a's profile
-10 Aug, 2012 11:33:44 PM TwitMini.controller.ProfileViewController FollowuserJSON
+10 Aug, 2012 11:33:44 PM Minty.controller.ProfileViewController FollowuserJSON
 INFO: user b unfollowed a
-10 Aug, 2012 11:34:06 PM TwitMini.controller.ProfileViewController FollowuserJSON
+10 Aug, 2012 11:34:06 PM Minty.controller.ProfileViewController FollowuserJSON
 INFO: user b followed a
-10 Aug, 2012 11:34:13 PM TwitMini.controller.ProfileViewController FollowuserJSON
+10 Aug, 2012 11:34:13 PM Minty.controller.ProfileViewController FollowuserJSON
 INFO: user b unfollowed a
-10 Aug, 2012 11:50:35 PM TwitMini.controller.ProfileViewController FollowuserJSON
+10 Aug, 2012 11:50:35 PM Minty.controller.ProfileViewController FollowuserJSON
 INFO: user b followed a
-11 Aug, 2012 12:01:21 AM TwitMini.controller.LoginController login
+11 Aug, 2012 12:01:21 AM Minty.controller.LoginController login
 INFO: user blogged in successfully
-11 Aug, 2012 12:01:31 AM TwitMini.controller.TweetController create
+11 Aug, 2012 12:01:31 AM Minty.controller.TweetController create
 INFO: user btweeted 143
-11 Aug, 2012 12:01:58 AM TwitMini.controller.ProfileViewController ViewUser
+11 Aug, 2012 12:01:58 AM Minty.controller.ProfileViewController ViewUser
 INFO: user b visited gv's profile
-11 Aug, 2012 12:02:12 AM TwitMini.controller.ProfileViewController FollowuserJSON
+11 Aug, 2012 12:02:12 AM Minty.controller.ProfileViewController FollowuserJSON
 INFO: user b followed gv
-11 Aug, 2012 12:02:22 AM TwitMini.controller.ProfileViewController FollowuserJSON
+11 Aug, 2012 12:02:22 AM Minty.controller.ProfileViewController FollowuserJSON
 INFO: user b unfollowed gv
-11 Aug, 2012 12:02:24 AM TwitMini.controller.ProfileViewController FollowuserJSON
+11 Aug, 2012 12:02:24 AM Minty.controller.ProfileViewController FollowuserJSON
 INFO: user b followed gv
-11 Aug, 2012 12:02:26 AM TwitMini.controller.ProfileViewController FollowuserJSON
+11 Aug, 2012 12:02:26 AM Minty.controller.ProfileViewController FollowuserJSON
 INFO: user b unfollowed gv
-11 Aug, 2012 12:02:26 AM TwitMini.controller.ProfileViewController FollowuserJSON
+11 Aug, 2012 12:02:26 AM Minty.controller.ProfileViewController FollowuserJSON
 INFO: user b followed gv
-11 Aug, 2012 12:03:21 AM TwitMini.controller.ProfileViewController ViewUser
+11 Aug, 2012 12:03:21 AM Minty.controller.ProfileViewController ViewUser
 INFO: user b visited gv's profile
-11 Aug, 2012 12:03:30 AM TwitMini.controller.ProfileViewController FollowuserJSON
+11 Aug, 2012 12:03:30 AM Minty.controller.ProfileViewController FollowuserJSON
 INFO: user b unfollowed gv
-11 Aug, 2012 12:03:32 AM TwitMini.controller.ProfileViewController FollowuserJSON
+11 Aug, 2012 12:03:32 AM Minty.controller.ProfileViewController FollowuserJSON
 INFO: user b followed gv
-11 Aug, 2012 12:03:33 AM TwitMini.controller.ProfileViewController FollowuserJSON
+11 Aug, 2012 12:03:33 AM Minty.controller.ProfileViewController FollowuserJSON
 INFO: user b unfollowed gv
-11 Aug, 2012 12:03:35 AM TwitMini.controller.ProfileViewController FollowuserJSON
+11 Aug, 2012 12:03:35 AM Minty.controller.ProfileViewController FollowuserJSON
 INFO: user b followed gv
-11 Aug, 2012 12:04:23 AM TwitMini.controller.ProfileViewController ViewUser
+11 Aug, 2012 12:04:23 AM Minty.controller.ProfileViewController ViewUser
 INFO: user b visited gv's profile
-11 Aug, 2012 12:04:29 AM TwitMini.controller.ProfileViewController FollowuserJSON
+11 Aug, 2012 12:04:29 AM Minty.controller.ProfileViewController FollowuserJSON
 INFO: user b unfollowed gv
-11 Aug, 2012 12:04:33 AM TwitMini.controller.ProfileViewController ViewUser
+11 Aug, 2012 12:04:33 AM Minty.controller.ProfileViewController ViewUser
 INFO: user b visited gv's profile
-11 Aug, 2012 12:04:46 AM TwitMini.controller.ProfileViewController FollowuserJSON
+11 Aug, 2012 12:04:46 AM Minty.controller.ProfileViewController FollowuserJSON
 INFO: user b followed gv
-11 Aug, 2012 12:05:00 AM TwitMini.controller.ProfileViewController ViewUser
+11 Aug, 2012 12:05:00 AM Minty.controller.ProfileViewController ViewUser
 INFO: user b visited a's profile
-11 Aug, 2012 12:05:22 AM TwitMini.controller.ProfileViewController FollowuserJSON
+11 Aug, 2012 12:05:22 AM Minty.controller.ProfileViewController FollowuserJSON
 INFO: user b unfollowed a
-11 Aug, 2012 12:05:35 AM TwitMini.controller.ProfileViewController ViewUser
+11 Aug, 2012 12:05:35 AM Minty.controller.ProfileViewController ViewUser
 INFO: user b visited a's profile
-11 Aug, 2012 12:05:44 AM TwitMini.controller.ProfileViewController FollowuserJSON
+11 Aug, 2012 12:05:44 AM Minty.controller.ProfileViewController FollowuserJSON
 INFO: user b followed a
-11 Aug, 2012 12:05:47 AM TwitMini.controller.ProfileViewController FollowuserJSON
+11 Aug, 2012 12:05:47 AM Minty.controller.ProfileViewController FollowuserJSON
 INFO: user b unfollowed a
-11 Aug, 2012 12:10:55 AM TwitMini.configuration.AppConfig logger
+11 Aug, 2012 12:10:55 AM Minty.configuration.AppConfig logger
 INFO: -------------------------------------------------------------------------------------------
-11 Aug, 2012 12:10:55 AM TwitMini.configuration.AppConfig logger
+11 Aug, 2012 12:10:55 AM Minty.configuration.AppConfig logger
 INFO: -------------------------------------------------------------------------------------------
-11 Aug, 2012 12:10:55 AM TwitMini.configuration.AppConfig logger
+11 Aug, 2012 12:10:55 AM Minty.configuration.AppConfig logger
 INFO: Minty Server log
-11 Aug, 2012 12:11:26 AM TwitMini.controller.LoginController login
+11 Aug, 2012 12:11:26 AM Minty.controller.LoginController login
 INFO: user blogged in successfully
-11 Aug, 2012 12:11:44 AM TwitMini.controller.ProfileViewController ViewUser
+11 Aug, 2012 12:11:44 AM Minty.controller.ProfileViewController ViewUser
 INFO: user b visited gv's profile
-11 Aug, 2012 12:11:51 AM TwitMini.controller.ProfileViewController FollowuserJSON
+11 Aug, 2012 12:11:51 AM Minty.controller.ProfileViewController FollowuserJSON
 INFO: user b unfollowed gv
-11 Aug, 2012 12:12:01 AM TwitMini.controller.ProfileViewController FollowuserJSON
+11 Aug, 2012 12:12:01 AM Minty.controller.ProfileViewController FollowuserJSON
 INFO: user b followed gv
-11 Aug, 2012 12:12:01 AM TwitMini.controller.ProfileViewController FollowuserJSON
+11 Aug, 2012 12:12:01 AM Minty.controller.ProfileViewController FollowuserJSON
 INFO: user b unfollowed gv
-11 Aug, 2012 12:12:07 AM TwitMini.controller.ProfileViewController FollowuserJSON
+11 Aug, 2012 12:12:07 AM Minty.controller.ProfileViewController FollowuserJSON
 INFO: user b followed gv
-11 Aug, 2012 12:12:19 AM TwitMini.controller.ProfileViewController ViewUser
+11 Aug, 2012 12:12:19 AM Minty.controller.ProfileViewController ViewUser
 INFO: user b visited a's profile
-11 Aug, 2012 12:12:31 AM TwitMini.controller.ProfileViewController FollowuserJSON
+11 Aug, 2012 12:12:31 AM Minty.controller.ProfileViewController FollowuserJSON
 INFO: user b followed a
-11 Aug, 2012 12:19:25 AM TwitMini.controller.ProfileViewController ViewUser
+11 Aug, 2012 12:19:25 AM Minty.controller.ProfileViewController ViewUser
 INFO: user b visited a's profile
-11 Aug, 2012 12:20:33 AM TwitMini.controller.TweetController create
+11 Aug, 2012 12:20:33 AM Minty.controller.TweetController create
 INFO: user btweeted 144
-11 Aug, 2012 12:20:48 AM TwitMini.controller.TweetController create
+11 Aug, 2012 12:20:48 AM Minty.controller.TweetController create
 INFO: user btweeted 145
-11 Aug, 2012 12:20:58 AM TwitMini.controller.TweetController create
+11 Aug, 2012 12:20:58 AM Minty.controller.TweetController create
 INFO: user btweeted 146
-11 Aug, 2012 12:24:42 AM TwitMini.controller.HomePageController Search
+11 Aug, 2012 12:24:42 AM Minty.controller.HomePageController Search
 INFO: User b searched for kdude
-11 Aug, 2012 12:41:17 AM TwitMini.configuration.AppConfig logger
+11 Aug, 2012 12:41:17 AM Minty.configuration.AppConfig logger
 INFO: -------------------------------------------------------------------------------------------
-11 Aug, 2012 12:41:17 AM TwitMini.configuration.AppConfig logger
+11 Aug, 2012 12:41:17 AM Minty.configuration.AppConfig logger
 INFO: -------------------------------------------------------------------------------------------
-11 Aug, 2012 12:41:17 AM TwitMini.configuration.AppConfig logger
+11 Aug, 2012 12:41:17 AM Minty.configuration.AppConfig logger
 INFO: Minty Server log
-11 Aug, 2012 12:41:47 AM TwitMini.controller.HomePageController Search
+11 Aug, 2012 12:41:47 AM Minty.controller.HomePageController Search
 INFO: User null searched for kdude
-11 Aug, 2012 12:42:40 AM TwitMini.configuration.AppConfig logger
+11 Aug, 2012 12:42:40 AM Minty.configuration.AppConfig logger
 INFO: -------------------------------------------------------------------------------------------
-11 Aug, 2012 12:42:40 AM TwitMini.configuration.AppConfig logger
+11 Aug, 2012 12:42:40 AM Minty.configuration.AppConfig logger
 INFO: -------------------------------------------------------------------------------------------
-11 Aug, 2012 12:42:40 AM TwitMini.configuration.AppConfig logger
+11 Aug, 2012 12:42:40 AM Minty.configuration.AppConfig logger
 INFO: Minty Server log
-11 Aug, 2012 12:42:47 AM TwitMini.controller.HomePageController Search
+11 Aug, 2012 12:42:47 AM Minty.controller.HomePageController Search
 INFO: User null searched for kdude
-11 Aug, 2012 12:45:04 AM TwitMini.controller.HomePageController Search
+11 Aug, 2012 12:45:04 AM Minty.controller.HomePageController Search
 INFO: User null searched for kdude
-11 Aug, 2012 12:50:33 AM TwitMini.configuration.AppConfig logger
+11 Aug, 2012 12:50:33 AM Minty.configuration.AppConfig logger
 INFO: -------------------------------------------------------------------------------------------
-11 Aug, 2012 12:50:33 AM TwitMini.configuration.AppConfig logger
+11 Aug, 2012 12:50:33 AM Minty.configuration.AppConfig logger
 INFO: -------------------------------------------------------------------------------------------
-11 Aug, 2012 12:50:33 AM TwitMini.configuration.AppConfig logger
+11 Aug, 2012 12:50:33 AM Minty.configuration.AppConfig logger
 INFO: Minty Server log
-11 Aug, 2012 12:50:46 AM TwitMini.controller.HomePageController Search
+11 Aug, 2012 12:50:46 AM Minty.controller.HomePageController Search
 INFO: User null searched for kdude
-11 Aug, 2012 12:51:34 AM TwitMini.controller.HomePageController Search
+11 Aug, 2012 12:51:34 AM Minty.controller.HomePageController Search
 INFO: User null searched for as
-11 Aug, 2012 12:52:42 AM TwitMini.controller.HomePageController Search
+11 Aug, 2012 12:52:42 AM Minty.controller.HomePageController Search
 INFO: User null searched for as
-11 Aug, 2012 2:26:42 AM TwitMini.configuration.AppConfig logger
+11 Aug, 2012 2:26:42 AM Minty.configuration.AppConfig logger
 INFO: -------------------------------------------------------------------------------------------
-11 Aug, 2012 2:26:42 AM TwitMini.configuration.AppConfig logger
+11 Aug, 2012 2:26:42 AM Minty.configuration.AppConfig logger
 INFO: -------------------------------------------------------------------------------------------
-11 Aug, 2012 2:26:42 AM TwitMini.configuration.AppConfig logger
+11 Aug, 2012 2:26:42 AM Minty.configuration.AppConfig logger
 INFO: Minty Server log
-11 Aug, 2012 3:05:49 AM TwitMini.configuration.AppConfig logger
+11 Aug, 2012 3:05:49 AM Minty.configuration.AppConfig logger
 INFO: -------------------------------------------------------------------------------------------
-11 Aug, 2012 3:05:49 AM TwitMini.configuration.AppConfig logger
+11 Aug, 2012 3:05:49 AM Minty.configuration.AppConfig logger
 INFO: -------------------------------------------------------------------------------------------
-11 Aug, 2012 3:05:49 AM TwitMini.configuration.AppConfig logger
+11 Aug, 2012 3:05:49 AM Minty.configuration.AppConfig logger
 INFO: Minty Server log
-11 Aug, 2012 3:13:24 AM TwitMini.configuration.AppConfig logger
+11 Aug, 2012 3:13:24 AM Minty.configuration.AppConfig logger
 INFO: -------------------------------------------------------------------------------------------
-11 Aug, 2012 3:13:24 AM TwitMini.configuration.AppConfig logger
+11 Aug, 2012 3:13:24 AM Minty.configuration.AppConfig logger
 INFO: -------------------------------------------------------------------------------------------
-11 Aug, 2012 3:13:24 AM TwitMini.configuration.AppConfig logger
+11 Aug, 2012 3:13:24 AM Minty.configuration.AppConfig logger
 INFO: Minty Server log
-11 Aug, 2012 3:13:43 AM TwitMini.configuration.AppConfig logger
+11 Aug, 2012 3:13:43 AM Minty.configuration.AppConfig logger
 INFO: -------------------------------------------------------------------------------------------
-11 Aug, 2012 3:13:43 AM TwitMini.configuration.AppConfig logger
+11 Aug, 2012 3:13:43 AM Minty.configuration.AppConfig logger
 INFO: -------------------------------------------------------------------------------------------
-11 Aug, 2012 3:13:43 AM TwitMini.configuration.AppConfig logger
+11 Aug, 2012 3:13:43 AM Minty.configuration.AppConfig logger
 INFO: Minty Server log
-11 Aug, 2012 3:27:00 AM TwitMini.configuration.AppConfig logger
+11 Aug, 2012 3:27:00 AM Minty.configuration.AppConfig logger
 INFO: -------------------------------------------------------------------------------------------
-11 Aug, 2012 3:27:00 AM TwitMini.configuration.AppConfig logger
+11 Aug, 2012 3:27:00 AM Minty.configuration.AppConfig logger
 INFO: -------------------------------------------------------------------------------------------
-11 Aug, 2012 3:27:00 AM TwitMini.configuration.AppConfig logger
+11 Aug, 2012 3:27:00 AM Minty.configuration.AppConfig logger
 INFO: Minty Server log
-11 Aug, 2012 3:27:11 AM TwitMini.configuration.AppConfig logger
+11 Aug, 2012 3:27:11 AM Minty.configuration.AppConfig logger
 INFO: -------------------------------------------------------------------------------------------
-11 Aug, 2012 3:27:11 AM TwitMini.configuration.AppConfig logger
+11 Aug, 2012 3:27:11 AM Minty.configuration.AppConfig logger
 INFO: -------------------------------------------------------------------------------------------
-11 Aug, 2012 3:27:11 AM TwitMini.configuration.AppConfig logger
+11 Aug, 2012 3:27:11 AM Minty.configuration.AppConfig logger
 INFO: Minty Server log
-11 Aug, 2012 3:27:47 AM TwitMini.configuration.AppConfig logger
+11 Aug, 2012 3:27:47 AM Minty.configuration.AppConfig logger
 INFO: -------------------------------------------------------------------------------------------
-11 Aug, 2012 3:27:47 AM TwitMini.configuration.AppConfig logger
+11 Aug, 2012 3:27:47 AM Minty.configuration.AppConfig logger
 INFO: -------------------------------------------------------------------------------------------
-11 Aug, 2012 3:27:47 AM TwitMini.configuration.AppConfig logger
+11 Aug, 2012 3:27:47 AM Minty.configuration.AppConfig logger
 INFO: Minty Server log
-11 Aug, 2012 11:10:13 AM TwitMini.configuration.AppConfig logger
+11 Aug, 2012 11:10:13 AM Minty.configuration.AppConfig logger
 INFO: -------------------------------------------------------------------------------------------
-11 Aug, 2012 11:10:13 AM TwitMini.configuration.AppConfig logger
+11 Aug, 2012 11:10:13 AM Minty.configuration.AppConfig logger
 INFO: -------------------------------------------------------------------------------------------
-11 Aug, 2012 11:10:13 AM TwitMini.configuration.AppConfig logger
+11 Aug, 2012 11:10:13 AM Minty.configuration.AppConfig logger
 INFO: Minty Server log
-11 Aug, 2012 11:23:05 AM TwitMini.controller.LoginController logout
+11 Aug, 2012 11:23:05 AM Minty.controller.LoginController logout
 INFO: user e logged out successfully
-11 Aug, 2012 3:34:50 PM TwitMini.controller.TweetController create
+11 Aug, 2012 3:34:50 PM Minty.controller.TweetController create
 INFO: user amarontweeted 147
-11 Aug, 2012 3:35:05 PM TwitMini.controller.ProfileViewController ViewUser
+11 Aug, 2012 3:35:05 PM Minty.controller.ProfileViewController ViewUser
 INFO: user amaron visited a's profile
-11 Aug, 2012 3:35:20 PM TwitMini.controller.ProfileViewController FollowuserJSON
+11 Aug, 2012 3:35:20 PM Minty.controller.ProfileViewController FollowuserJSON
 INFO: user amaron followed a
-11 Aug, 2012 3:35:30 PM TwitMini.controller.ProfileViewController ViewUser
+11 Aug, 2012 3:35:30 PM Minty.controller.ProfileViewController ViewUser
 INFO: user amaron visited gv's profile
-11 Aug, 2012 3:35:40 PM TwitMini.controller.ProfileViewController FollowuserJSON
+11 Aug, 2012 3:35:40 PM Minty.controller.ProfileViewController FollowuserJSON
 INFO: user amaron followed gv
-11 Aug, 2012 3:35:48 PM TwitMini.controller.ProfileViewController ViewUser
+11 Aug, 2012 3:35:48 PM Minty.controller.ProfileViewController ViewUser
 INFO: user amaron visited a's profile
-11 Aug, 2012 3:36:01 PM TwitMini.controller.ProfileViewController ViewUser
+11 Aug, 2012 3:36:01 PM Minty.controller.ProfileViewController ViewUser
 INFO: user amaron visited b's profile
-11 Aug, 2012 3:36:12 PM TwitMini.controller.ProfileViewController ViewUser
+11 Aug, 2012 3:36:12 PM Minty.controller.ProfileViewController ViewUser
 INFO: user amaron visited gv's profile
-11 Aug, 2012 3:49:13 PM TwitMini.configuration.AppConfig logger
+11 Aug, 2012 3:49:13 PM Minty.configuration.AppConfig logger
 INFO: -------------------------------------------------------------------------------------------
-11 Aug, 2012 3:49:13 PM TwitMini.configuration.AppConfig logger
+11 Aug, 2012 3:49:13 PM Minty.configuration.AppConfig logger
 INFO: -------------------------------------------------------------------------------------------
-11 Aug, 2012 3:49:13 PM TwitMini.configuration.AppConfig logger
+11 Aug, 2012 3:49:13 PM Minty.configuration.AppConfig logger
 INFO: Minty Server log
-11 Aug, 2012 4:49:45 PM TwitMini.configuration.AppConfig logger
+11 Aug, 2012 4:49:45 PM Minty.configuration.AppConfig logger
 INFO: -------------------------------------------------------------------------------------------
-11 Aug, 2012 4:49:46 PM TwitMini.configuration.AppConfig logger
+11 Aug, 2012 4:49:46 PM Minty.configuration.AppConfig logger
 INFO: -------------------------------------------------------------------------------------------
-11 Aug, 2012 4:49:46 PM TwitMini.configuration.AppConfig logger
+11 Aug, 2012 4:49:46 PM Minty.configuration.AppConfig logger
 INFO: Minty Server log
-11 Aug, 2012 4:51:33 PM TwitMini.controller.TweetController create
+11 Aug, 2012 4:51:33 PM Minty.controller.TweetController create
 INFO: user amarontweeted 1
-11 Aug, 2012 4:56:06 PM TwitMini.controller.LoginController logout
+11 Aug, 2012 4:56:06 PM Minty.controller.LoginController logout
 INFO: user amaron logged out successfully
-11 Aug, 2012 4:59:36 PM TwitMini.controller.TweetController create
+11 Aug, 2012 4:59:36 PM Minty.controller.TweetController create
 INFO: user kdudetweeted 2
-11 Aug, 2012 4:59:36 PM TwitMini.controller.TweetController create
+11 Aug, 2012 4:59:36 PM Minty.controller.TweetController create
 INFO: user kdudetweeted 3
-11 Aug, 2012 4:59:46 PM TwitMini.controller.ProfileViewController ViewUser
+11 Aug, 2012 4:59:46 PM Minty.controller.ProfileViewController ViewUser
 INFO: user kdude visited amaron's profile
-11 Aug, 2012 5:00:16 PM TwitMini.controller.ProfileViewController FollowuserJSON
+11 Aug, 2012 5:00:16 PM Minty.controller.ProfileViewController FollowuserJSON
 INFO: user kdude followed amaron
-11 Aug, 2012 5:01:09 PM TwitMini.controller.LoginController login
+11 Aug, 2012 5:01:09 PM Minty.controller.LoginController login
 INFO: user amaronlogged in successfully
-11 Aug, 2012 5:01:18 PM TwitMini.controller.TweetController create
+11 Aug, 2012 5:01:18 PM Minty.controller.TweetController create
 INFO: user amarontweeted 4
-11 Aug, 2012 5:01:50 PM TwitMini.controller.TweetController create
+11 Aug, 2012 5:01:50 PM Minty.controller.TweetController create
 INFO: user kdudetweeted 5
-11 Aug, 2012 5:01:54 PM TwitMini.controller.ProfileViewController ViewUser
+11 Aug, 2012 5:01:54 PM Minty.controller.ProfileViewController ViewUser
 INFO: user kdude visited amaron's profile
-11 Aug, 2012 5:04:08 PM TwitMini.controller.LoginController logout
+11 Aug, 2012 5:04:08 PM Minty.controller.LoginController logout
 INFO: user kdude logged out successfully
-11 Aug, 2012 5:04:17 PM TwitMini.controller.LoginController logout
+11 Aug, 2012 5:04:17 PM Minty.controller.LoginController logout
 INFO: user amaron logged out successfully
-11 Aug, 2012 6:53:31 PM TwitMini.configuration.AppConfig logger
+11 Aug, 2012 6:53:31 PM Minty.configuration.AppConfig logger
 INFO: -------------------------------------------------------------------------------------------
-11 Aug, 2012 6:53:31 PM TwitMini.configuration.AppConfig logger
+11 Aug, 2012 6:53:31 PM Minty.configuration.AppConfig logger
 INFO: -------------------------------------------------------------------------------------------
-11 Aug, 2012 6:53:31 PM TwitMini.configuration.AppConfig logger
+11 Aug, 2012 6:53:31 PM Minty.configuration.AppConfig logger
 INFO: Minty Server log
-11 Aug, 2012 8:33:45 PM TwitMini.configuration.AppConfig logger
+11 Aug, 2012 8:33:45 PM Minty.configuration.AppConfig logger
 INFO: -------------------------------------------------------------------------------------------
-11 Aug, 2012 8:33:45 PM TwitMini.configuration.AppConfig logger
+11 Aug, 2012 8:33:45 PM Minty.configuration.AppConfig logger
 INFO: -------------------------------------------------------------------------------------------
-11 Aug, 2012 8:33:45 PM TwitMini.configuration.AppConfig logger
+11 Aug, 2012 8:33:45 PM Minty.configuration.AppConfig logger
 INFO: Minty Server log
-11 Aug, 2012 8:36:27 PM TwitMini.configuration.AppConfig logger
+11 Aug, 2012 8:36:27 PM Minty.configuration.AppConfig logger
 INFO: -------------------------------------------------------------------------------------------
-11 Aug, 2012 8:36:27 PM TwitMini.configuration.AppConfig logger
+11 Aug, 2012 8:36:27 PM Minty.configuration.AppConfig logger
 INFO: -------------------------------------------------------------------------------------------
-11 Aug, 2012 8:36:27 PM TwitMini.configuration.AppConfig logger
+11 Aug, 2012 8:36:27 PM Minty.configuration.AppConfig logger
 INFO: Minty Server log
-11 Aug, 2012 8:48:27 PM TwitMini.configuration.AppConfig logger
+11 Aug, 2012 8:48:27 PM Minty.configuration.AppConfig logger
 INFO: -------------------------------------------------------------------------------------------
-11 Aug, 2012 8:48:27 PM TwitMini.configuration.AppConfig logger
+11 Aug, 2012 8:48:27 PM Minty.configuration.AppConfig logger
 INFO: -------------------------------------------------------------------------------------------
-11 Aug, 2012 8:48:27 PM TwitMini.configuration.AppConfig logger
+11 Aug, 2012 8:48:27 PM Minty.configuration.AppConfig logger
 INFO: Minty Server log
-11 Aug, 2012 9:09:50 PM TwitMini.configuration.AppConfig logger
+11 Aug, 2012 9:09:50 PM Minty.configuration.AppConfig logger
 INFO: -------------------------------------------------------------------------------------------
-11 Aug, 2012 9:09:50 PM TwitMini.configuration.AppConfig logger
+11 Aug, 2012 9:09:50 PM Minty.configuration.AppConfig logger
 INFO: -------------------------------------------------------------------------------------------
-11 Aug, 2012 9:09:50 PM TwitMini.configuration.AppConfig logger
+11 Aug, 2012 9:09:50 PM Minty.configuration.AppConfig logger
 INFO: Minty Server log
-11 Aug, 2012 9:14:08 PM TwitMini.configuration.AppConfig logger
+11 Aug, 2012 9:14:08 PM Minty.configuration.AppConfig logger
 INFO: -------------------------------------------------------------------------------------------
-11 Aug, 2012 9:14:08 PM TwitMini.configuration.AppConfig logger
+11 Aug, 2012 9:14:08 PM Minty.configuration.AppConfig logger
 INFO: -------------------------------------------------------------------------------------------
-11 Aug, 2012 9:14:08 PM TwitMini.configuration.AppConfig logger
+11 Aug, 2012 9:14:08 PM Minty.configuration.AppConfig logger
 INFO: Minty Server log
-12 Aug, 2012 12:05:46 AM TwitMini.configuration.AppConfig logger
+12 Aug, 2012 12:05:46 AM Minty.configuration.AppConfig logger
 INFO: -------------------------------------------------------------------------------------------
-12 Aug, 2012 12:05:46 AM TwitMini.configuration.AppConfig logger
+12 Aug, 2012 12:05:46 AM Minty.configuration.AppConfig logger
 INFO: -------------------------------------------------------------------------------------------
-12 Aug, 2012 12:05:46 AM TwitMini.configuration.AppConfig logger
+12 Aug, 2012 12:05:46 AM Minty.configuration.AppConfig logger
 INFO: Minty Server log
-12 Aug, 2012 12:17:49 AM TwitMini.controller.HomePageController Search
+12 Aug, 2012 12:17:49 AM Minty.controller.HomePageController Search
 INFO: User null searched for a
-12 Aug, 2012 12:24:53 AM TwitMini.configuration.AppConfig logger
+12 Aug, 2012 12:24:53 AM Minty.configuration.AppConfig logger
 INFO: -------------------------------------------------------------------------------------------
-12 Aug, 2012 12:24:53 AM TwitMini.configuration.AppConfig logger
+12 Aug, 2012 12:24:53 AM Minty.configuration.AppConfig logger
 INFO: -------------------------------------------------------------------------------------------
-12 Aug, 2012 12:24:53 AM TwitMini.configuration.AppConfig logger
+12 Aug, 2012 12:24:53 AM Minty.configuration.AppConfig logger
 INFO: Minty Server log
-12 Aug, 2012 12:25:12 AM TwitMini.controller.HomePageController Search
+12 Aug, 2012 12:25:12 AM Minty.controller.HomePageController Search
 INFO: User null searched for a
-12 Aug, 2012 12:26:29 AM TwitMini.controller.LoginController login
+12 Aug, 2012 12:26:29 AM Minty.controller.LoginController login
 INFO: user amaronlogged in successfully
-12 Aug, 2012 12:26:43 AM TwitMini.controller.TweetController create
+12 Aug, 2012 12:26:43 AM Minty.controller.TweetController create
 INFO: user amarontweeted 6
-12 Aug, 2012 12:26:49 AM TwitMini.controller.TweetController create
+12 Aug, 2012 12:26:49 AM Minty.controller.TweetController create
 INFO: user amarontweeted 7
-12 Aug, 2012 12:27:36 AM TwitMini.controller.LoginController login
+12 Aug, 2012 12:27:36 AM Minty.controller.LoginController login
 INFO: user kdudelogged in successfully
-12 Aug, 2012 12:27:46 AM TwitMini.controller.TweetController create
+12 Aug, 2012 12:27:46 AM Minty.controller.TweetController create
 INFO: user kdudetweeted 8
-12 Aug, 2012 12:28:00 AM TwitMini.controller.TweetController create
+12 Aug, 2012 12:28:00 AM Minty.controller.TweetController create
 INFO: user amarontweeted 9
-12 Aug, 2012 12:28:20 AM TwitMini.controller.ProfileViewController ViewUser
+12 Aug, 2012 12:28:20 AM Minty.controller.ProfileViewController ViewUser
 INFO: user amaron visited kdude's profile
-12 Aug, 2012 12:28:30 AM TwitMini.controller.ProfileViewController FollowuserJSON
+12 Aug, 2012 12:28:30 AM Minty.controller.ProfileViewController FollowuserJSON
 INFO: user amaron followed kdude
-12 Aug, 2012 12:28:54 AM TwitMini.controller.TweetController create
+12 Aug, 2012 12:28:54 AM Minty.controller.TweetController create
 INFO: user kdudetweeted 10
-12 Aug, 2012 12:29:05 AM TwitMini.controller.TweetController create
+12 Aug, 2012 12:29:05 AM Minty.controller.TweetController create
 INFO: user kdudetweeted 11
-12 Aug, 2012 12:34:39 AM TwitMini.controller.TweetController create
+12 Aug, 2012 12:34:39 AM Minty.controller.TweetController create
 INFO: user kdudetweeted 12
-12 Aug, 2012 12:35:29 AM TwitMini.controller.TweetController create
+12 Aug, 2012 12:35:29 AM Minty.controller.TweetController create
 INFO: user amarontweeted 13
-12 Aug, 2012 12:36:09 AM TwitMini.controller.LoginController logout
+12 Aug, 2012 12:36:09 AM Minty.controller.LoginController logout
 INFO: user kdude logged out successfully
-12 Aug, 2012 12:45:04 AM TwitMini.controller.TweetController create
+12 Aug, 2012 12:45:04 AM Minty.controller.TweetController create
 INFO: user amarontweeted 14
-12 Aug, 2012 12:45:46 AM TwitMini.controller.HomePageController Search
+12 Aug, 2012 12:45:46 AM Minty.controller.HomePageController Search
 INFO: User amaron searched for a
-12 Aug, 2012 12:47:17 AM TwitMini.controller.HomePageController Search
+12 Aug, 2012 12:47:17 AM Minty.controller.HomePageController Search
 INFO: User amaron searched for a
-12 Aug, 2012 12:53:52 AM TwitMini.controller.HomePageController Search
+12 Aug, 2012 12:53:52 AM Minty.controller.HomePageController Search
 INFO: User amaron searched for a
-12 Aug, 2012 12:54:30 AM TwitMini.controller.HomePageController Search
+12 Aug, 2012 12:54:30 AM Minty.controller.HomePageController Search
 INFO: User amaron searched for a
-12 Aug, 2012 12:56:04 AM TwitMini.controller.HomePageController Search
+12 Aug, 2012 12:56:04 AM Minty.controller.HomePageController Search
 INFO: User amaron searched for a
-12 Aug, 2012 12:57:12 AM TwitMini.controller.HomePageController Search
+12 Aug, 2012 12:57:12 AM Minty.controller.HomePageController Search
 INFO: User amaron searched for a
-12 Aug, 2012 12:59:38 AM TwitMini.controller.HomePageController Search
+12 Aug, 2012 12:59:38 AM Minty.controller.HomePageController Search
 INFO: User amaron searched for a
-12 Aug, 2012 1:00:17 AM TwitMini.controller.HomePageController Search
+12 Aug, 2012 1:00:17 AM Minty.controller.HomePageController Search
 INFO: User amaron searched for a
-12 Aug, 2012 1:00:27 AM TwitMini.controller.HomePageController Search
+12 Aug, 2012 1:00:27 AM Minty.controller.HomePageController Search
 INFO: User amaron searched for a
-12 Aug, 2012 1:01:14 AM TwitMini.controller.HomePageController Search
+12 Aug, 2012 1:01:14 AM Minty.controller.HomePageController Search
 INFO: User amaron searched for a
-12 Aug, 2012 1:02:08 AM TwitMini.controller.HomePageController Search
+12 Aug, 2012 1:02:08 AM Minty.controller.HomePageController Search
 INFO: User amaron searched for a
-12 Aug, 2012 1:30:16 AM TwitMini.configuration.AppConfig logger
+12 Aug, 2012 1:30:16 AM Minty.configuration.AppConfig logger
 INFO: -------------------------------------------------------------------------------------------
-12 Aug, 2012 1:30:16 AM TwitMini.configuration.AppConfig logger
+12 Aug, 2012 1:30:16 AM Minty.configuration.AppConfig logger
 INFO: -------------------------------------------------------------------------------------------
-12 Aug, 2012 1:30:16 AM TwitMini.configuration.AppConfig logger
+12 Aug, 2012 1:30:16 AM Minty.configuration.AppConfig logger
 INFO: Minty Server log
-12 Aug, 2012 1:32:22 AM TwitMini.controller.LoginController login
+12 Aug, 2012 1:32:22 AM Minty.controller.LoginController login
 INFO: user amaronlogged in successfully
-12 Aug, 2012 1:35:02 AM TwitMini.controller.TweetController create
+12 Aug, 2012 1:35:02 AM Minty.controller.TweetController create
 INFO: user amarontweeted 15
-12 Aug, 2012 1:35:11 AM TwitMini.controller.TweetController create
+12 Aug, 2012 1:35:11 AM Minty.controller.TweetController create
 INFO: user amarontweeted 16
-12 Aug, 2012 1:35:18 AM TwitMini.controller.TweetController create
+12 Aug, 2012 1:35:18 AM Minty.controller.TweetController create
 INFO: user amarontweeted 17
-12 Aug, 2012 1:35:18 AM TwitMini.controller.TweetController create
+12 Aug, 2012 1:35:18 AM Minty.controller.TweetController create
 INFO: user amarontweeted 18
-12 Aug, 2012 1:35:30 AM TwitMini.controller.TweetController create
+12 Aug, 2012 1:35:30 AM Minty.controller.TweetController create
 INFO: user amarontweeted 19
-12 Aug, 2012 1:35:31 AM TwitMini.controller.TweetController create
+12 Aug, 2012 1:35:31 AM Minty.controller.TweetController create
 INFO: user amarontweeted 20
-12 Aug, 2012 1:37:26 AM TwitMini.controller.LoginController logout
+12 Aug, 2012 1:37:26 AM Minty.controller.LoginController logout
 INFO: user amaron logged out successfully
-12 Aug, 2012 1:38:11 AM TwitMini.controller.LoginController login
+12 Aug, 2012 1:38:11 AM Minty.controller.LoginController login
 INFO: user aalogged in successfully
-12 Aug, 2012 1:39:10 AM TwitMini.controller.TweetController create
+12 Aug, 2012 1:39:10 AM Minty.controller.TweetController create
 INFO: user aatweeted 21
-12 Aug, 2012 1:39:23 AM TwitMini.controller.ProfileViewController ViewUser
+12 Aug, 2012 1:39:23 AM Minty.controller.ProfileViewController ViewUser
 INFO: user aa visited amaron's profile
-12 Aug, 2012 3:20:40 AM TwitMini.configuration.AppConfig logger
+12 Aug, 2012 3:20:40 AM Minty.configuration.AppConfig logger
 INFO: -------------------------------------------------------------------------------------------
-12 Aug, 2012 3:20:40 AM TwitMini.configuration.AppConfig logger
+12 Aug, 2012 3:20:40 AM Minty.configuration.AppConfig logger
 INFO: -------------------------------------------------------------------------------------------
-12 Aug, 2012 3:20:40 AM TwitMini.configuration.AppConfig logger
+12 Aug, 2012 3:20:40 AM Minty.configuration.AppConfig logger
 INFO: Minty Server log
-12 Aug, 2012 3:33:05 AM TwitMini.configuration.AppConfig logger
+12 Aug, 2012 3:33:05 AM Minty.configuration.AppConfig logger
 INFO: -------------------------------------------------------------------------------------------
-12 Aug, 2012 3:33:05 AM TwitMini.configuration.AppConfig logger
+12 Aug, 2012 3:33:05 AM Minty.configuration.AppConfig logger
 INFO: -------------------------------------------------------------------------------------------
-12 Aug, 2012 3:33:05 AM TwitMini.configuration.AppConfig logger
+12 Aug, 2012 3:33:05 AM Minty.configuration.AppConfig logger
 INFO: Minty Server log
-12 Aug, 2012 3:33:35 AM TwitMini.controller.LoginController login
+12 Aug, 2012 3:33:35 AM Minty.controller.LoginController login
 INFO: user amaronlogged in successfully
-12 Aug, 2012 12:09:08 PM TwitMini.configuration.AppConfig logger
+12 Aug, 2012 12:09:08 PM Minty.configuration.AppConfig logger
 INFO: -------------------------------------------------------------------------------------------
-12 Aug, 2012 12:09:08 PM TwitMini.configuration.AppConfig logger
+12 Aug, 2012 12:09:08 PM Minty.configuration.AppConfig logger
 INFO: -------------------------------------------------------------------------------------------
-12 Aug, 2012 12:09:08 PM TwitMini.configuration.AppConfig logger
+12 Aug, 2012 12:09:08 PM Minty.configuration.AppConfig logger
 INFO: Minty Server log
-12 Aug, 2012 12:10:56 PM TwitMini.configuration.AppConfig logger
+12 Aug, 2012 12:10:56 PM Minty.configuration.AppConfig logger
 INFO: -------------------------------------------------------------------------------------------
-12 Aug, 2012 12:10:56 PM TwitMini.configuration.AppConfig logger
+12 Aug, 2012 12:10:56 PM Minty.configuration.AppConfig logger
 INFO: -------------------------------------------------------------------------------------------
-12 Aug, 2012 12:10:56 PM TwitMini.configuration.AppConfig logger
+12 Aug, 2012 12:10:56 PM Minty.configuration.AppConfig logger
 INFO: Minty Server log
-12 Aug, 2012 12:27:59 PM TwitMini.controller.LoginController login
+12 Aug, 2012 12:27:59 PM Minty.controller.LoginController login
 INFO: user amaronlogged in successfully
-12 Aug, 2012 12:30:28 PM TwitMini.controller.LoginController logout
+12 Aug, 2012 12:30:28 PM Minty.controller.LoginController logout
 INFO: user amaron logged out successfully
-12 Aug, 2012 12:46:59 PM TwitMini.configuration.AppConfig logger
+12 Aug, 2012 12:46:59 PM Minty.configuration.AppConfig logger
 INFO: -------------------------------------------------------------------------------------------
-12 Aug, 2012 12:46:59 PM TwitMini.configuration.AppConfig logger
+12 Aug, 2012 12:46:59 PM Minty.configuration.AppConfig logger
 INFO: -------------------------------------------------------------------------------------------
-12 Aug, 2012 12:46:59 PM TwitMini.configuration.AppConfig logger
+12 Aug, 2012 12:46:59 PM Minty.configuration.AppConfig logger
 INFO: Minty Server log
-12 Aug, 2012 12:48:33 PM TwitMini.controller.LoginController login
+12 Aug, 2012 12:48:33 PM Minty.controller.LoginController login
 INFO: user amaronlogged in successfully
-12 Aug, 2012 12:49:55 PM TwitMini.controller.LoginController logout
+12 Aug, 2012 12:49:55 PM Minty.controller.LoginController logout
 INFO: user amaron logged out successfully
-12 Aug, 2012 12:50:44 PM TwitMini.controller.HomePageController Search
+12 Aug, 2012 12:50:44 PM Minty.controller.HomePageController Search
 INFO: User null searched for a
-12 Aug, 2012 12:52:26 PM TwitMini.controller.HomePageController Search
+12 Aug, 2012 12:52:26 PM Minty.controller.HomePageController Search
 INFO: User null searched for a
-12 Aug, 2012 12:57:55 PM TwitMini.configuration.MintyConfig logger
+12 Aug, 2012 12:57:55 PM Minty.configuration.MintyConfig logger
 INFO: -------------------------------------------------------------------------------------------
-12 Aug, 2012 12:57:55 PM TwitMini.configuration.MintyConfig logger
+12 Aug, 2012 12:57:55 PM Minty.configuration.MintyConfig logger
 INFO: -------------------------------------------------------------------------------------------
-12 Aug, 2012 12:57:55 PM TwitMini.configuration.MintyConfig logger
+12 Aug, 2012 12:57:55 PM Minty.configuration.MintyConfig logger
 INFO: Minty Server log
-12 Aug, 2012 1:00:38 PM TwitMini.controller.HomePageController Search
+12 Aug, 2012 1:00:38 PM Minty.controller.HomePageController Search
 INFO: User null searched for a
-12 Aug, 2012 1:01:14 PM TwitMini.controller.LoginController login
+12 Aug, 2012 1:01:14 PM Minty.controller.LoginController login
 INFO: user amaronlogged in successfully
-12 Aug, 2012 1:02:11 PM TwitMini.controller.TweetController create
+12 Aug, 2012 1:02:11 PM Minty.controller.TweetController create
 INFO: user amarontweeted 24
-12 Aug, 2012 1:02:19 PM TwitMini.controller.TweetController create
+12 Aug, 2012 1:02:19 PM Minty.controller.TweetController create
 INFO: user amarontweeted 25
-12 Aug, 2012 1:07:35 PM TwitMini.configuration.MintyConfig logger
+12 Aug, 2012 1:07:35 PM Minty.configuration.MintyConfig logger
 INFO: -------------------------------------------------------------------------------------------
-12 Aug, 2012 1:07:35 PM TwitMini.configuration.MintyConfig logger
+12 Aug, 2012 1:07:35 PM Minty.configuration.MintyConfig logger
 INFO: -------------------------------------------------------------------------------------------
-12 Aug, 2012 1:07:35 PM TwitMini.configuration.MintyConfig logger
+12 Aug, 2012 1:07:35 PM Minty.configuration.MintyConfig logger
 INFO: Minty Server log
-12 Aug, 2012 1:15:15 PM TwitMini.controller.LoginController login
+12 Aug, 2012 1:15:15 PM Minty.controller.LoginController login
 INFO: user amaronlogged in successfully
-12 Aug, 2012 1:15:39 PM TwitMini.controller.TweetController create
+12 Aug, 2012 1:15:39 PM Minty.controller.TweetController create
 INFO: user amarontweeted 26
-12 Aug, 2012 1:16:08 PM TwitMini.controller.TweetController create
+12 Aug, 2012 1:16:08 PM Minty.controller.TweetController create
 INFO: user amarontweeted 27
-12 Aug, 2012 1:16:16 PM TwitMini.controller.TweetController create
+12 Aug, 2012 1:16:16 PM Minty.controller.TweetController create
 INFO: user amarontweeted 28
-12 Aug, 2012 1:16:24 PM TwitMini.controller.TweetController create
+12 Aug, 2012 1:16:24 PM Minty.controller.TweetController create
 INFO: user amarontweeted 29
-12 Aug, 2012 1:16:33 PM TwitMini.controller.TweetController create
+12 Aug, 2012 1:16:33 PM Minty.controller.TweetController create
 INFO: user amarontweeted 30
-12 Aug, 2012 1:17:48 PM TwitMini.controller.TweetController create
+12 Aug, 2012 1:17:48 PM Minty.controller.TweetController create
 INFO: user amarontweeted 31
-12 Aug, 2012 1:17:59 PM TwitMini.controller.TweetController create
+12 Aug, 2012 1:17:59 PM Minty.controller.TweetController create
 INFO: user amarontweeted 32
-12 Aug, 2012 1:18:04 PM TwitMini.controller.TweetController create
+12 Aug, 2012 1:18:04 PM Minty.controller.TweetController create
 INFO: user amarontweeted 33
+12 Aug, 2012 1:26:48 PM Minty.configuration.MintyConfig logger
+INFO: -------------------------------------------------------------------------------------------
+12 Aug, 2012 1:26:48 PM Minty.configuration.MintyConfig logger
+INFO: -------------------------------------------------------------------------------------------
+12 Aug, 2012 1:26:48 PM Minty.configuration.MintyConfig logger
+INFO: Minty Server log
+12 Aug, 2012 6:35:03 PM Minty.configuration.MintyConfig logger
+INFO: -------------------------------------------------------------------------------------------
+12 Aug, 2012 6:35:03 PM Minty.configuration.MintyConfig logger
+INFO: -------------------------------------------------------------------------------------------
+12 Aug, 2012 6:35:03 PM Minty.configuration.MintyConfig logger
+INFO: Minty Server log
+12 Aug, 2012 6:35:48 PM Minty.controller.LoginController login
+INFO: user amaronlogged in successfully
+12 Aug, 2012 6:36:04 PM Minty.controller.TweetController create
+INFO: user amarontweeted 34
+12 Aug, 2012 6:54:34 PM Minty.configuration.MintyConfig logger
+INFO: -------------------------------------------------------------------------------------------
+12 Aug, 2012 6:54:34 PM Minty.configuration.MintyConfig logger
+INFO: -------------------------------------------------------------------------------------------
+12 Aug, 2012 6:54:34 PM Minty.configuration.MintyConfig logger
+INFO: Minty Server log
+12 Aug, 2012 6:55:53 PM Minty.configuration.MintyConfig logger
+INFO: -------------------------------------------------------------------------------------------
+12 Aug, 2012 6:55:53 PM Minty.configuration.MintyConfig logger
+INFO: -------------------------------------------------------------------------------------------
+12 Aug, 2012 6:55:53 PM Minty.configuration.MintyConfig logger
+INFO: Minty Server log
+12 Aug, 2012 6:56:23 PM Minty.controller.LoginController login
+INFO: user amaronlogged in successfully
+12 Aug, 2012 6:56:48 PM Minty.controller.TweetController create
+INFO: user amarontweeted 35
+12 Aug, 2012 7:01:27 PM Minty.controller.TweetController create
+INFO: user amarontweeted 36
+12 Aug, 2012 7:02:53 PM Minty.controller.TweetController create
+INFO: user amarontweeted 37
+12 Aug, 2012 7:04:40 PM Minty.controller.TweetController create
+INFO: user amarontweeted 38
+12 Aug, 2012 7:07:19 PM Minty.configuration.MintyConfig logger
+INFO: -------------------------------------------------------------------------------------------
+12 Aug, 2012 7:07:19 PM Minty.configuration.MintyConfig logger
+INFO: -------------------------------------------------------------------------------------------
+12 Aug, 2012 7:07:19 PM Minty.configuration.MintyConfig logger
+INFO: Minty Server log
+12 Aug, 2012 7:07:29 PM Minty.controller.LoginController logout
+INFO: user null logged out successfully
+12 Aug, 2012 7:07:40 PM Minty.controller.LoginController login
+INFO: user amaronlogged in successfully
+12 Aug, 2012 7:08:00 PM Minty.controller.TweetController create
+INFO: user amarontweeted 39
+12 Aug, 2012 7:15:05 PM Minty.configuration.MintyConfig logger
+INFO: -------------------------------------------------------------------------------------------
+12 Aug, 2012 7:15:05 PM Minty.configuration.MintyConfig logger
+INFO: -------------------------------------------------------------------------------------------
+12 Aug, 2012 7:15:05 PM Minty.configuration.MintyConfig logger
+INFO: Minty Server log
+12 Aug, 2012 7:15:12 PM Minty.controller.LoginController login
+INFO: user amaronlogged in successfully
+12 Aug, 2012 7:15:21 PM Minty.controller.TweetController create
+INFO: user amarontweeted 40
+12 Aug, 2012 7:19:49 PM Minty.controller.TweetController create
+INFO: user amarontweeted 41
+12 Aug, 2012 7:21:06 PM Minty.controller.TweetController create
+INFO: user amarontweeted 42
+12 Aug, 2012 7:30:20 PM Minty.configuration.MintyConfig logger
+INFO: -------------------------------------------------------------------------------------------
+12 Aug, 2012 7:30:20 PM Minty.configuration.MintyConfig logger
+INFO: -------------------------------------------------------------------------------------------
+12 Aug, 2012 7:30:20 PM Minty.configuration.MintyConfig logger
+INFO: Minty Server log
+12 Aug, 2012 7:30:35 PM Minty.controller.LoginController login
+INFO: user amaronlogged in successfully
+12 Aug, 2012 7:30:59 PM Minty.controller.TweetController create
+INFO: user amarontweeted 43
+12 Aug, 2012 7:37:59 PM Minty.configuration.MintyConfig logger
+INFO: -------------------------------------------------------------------------------------------
+12 Aug, 2012 7:37:59 PM Minty.configuration.MintyConfig logger
+INFO: -------------------------------------------------------------------------------------------
+12 Aug, 2012 7:37:59 PM Minty.configuration.MintyConfig logger
+INFO: Minty Server log
+12 Aug, 2012 7:38:11 PM Minty.controller.LoginController login
+INFO: user amaronlogged in successfully
+12 Aug, 2012 7:38:33 PM Minty.controller.TweetController create
+INFO: user amarontweeted 44
+12 Aug, 2012 7:44:32 PM Minty.configuration.MintyConfig logger
+INFO: -------------------------------------------------------------------------------------------
+12 Aug, 2012 7:44:32 PM Minty.configuration.MintyConfig logger
+INFO: -------------------------------------------------------------------------------------------
+12 Aug, 2012 7:44:32 PM Minty.configuration.MintyConfig logger
+INFO: Minty Server log
+12 Aug, 2012 7:44:45 PM Minty.controller.LoginController login
+INFO: user amaronlogged in successfully
+12 Aug, 2012 7:45:00 PM Minty.controller.TweetController create
+INFO: user amarontweeted 45
+12 Aug, 2012 7:46:04 PM Minty.configuration.MintyConfig logger
+INFO: -------------------------------------------------------------------------------------------
+12 Aug, 2012 7:46:04 PM Minty.configuration.MintyConfig logger
+INFO: -------------------------------------------------------------------------------------------
+12 Aug, 2012 7:46:04 PM Minty.configuration.MintyConfig logger
+INFO: Minty Server log
+12 Aug, 2012 7:46:09 PM Minty.controller.LoginController login
+INFO: user amaronlogged in successfully
+12 Aug, 2012 7:46:17 PM Minty.controller.TweetController create
+INFO: user amarontweeted 46
+12 Aug, 2012 7:52:15 PM Minty.configuration.MintyConfig logger
+INFO: -------------------------------------------------------------------------------------------
+12 Aug, 2012 7:52:15 PM Minty.configuration.MintyConfig logger
+INFO: -------------------------------------------------------------------------------------------
+12 Aug, 2012 7:52:15 PM Minty.configuration.MintyConfig logger
+INFO: Minty Server log
+12 Aug, 2012 7:52:40 PM Minty.controller.LoginController login
+INFO: user amaronlogged in successfully
+12 Aug, 2012 7:52:54 PM Minty.controller.TweetController create
+INFO: user amarontweeted 47
+12 Aug, 2012 7:54:00 PM Minty.configuration.MintyConfig logger
+INFO: -------------------------------------------------------------------------------------------
+12 Aug, 2012 7:54:00 PM Minty.configuration.MintyConfig logger
+INFO: -------------------------------------------------------------------------------------------
+12 Aug, 2012 7:54:00 PM Minty.configuration.MintyConfig logger
+INFO: Minty Server log
+12 Aug, 2012 7:54:21 PM Minty.controller.LoginController login
+INFO: user amaronlogged in successfully
+12 Aug, 2012 7:54:38 PM Minty.controller.TweetController create
+INFO: user amarontweeted 48
+12 Aug, 2012 7:56:05 PM Minty.configuration.MintyConfig logger
+INFO: -------------------------------------------------------------------------------------------
+12 Aug, 2012 7:56:05 PM Minty.configuration.MintyConfig logger
+INFO: -------------------------------------------------------------------------------------------
+12 Aug, 2012 7:56:05 PM Minty.configuration.MintyConfig logger
+INFO: Minty Server log
+12 Aug, 2012 7:56:11 PM Minty.controller.LoginController login
+INFO: user amaronlogged in successfully
+12 Aug, 2012 7:56:27 PM Minty.controller.TweetController create
+INFO: user amarontweeted 49
+12 Aug, 2012 8:02:08 PM Minty.configuration.MintyConfig logger
+INFO: -------------------------------------------------------------------------------------------
+12 Aug, 2012 8:02:08 PM Minty.configuration.MintyConfig logger
+INFO: -------------------------------------------------------------------------------------------
+12 Aug, 2012 8:02:08 PM Minty.configuration.MintyConfig logger
+INFO: Minty Server log
+12 Aug, 2012 8:02:17 PM Minty.controller.LoginController login
+INFO: user amaronlogged in successfully
+12 Aug, 2012 8:02:45 PM Minty.controller.TweetController create
+INFO: user amarontweeted 50
+12 Aug, 2012 8:04:14 PM Minty.controller.TweetController create
+INFO: user amarontweeted 51
+12 Aug, 2012 8:12:00 PM Minty.configuration.MintyConfig logger
+INFO: -------------------------------------------------------------------------------------------
+12 Aug, 2012 8:12:00 PM Minty.configuration.MintyConfig logger
+INFO: -------------------------------------------------------------------------------------------
+12 Aug, 2012 8:12:00 PM Minty.configuration.MintyConfig logger
+INFO: Minty Server log
+12 Aug, 2012 8:12:42 PM Minty.controller.LoginController login
+INFO: user amaronlogged in successfully
+12 Aug, 2012 8:13:02 PM Minty.controller.TweetController create
+INFO: user amarontweeted 52
+12 Aug, 2012 8:18:37 PM Minty.configuration.MintyConfig logger
+INFO: -------------------------------------------------------------------------------------------
+12 Aug, 2012 8:18:37 PM Minty.configuration.MintyConfig logger
+INFO: -------------------------------------------------------------------------------------------
+12 Aug, 2012 8:18:37 PM Minty.configuration.MintyConfig logger
+INFO: Minty Server log

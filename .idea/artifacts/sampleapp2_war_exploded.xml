@@ -5,7 +5,7 @@
       <element id="javaee-facet-resources" facet="sampleapp2/web/Web" />
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
-          <element id="module-output" name="sampleapp2" />
+          <element id="module-output" name="Minty" />
         </element>
         <element id="directory" name="lib">
           <element id="library" level="project" name="Maven: commons-dbcp:commons-dbcp:1.4" />

@@ -12,7 +12,7 @@
 </c:if>
 
 
-New to TwitMini? Register Now!
+New to Minty? Register Now!
 <form action="/user/register" method="post">
     Name: <input type="text" name="realname"></br>
     username: <input type="text" name="username"></br>
