@@ -171,9 +171,7 @@
 
             <div class="nav-collapse">
                 <ul class="nav">
-                    <li class="active"><a href="#">Home</a></li>
-                    <li><a href="/user/${User.username}/mentions">Mentions</a></li>
-                    <li><a href="/public">Public</a></li>
+                    <li class="active"><a href="#">@${User.username}</a></li>
                 </ul>
             </div><!--/.nav-collapse -->
         </div>
@@ -202,7 +200,7 @@
                         </div></div>
                     <div class="span2"><div class="count">Followers ${User.num_followers}</div>
                         <div class="count">Following ${User.num_following}</div>
-                        <div class="count">Tweets ${User.num_tweets}</div>
+                        <div class="count">Mintees ${User.num_tweets}</div>
 
 
                     </div>
@@ -220,7 +218,8 @@
                 <ul class="nav nav-list">
 
 
-                    <li class="active"><a href="#">Tweets</a></li>
+                    <li><a href="#">Tweets</a></li>
+                    <li class="active"><a href="#">Mentions</a></li>
                     <li><a href="#">Followers</a></li>
                     <li><a href="#">Following</a></li>
 

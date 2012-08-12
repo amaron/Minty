@@ -108,6 +108,17 @@ public class HomePageController {
 
     }
 
+    @RequestMapping("/mentions")
+    public ModelAndView homementions(final HttpSession session)
+    {
+        final String handle = (String) session.getAttribute("userName");
+        return new ModelAndView("homementions"){{
+            addObject("User", (String) session.getAttribute(handle));
+            addObject("List",viewService.listUserMentions(handle,0,10));
+        }
+        };
+    }
+
     @RequestMapping("/home")
     public ModelAndView home(final HttpSession Session){
 
@@ -120,6 +131,8 @@ public class HomePageController {
             addObject("List",tweetStore.listHomePageTweets(10, 0, (Long) Session.getAttribute("userID")));
         }
     };
+
+
     }
 
 
