@@ -3,7 +3,6 @@ package Minty.controller;
 import Minty.model.TweetData;
 import Minty.model.User;
 import Minty.services.TweetService;
-import Minty.services.UserService;
 import Minty.services.ViewService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -26,14 +25,12 @@ public class RESTController {
 
     private final ViewService viewService;
     private final TweetService tweetStore;
-    private final UserService userService;
     private final Logger logger;
 
     @Autowired
-    public RESTController(ViewService viewService, TweetService tweetStore, UserService userService, Logger logger) {
+    public RESTController(ViewService viewService, TweetService tweetStore, Logger logger) {
         this.viewService = viewService;
         this.tweetStore=tweetStore;
-        this.userService = userService;
         this.logger=logger;
     }
 
@@ -80,6 +77,12 @@ public class RESTController {
     @ResponseBody
     public List<TweetData> listUserFeed(@PathVariable String handle, @RequestParam int offset, @RequestParam int limit){
         return viewService.listUserFeed(handle,offset,limit);
+    }
+
+    @RequestMapping(value="/user/tweet/{id}.json", method=RequestMethod.GET)
+    @ResponseBody
+    public List<TweetData> getTweet(@RequestParam int id){
+        return tweetStore.getTweet(id);
     }
 
     @RequestMapping(value="{handle}/followers.json", method=RequestMethod.GET)

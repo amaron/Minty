@@ -65,9 +65,7 @@ public class SignupController {
 
     @RequestMapping(value = "/user/register", method = RequestMethod.GET)
     public ModelAndView RegistrationForm() {
-
-        return new ModelAndView("register");  // will change it to specific register page with only register
-
+        return new ModelAndView("register");
     }
 
     @RequestMapping(value = "/user/register/usrchk/{username}.json", method = RequestMethod.POST)
@@ -86,31 +84,26 @@ public class SignupController {
         try {
             h.put("msg",validatorService.checkEmail(email));
         } catch (InterruptedException e) {
-            e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
+            e.printStackTrace();
         }
         return h;
     }
 
     @RequestMapping(value = "/user/register", method = RequestMethod.POST)
-    public ModelAndView register(User user,
-                                 HttpSession session) {
+    public ModelAndView register(User user, HttpSession session) {
 
         EmailValidator EV= new EmailValidator();
-
         ModelAndView mv = new ModelAndView("register");
         long userID;
-
         User userData = userService.getUser(user.getUsername());
         if(userData!=null){
             mv.addObject("message"," username/email id already in use, please re-enter");
             return mv;
         }
-
         else{
             if(EV.validate(user.getEmail())==false){
                 mv.addObject("message", "Enter proper Email address");
                 return mv;
-
             }
         }
 
@@ -121,7 +114,6 @@ public class SignupController {
         mv.setViewName("redirect:/home");
 
         return mv;
-
 
     }
 

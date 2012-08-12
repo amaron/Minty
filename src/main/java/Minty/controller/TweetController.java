@@ -19,11 +19,12 @@ import java.util.logging.Logger;
 
 /**
  * Created with IntelliJ IDEA.
- * User: kunjan
+ * User: karthik
  * Date: 26/7/12
  * Time: 5:17 PM
  * To change this template use File | Settings | File Templates.
  */
+
 @Controller
 @RequestMapping("user")
 public class TweetController {
@@ -40,25 +41,23 @@ public class TweetController {
     }
 
 
-    @RequestMapping("{handle}/tweet/{id}")
+    @RequestMapping(value="{handle}/tweet/{id}", method=RequestMethod.GET)
     public ModelAndView Viewtweet(@PathVariable final String handle, @PathVariable final int id) {
-
+        if(viewService.getUserId(handle)==null){
+            return new ModelAndView("errorpage") {{
+                addObject("message","user "+ handle+ " doesnt exist!");
+            }};
+        }
 
         ModelAndView mv= new ModelAndView("tweetpage");
         mv.addObject("List", tweetStore.getTweet(id));
-
-
         return mv;
     }
 
     @RequestMapping(value="/retweet/{id}", method=RequestMethod.POST)
     @ResponseBody
     public List<TweetData> retweet(@PathVariable final int id) {
-
-
-        return  tweetStore.getTweet(id);
-
-
+         return  tweetStore.getTweet(id);
     }
 
 
@@ -68,7 +67,7 @@ public class TweetController {
 
         Hashtable h= new Hashtable();
         Integer offset=  (Integer)Session.getAttribute("offset");
-        List<TweetData> L= (List< TweetData>)tweetStore.listHomePageTweets(10, offset + num, (Long) Session.getAttribute("userID"));
+        List<TweetData> L= tweetStore.listHomePageTweets(10, offset + num, (Long) Session.getAttribute("userID"));
         h.put("status","success");
         h.put("val",L.size());
         h.put("List", L);
@@ -97,10 +96,8 @@ public class TweetController {
     @ResponseBody
     public TweetData create(TweetData tweet, HttpSession session) {
 
-
         TweetData new_tweet= tweetStore.add(tweet, (String)session.getAttribute("userName"), (Long)session.getAttribute("userID"));
         logger.info("user "+(String)session.getAttribute("userName") +"tweeted " + new_tweet.getTweet_id());
-
         return new_tweet;
     }
 
@@ -110,7 +107,6 @@ public class TweetController {
 
         Integer latestTweet= (Integer) Session.getAttribute("latestTweet");
         Hashtable h= new Hashtable();
-       // return h;
         Integer update=tweetStore.getLatestTweetId((Long) Session.getAttribute("userID"), latestTweet);
         System.out.println("latest tweet " + Session.getAttribute("userName")+ update);
         if(update>latestTweet){
@@ -130,12 +126,11 @@ public class TweetController {
         Hashtable h= new Hashtable();
         Integer latestTweet= (Integer) Session.getAttribute("latestTweet");
         Integer currLatestTweet=(Integer) Session.getAttribute("currLatestTweet");
-        List<TweetData> L=(List<TweetData>)tweetStore.getNewTweets(latestTweet,currLatestTweet,(Long)Session.getAttribute("userID"));
+        List<TweetData> L=tweetStore.getNewTweets(latestTweet,currLatestTweet,(Long)Session.getAttribute("userID"));
         h.put("val",L.size());
         System.out.println("List size"+L.size());
         h.put("List",L);
         Session.setAttribute("latestTweet",currLatestTweet);
-
         return h;
 
     }
