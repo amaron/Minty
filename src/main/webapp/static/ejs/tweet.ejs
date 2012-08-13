@@ -1,23 +1,9 @@
-           <div class="tweet" id="tweetItem<%=tweet_id%>">
+   <div class="tweet" id="tweetItem<%=tweet_id%>">
                          <div class="span1"><span class="tweetimage"><img src="static/img/gaurav.jpg" height="58px" width="58px"/></span></div>
                          <div class="span11">
                              <span class="time"> <%=timeDiff%></span>
                              <span class="tweetheader"><a href="/user/<%=username%>"><%=username%></a></span><br>
                              <span id="itemName<%=tweet_id%>" class="tweettext"><%=tweet%></span>
-                             <span class="reply">
-                               <a href="javascript:void(0);" onclick='dialogreply("<%=username%>")' id='replylink<%=tweet_id%>'>reply</a>
-                               <a href="javascript:void(0);" onclick='dialogretweet("<%=tweet%>", "<%=username%>")' id='retweetlink<%=tweet_id%>'> retweet</a></small>
-                             </span>
-
-                              <form action="" id='replyform<%=tweet_id%>' name='replyform<%=tweet_id%>' style='display:none' onsubmit='addTweetThenHide(this,<%=tweet_id%>);return false;'>
-                                                    <textarea id='tweet' name='tweet'>@<%=username%>: </textarea>
-                                                    <input type='submit' value='reply'/> <small><a href="javascript:void(0);" onclick='hideReply(<%=tweet_id%>)' id='hidelink<%=tweet_id%>'>nevermind</a></small>
-                                                    </form>
-
-                                                    <form action="" id='retweetform<%=tweet_id%>' name='retweetform<%=tweet_id%>' style='display:none'  onsubmit='addTweetThenHide(this,<%=tweet_id%>);return false;'>
-                                                      <textarea id='tweet' name='tweet'>@<%=username%>: </textarea>
-                                                      <input type='submit' value='retweet'/> <small><a href="javascript:void(0);" onclick='hideRetweet(<%=tweet_id%>)' id='hidelink<%=tweet_id%>'>nevermind</a></small>
-                                                      </form>
 
                              <small><a href="javascript:void(0);" onclick='showReply(<%=tweet_id%>)' id='replylink<%=tweet_id%>'>reply</a></small>
                              <small><a href="javascript:void(0);" onclick='callRetweet(<%=tweet_id%>)' id='retweetlink<%=tweet_id%>'> retweet</a></small>
