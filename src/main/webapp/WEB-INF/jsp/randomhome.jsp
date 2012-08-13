@@ -207,7 +207,7 @@
         <div class="span9">
 
             <div class="row-fluid">
-
+             <legend>Home</legend>
 
 
 
@@ -215,7 +215,7 @@
                     <form action="/user/getNewTweet.json" onsubmit="displayNew(this);return false">
                         <input type="submit" style="display:none" value="you have new tweets!" id="updateBtn"/>
                     </form>
-                    <a href="#" class="bs-prompt">Prompt</a>
+
                     <c:forEach var='item' items='${List}'>
 
                         <script type="text/javascript">

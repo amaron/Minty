@@ -161,7 +161,7 @@
             <div class="nav-collapse">
                 <ul class="nav">
                     <li><a href="/home">Home</a></li>
-                    <li class="active"><a href="/user/${User.username}/mentions">Mentions</a></li>
+                    <li class="active"><a href="/mentions">Mentions</a></li>
                     <li><a href="/public">Public</a></li>
                 </ul>
             </div><!--/.nav-collapse -->
@@ -202,13 +202,11 @@
 
             <div class="row-fluid">
 
-
+               <legend>Mentions</legend>
 
 
                 <div class="well" id="tweetList">
-                    <form action="/user/getNewTweet.json" onsubmit="displayNew(this);return false">
-                        <input type="submit" style="display:none" value="you have new tweets!" id="updateBtn"/>
-                    </form>
+
                     <c:forEach var='item' items='${List}'>
 
                         <script type="text/javascript">
