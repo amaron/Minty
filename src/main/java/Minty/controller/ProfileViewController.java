@@ -2,7 +2,6 @@ package Minty.controller;
 
 import Minty.model.TweetData;
 import Minty.model.User;
-import Minty.services.TweetService;
 import Minty.services.UserService;
 import Minty.services.ViewService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,7 +17,7 @@ import java.util.logging.Logger;
 
 /**
  * Created with IntelliJ IDEA.
- * User: kunjan
+ * User: karthik
  * Date: 26/7/12
  * Time: 5:17 PM
  * To change this template use File | Settings | File Templates.
@@ -28,31 +27,28 @@ import java.util.logging.Logger;
 public class ProfileViewController {
 
     private final ViewService viewService;
-    private final TweetService tweetStore;
     private final UserService userService;
     private final Logger logger;
 
     @Autowired
-    public ProfileViewController(ViewService viewService, TweetService tweetStore, UserService userService, Logger logger) {
+    public ProfileViewController(ViewService viewService, UserService userService, Logger logger) {
         this.viewService = viewService;
-        this.tweetStore=tweetStore;
         this.userService = userService;
         this.logger=logger;
     }
 
 
-    @RequestMapping("{handle}")
-    public ModelAndView ViewUser(@PathVariable final String handle, HttpServletRequest request) {
-
-
+    @RequestMapping(value="{handle}", method=RequestMethod.GET)
+    public ModelAndView ViewUser(@PathVariable final String handle, HttpServletRequest request)
+    {
         boolean isUser=viewService.isUserExists(handle);
         if(!isUser){ return new ModelAndView("errorpage") {{
             addObject("message","user "+ handle+ " doesnt exist!");
         }};
         }
 
-
         HttpSession session = request.getSession(false);
+
         if(session!=null) {
 
         String userName = (String) session.getAttribute("userName");
@@ -67,33 +63,29 @@ public class ProfileViewController {
                 return mv;
             }
 
-        boolean isfollow=viewService.isFollowing((Long)session.getAttribute("userID"),handle);
+            boolean isfollow=viewService.isFollowing((Long)session.getAttribute("userID"),handle);
 
-        ModelAndView mv= new ModelAndView("profileview");
-        if(isfollow==true){mv.addObject("message","unfollow");}
-        else mv.addObject("message","follow");
+            ModelAndView mv= new ModelAndView("profileview");
+            if(isfollow==true){mv.addObject("message","unfollow");}
+            else mv.addObject("message","follow");
 
-        mv.addObject("User",userService.getUser(handle));
-        mv.addObject("handle",handle);
-        mv.addObject("List", viewService.listUserTweets(handle,0,10));
+            mv.addObject("User",userService.getUser(handle));
+            mv.addObject("handle",handle);
+            mv.addObject("List", viewService.listUserTweets(handle,0,10));
 
-        logger.info("user "+userName + " visited " + handle + "'s profile");
+            logger.info("user "+userName + " visited " + handle + "'s profile");
 
-        return mv;
+            return mv;
+        }
         }
 
-        }
-
-         return new ModelAndView("profileview-public"){{
-                addObject("List",viewService.listUserTweets(handle,0,10));
-                addObject("User",userService.getUser(handle));
-
-            }};
-
-
+    return new ModelAndView("profileview-public"){{
+           addObject("List",viewService.listUserTweets(handle,0,10));
+           addObject("User",userService.getUser(handle));
+           }};
     }
 
-    @RequestMapping("{handle}/mentions")
+    @RequestMapping(value="{handle}/mentions", method=RequestMethod.GET)
     public ModelAndView mentions(@PathVariable final String handle)
     {
 
@@ -110,7 +102,6 @@ public class ProfileViewController {
     @ResponseBody
     public List<TweetData> moreMentions(@PathVariable final String handle, @RequestParam final int offset)
     {
-
         return viewService.listUserMentions(handle,offset,10);
     }
 
@@ -119,20 +110,16 @@ public class ProfileViewController {
     @ResponseBody
     public List<TweetData> moreUserTwees(@PathVariable final String handle, @RequestParam final int offset)
     {
-
         return viewService.listUserTweets(handle,offset,10);
     }
 
-
-
-    @RequestMapping("{handle}/followers")
+    @RequestMapping(value="{handle}/followers", method=RequestMethod.GET)
     public ModelAndView getFollowers(@PathVariable final String handle,HttpSession Session){
         ModelAndView mv= new ModelAndView("userlist");
         mv.addObject("label","followers");
         mv.addObject("User",userService.getUser((String) Session.getAttribute("userName")));
         mv.addObject("List",viewService.getFollowers(handle));
         mv.addObject("handle",handle);
-
         return mv;
     }
 
@@ -150,7 +137,7 @@ public class ProfileViewController {
     }
 
 
-    @RequestMapping("{handle}/following")
+    @RequestMapping(value="{handle}/following",method=RequestMethod.GET)
     public ModelAndView getFollowering(@PathVariable final String handle,HttpSession Session){
         ModelAndView mv= new ModelAndView("userlist");
         mv.addObject("following");
@@ -177,10 +164,7 @@ public class ProfileViewController {
             logger.info("user "+ (String)Session.getAttribute("userName")+" unfollowed " + handle );
             h.put("value","follow");h.put("displayvalue","unfollow");
         }
-
-
         return h;
     }
-
 
 }

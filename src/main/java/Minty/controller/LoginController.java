@@ -36,47 +36,40 @@ public class LoginController {
     @RequestMapping("/")
     public ModelAndView index() {
 
-            return new ModelAndView("index");  // will change it to specific register page with only register
-
+            return new ModelAndView("index");
 
     }
 
     @RequestMapping("/index")
     public ModelAndView indexHome() {
 
-            return new ModelAndView("index");  // will change it to specific register page with only register
-
+            return new ModelAndView("index");
 
     }
 
     @RequestMapping(value = "/user/login", method = RequestMethod.GET)
     public ModelAndView loginForm() {
 
-            return new ModelAndView("login");  // will change it to specific register page with only register
-
+            return new ModelAndView("login");
     }
 
-
     @RequestMapping(value = "/user/login", method = RequestMethod.POST)
-    public ModelAndView login(User user,
-                              HttpSession session) {
-
+    public ModelAndView login(User user, HttpSession session) {
 
         ModelAndView mv = new ModelAndView("login");
         int userID;
+        User userData = userService.getUser(user.getUsername());
 
-            User userData = userService.getUser(user.getUsername());
+        if(userData==null){
+            mv.addObject("message"," provided username/email id " + user.getUsername() +" does not exist, please register");
+            return mv;
+        }
 
-            if(userData==null){
-                mv.addObject("message"," provided username/email id " + user.getUsername() +" does not exist, please register");
-                return mv;
-            }
-
-            if (!userData.equals(null) && !userData.getUser_password().equals(user.getUser_password())) {
-                mv.addObject("message", "Invalid password");
-                return mv;
-            }
-            userID =  userData.getUser_id();
+        if (!userData.equals(null) && !userData.getUser_password().equals(user.getUser_password())) {
+            mv.addObject("message", "Invalid password");
+            return mv;
+        }
+        userID =  userData.getUser_id();
 
 
         logger.info("user "+ user.getUsername() + "logged in successfully");

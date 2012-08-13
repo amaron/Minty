@@ -16,7 +16,6 @@ import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
-import java.util.Enumeration;
 import java.util.List;
 import java.util.logging.Logger;
 
@@ -38,14 +37,6 @@ public class HomePageController {
 
     }
 
-    @RequestMapping("/tweet")
-    public ModelAndView homeredirect(){
-
-        return new ModelAndView("redirect:/home"){{
-
-        }
-        };
-    }
 
     @RequestMapping(value="/search/moreSearchTweets.json", method=RequestMethod.GET)
     @ResponseBody
@@ -62,7 +53,7 @@ public class HomePageController {
     @RequestMapping("/search")
     public ModelAndView Search(@RequestParam final String searchtext, HttpSession Session){
 
-        logger.info("User " + (String)Session.getAttribute("userName") + " searched for "+ searchtext );
+       logger.info("User " + (String)Session.getAttribute("userName") + " searched for "+ searchtext );
 
        final  List<TweetData> tweet_list= viewService.searchTweets(searchtext,0,10);
        final List<User> user_list =  viewService.searchUsers(searchtext,0,10);
@@ -92,24 +83,17 @@ public class HomePageController {
         return tweetStore.listAllTweets(offset,10);
 
     }
-    //@RequestParam ArrayList<String> u_list, @RequestParam int tweet_id
+
     @RequestMapping(value="/user/addToMentions.json", method= RequestMethod.POST)
     @ResponseBody
     public String addToMentions( @RequestParam int tweet_id, HttpServletRequest request){
         String[] u_list = request.getParameterValues("u_list[]");
-        Enumeration enumeration = request.getParameterNames();
-        while (enumeration.hasMoreElements()) {
-            String parameterName = (String) enumeration.nextElement();
-            System.out.println("Parameter = " + parameterName);
-        }
-
-        System.out.println("user  parameters "+request.getParameterNames().toString());
         return viewService.addToMentions(u_list, tweet_id);
 
     }
 
     @RequestMapping("/mentions")
-    public ModelAndView homementions(final HttpSession session)
+    public ModelAndView homeMentions(final HttpSession session)
     {
         final String handle = (String) session.getAttribute("userName");
         return new ModelAndView("homementions"){{

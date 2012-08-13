@@ -19,11 +19,14 @@ public class ViewService {
         this.userID = userID;
         db = template;
     }
+    
     public Long getUserId(String handle){
         Long l=null;
         try{
-        l=  db.queryForLong("select user_id from users where username=? ",handle);
-        }catch(Exception e){}
+        l=  db.queryForLong("SELECT user_id FROM users WHERE username=? ",handle);
+        }catch(Exception e){
+            return l;
+        }
         return l;
 
     }
@@ -47,83 +50,74 @@ public class ViewService {
     }
 
     public List<User> searchUsers(String string, int offset, int limit){
-        return db.query("select * from USERS where username like ? order by username desc offset ? limit ?",User.rowMapper,"%"+string+"%", offset, limit);
+        return db.query("SELECT * FROM USERS WHERE username like ? ORDER by username DESC offset ? limit ?" ,User.rowMapper,"%"+string+"%", offset, limit);
     }
 
     public List<TweetData> searchTweets(String string, int offset, int limit){
-        return db.query("select * from TWEETS where tweet like ? order by tweet_id desc offset ? limit ?",TweetData.rowMapper,"%"+string+"%",offset,limit);
+        return db.query("SELECT * FROM TWEETS WHERE tweet like ? ORDER by tweet_id DESC offset ? limit ?",TweetData.rowMapper,"%"+string+"%",offset,limit);
     }
 
     public List<TweetData> listUserMentions(String handle, int offset, int limit) {
-        return db.query("select * from TWEETS where tweet_id in (select mentions.tweet_id from mentions where mentions.user_id=?) order by tweet_id desc offset ? limit ?",TweetData.rowMapper,(long)getUserId(handle),offset,limit);
+        return db.query("SELECT * FROM TWEETS WHERE tweet_id in (SELECT mentions.tweet_id FROM mentions WHERE mentions.user_id=?) ORDER by tweet_id DESC offset ? limit ?",TweetData.rowMapper,(long)getUserId(handle),offset,limit);
 
     }
 
     public List<User> getFollowers(String handle){
      Long id=getUserId(handle);
-     return db.query("select * from users where user_id in (select following.user_id from following where following_id=? and following.user_id!=?)",User.rowMapper,id,id);
+     return db.query("SELECT * FROM users WHERE user_id in (SELECT following.user_id FROM following WHERE following_id=? and following.user_id!=?)",User.rowMapper,id,id);
     }
 
     public List<User> getFollowing(String handle){
         Long id=getUserId(handle);
-        return db.query("select * from users where user_id in (select following_id from following where following.user_id=? and following.following_id!=?)",User.rowMapper,id,id);
+        return db.query("SELECT * FROM users WHERE user_id in (SELECT following_id FROM following WHERE following.user_id=? and following.following_id!=?)",User.rowMapper,id,id);
     }
-
 
     public boolean isFollowing(long user_id, String handle){
 
       Long user_id_handle=getUserId(handle);
-      Integer l1=db.queryForInt("select count(*) from following where user_id =? and following_id=?",user_id,user_id_handle);
-        System.out.println("is following? "+l1);
-        if(l1==0)return false;
+      Integer is_following=db.queryForInt("SELECT count(*) FROM following WHERE user_id =? and following_id=?",user_id,user_id_handle);
+        if(is_following==0)return false;
         return true;
     }
 
     public boolean isUserExists(String handle){
 
-        Integer l=db.queryForInt("select count(*) from users where username=?",handle);
-        if(l==0)return false;
+        Integer is_user_exists=db.queryForInt("SELECT count(*) FROM users WHERE username=?",handle);
+        if(is_user_exists==0)return false;
         return true;
-    }
-
-    public boolean isUserHimself(Long id){
-        return id.equals(userID.get());
     }
 
     public void followUser(String handle){
 
-        Long l=getUserId(handle);
-        if(userID.get()==l)   return;
-        if(isFollowing(userID.get(),handle)){unfollowUser(l);return;}
-/*
-        db.update("insert into following values(?,?)",userID.get(), l);
-        db.update("update users set num_following=num_following+1 where user_id=?",userID.get());
-        db.update("update users set num_followers=num_followers+1 where user_id=?",l);
-*/
-        db.update("insert into following values(?,?);" +
-                  "update users set num_following=num_following+1 where user_id=?;" +
-                "update users set num_followers=num_followers+1 where user_id=?;",userID.get(), l,userID.get(),l);
-        System.out.println("following user "+handle);
+        Long user_id=getUserId(handle);
+        if(userID.get()==user_id)   return;
+        if(isFollowing(userID.get(),handle)){unfollowUser(user_id);return;}
 
+        db.update("insert into following values(?,?);" +
+                  "update users set num_following=num_following+1 WHERE user_id=?;" +
+                "update users set num_followers=num_followers+1 WHERE user_id=?;",userID.get(), user_id,userID.get(),user_id);
+        
     }
 
-    public void unfollowUser(Long l){
-        System.out.println("unfollowing userid " +l);
-        db.update("delete from following where user_id=? and following_id=? ",userID.get(), l);
-        db.update("update users set num_following=num_following-1 where user_id=?",userID.get());
-        db.update("update users set num_followers=num_followers-1 where user_id=?",l);
+    public void unfollowUser(Long following_user_id){
+        
+        db.update("delete FROM following WHERE user_id=? and following_id=?;" + 
+                "update users set num_following=num_following-1 WHERE user_id=?;" + 
+                "update users set num_followers=num_followers-1 WHERE user_id=?;",
+                userID.get(), following_user_id, userID.get(),following_user_id);
+        
     }
 
     public List<TweetData> listUserFeed(String handle, int offset, int limit) {
         Long id=getUserId(handle);
-        return db.query("select * from tweets where tweet_id in (select tweet_id from USERFEED where user_id=?)  order by tweet_id desc limit ? offset ?",
+        return db.query("SELECT * FROM tweets WHERE tweet_id in (SELECT tweet_id FROM USERFEED WHERE user_id=?)  ORDER by tweet_id DESC limit ? offset ?",
                 TweetData.rowMapper,id,limit,offset);
 
     }
 
     public List<TweetData> listUserTweets(String handle, int offset, int limit) {
 
-        return db.query("select * from tweets where username=? order by tweet_id desc offset ? limit ?",
+        return db.query("SELECT * FROM tweets WHERE username=? ORDER by tweet_id DESC offset ? limit ?",
                 TweetData.rowMapper,handle,offset, limit
         );
     }

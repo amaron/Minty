@@ -154,6 +154,43 @@ import java.util.logging.SimpleFormatter;
                         ");\n" +
                         "ALTER TABLE userfeed OWNER TO postgres;");
             }
+
+            try {
+                int a =  db.queryForInt("SELECT COUNT(*) FROM restusers;");
+            }
+            catch (Exception e) {
+            db.update("CREATE TABLE restusers\n" +
+                    "(\n" +
+                    "  username character varying(30),\n" +
+                    "  pkey character varying(36),\n" +
+                    "  reg_time timestamp without time zone DEFAULT now()\n" +
+                    ")\n" +
+                    "WITH (\n" +
+                    "  OIDS=FALSE\n" +
+                    ");\n" +
+                    "ALTER TABLE restusers OWNER TO postgres;\n");
+
+            }
+
+            try {
+                int a =  db.queryForInt("SELECT COUNT(*) FROM registered3rdparty;");
+            }
+            catch (Exception e) {
+                db.update("\n" +
+                        "CREATE TABLE registered3rdparty\n" +
+                        "(\n" +
+                        "  id serial NOT NULL,\n" +
+                        "  pname character varying(30),\n" +
+                        "  pkey character varying(36),\n" +
+                        "  reg_time timestamp without time zone DEFAULT now(),\n" +
+                        "  CONSTRAINT registered3rdparty_pkey PRIMARY KEY (id)\n" +
+                        ")\n" +
+                        "WITH (\n" +
+                        "  OIDS=FALSE\n" +
+                        ");\n" +
+                        "ALTER TABLE registered3rdparty OWNER TO postgres;\n");
+            }
+
             return db;
         }
 
