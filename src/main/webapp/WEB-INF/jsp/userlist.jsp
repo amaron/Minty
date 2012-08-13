@@ -228,21 +228,30 @@
         <div class="span9">
             <div class="row-fluid">
 
-
-               <iframe name="mainframe" frameborder="0">
-
-               </iframe>
-
                 <div class="well" >
+
                     <c:forEach var='item' items='${List}'>
-                        <li>${item.realname}<blockquote><a href="/user/${item.username}">${item.username}</a></blockquote></li>
+                        <div class="tweet">
+                        <div class="span1"><span class="tweetimage"><img src="/static/img/gaurav.jpg" height="58px" width="58px"/></span></div>
+                        <div class="span11">
+                            <span class="tweetheader">${item.realname}</span><br>
+                            <span class="tweettext">@${item.username}</span>
+                            <span class="reply"> <form class="followbutton" action="" onsubmit="follow('${item.handle}'); return false;">
+
+                                <input type="submit" class="btn-success btn-large" value="${message}" name="unfollow" id="followBtn"/>
+
+                            </form></span>
+                        </div>
+                        </div>
+
+
+
+
                     </c:forEach>
 
                     <div class="tweet" onmouseover="document.getElementById('re').style.display = 'block';" onmouseout="document.getElementById('re').style.display = 'none';">
                         <div class="span1"><span class="tweetimage"><img src="img/gaurav.jpg" height="58px" width="58px"/></span></div>
                         <div class="span11">
-                            <span class="time">5 mins ago</span>
-
                             <span class="tweetheader">Gaurav Munjal</span><br>
                             <span class="tweettext">Hey, we are here to create a dent in the universe, otherwise, why even be here. And by the way who the fuck is John Galt? Err what the hell you are saying man!</span>
                             <span class="reply"><a id="re" href="#" style="display: none;">Reply</a></span>
