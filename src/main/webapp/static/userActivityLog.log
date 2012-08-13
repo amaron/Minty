@@ -1462,3 +1462,45 @@ INFO: --------------------------------------------------------------------------
 INFO: Minty Server log
 14 Aug, 2012 2:16:01 AM Minty.controller.LoginController login
 INFO: user amaronlogged in successfully
+14 Aug, 2012 2:25:43 AM Minty.configuration.MintyConfig logger
+INFO: -------------------------------------------------------------------------------------------
+14 Aug, 2012 2:25:43 AM Minty.configuration.MintyConfig logger
+INFO: -------------------------------------------------------------------------------------------
+14 Aug, 2012 2:25:43 AM Minty.configuration.MintyConfig logger
+INFO: Minty Server log
+14 Aug, 2012 2:37:59 AM Minty.controller.LoginController login
+INFO: user amaronlogged in successfully
+14 Aug, 2012 2:38:12 AM Minty.controller.LoginController logout
+INFO: user null logged out successfully
+14 Aug, 2012 2:38:42 AM Minty.controller.LoginController login
+INFO: user kdudelogged in successfully
+14 Aug, 2012 2:39:09 AM Minty.controller.TweetController create
+INFO: user amarontweeted 100
+14 Aug, 2012 2:43:45 AM Minty.controller.TweetController create
+INFO: user amarontweeted 101
+14 Aug, 2012 2:44:19 AM Minty.controller.TweetController create
+INFO: user kdudetweeted 102
+14 Aug, 2012 2:45:12 AM Minty.controller.TweetController create
+INFO: user amarontweeted 103
+14 Aug, 2012 2:45:16 AM Minty.controller.TweetController create
+INFO: user amarontweeted 104
+14 Aug, 2012 2:48:24 AM Minty.controller.TweetController create
+INFO: user amarontweeted 105
+14 Aug, 2012 2:48:54 AM Minty.controller.TweetController create
+INFO: user kdudetweeted 106
+14 Aug, 2012 2:49:40 AM Minty.controller.TweetController create
+INFO: user amarontweeted 107
+14 Aug, 2012 2:51:57 AM Minty.controller.TweetController create
+INFO: user amarontweeted 108
+14 Aug, 2012 2:57:34 AM Minty.configuration.MintyConfig logger
+INFO: -------------------------------------------------------------------------------------------
+14 Aug, 2012 2:57:34 AM Minty.configuration.MintyConfig logger
+INFO: -------------------------------------------------------------------------------------------
+14 Aug, 2012 2:57:34 AM Minty.configuration.MintyConfig logger
+INFO: Minty Server log
+14 Aug, 2012 2:57:59 AM Minty.controller.LoginController login
+INFO: user amaronlogged in successfully
+14 Aug, 2012 2:58:07 AM Minty.controller.LoginController login
+INFO: user kdudelogged in successfully
+14 Aug, 2012 2:58:17 AM Minty.controller.TweetController create
+INFO: user kdudetweeted 109

@@ -68,7 +68,7 @@
                     <div class="control-group">
                         <label class="control-label" for="fileInput">How do you look?</label>
                         <div class="controls">
-                            <input class="input-file" id="fileInput" type="file">
+                            <input class="input-file" name="" id="fileInput" type="file">
                         </div>
                     </div>
                     <div class="control-group">

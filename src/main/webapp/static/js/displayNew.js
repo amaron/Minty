@@ -46,22 +46,10 @@ function displayNew(form){
         $('#updateBtn').hide();
         for(var i=0;i<data.val;i++){
             var temp=data.List[i];
-            //alert(temp);
-            var list= idFinder(temp.tweet);
-            temp.tweet=strip(temp.tweet);
-            //alert(temp.tweet);
-            temp.tweet=htmlAdder(temp.tweet,list);
-
-            var month_names_short= ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
-            var timeObject = getJsTimestamp( String(temp.pushtime) );
-            var stamp =  new Date(timeObject.year, Number(timeObject.month)-1, timeObject.day, timeObject.hour, timeObject.minute, timeObject.second);
-            var timeDiff= timeDifference((new Date()).getTime(),stamp.getTime());
-            temp["timeDiff"]=timeDiff;
-
-            temp.pushtime =month_names_short[Number(timeObject.month)-1]+" "+ timeObject.day +" " + timeObject.year + " at " + timeObject.hour+":"+timeObject.minute;
             var tweetItemLI = $(new EJS({url: '/static/ejs/tweet.ejs'}).render(temp)).data("tweetID", (temp).tweet_id);
+            var tweetItemLI =preComputeOnTweet(temp);
             $('#tweetList').prepend(tweetItemLI);
-            //appendItem(temp);
+
         }
     });
 }

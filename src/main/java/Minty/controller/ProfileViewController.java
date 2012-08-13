@@ -134,7 +134,7 @@ public class ProfileViewController {
 
     @RequestMapping(value="/edit", method=RequestMethod.POST)
     public ModelAndView saveEditProfile(User user, final HttpSession Session){
-        userService.updateUser(user);
+        userService.updateUser(user,(String)Session.getAttribute("userName"));
         return new ModelAndView("redirect:/home");
     }
 
