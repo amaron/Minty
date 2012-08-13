@@ -202,7 +202,7 @@
                 <ul class="nav nav-list">
 
 
-                    <li class="active"><a href="#">Tweets</a></li>
+                    <li class="active"><a href="">Tweets</a></li>
                     <li><a href="#">Followers</a></li>
                     <li><a href="#">Following</a></li>
 

@@ -218,8 +218,8 @@
                 <ul class="nav nav-list">
 
 
-                    <li><a href="#">Tweets</a></li>
-                    <li class="active"><a href="#">Mentions</a></li>
+                    <li><a href="">Tweets</a></li>
+                    <li class="active"><a href="/user/${User.username}/mentions">Mentions</a></li>
                     <li><a href="#">Followers</a></li>
                     <li><a href="#">Following</a></li>
 
