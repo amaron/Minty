@@ -116,7 +116,7 @@ public class ProfileViewController {
     @RequestMapping(value="{handle}/followers", method=RequestMethod.GET)
     public ModelAndView getFollowers(@PathVariable final String handle,HttpSession Session){
         ModelAndView mv= new ModelAndView("userlist");
-        mv.addObject("label","followers");
+        mv.addObject("label","Users who follow " + handle);
         mv.addObject("User",userService.getUser((String) Session.getAttribute("userName")));
         mv.addObject("List",viewService.getFollowers(handle));
 
@@ -142,7 +142,7 @@ public class ProfileViewController {
     @RequestMapping(value="{handle}/following",method=RequestMethod.GET)
     public ModelAndView getFollowering(@PathVariable final String handle,HttpSession Session){
         ModelAndView mv= new ModelAndView("userlist");
-        mv.addObject("following");
+        mv.addObject("label","Users following " + handle);
         mv.addObject("User",userService.getUser((String) Session.getAttribute("userName")));
         mv.addObject("List",viewService.getFollowing(handle));
         mv.addObject("handle",handle);

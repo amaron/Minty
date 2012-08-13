@@ -1,17 +1,44 @@
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
 
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Latest Tweets on Minty!</title>
+    <title>Home</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
 
     <!-- Le styles -->
-    <link href="css/bootstrap.css" rel="stylesheet">
+    <script type="text/javascript" src="/static/js/jquery.min.js"></script>
+    <script type="text/javascript" src="/static/js/easy.notification.js"></script>
+    <script type="text/javascript" src="/static/js/ejs_production.js"></script>
+    <script type="text/javascript" src="/static/js/charCount.js"></script>
+    <script type="text/javascript" src="/static/js/timeDifference.js"></script>
+    <script type="text/javascript" src="/static/js/getJSTimestamp.js"></script>
+    <script type="text/javascript" src="/static/js/getUpdates.js"></script>
+    <script type="text/javascript" src="/static/js/addTweet.js"></script>
+    <script type="text/javascript" src="/static/js/addTweetNow.js"></script>
+    <script type="text/javascript" src="/static/js/appendItem.js"></script>
+    <script type="text/javascript" src="/static/js/getMoreTweets.js"></script>
+    <script type="text/javascript" src="/static/js/displayNew.js"></script>
+    <script type="text/javascript" src="/static/js/escapeHTML.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+
+            //custom usage
+            $("#tweet").charCount({
+                allowed: 128,
+                warning: 20,
+                counterText: 'Characters left: '
+            });
+        });
+        var num_tweets=${User.num_tweets};
+        var newtweets=0;
+    </script>
+    <link href="/static/css/bootstrap.css" rel="stylesheet">
     <style type="text/css">
         body {
             padding-top: 110px;
@@ -21,8 +48,9 @@
             padding: 9px 0;
         }
     </style>
-    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="/static/css/bootstrap-responsive.css" rel="stylesheet">
     <style type="text/css">
+
         .tweet {
             padding-top: 15px;
             padding-bottom: 0px;
@@ -70,8 +98,7 @@
             padding-left: 80px;
         }
         .mintbio {
-            font-size:18px;
-            line-height: 22px;
+
         }
         .charleft{
             float: right;
@@ -96,20 +123,6 @@
         a:active {
             color: #51A351;
         }
-        .smalldetails {
-            padding-top: 30px;
-        }
-        .followbutton {
-            padding-top:5px;
-        }
-        .count {
-            padding-top:20px;
-            text-align: right;
-            font-family: "Arial Black";
-            font-size: 22px;
-
-        }
-
     </style>
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
@@ -118,39 +131,6 @@
     <![endif]-->
 
     <!-- Le fav and touch icons -->
-    <link rel="stylesheet" href="/static/css/bootstrap.css">
-    <link rel="stylesheet" href="/static/css/easyNotification.css">
-    <script type="text/javascript" src="/static/js/jquery.min.js"></script>
-    <script type="text/javascript" src="/static/js/ejs_production.js"></script>
-    <script type="text/javascript" src="/static/js/timeDifference.js"></script>
-    <script type="text/javascript" src="/static/js/appendItem.js"></script>
-    <script type="text/javascript" src="/static/js/getJSTimestamp.js"></script>
-    <script type="text/javascript" src="/static/js/easy.notification.js"></script>
-    <script type="text/javascript" src='/static/js/follow.js'></script>
-    <script type="text/javascript" src='/static/js/addTweet.js'></script>
-    <script type="text/javascript">var num_followers=${User.num_followers};</script>
-    <script type="text/javascript">
-        var cur_offset=10;
-        function getMorePublicTweets(){
-
-            $.ajax({
-                type: 'GET',
-                url: '/getMorePublicTweets.json',
-                data: { offset: cur_offset },
-                success: function(data) {
-                    if(data.length==0) $('#moreTweetsBtn').hide();
-                    for(var k=0;k<data.length;k++){
-                        //alert(JSON.stringify(data.List[k]));
-                        appendItem(data[k]);
-                    }
-                }
-            });
-            cur_offset+=10;
-
-
-            }
-    </script>
-
     <link rel="shortcut icon" href="../assets/ico/favicon.ico">
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
@@ -160,7 +140,7 @@
 
 <body>
 
-<div class="navbar navbar-fixed-top" >
+<div class="navbar navbar-fixed-top">
     <div class="navbar-inner">
         <div class="container">
             <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
@@ -169,44 +149,61 @@
                 <span class="icon-bar"></span>
             </a>
             <a class="brand" href="#">Minty</a>
-
+            <div class="btn-group pull-right">
+                <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+                    <i class="icon-user"></i> ${User.username}
+                    <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="/user/${User.username}">Profile</a></li>
+                    <li class="divider"></li>
+                    <li><a href="/user/logout">Sign Out</a></li>
+                </ul>
+            </div>
             <div class="nav-collapse">
                 <ul class="nav">
-                    <li class="active"><a href="#">Home</a></li>
-                    <li><a href="/user/login">Login</a></li>
-                    <li><a href="/public">Public</a></li>
+                    <li><a href="/home">Home</a></li>
+                    <li><a href="/mentions">Mentions</a></li><%//TODO:Do not display this if not logged in%>
+                    <li class="active"><a href="/public">Public</a></li>
                 </ul>
             </div><!--/.nav-collapse -->
         </div>
     </div>
 </div>
 
-
-
 <div class="container">
-
     <div class="row-fluid">
-        <div class="span12">
+        <div class="span3">
+            <div class="well sidebar-nav">
 
-            <div class="hero-unit">
-                <div class="row fluid">
-
-                    <div class="span4">
-                    Already a Minty member? Login to start tweeting! <a class="btn btn-success" href="/user/login"></a>
-
-                    Not on Minty? You can be tweeting on Minty too! Just take 2 mins to signup! <a class="btn btn-success" href="/user/register"></a>
-                    </div>
-
-                </div>
-            </div>
+                <ul class="nav nav-list">
+                    <%//TODO:Similar to this user%>
+                    <legend>Popular users<span class="smalltext"></legend></li>
+                    <div class="mintbio">We are here to create a dent in the universe, otherwise, why even be here.</div>
 
 
-        </div>
-    </div>
+
+                </ul>
+
+
+            </div><!--/.well -->
+
+
+
+
+
+
+
+
+        </div><!--/span-->
+
+
 
 
         <div class="span9">
+
             <div class="row-fluid">
+                <legend>Public Mintline</legend>
 
 
 
@@ -223,10 +220,9 @@
         </div>
 
 
-    <div class="span9">
-        <button class="btn btn-success" id="moreTweetsBtn" onclick="getMorePublicTweets();return false">load more...</button>
-    </div>
 
+
+    </div>
     <hr>
 
     <footer>
@@ -238,20 +234,22 @@
 <!-- Le javascript
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
-<script src="js/jquery.js"></script>
-<script src="js/bootstrap-transition.js"></script>
-<script src="js/bootstrap-alert.js"></script>
-<script src="js/bootstrap-modal.js"></script>
-<script src="js/bootstrap-dropdown.js"></script>
-<script src="js/bootstrap-scrollspy.js"></script>
-<script src="js/bootstrap-tab.js"></script>
-<script src="js/bootstrap-tooltip.js"></script>
-<script src="js/bootstrap-popover.js"></script>
-<script src="js/bootstrap-button.js"></script>
-<script src="js/bootstrap-collapse.js"></script>
-<script src="js/bootstrap-carousel.js"></script>
-<script src="js/bootstrap-typeahead.js"></script>
+<script src="/static/js/bootstrap/jquery.js"></script>
+<script src="/static/js/bootstrap/bootstrap-transition.js"></script>
+<script src="/static/js/bootstrap/bootstrap-alert.js"></script>
+<script src="/static/js/bootstrap/bootstrap-modal.js"></script>
+<script src="/static/js/bootstrap/bootstrap-dropdown.js"></script>
+<script src="/static/js/bootstrap/bootstrap-scrollspy.js"></script>
+<script src="/static/js/bootstrap/bootstrap-tab.js"></script>
+<script src="/static/js/bootstrap/bootstrap-tooltip.js"></script>
+<script src="/static/js/bootstrap/bootstrap-popover.js"></script>
+<script src="/static/js/bootstrap/bootstrap-button.js"></script>
+<script src="/static/js/bootstrap/bootstrap-collapse.js"></script>
+<script src="/static/js/bootstrap/bootstrap-carousel.js"></script>
+<script src="/static/js/bootstrap/bootstrap-typeahead.js"></script>
+<script type="text/javascript" src="/static/js/bootstrap/jquery.validate.js"></script>
 
 </body>
 </html>
+
 
