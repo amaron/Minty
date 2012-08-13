@@ -126,8 +126,6 @@
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
 <script src="/static/js/bootstrap/jquery.js"></script>
-<script src="/static/js/bootbox.js"></script>
-<script src="/static/js/bootbox.min.js"></script>
 <script src="/static/js/bootstrap/bootstrap-transition.js"></script>
 <script src="/static/js/bootstrap/bootstrap-alert.js"></script>
 <script src="/static/js/bootstrap/bootstrap-modal.js"></script>
@@ -148,7 +146,8 @@
     }
 
     $(document).ready(function(){
-        bootbox.alert("Hello world!");
+
+        alert("wassup");
         $.validator.addMethod("usernameShouldNotAlreadyExist",function(value){
             var check=false;
 

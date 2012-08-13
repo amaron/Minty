@@ -126,8 +126,9 @@ public class ProfileViewController {
 
     @RequestMapping(value="/edit", method=RequestMethod.GET)
     public ModelAndView editProfile(final HttpSession Session){
-        return new ModelAndView("editprofile"){{
+        return new ModelAndView("almostthere"){{
              addObject("User",userService.getUser((String) Session.getAttribute("userName")));
+             addObject("handle",(String) Session.getAttribute("userName"));
         }};
     }
 

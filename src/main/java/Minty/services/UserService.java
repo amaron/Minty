@@ -22,8 +22,8 @@ public class UserService {
         this.db = db;
     }
 
-    public int updateUser(User user) {
-        return db.update("UPDATE USERS SET bio=? website=? place=?  where username=?", user.getBio(), user.getWebsite(), user.getPlace(), user.getUsername());
+    public int updateUser(User user, String username) {
+        return db.update("UPDATE USERS SET bio=?, website=?, place=?  where username=?", user.getBio(), user.getWebsite(), user.getPlace(), username);
 
     }
 

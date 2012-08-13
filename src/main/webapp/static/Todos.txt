@@ -1,0 +1,5 @@
+1> Make the search bar part of header
+2> complete the the follower/following page and the 3 profile pages with all hyper links etc working
+3> user details page with pic upload
+4> tweetpage
+5> search page

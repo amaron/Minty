@@ -10,7 +10,8 @@
     <!-- Include Bootstrap Asserts JavaScript Files. -->
 
     <!-- Le styles -->
-
+    <link href="/static/css/bootstrap.css" rel="stylesheet">
+    <link href="/static/css/bootstrap-responsive.css" rel="stylesheet">
     <style>
         body {
             padding-top: 120px; /* 60px to make the container go all the way to the bottom of the topbar */
@@ -18,8 +19,7 @@
 
     </style>
 
-    <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
@@ -62,7 +62,7 @@
 
 
 
-            <form class="form-horizontal">
+            <form class="form-horizontal" action="/user/${handle}/userdetails" method="post">
                 <fieldset>
 
                     <div class="control-group">
@@ -72,16 +72,16 @@
                         </div>
                     </div>
                     <div class="control-group">
-                        <label class="control-label" for="textarea">Bio (a few words)</label>
+                        <label class="control-label" for="bio">Bio (a few words)</label>
                         <div class="controls">
-                            <textarea class="input-xlarge" id="textarea" rows="3" placeholder="Standing out or out standing? Minty needs to know."></textarea>
+                            <textarea class="input-xlarge" name="bio" value="${User.bio}" id="bio" rows="3" placeholder="Standing out or out standing? Minty needs to know."></textarea>
 
                         </div>
                     </div>
                     <div class="control-group">
-                        <label class="control-label" for="input01">Location</label>
+                        <label class="control-label" for="place">Location</label>
                         <div class="controls">
-                            <input type="text" class="input-xlarge" id="input01" placeholder="Minty loves cheesiness.">
+                            <input type="text" class="input-xlarge" value="${User.place}" name="place" id="place" placeholder="Minty loves cheesiness.">
                             <p class="help-block">City/State/Country/Planet/Heart</p>
                         </div>
                     </div>
@@ -89,9 +89,9 @@
 
 
                     <div class="control-group">
-                        <label class="control-label" for="input01">Website</label>
+                        <label class="control-label" for="website">Website</label>
                         <div class="controls">
-                            <input type="text" class="input-xlarge" id="input01" placeholder="Minty loves cheesiness.">
+                            <input type="text" class="input-xlarge" value="${User.website}" name="website" id="website" placeholder="Minty loves cheesiness.">
                             <p class="help-block">Blog/Webpage/Facebook/Por..Project</p>
                         </div>
                     </div>
@@ -111,11 +111,13 @@
 
                     <div class="form-actions">
                         <button type="submit" class="btn btn-primary">Take me to my Minty!</button>
-                        <button class="btn">Skip</button>
                     </div>
+
                 </fieldset>
             </form>
-
+            <form action="/home">
+                <button class="btn">Skip</button>
+            </form>
         </div><!--/span-->
 
 
@@ -131,68 +133,19 @@
 <!-- Le javascript
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
-<script src="js/jquery.js"></script>
-<script src="js/bootstrap-transition.js"></script>
-<script src="js/bootstrap-alert.js"></script>
-<script src="js/bootstrap-modal.js"></script>
-<script src="js/bootstrap-dropdown.js"></script>
-<script src="js/bootstrap-scrollspy.js"></script>
-<script src="js/bootstrap-tab.js"></script>
-<script src="js/bootstrap-tooltip.js"></script>
-<script src="js/bootstrap-popover.js"></script>
-<script src="js/bootstrap-button.js"></script>
-<script src="js/bootstrap-collapse.js"></script>
-<script src="js/bootstrap-carousel.js"></script>
-<script src="js/bootstrap-typeahead.js"></script>
-<script type="text/javascript" src="http://jzaefferer.github.com/jquery-validation/jquery.validate.js"></script>
-<script type="text/javascript">
-    //TODO: Validation for webpages and other stuff.
-    function checkpassword(){
-        return "Man, enter your password!";
-    }
-    $(document).ready(function(){
-        $('input').hover(function()
-        {
-            $(this).popover('show')
-        });
-        $("#registerHere").validate({
-            rules:{
-                user_name:"required",
-                user_email:{
-
-                    required:true,
-                    email: true
-
-                },
-                password:{
-                    required:true,
-                    minlength: 6
-                },
-            },
-            messages:{
-                user_name:"Enter your first and last name",
-                user_email:{
-                    required:"Enter your email address",
-                    email:"Enter valid email address"
-                },
-                password:{
-                    required:checkpassword(),
-                    minlength:"Password must be minimum 6 characters"
-                },
-
-            },
-            errorClass: "help-inline",
-            errorElement: "span",
-            highlight:function(element, errorClass, validClass) {
-                $(element).parents('.control-group').addClass('error');
-            },
-            unhighlight: function(element, errorClass, validClass) {
-                $(element).parents('.control-group').removeClass('error');
-                $(element).parents('.control-group').addClass('success');
-            }
-        });
-    });
-</script>
+<script src="/static/js/bootstrap/jquery.js"></script>
+<script src="/static/js/bootstrap/bootstrap-transition.js"></script>
+<script src="/static/js/bootstrap/bootstrap-alert.js"></script>
+<script src="/static/js/bootstrap/bootstrap-modal.js"></script>
+<script src="/static/js/bootstrap/bootstrap-dropdown.js"></script>
+<script src="/static/js/bootstrap/bootstrap-scrollspy.js"></script>
+<script src="/static/js/bootstrap/bootstrap-tab.js"></script>
+<script src="/static/js/bootstrap/bootstrap-tooltip.js"></script>
+<script src="/static/js/bootstrap/bootstrap-popover.js"></script>
+<script src="/static/js/bootstrap/bootstrap-button.js"></script>
+<script src="/static/js/bootstrap/bootstrap-collapse.js"></script>
+<script src="/static/js/bootstrap/bootstrap-carousel.js"></script>
+<script src="/static/js/bootstrap/bootstrap-typeahead.js"></script>
 
 </body>
 </html>

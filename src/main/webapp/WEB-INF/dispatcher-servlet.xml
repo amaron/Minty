@@ -20,14 +20,14 @@
         <mvc:interceptor>
             <mvc:mapping path="/home/*"/>
             <mvc:mapping path="/home"/>
-            <mvc:mapping path="/tweet"/>
-            <mvc:mapping path="/tweet/*"/>
+            <mvc:mapping path="/user/edit"/>
+            <mvc:mapping path="/user/*/userdetails"/>
             <mvc:mapping path="/user/follow/*"/>
             <mvc:mapping path='/user/updates.json'/>
             <mvc:mapping path='/user/tweet/create.json'/>
-            <mvc:mapping path='/user/{handle}/tweet/{id}/reply'/>
+            <mvc:mapping path='/user/*/tweet/*/reply'/>
             <mvc:mapping path="/user/unfollow/*"/>
-            <mvc:mapping path="/user/retweet/{id}"/>
+            <mvc:mapping path="/user/retweet/*"/>
             <mvc:mapping path="/mentions"/>
 
             <bean class="Minty.interceptor.AuthInterceptor"/>

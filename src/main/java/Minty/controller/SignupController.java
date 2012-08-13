@@ -68,6 +68,21 @@ public class SignupController {
         return new ModelAndView("register");
     }
 
+    @RequestMapping(value = "/user/{handle}/userdetails", method = RequestMethod.GET)
+    public ModelAndView userDetailsForm(@PathVariable final String handle) {
+        return new ModelAndView("almostthere"){{
+            addObject("User",userService.getUser(handle));
+        }};
+    }
+
+    @RequestMapping(value = "/user/{handle}/userdetails", method = RequestMethod.POST)
+    public ModelAndView submituserDetailsForm(@PathVariable final String handle,final User user) {
+        System.out.println("user details post "+ user.getBio() +user.getWebsite()+user.getPlace());
+        user.setUsername(handle);
+        userService.updateUser(user,handle);                 /// Gaurav you need to add this code with the photo upload code
+        return new ModelAndView("redirect:/home");
+    }
+
     @RequestMapping(value = "/user/register/usrchk/{username}.json", method = RequestMethod.POST)
     @ResponseBody
     public Hashtable validateUsername(@PathVariable String username) {
@@ -90,7 +105,7 @@ public class SignupController {
     }
 
     @RequestMapping(value = "/user/register", method = RequestMethod.POST)
-    public ModelAndView register(User user, HttpSession session) {
+    public ModelAndView register(final User user, HttpSession session) {
 
         EmailValidator EV= new EmailValidator();
         ModelAndView mv = new ModelAndView("register");
@@ -111,10 +126,15 @@ public class SignupController {
         userService.addFollowing(userID,userID);
         session.setAttribute("userName", user.getUsername());
         session.setAttribute("userID", userID);
-        mv.setViewName("redirect:/home");
 
-        return mv;
+        //mv.setViewName("redirect:/user/" + user.getUsername()+"/userdetails");
+
+        return new ModelAndView("almostthere"){{
+            addObject("handle",user.getUsername());
+        }};
 
     }
+
+
 
 }
