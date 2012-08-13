@@ -14,11 +14,9 @@ function addTweet(form) {
 }
 
 function addTweetThenHide(form,id) {
-    $.post('/user/tweet/create.json', $(form).serialize(),function(data) {
-        $('#numTweets').text(num_tweets);
-        hideReply(id);
-    });
-
+    addTweetNow(form);
+    hideReply(id);
+    hideRetweet(id);
     newtweets++;
     num_tweets++;
 

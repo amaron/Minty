@@ -22,6 +22,8 @@ function addTweetNow(form) {
 
 
     });
+    newtweets++;
+    num_tweets++;
 
 
 }

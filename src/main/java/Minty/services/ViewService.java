@@ -42,7 +42,7 @@ public class ViewService {
             if(user_id==null)continue;
             else{
                 System.out.println(handle);
-                db.update("insert into mentions values(?,?)", user_id, tweet_id);
+                db.update("insert INTO mentions values(?,?)", user_id, tweet_id);
                 count++;
             }
         }
@@ -93,17 +93,17 @@ public class ViewService {
         if(userID.get()==user_id)   return;
         if(isFollowing(userID.get(),handle)){unfollowUser(user_id);return;}
 
-        db.update("insert into following values(?,?);" +
-                  "update users set num_following=num_following+1 WHERE user_id=?;" +
-                "update users set num_followers=num_followers+1 WHERE user_id=?;",userID.get(), user_id,userID.get(),user_id);
+        db.update("INSERT INTO following values(?,?);" +
+                  "UPDATE users SET num_following=num_following+1 WHERE user_id=?;" +
+                "UPDATE users SET num_followers=num_followers+1 WHERE user_id=?;",userID.get(), user_id,userID.get(),user_id);
         
     }
 
     public void unfollowUser(Long following_user_id){
         
-        db.update("delete FROM following WHERE user_id=? and following_id=?;" + 
-                "update users set num_following=num_following-1 WHERE user_id=?;" + 
-                "update users set num_followers=num_followers-1 WHERE user_id=?;",
+        db.update("DELETE FROM following WHERE user_id=? and following_id=?;" +
+                "UPDATE users SET num_following=num_following-1 WHERE user_id=?;" +
+                "UPDATE users SET num_followers=num_followers-1 WHERE user_id=?;",
                 userID.get(), following_user_id, userID.get(),following_user_id);
         
     }
