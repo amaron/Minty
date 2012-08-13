@@ -56,10 +56,7 @@ public class UploadFileController {
             }
             return "/uploadfile";
         }
-        imageStore.addPic(request.getRealPath("/"),uploadItem.getFileData());
-
-
-        // ..........................................
+        imageStore.addPic(request.getRealPath("/"),uploadItem.getFileData(),(String)session.getAttribute("userName"));
         //session.setAttribute("uploadFile", uploadItem.getFileData().getOriginalFilename());
 
         return "redirect:uploadfileindex";

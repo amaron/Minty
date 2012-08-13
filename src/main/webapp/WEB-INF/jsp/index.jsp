@@ -2,6 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="utf-8">
     <title>Welcome to Minty!</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -125,6 +126,8 @@
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
 <script src="/static/js/bootstrap/jquery.js"></script>
+<script src="/static/js/bootbox.js"></script>
+<script src="/static/js/bootbox.min.js"></script>
 <script src="/static/js/bootstrap/bootstrap-transition.js"></script>
 <script src="/static/js/bootstrap/bootstrap-alert.js"></script>
 <script src="/static/js/bootstrap/bootstrap-modal.js"></script>
@@ -145,7 +148,7 @@
     }
 
     $(document).ready(function(){
-
+        bootbox.alert("Hello world!");
         $.validator.addMethod("usernameShouldNotAlreadyExist",function(value){
             var check=false;
 

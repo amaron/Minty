@@ -32,7 +32,7 @@ public class ImageStore {
         return dirCreated;
 
     }
-    public boolean addPic(String path,MultipartFile file){
+    public boolean addPic(String path,MultipartFile file,String username){
         try {
 
             String fileName = null;
@@ -40,7 +40,7 @@ public class ImageStore {
             OutputStream outputStream = null;
             if (checkImgSize(path, file)) {
                 inputStream = file.getInputStream();
-                fileName = path + "/static/img/"+"Woo"+"/profilePic.jpg";
+                fileName = path + "/static/img/"+"Woo"+"/"+username+".jpg";
                 fileWrite(inputStream, fileName);
                 return true;
             }

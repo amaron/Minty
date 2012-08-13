@@ -236,11 +236,7 @@
                         <div class="span11">
                             <span class="tweetheader">${item.realname}</span><br>
                             <span class="tweettext">@${item.username}</span>
-                            <span class="reply"> <form class="followbutton" action="" onsubmit="follow('${item.handle}'); return false;">
-
-                                <input type="submit" class="btn-success btn-large" value="${message}" name="unfollow" id="followBtn"/>
-
-                            </form></span>
+                            <span class="reply"></span>
                         </div>
                         </div>
 

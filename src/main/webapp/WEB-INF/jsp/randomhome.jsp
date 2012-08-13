@@ -215,6 +215,7 @@
                     <form action="/user/getNewTweet.json" onsubmit="displayNew(this);return false">
                         <input type="submit" style="display:none" value="you have new tweets!" id="updateBtn"/>
                     </form>
+                    <a href="#" class="bs-prompt">Prompt</a>
                     <c:forEach var='item' items='${List}'>
 
                         <script type="text/javascript">
@@ -257,6 +258,16 @@
 <script src="static/js/bootstrap/bootstrap-carousel.js"></script>
 <script src="static/js/bootstrap/bootstrap-typeahead.js"></script>
 <script type="text/javascript" src="/static/js/bootstrap/jquery.validate.js"></script>
+<script type="text/javascript" src="/static/js/bootbox.js"></script>
+<script type="text/javascript" src="/static/js/bootbox.min.js"></script>
+<script type="text/javascript">
+    function dialogretweet(tw,usern) {
+        bootbox.confirm("@"+usern+":"+ tw + ". "+"\nRetweet this?");
 
+    };
+    function dialogreply(usern) {
+        bootbox.prompt("Reply to @" + usern);
+    }
+    </script>
 </body>
 </html>
