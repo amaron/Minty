@@ -35,6 +35,10 @@ public class TweetService {
         return db.query("select * from tweets order by tweet_id desc limit ? offset ?",TweetData.rowMapper, limit, offset);
     }
 
+    public String addToRetweets(long user_id,int tweet_id){
+        db.update("insert into retweets values(?,?)",user_id,tweet_id);
+        return "success";
+    }
     public List<TweetData> getNewTweets(Integer curmax_tweet_homepage, Integer curmax_tweet_db, Long user_id) {
      System.out.println("cur and curmax" + curmax_tweet_homepage + " " + curmax_tweet_homepage);
         return db.query("select * from tweets where tweets.tweet_id in ( select tweet_id from USERFEED where USERFEED.user_id= ? and USERFEED.tweet_id > ? and USERFEED.tweet_id <= ? and USERFEED.tweet_id not in (select tweet_id from tweets where user_id=? and tweet_id>?)) order by tweet_id asc",

@@ -1196,3 +1196,111 @@ INFO: --------------------------------------------------------------------------
 INFO: -------------------------------------------------------------------------------------------
 13 Aug, 2012 3:41:57 PM Minty.configuration.MintyConfig logger
 INFO: Minty Server log
+13 Aug, 2012 5:18:50 PM Minty.configuration.MintyConfig logger
+INFO: -------------------------------------------------------------------------------------------
+13 Aug, 2012 5:18:50 PM Minty.configuration.MintyConfig logger
+INFO: -------------------------------------------------------------------------------------------
+13 Aug, 2012 5:18:50 PM Minty.configuration.MintyConfig logger
+INFO: Minty Server log
+13 Aug, 2012 5:19:09 PM Minty.controller.LoginController login
+INFO: user amaronlogged in successfully
+13 Aug, 2012 5:19:37 PM Minty.controller.TweetController create
+INFO: user amarontweeted 59
+13 Aug, 2012 5:23:56 PM Minty.configuration.MintyConfig logger
+INFO: -------------------------------------------------------------------------------------------
+13 Aug, 2012 5:23:56 PM Minty.configuration.MintyConfig logger
+INFO: -------------------------------------------------------------------------------------------
+13 Aug, 2012 5:23:56 PM Minty.configuration.MintyConfig logger
+INFO: Minty Server log
+13 Aug, 2012 5:24:40 PM Minty.controller.LoginController login
+INFO: user amaronlogged in successfully
+13 Aug, 2012 5:24:56 PM Minty.controller.TweetController create
+INFO: user amarontweeted 60
+13 Aug, 2012 5:54:43 PM Minty.controller.TweetController create
+INFO: user amarontweeted 61
+13 Aug, 2012 5:54:53 PM Minty.controller.TweetController create
+INFO: user amarontweeted 62
+13 Aug, 2012 6:14:05 PM Minty.configuration.MintyConfig logger
+INFO: -------------------------------------------------------------------------------------------
+13 Aug, 2012 6:14:05 PM Minty.configuration.MintyConfig logger
+INFO: -------------------------------------------------------------------------------------------
+13 Aug, 2012 6:14:05 PM Minty.configuration.MintyConfig logger
+INFO: Minty Server log
+13 Aug, 2012 6:14:43 PM Minty.controller.LoginController login
+INFO: user amaronlogged in successfully
+13 Aug, 2012 6:15:03 PM Minty.controller.TweetController create
+INFO: user amarontweeted 63
+13 Aug, 2012 6:15:14 PM Minty.controller.TweetController create
+INFO: user amarontweeted 64
+13 Aug, 2012 6:17:49 PM Minty.controller.TweetController create
+INFO: user amarontweeted 65
+13 Aug, 2012 6:20:04 PM Minty.controller.LoginController login
+INFO: user amaronlogged in successfully
+13 Aug, 2012 6:20:17 PM Minty.controller.TweetController create
+INFO: user amarontweeted 66
+13 Aug, 2012 6:33:36 PM Minty.configuration.MintyConfig logger
+INFO: -------------------------------------------------------------------------------------------
+13 Aug, 2012 6:33:36 PM Minty.configuration.MintyConfig logger
+INFO: -------------------------------------------------------------------------------------------
+13 Aug, 2012 6:33:36 PM Minty.configuration.MintyConfig logger
+INFO: Minty Server log
+13 Aug, 2012 6:34:19 PM Minty.controller.LoginController login
+INFO: user amaronlogged in successfully
+13 Aug, 2012 6:34:49 PM Minty.controller.TweetController create
+INFO: user amarontweeted 67
+13 Aug, 2012 6:38:05 PM Minty.controller.TweetController create
+INFO: user amarontweeted 68
+13 Aug, 2012 6:38:39 PM Minty.controller.TweetController create
+INFO: user amarontweeted 69
+13 Aug, 2012 6:39:48 PM Minty.controller.TweetController create
+INFO: user amarontweeted 70
+13 Aug, 2012 6:39:55 PM Minty.controller.LoginController logout
+INFO: user amaron logged out successfully
+13 Aug, 2012 8:21:21 PM Minty.configuration.MintyConfig logger
+INFO: -------------------------------------------------------------------------------------------
+13 Aug, 2012 8:21:21 PM Minty.configuration.MintyConfig logger
+INFO: -------------------------------------------------------------------------------------------
+13 Aug, 2012 8:21:21 PM Minty.configuration.MintyConfig logger
+INFO: Minty Server log
+13 Aug, 2012 8:21:56 PM Minty.controller.LoginController login
+INFO: user amaronlogged in successfully
+13 Aug, 2012 8:22:43 PM Minty.controller.TweetController create
+INFO: user amarontweeted 71
+13 Aug, 2012 8:23:32 PM Minty.controller.TweetController create
+INFO: user amarontweeted 73
+13 Aug, 2012 8:29:10 PM Minty.controller.TweetController create
+INFO: user amarontweeted 75
+13 Aug, 2012 8:30:39 PM Minty.controller.TweetController create
+INFO: user amarontweeted 77
+13 Aug, 2012 8:31:23 PM Minty.controller.TweetController create
+INFO: user amarontweeted 78
+13 Aug, 2012 8:31:29 PM Minty.controller.TweetController create
+INFO: user amarontweeted 79
+13 Aug, 2012 8:33:12 PM Minty.controller.TweetController create
+INFO: user amarontweeted 80
+13 Aug, 2012 8:33:15 PM Minty.controller.TweetController create
+INFO: user amarontweeted 81
+13 Aug, 2012 8:37:07 PM Minty.controller.LoginController login
+INFO: user kdudelogged in successfully
+13 Aug, 2012 8:37:18 PM Minty.controller.TweetController create
+INFO: user kdudetweeted 82
+13 Aug, 2012 8:38:13 PM Minty.controller.LoginController login
+INFO: user kdudelogged in successfully
+13 Aug, 2012 8:39:12 PM Minty.controller.TweetController create
+INFO: user amarontweeted 83
+13 Aug, 2012 8:40:37 PM Minty.controller.TweetController create
+INFO: user amarontweeted 84
+13 Aug, 2012 8:41:05 PM Minty.controller.ProfileViewController ViewUser
+INFO: user amaron visited kdude's profile
+13 Aug, 2012 8:42:12 PM Minty.controller.ProfileViewController ViewUser
+INFO: user kdude visited amaron's profile
+13 Aug, 2012 8:42:41 PM Minty.controller.TweetController create
+INFO: user amarontweeted 85
+13 Aug, 2012 8:44:34 PM Minty.controller.TweetController create
+INFO: user kdudetweeted 86
+13 Aug, 2012 8:44:48 PM Minty.controller.TweetController create
+INFO: user kdudetweeted 87
+13 Aug, 2012 8:45:24 PM Minty.controller.TweetController create
+INFO: user amarontweeted 88
+13 Aug, 2012 9:07:47 PM Minty.controller.TweetController create
+INFO: user amarontweeted 89

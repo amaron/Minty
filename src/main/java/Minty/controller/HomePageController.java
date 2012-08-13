@@ -92,6 +92,14 @@ public class HomePageController {
 
     }
 
+    @RequestMapping(value="/user/addToRetweets.json", method= RequestMethod.POST)
+    @ResponseBody
+    public String addToRetweets( @RequestParam int tweet_id, HttpSession Session){
+
+        return tweetStore.addToRetweets((Long) Session.getAttribute("userID"),tweet_id);
+
+    }
+
     @RequestMapping("/mentions")
     public ModelAndView homeMentions(final HttpSession session)
     {
