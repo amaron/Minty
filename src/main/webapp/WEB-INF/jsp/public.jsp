@@ -120,6 +120,7 @@
     <!-- Le fav and touch icons -->
     <link rel="stylesheet" href="/static/css/bootstrap.css">
     <link rel="stylesheet" href="/static/css/easyNotification.css">
+
     <script type="text/javascript" src="/static/js/jquery.min.js"></script>
     <script type="text/javascript" src="/static/js/ejs_production.js"></script>
     <script type="text/javascript" src="/static/js/timeDifference.js"></script>
@@ -185,27 +186,9 @@
 
 <div class="container">
 
-    <div class="row-fluid">
-        <div class="span12">
-
-            <div class="hero-unit">
-                <div class="row fluid">
-
-                    <div class="span4">
-                    Already a Minty member? Login to start tweeting! <a class="btn btn-success" href="/user/login"></a>
-
-                    Not on Minty? You can be tweeting on Minty too! Just take 2 mins to signup! <a class="btn btn-success" href="/user/register"></a>
-                    </div>
-
-                </div>
-            </div>
 
 
-        </div>
-    </div>
-
-
-        <div class="span9">
+    <div class="span12">
             <div class="row-fluid">
 
 
@@ -254,4 +237,3 @@
 
 </body>
 </html>
-
