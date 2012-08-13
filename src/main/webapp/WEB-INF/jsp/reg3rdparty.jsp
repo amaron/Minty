@@ -12,3 +12,15 @@ Register Now to user Minty 3rdParty REST APIs!
     <input type="submit" value="Register">
 </form>
 
+Post tweet
+<form action="/REST/user/amaron/createTweet.json" method="post">
+    username: <input type="text" name="username"></br>
+    Tweet: <input type="text" name="Tweet"></br>
+    p_key: <input type="text" name="p_key"></br>
+    u_key: <input type="text" name="u_key"></br>
+    user_id: <input type="text" name="user_id"></br>
+
+    <input type="submit" value="Post Tweet!">
+</form>
+
+

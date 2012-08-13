@@ -174,12 +174,13 @@ public class RESTController {
 
     @RequestMapping(value="/user/{handle}/createTweet.json", method=RequestMethod.POST)
     @ResponseBody
-    public Hashtable createTweet(@PathVariable String handle, @RequestParam String Secret, @RequestParam String Tweet, @RequestParam final long user_id, @RequestParam final String username){
+    public Hashtable createTweet(@PathVariable String handle, @RequestParam String u_key,@RequestParam String p_key, @RequestParam String Tweet, @RequestParam final long user_id, @RequestParam final String username){
 
        final TweetData tweet=new TweetData();
        tweet.setTweet(Tweet);
 
-       final String result = restHelper.validate(Secret, username);
+       final String result = restHelper.validate(p_key,u_key, username);
+       System.out.println(result);
        if(result.equals("success")){
        return new Hashtable(){{
            put("Tweet",tweetStore.add(tweet,username,user_id));

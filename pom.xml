@@ -5,7 +5,7 @@
     <artifactId>sampleapp2</artifactId>
     <packaging>war</packaging>
     <version>1.0</version>
-    <description>sampleapp2 Maven Webapp</description>
+    <description>Minty Maven Webapp</description>
     <url>http://maven.apache.org</url>
     <dependencies>
         <dependency>
@@ -91,7 +91,7 @@
         </dependency>
     </dependencies>
     <build>
-        <finalName>sampleapp2</finalName>
+        <finalName>Minty</finalName>
         <plugins>
             <plugin>
                 <artifactId>maven-compiler-plugin</artifactId>

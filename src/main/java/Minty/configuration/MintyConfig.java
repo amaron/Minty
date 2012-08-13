@@ -191,6 +191,26 @@ import java.util.logging.SimpleFormatter;
                         "ALTER TABLE registered3rdparty OWNER TO postgres;\n");
             }
 
+            try {
+                int a =  db.queryForInt("SELECT COUNT(*) FROM retweets;");
+            }
+            catch (Exception e) {
+            db.update("CREATE TABLE retweets\n" +
+                    "(\n" +
+                    "  user_id integer,\n" +
+                    "  tweet_id integer,\n" +
+                    "  CONSTRAINT retweets_tweet_id_fkey FOREIGN KEY (tweet_id)\n" +
+                    "      REFERENCES tweets (tweet_id) MATCH SIMPLE\n" +
+                    "      ON UPDATE NO ACTION ON DELETE NO ACTION,\n" +
+                    "  CONSTRAINT retweets_user_id_fkey FOREIGN KEY (user_id)\n" +
+                    "      REFERENCES users (user_id) MATCH SIMPLE\n" +
+                    "      ON UPDATE NO ACTION ON DELETE NO ACTION\n" +
+                    ")\n" +
+                    "WITH (\n" +
+                    "  OIDS=FALSE\n" +
+                    ");\n" +
+                    "ALTER TABLE retweets OWNER TO postgres;");
+            }
             return db;
         }
 

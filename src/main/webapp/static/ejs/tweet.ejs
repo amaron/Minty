@@ -19,5 +19,16 @@
                                                       <input type='submit' value='retweet'/> <small><a href="javascript:void(0);" onclick='hideRetweet(<%=tweet_id%>)' id='hidelink<%=tweet_id%>'>nevermind</a></small>
                                                       </form>
 
+                             <small><a href="javascript:void(0);" onclick='showReply(<%=tweet_id%>)' id='replylink<%=tweet_id%>'>reply</a></small>
+                             <small><a href="javascript:void(0);" onclick='callRetweet(<%=tweet_id%>)' id='retweetlink<%=tweet_id%>'> retweet</a></small>
                          </div>
+
+                         <div class="span11">
+                         <form action="" id='replyform<%=tweet_id%>' name='replyform<%=tweet_id%>' style='display:none' onsubmit='addTweetThenHide(this,<%=tweet_id%>);return false;'>
+                         <textarea id='tweet' name='tweet'>@<%=username%>: </textarea>
+                         <input type='submit' value='reply'/> <small><a href="javascript:void(0);" onclick='hideReply(<%=tweet_id%>)' id='hidelink<%=tweet_id%>'>nevermind</a></small>
+                         </form>
+                         </div>
+
+
            </div>

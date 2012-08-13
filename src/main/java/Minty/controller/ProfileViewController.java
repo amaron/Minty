@@ -119,6 +119,7 @@ public class ProfileViewController {
         mv.addObject("label","followers");
         mv.addObject("User",userService.getUser((String) Session.getAttribute("userName")));
         mv.addObject("List",viewService.getFollowers(handle));
+
         mv.addObject("handle",handle);
         return mv;
     }

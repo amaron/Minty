@@ -57,7 +57,7 @@ public class TweetController {
     @RequestMapping(value="/retweet/{id}", method=RequestMethod.POST)
     @ResponseBody
     public List<TweetData> retweet(@PathVariable final int id) {
-         return  tweetStore.getTweet(id);
+        return  tweetStore.getTweet(id);
     }
 
 

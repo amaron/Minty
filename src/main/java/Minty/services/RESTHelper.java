@@ -2,6 +2,7 @@ package Minty.services;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.dao.EmptyResultDataAccessException;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Service;
 
@@ -49,50 +50,46 @@ public class RESTHelper {
     }
 
     private String check3rdPartyRegistration(String remote_party){
-        String result=null;
-        try{
-            db.queryForList("SELECT * FROM registered3rdparty WHERE pkey=?",remote_party);
+        try {
+            db.queryForMap("SELECT * FROM registered3rdparty WHERE pkey=?",decrypt(remote_party));
 
-        }catch(Exception e){
-            return result;
+        }
+        catch (EmptyResultDataAccessException e) {
+            return null;
         }
         return "yes";
     }
 
     private String checkRESTUserRegistration(String user_key, String username){
-        String result=null;
-        try{
-            db.queryForList("SELECT * FROM restusers WHERE pkey=? AND username=?",user_key, username);
 
-        }catch(Exception e){
-            return result;
+        try {
+            db.queryForMap("SELECT * FROM restusers WHERE pkey=? AND username=?",decrypt(user_key), username);
+
+        }
+        catch (EmptyResultDataAccessException e) {
+            return null;
         }
         return "yes";
     }
 
     private boolean checkTimeOut(String request_time){
         Timestamp req_time = Timestamp.valueOf(request_time);
-        if(((new java.util.Date()).getTime())- req_time.getTime()>5000)return false;
+        if(((new java.util.Date()).getTime())- req_time.getTime()>50000000)return false;
         else return true;
 
     }
 
-    public String validate(String Secret, String username){
+    public String validate(String p_key, String u_key, String username){
 
-        String decoded_string=decrypt(Secret);
-        String[] data=decoded_string.split(",");
-        if(check3rdPartyRegistration(data[0])==null){
+        if(check3rdPartyRegistration(p_key)==null){
             return "Invalid 3rdParty Key. Contact Minty Admin for lost password or Register for 3rdParty access";
         }else{
-            if(checkRESTUserRegistration(data[2],username)==null){
+            if(checkRESTUserRegistration(u_key,username)==null){
                 return "Invalid User Key. User Must be logged on to make tweets.";
             }else{
-                if(checkTimeOut(data[1])){
+
                     return "success";
-                }else{
-                    return "Request Timed out. Please Sync with Minty Server Time and send again";
-                }
-            }
+                 }
         }
 
     }
