@@ -129,13 +129,28 @@ public class RESTController {
 
     @RequestMapping(value="/login", method=RequestMethod.GET)
     public ModelAndView getRESTlogin(){
-           return new ModelAndView("index");
+           return new ModelAndView("restlogin");
+    }
+
+
+    @RequestMapping(value="/register",method=RequestMethod.GET)
+    public ModelAndView reg3rdparty(){
+        return new ModelAndView("reg3rdparty");
+    }
+
+    @RequestMapping(value="/register",method=RequestMethod.POST)
+    public ModelAndView giveKeyreg3rdparty(@RequestParam String pname){
+        final String pkey=restHelper.register3rdParty(pname);
+        System.out.println("key "+ pkey + "cryptkey " + restHelper.encrypt(pkey));
+        return new ModelAndView("reg3rdparty"){{
+            addObject("message",restHelper.encrypt(pkey));
+        }};
     }
 
     @RequestMapping(value="/login", method=RequestMethod.POST)
     @ResponseBody
     public String postRESTlogin(@RequestParam String cb_url, User user){
-        int userID;
+
         User userData = userService.getUser(user.getUsername());
         String post_data;
         if(userData==null){

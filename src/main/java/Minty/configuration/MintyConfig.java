@@ -162,7 +162,7 @@ import java.util.logging.SimpleFormatter;
             db.update("CREATE TABLE restusers\n" +
                     "(\n" +
                     "  username character varying(30),\n" +
-                    "  pkey uuid[],\n" +
+                    "  pkey character varying(36),\n" +
                     "  reg_time timestamp without time zone DEFAULT now()\n" +
                     ")\n" +
                     "WITH (\n" +
@@ -181,7 +181,7 @@ import java.util.logging.SimpleFormatter;
                         "(\n" +
                         "  id serial NOT NULL,\n" +
                         "  pname character varying(30),\n" +
-                        "  pkey uuid,\n" +
+                        "  pkey character varying(36),\n" +
                         "  reg_time timestamp without time zone DEFAULT now(),\n" +
                         "  CONSTRAINT registered3rdparty_pkey PRIMARY KEY (id)\n" +
                         ")\n" +

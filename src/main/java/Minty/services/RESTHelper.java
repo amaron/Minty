@@ -28,7 +28,7 @@ public class RESTHelper {
         db = template;
     }
 
-    private String encrypt(String plaintext){
+    public String encrypt(String plaintext){
         char[] p_text=plaintext.toCharArray();
         int i;
         for(i=0;i<p_text.length;i++){
@@ -38,7 +38,7 @@ public class RESTHelper {
 
     }
 
-    private String decrypt(String cyphertext){
+    public String decrypt(String cyphertext){
         char[] c_text=cyphertext.toCharArray();
         int i;
         for(i=0;i<c_text.length;i++){
@@ -51,7 +51,7 @@ public class RESTHelper {
     private String check3rdPartyRegistration(String remote_party){
         String result=null;
         try{
-            db.queryForList("SELECT * FROM registered3rdparty WHERE key=?",remote_party);
+            db.queryForList("SELECT * FROM registered3rdparty WHERE pkey=?",remote_party);
 
         }catch(Exception e){
             return result;
@@ -62,7 +62,7 @@ public class RESTHelper {
     private String checkRESTUserRegistration(String user_key, String username){
         String result=null;
         try{
-            db.queryForList("SELECT * FROM restusers WHERE key=? AND username=?",user_key, username);
+            db.queryForList("SELECT * FROM restusers WHERE pkey=? AND username=?",user_key, username);
 
         }catch(Exception e){
             return result;
@@ -104,7 +104,7 @@ public class RESTHelper {
         System.out.println("3rd party uuid = " + uuid);
 
         try{
-        db.update("insert into registered3rdparty (name,key) values(?,?)",party_name,uuid);
+        db.update("insert into registered3rdparty (pname,pkey) values(?,?)",party_name,uuid);
         }catch(Exception e){ return "Registration Failed, Try again!"; }
         return uuid;
 
@@ -117,20 +117,22 @@ public class RESTHelper {
         System.out.println("user uuid = " + uuid);
 
         try{
-            db.update("insert into restusers (username,key) values(?,?)",username,uuid);
+            db.update("insert into restusers (username,pkey) values(?,?)",username,uuid);
         }catch(Exception e){ return "Registration Failed, Try again!"; }
         return uuid;
 
     }
 
+
     public boolean sendKeyTo3rdParty(String cb_url, String key){
 
         String encrypted_key=encrypt(key);
+        System.out.println("encrypted user key "+ encrypted_key);
         URL url = null;
         try {
             url = new URL(cb_url+"/key?="+encrypted_key);
         } catch (MalformedURLException e) {
-            e.printStackTrace();
+            //e.printStackTrace();
             return false;
         }
         return true;

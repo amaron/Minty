@@ -1084,3 +1084,39 @@ INFO: --------------------------------------------------------------------------
 INFO: Minty Server log
 12 Aug, 2012 10:14:17 PM Minty.controller.LoginController login
 INFO: user amaronlogged in successfully
+13 Aug, 2012 3:29:06 AM Minty.configuration.MintyConfig logger
+INFO: -------------------------------------------------------------------------------------------
+13 Aug, 2012 3:29:06 AM Minty.configuration.MintyConfig logger
+INFO: -------------------------------------------------------------------------------------------
+13 Aug, 2012 3:29:06 AM Minty.configuration.MintyConfig logger
+INFO: Minty Server log
+13 Aug, 2012 11:43:39 AM Minty.configuration.MintyConfig logger
+INFO: -------------------------------------------------------------------------------------------
+13 Aug, 2012 11:43:39 AM Minty.configuration.MintyConfig logger
+INFO: -------------------------------------------------------------------------------------------
+13 Aug, 2012 11:43:39 AM Minty.configuration.MintyConfig logger
+INFO: Minty Server log
+13 Aug, 2012 11:56:16 AM Minty.configuration.MintyConfig logger
+INFO: -------------------------------------------------------------------------------------------
+13 Aug, 2012 11:56:16 AM Minty.configuration.MintyConfig logger
+INFO: -------------------------------------------------------------------------------------------
+13 Aug, 2012 11:56:16 AM Minty.configuration.MintyConfig logger
+INFO: Minty Server log
+13 Aug, 2012 11:57:59 AM Minty.controller.LoginController login
+INFO: user amaronlogged in successfully
+13 Aug, 2012 11:59:30 AM Minty.controller.LoginController logout
+INFO: user amaron logged out successfully
+13 Aug, 2012 12:00:09 PM Minty.controller.LoginController login
+INFO: user amaronlogged in successfully
+13 Aug, 2012 12:03:02 PM Minty.configuration.MintyConfig logger
+INFO: -------------------------------------------------------------------------------------------
+13 Aug, 2012 12:03:02 PM Minty.configuration.MintyConfig logger
+INFO: -------------------------------------------------------------------------------------------
+13 Aug, 2012 12:03:02 PM Minty.configuration.MintyConfig logger
+INFO: Minty Server log
+13 Aug, 2012 12:11:36 PM Minty.configuration.MintyConfig logger
+INFO: -------------------------------------------------------------------------------------------
+13 Aug, 2012 12:11:36 PM Minty.configuration.MintyConfig logger
+INFO: -------------------------------------------------------------------------------------------
+13 Aug, 2012 12:11:36 PM Minty.configuration.MintyConfig logger
+INFO: Minty Server log
