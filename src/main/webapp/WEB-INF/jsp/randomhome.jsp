@@ -176,8 +176,8 @@
 
                 <ul class="nav nav-list">
 
-                    <legend>Gaurav Munjal<span class="smalltext"><a href="View my profile">View my profile</a></span></legend></li>
-                    <div class="mintbio">We are here to create a dent in the universe, otherwise, why even be here.</div>
+                    <legend>Gaurav Munjal<span class="smalltext"><a href="/user/${User.username}">View my profile</a></span></legend></li>
+                    <div class="mintbio">${User.bio}</div>
 
 
 

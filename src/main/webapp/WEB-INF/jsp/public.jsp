@@ -220,7 +220,9 @@
         </div>
 
 
-
+        <div class="span9">
+            <button class="btn btn-success" id="moreTweetsBtn" onclick="getMoreTweets(this);return false">load more...</button>
+        </div>
 
     </div>
     <hr>
