@@ -77,7 +77,7 @@ public class SignupController {
         System.out.println("user details post "+ user.getBio() +user.getWebsite()+user.getPlace());
         user.setUsername(handle);
         userService.updateUser(user,handle);                 /// Gaurav you need to add this code with the photo upload code
-        return new ModelAndView("redirect:/home");
+        return new ModelAndView("redirect:/uploadfile");
     }
 
     @RequestMapping(value = "/user/register/usrchk/{username}.json", method = RequestMethod.POST)

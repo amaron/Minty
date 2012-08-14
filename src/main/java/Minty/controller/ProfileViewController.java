@@ -126,10 +126,11 @@ public class ProfileViewController {
 
     @RequestMapping(value="/edit", method=RequestMethod.GET)
     public ModelAndView editProfile(final HttpSession Session){
-        return new ModelAndView("almostthere"){{
-             addObject("User",userService.getUser((String) Session.getAttribute("userName")));
-             addObject("handle",(String) Session.getAttribute("userName"));
-        }};
+        ModelAndView mv = new ModelAndView("edit");
+        mv.addObject("User",userService.getUser((String) Session.getAttribute("userName")));
+        mv.addObject("handle",(String) Session.getAttribute("userName"));
+        System.out.print(userService.getUser((String) Session.getAttribute("userName")).getBio());
+        return mv;
     }
 
     @RequestMapping(value="/edit", method=RequestMethod.POST)

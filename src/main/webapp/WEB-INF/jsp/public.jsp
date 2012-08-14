@@ -25,6 +25,39 @@
     <script type="text/javascript" src="/static/js/getMoreTweets.js"></script>
     <script type="text/javascript" src="/static/js/displayNew.js"></script>
     <script type="text/javascript" src="/static/js/escapeHTML.js"></script>
+    <link rel="stylesheet" href="/static/css/bootstrap.css">
+    <link rel="stylesheet" href="/static/css/easyNotification.css">
+
+    <script type="text/javascript" src="/static/js/jquery.min.js"></script>
+    <script type="text/javascript" src="/static/js/ejs_production.js"></script>
+    <script type="text/javascript" src="/static/js/timeDifference.js"></script>
+    <script type="text/javascript" src="/static/js/appendItem.js"></script>
+    <script type="text/javascript" src="/static/js/getJSTimestamp.js"></script>
+    <script type="text/javascript" src="/static/js/easy.notification.js"></script>
+    <script type="text/javascript" src='/static/js/follow.js'></script>
+    <script type="text/javascript" src='/static/js/addTweet.js'></script>
+    <script type="text/javascript">var num_followers=${User.num_followers};</script>
+    <script type="text/javascript">
+        var cur_offset=10;
+        function getMorePublicTweets(){
+
+            $.ajax({
+                type: 'GET',
+                url: '/getMorePublicTweets.json',
+                data: { offset: cur_offset },
+                success: function(data) {
+                    if(data.length==0) $('#moreTweetsBtn').hide();
+                    for(var k=0;k<data.length;k++){
+                        //alert(JSON.stringify(data.List[k]));
+                        appendItem(data[k]);
+                    }
+                }
+            });
+            cur_offset+=10;
+
+
+        }
+    </script>
     <script type="text/javascript">
         $(document).ready(function(){
 
@@ -216,12 +249,13 @@
                     </c:forEach>
 
                 </div><!--/span-->
+                <button class="btn btn-success" id="moreTweetsBtn" onclick="getMorePublicTweets(this);return false">More Public Tweets!</button>
             </div>
         </div>
 
 
         <div class="span9">
-            <button class="btn btn-success" id="moreTweetsBtn" onclick="getMoreTweets(this);return false">load more...</button>
+
         </div>
 
     </div>

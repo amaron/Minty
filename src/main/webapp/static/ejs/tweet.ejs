@@ -1,7 +1,7 @@
    <div class="tweet" style="display:none" id="tweetItem<%=tweet_id%>">
                          <div class="span1"><span class="tweetimage"><img src="/static/img/Woo/<%=username%>.jpg" height="58px" width="58px"/></span></div>
                          <div class="span11">
-                             <span class="time"> <%=timeDiff%></span>
+                             <span class="time"><a href="/user/<%=username%>/tweet/<%=tweet_id%>"> <%=timeDiff%> </a></span>
                              <span class="tweetheader"><a href="/user/<%=username%>"><%=username%></a></span><br>
                              <span id="itemName<%=tweet_id%>" class="tweettext"><%=tweet%></span>
 
