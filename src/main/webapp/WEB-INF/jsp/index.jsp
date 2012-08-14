@@ -147,6 +147,7 @@
 
     $(document).ready(function(){
 
+
         $.validator.addMethod("usernameShouldNotAlreadyExist",function(value){
             var check=false;
 

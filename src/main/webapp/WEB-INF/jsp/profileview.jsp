@@ -15,6 +15,9 @@
     <script type="text/javascript" src="/static/js/appendItem.js"></script>
     <script type="text/javascript" src="/static/js/getJSTimestamp.js"></script>
     <script type="text/javascript" src='/static/js/addTweet.js'></script>
+    <script type="text/javascript" src='/static/js/follow.js'></script>
+    <script type="text/javascript" src='/static/js/addTweetNow.js'></script>
+    <script type="text/javascript">var num_followers=${User.num_followers}</script>
     <meta charset="utf-8">
     <title>Bootstrap, from Twitter</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -185,11 +188,13 @@
 
                     </div>
                     <div class="span4">
-                        <div class="followbutton"><form class="followbutton" action="" onsubmit="follow('${handle}'); return false;">
+                        <div class="followbutton">
+                            <form class="followbutton" action="" onsubmit="follow('${User.username}'); return false;">
 
                             <input type="submit" class="btn-success btn-large" value="${message}" name="unfollow" id="followBtn"/>
 
-                        </form></div>
+                            </form>
+                        </div>
                         <div class="smalldetails">${User.place} - ${User.website}
                         </div></div>
                     <div class="span2"><div class="count">Followers ${User.num_followers}</div>
@@ -244,50 +249,11 @@
                     <c:forEach var='item' items='${List}'>
 
                         <script type="text/javascript">
-                            appendItem({tweet_id:${item.tweet_id}, tweet:'${item.tweet}', username:'${item.username}', pushtime:'${item.pushtime}'});
+                            appendItem({tweet_id:${item.tweet_id}, tweet:"${item.tweet}", username:'${item.username}', pushtime:'${item.pushtime}'});
                         </script>
                     </c:forEach>
 
 
-                    <div class="tweet" onmouseover="document.getElementById('re').style.display = 'block';" onmouseout="document.getElementById('re').style.display = 'none';">
-                        <div class="span1"><span class="tweetimage"><img src="img/gaurav.jpg" height="58px" width="58px"/></span></div>
-                        <div class="span11">
-                            <span class="time">5 mins ago</span>
-
-                            <span class="tweetheader">Gaurav Munjal</span><br>
-                            <span class="tweettext">Hey, we are here to create a dent in the universe, otherwise, why even be here. And by the way who the fuck is John Galt? Err what the hell you are saying man!</span>
-                            <span class="reply"><a id="re" href="#" style="display: none;">Reply</a></span>
-                        </div>
-                    </div>
-                    <div class="tweet" onmouseover="this.getElementById('re').style.display = 'block';" onmouseout="this.getElementById('re').style.display = 'none';">
-                        <div class="span1"><span class="tweetimage"><img src="img/gaurav.jpg" height="58px" width="58px"/></span></div>
-                        <div class="span11">
-                            <span class="time">5 mins ago</span>
-
-                            <span class="tweetheader">Gaurav Munjal</span><br>
-                            <span class="tweettext">Hey, we are here to create a dent in the universe, otherwise, why even be here. And by the way who the fuck is John Galt? Err what the hell you are saying man!</span>
-                            <span class="reply"><a id="re" href="#" style="display: none;">Reply</a></span>
-                        </div>
-                    </div>
-
-                    <!-- 				<form class="well form-inline" id="replyform">
-
-                         Reply to @gauravmunjal <input type="text" class="input-xxlarge"/>
-                         <input type="submit" class="btn-success" value="Reply"/>
-                         <input type="submit" class="btn-inverse" value="Nevermind"/>
-
-         </form>-->
-
-                    <div class="tweet" onmouseover="document.getElementById('re').style.display = 'block';" onmouseout="document.getElementById('re').style.display = 'none';">
-                        <div class="span1"><span class="tweetimage"><img src="img/gaurav.jpg" height="58px" width="58px"/></span></div>
-                        <div class="span11">
-                            <span class="time">5 mins ago</span>
-
-                            <span class="tweetheader">Gaurav Munjal</span><br>
-                            <span class="tweettext">Hey, we are here to create a dent in the universe, otherwise, why even be here. And by the way who the fuck is John Galt? Err what the hell you are saying man!</span>
-                            <span class="reply"><a id="re" href="#" style="display: none;">Reply</a></span>
-                        </div>
-                    </div>
                 </div><!--/span-->
             </div>
         </div>

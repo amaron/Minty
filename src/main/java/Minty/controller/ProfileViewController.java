@@ -153,7 +153,7 @@ public class ProfileViewController {
     @RequestMapping(value ="follow/{handle}.json", method = RequestMethod.POST)
     @ResponseBody
     public Hashtable FollowuserJSON(@PathVariable final String handle, HttpSession Session) {
-        viewService.followUser(handle);
+        viewService.followUser((Long)Session.getAttribute("userID"),handle);
         Hashtable h= new Hashtable();
         h.put("status","success");
         h.put("name",handle);

@@ -1614,3 +1614,121 @@ INFO: --------------------------------------------------------------------------
 INFO: Minty Server log
 14 Aug, 2012 6:33:34 PM Minty.controller.TweetController create
 INFO: user kunjantweeted 132
+14 Aug, 2012 7:39:01 PM Minty.configuration.MintyConfig logger
+INFO: -------------------------------------------------------------------------------------------
+14 Aug, 2012 7:39:01 PM Minty.configuration.MintyConfig logger
+INFO: -------------------------------------------------------------------------------------------
+14 Aug, 2012 7:39:01 PM Minty.configuration.MintyConfig logger
+INFO: Minty Server log
+14 Aug, 2012 7:41:06 PM Minty.controller.TweetController create
+INFO: user kktweeted 133
+14 Aug, 2012 7:54:24 PM Minty.controller.TweetController create
+INFO: user kktweeted 134
+14 Aug, 2012 7:57:42 PM Minty.controller.TweetController create
+INFO: user kktweeted 135
+14 Aug, 2012 8:04:00 PM Minty.controller.TweetController create
+INFO: user kktweeted 136
+14 Aug, 2012 8:04:05 PM Minty.controller.TweetController create
+INFO: user kktweeted 137
+14 Aug, 2012 8:05:08 PM Minty.controller.ProfileViewController ViewUser
+INFO: user kk visited amaron's profile
+14 Aug, 2012 8:05:20 PM Minty.controller.ProfileViewController ViewUser
+INFO: user kk visited amaron's profile
+14 Aug, 2012 8:05:35 PM Minty.controller.ProfileViewController ViewUser
+INFO: user kk visited amaron's profile
+14 Aug, 2012 8:11:55 PM Minty.controller.ProfileViewController ViewUser
+INFO: user kk visited amaron's profile
+14 Aug, 2012 8:12:10 PM Minty.controller.ProfileViewController ViewUser
+INFO: user kk visited amaron's profile
+14 Aug, 2012 8:12:20 PM Minty.controller.ProfileViewController FollowuserJSON
+INFO: user kk followed kk
+14 Aug, 2012 8:15:01 PM Minty.controller.ProfileViewController ViewUser
+INFO: user kk visited amaron's profile
+14 Aug, 2012 8:15:20 PM Minty.controller.ProfileViewController FollowuserJSON
+INFO: user kk followed kk
+14 Aug, 2012 8:15:26 PM Minty.controller.ProfileViewController FollowuserJSON
+INFO: user kk followed kk
+14 Aug, 2012 8:15:31 PM Minty.controller.ProfileViewController FollowuserJSON
+INFO: user kk followed kk
+14 Aug, 2012 8:19:20 PM Minty.controller.HomePageController Search
+INFO: User kk searched for sdf
+14 Aug, 2012 8:23:14 PM Minty.configuration.MintyConfig logger
+INFO: -------------------------------------------------------------------------------------------
+14 Aug, 2012 8:23:14 PM Minty.configuration.MintyConfig logger
+INFO: -------------------------------------------------------------------------------------------
+14 Aug, 2012 8:23:14 PM Minty.configuration.MintyConfig logger
+INFO: Minty Server log
+14 Aug, 2012 8:25:28 PM Minty.controller.LoginController login
+INFO: user amaronlogged in successfully
+14 Aug, 2012 8:31:06 PM Minty.controller.ProfileViewController ViewUser
+INFO: user amaron visited kk's profile
+14 Aug, 2012 8:31:23 PM Minty.controller.ProfileViewController FollowuserJSON
+INFO: user amaron followed amaron
+14 Aug, 2012 8:34:28 PM Minty.configuration.MintyConfig logger
+INFO: -------------------------------------------------------------------------------------------
+14 Aug, 2012 8:34:28 PM Minty.configuration.MintyConfig logger
+INFO: -------------------------------------------------------------------------------------------
+14 Aug, 2012 8:34:28 PM Minty.configuration.MintyConfig logger
+INFO: Minty Server log
+14 Aug, 2012 8:35:15 PM Minty.controller.LoginController login
+INFO: user amaronlogged in successfully
+14 Aug, 2012 8:35:41 PM Minty.controller.ProfileViewController ViewUser
+INFO: user amaron visited kk's profile
+14 Aug, 2012 8:37:24 PM Minty.controller.ProfileViewController ViewUser
+INFO: user amaron visited kk's profile
+14 Aug, 2012 8:38:14 PM Minty.controller.ProfileViewController FollowuserJSON
+INFO: user amaron followed amaron
+14 Aug, 2012 8:44:20 PM Minty.configuration.MintyConfig logger
+INFO: -------------------------------------------------------------------------------------------
+14 Aug, 2012 8:44:20 PM Minty.configuration.MintyConfig logger
+INFO: -------------------------------------------------------------------------------------------
+14 Aug, 2012 8:44:20 PM Minty.configuration.MintyConfig logger
+INFO: Minty Server log
+14 Aug, 2012 8:52:05 PM Minty.controller.LoginController login
+INFO: user amaronlogged in successfully
+14 Aug, 2012 8:54:31 PM Minty.controller.ProfileViewController ViewUser
+INFO: user amaron visited kk's profile
+14 Aug, 2012 8:54:39 PM Minty.controller.ProfileViewController FollowuserJSON
+INFO: user amaron followed amaron
+14 Aug, 2012 8:54:43 PM Minty.controller.ProfileViewController FollowuserJSON
+INFO: user amaron followed amaron
+14 Aug, 2012 8:54:53 PM Minty.controller.ProfileViewController FollowuserJSON
+INFO: user amaron followed amaron
+14 Aug, 2012 9:00:57 PM Minty.configuration.MintyConfig logger
+INFO: -------------------------------------------------------------------------------------------
+14 Aug, 2012 9:00:57 PM Minty.configuration.MintyConfig logger
+INFO: -------------------------------------------------------------------------------------------
+14 Aug, 2012 9:00:57 PM Minty.configuration.MintyConfig logger
+INFO: Minty Server log
+14 Aug, 2012 9:02:31 PM Minty.controller.LoginController login
+INFO: user amaronlogged in successfully
+14 Aug, 2012 9:02:57 PM Minty.controller.ProfileViewController ViewUser
+INFO: user amaron visited kk's profile
+14 Aug, 2012 9:03:08 PM Minty.controller.ProfileViewController FollowuserJSON
+INFO: user amaron followed amaron
+14 Aug, 2012 9:03:12 PM Minty.controller.ProfileViewController FollowuserJSON
+INFO: user amaron followed amaron
+14 Aug, 2012 9:07:49 PM Minty.configuration.MintyConfig logger
+INFO: -------------------------------------------------------------------------------------------
+14 Aug, 2012 9:07:49 PM Minty.configuration.MintyConfig logger
+INFO: -------------------------------------------------------------------------------------------
+14 Aug, 2012 9:07:49 PM Minty.configuration.MintyConfig logger
+INFO: Minty Server log
+14 Aug, 2012 9:08:28 PM Minty.controller.LoginController login
+INFO: user amaronlogged in successfully
+14 Aug, 2012 9:08:44 PM Minty.controller.ProfileViewController ViewUser
+INFO: user amaron visited kk's profile
+14 Aug, 2012 9:09:53 PM Minty.controller.ProfileViewController FollowuserJSON
+INFO: user amaron followed amaron
+14 Aug, 2012 9:09:56 PM Minty.controller.ProfileViewController FollowuserJSON
+INFO: user amaron followed amaron
+14 Aug, 2012 9:12:43 PM Minty.controller.ProfileViewController ViewUser
+INFO: user amaron visited kk's profile
+14 Aug, 2012 9:13:20 PM Minty.controller.ProfileViewController FollowuserJSON
+INFO: user amaron followed kk
+14 Aug, 2012 9:13:24 PM Minty.controller.ProfileViewController FollowuserJSON
+INFO: user amaron unfollowed kk
+14 Aug, 2012 9:13:29 PM Minty.controller.ProfileViewController FollowuserJSON
+INFO: user amaron followed kk
+14 Aug, 2012 9:15:51 PM Minty.controller.LoginController logout
+INFO: user amaron logged out successfully

@@ -75,9 +75,13 @@ public class ViewService {
     public boolean isFollowing(long user_id, String handle){
 
       Long user_id_handle=getUserId(handle);
-      Integer is_following=db.queryForInt("SELECT count(*) FROM following WHERE user_id =? and following_id=?",user_id,user_id_handle);
-        if(is_following==0)return false;
-        return true;
+        System.out.println("userid through .get"+ userID.get() + "passed userid"+ user_id + "handle id is"+ user_id_handle);
+        try{
+         db.queryForMap("SELECT * FROM following WHERE user_id = ? and following_id= ?",user_id,user_id_handle);
+         return true;
+        }catch(Exception e){return false;}
+
+
     }
 
     public boolean isUserExists(String handle){
@@ -87,16 +91,21 @@ public class ViewService {
         return true;
     }
 
-    public void followUser(String handle){
+    public void followUser(Long own_id, String handle){
 
         Long user_id=getUserId(handle);
-        if(userID.get()==user_id)   return;
-        if(isFollowing(userID.get(),handle)){unfollowUser(user_id);return;}
-
+        System.out.println("is following >"+ handle + isFollowing(own_id,handle));
+        if(own_id==user_id)   return;
+        if(isFollowing(own_id,handle)){unfollowUser(user_id);return;}
+        System.out.println("is following after action should be 0>"+ handle + isFollowing(own_id,handle));
         db.update("INSERT INTO following values(?,?);" +
                   "UPDATE users SET num_following=num_following+1 WHERE user_id=?;" +
-                "UPDATE users SET num_followers=num_followers+1 WHERE user_id=?;",userID.get(), user_id,userID.get(),user_id);
+                "UPDATE users SET num_followers=num_followers+1 WHERE user_id=?;",own_id, user_id,own_id,user_id);
         
+    }
+
+    public List<User> getPopularUsers(){
+        return db.query("SELECT * from Users order by num_tweets offset 0 limit 5",User.rowMapper);
     }
 
     public void unfollowUser(Long following_user_id){
