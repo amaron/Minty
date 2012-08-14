@@ -29,6 +29,7 @@
             <mvc:mapping path="/user/unfollow/*"/>
             <mvc:mapping path="/user/retweet/*"/>
             <mvc:mapping path="/mentions"/>
+            <mvc:mapping path="/uploadfile"/>
 
             <bean class="Minty.interceptor.AuthInterceptor"/>
         </mvc:interceptor>

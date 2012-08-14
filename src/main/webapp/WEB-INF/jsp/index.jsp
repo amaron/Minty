@@ -147,7 +147,6 @@
 
     $(document).ready(function(){
 
-        alert("wassup");
         $.validator.addMethod("usernameShouldNotAlreadyExist",function(value){
             var check=false;
 
