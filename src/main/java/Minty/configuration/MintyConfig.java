@@ -1,6 +1,6 @@
 package Minty.configuration;
 
-import Minty.services.DBAccessService;
+import Minty.model.DBAccessHelper;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -22,19 +22,19 @@ import java.util.logging.SimpleFormatter;
 public class MintyConfig {
 /*
     @Autowired
-    private DBAccessService db;
+    private DBAccessHelper db;
 */
 
     /*
         @Autowired
-        public MintyConfig (DBAccessService db){
+        public MintyConfig (DBAccessHelper db){
             this.db=db;
         }
     */
     @Bean
-    public DBAccessService db() {
+    public DBAccessHelper db() {
 
-        DBAccessService db = new DBAccessService();
+        DBAccessHelper db = new DBAccessHelper();
         try {
             int a =  db.queryForInt("SELECT COUNT(*) FROM USERS;");
         }

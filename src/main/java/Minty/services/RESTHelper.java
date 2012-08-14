@@ -1,5 +1,6 @@
 package Minty.services;
 
+import Minty.model.DBAccessHelper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.dao.EmptyResultDataAccessException;
@@ -20,10 +21,10 @@ import java.util.UUID;
 @Service
 public class RESTHelper {
     private final ThreadLocal<Long> userID;
-    public DBAccessService db;
+    public DBAccessHelper db;
 
     @Autowired
-    public RESTHelper(@Qualifier("userID") ThreadLocal<Long> userID, DBAccessService template) {
+    public RESTHelper(@Qualifier("userID") ThreadLocal<Long> userID, DBAccessHelper template) {
         this.userID = userID;
         db = template;
     }

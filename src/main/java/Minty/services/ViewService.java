@@ -1,5 +1,6 @@
 package Minty.services;
 
+import Minty.model.DBAccessHelper;
 import Minty.model.TweetData;
 import Minty.model.User;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,10 +12,10 @@ import java.util.List;
 @Service
 public class ViewService {
     private final ThreadLocal<Long> userID;
-    public DBAccessService db;
+    public DBAccessHelper db;
 
     @Autowired
-    public ViewService(@Qualifier("userID") ThreadLocal<Long> userID, DBAccessService db) {
+    public ViewService(@Qualifier("userID") ThreadLocal<Long> userID, DBAccessHelper db) {
         this.userID = userID;
         this.db = db;
     }

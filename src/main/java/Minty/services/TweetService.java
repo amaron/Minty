@@ -1,5 +1,6 @@
 package Minty.services;
 
+import Minty.model.DBAccessHelper;
 import Minty.model.TweetData;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -10,10 +11,10 @@ import java.util.List;
 @Service
 public class TweetService {
     private final ThreadLocal<Long> userID;
-    public DBAccessService db;
+    public DBAccessHelper db;
 
     @Autowired
-    public TweetService(@Qualifier("userID") ThreadLocal<Long> userID, DBAccessService template) {
+    public TweetService(@Qualifier("userID") ThreadLocal<Long> userID, DBAccessHelper template) {
         this.userID = userID;
         System.out.println("from @service tweetStore, userID," + this.userID);
         db = template;
