@@ -3,7 +3,6 @@ package Minty.services;
 import Minty.model.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Service;
 
 /**
@@ -18,12 +17,10 @@ public class ValidatorService {
 
     private final ThreadLocal<Long> userID;
     private final UserService userService;
-    public JdbcTemplate db;
 
     @Autowired
-    public ValidatorService(@Qualifier("userID") ThreadLocal<Long> userID, JdbcTemplate template, UserService userService) {
+    public ValidatorService(@Qualifier("userID") ThreadLocal<Long> userID, UserService userService) {
         this.userID = userID;
-        db = template;
         this.userService=userService;
     }
 

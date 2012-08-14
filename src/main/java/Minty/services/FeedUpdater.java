@@ -1,7 +1,5 @@
 package Minty.services;
 
-import org.springframework.jdbc.core.JdbcTemplate;
-
 /**
  * Created with IntelliJ IDEA.
  * User: kunjan
@@ -14,8 +12,8 @@ public class FeedUpdater extends Thread {
 
     private int tweet_id;
     private long user_id;
-    JdbcTemplate db;
-    public FeedUpdater(int tweet_id, long user_id, JdbcTemplate db){
+    DBAccessService db;
+    public FeedUpdater(int tweet_id, long user_id, DBAccessService db){
         this.tweet_id=tweet_id;
         this.user_id=user_id;
         this.db=db;

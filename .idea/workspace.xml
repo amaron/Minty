@@ -40,16 +40,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c784c63d-b7b4-4e4d-a4f9-0fe82e90cf56" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/TwitMini/controller/HomePageController$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/TwitMini/controller/HomePageController$2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/TwitMini/controller/HomePageController$3.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/TwitMini/controller/ProfileViewController$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/TwitMini/controller/ProfileViewController$2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/tmp/jsp/org/apache/jsp/WEB_002dINF/jsp/ownprofile_jsp.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/tmp/jsp/org/apache/jsp/WEB_002dINF/jsp/profileview_jsp.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/tmp/jsp/org/apache/jsp/WEB_002dINF/jsp/index_jsp.class" afterPath="$PROJECT_DIR$/target/tmp/jsp/org/apache/jsp/WEB_002dINF/jsp/index_jsp.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/tmp/jsp/org/apache/jsp/WEB_002dINF/jsp/randomhome_jsp.class" afterPath="$PROJECT_DIR$/target/tmp/jsp/org/apache/jsp/WEB_002dINF/jsp/randomhome_jsp.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/Minty/services/DBAccessService.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Minty/services/FeedUpdater.java" afterPath="$PROJECT_DIR$/src/main/java/Minty/services/FeedUpdater.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Minty/services/RESTHelper.java" afterPath="$PROJECT_DIR$/src/main/java/Minty/services/RESTHelper.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Minty/services/TweetService.java" afterPath="$PROJECT_DIR$/src/main/java/Minty/services/TweetService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Minty/services/UserService.java" afterPath="$PROJECT_DIR$/src/main/java/Minty/services/UserService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Minty/services/ValidatorService.java" afterPath="$PROJECT_DIR$/src/main/java/Minty/services/ValidatorService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Minty/services/ViewService.java" afterPath="$PROJECT_DIR$/src/main/java/Minty/services/ViewService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/tweetpage.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/tweetpage.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/static/ejs/tweet.ejs" afterPath="$PROJECT_DIR$/src/main/webapp/static/ejs/tweet.ejs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/static/js/addTweetNow.js" afterPath="$PROJECT_DIR$/src/main/webapp/static/js/addTweetNow.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/static/js/appendItem.js" afterPath="$PROJECT_DIR$/src/main/webapp/static/js/appendItem.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/static/js/displayNew.js" afterPath="$PROJECT_DIR$/src/main/webapp/static/js/displayNew.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/static/userActivityLog.log" afterPath="$PROJECT_DIR$/src/main/webapp/static/userActivityLog.log" />
     </list>
     <ignored path="sampleapp2.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -112,64 +116,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="almostthere.jsp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/almostthere.jsp">
+      <file leaf-file-name="UserService.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Minty/services/UserService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="70" column="62" selection-start="2423" selection-end="2423" vertical-scroll-proportion="-4.5416665">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UploadItem.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Minty/model/UploadItem.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="13" selection-start="107" selection-end="107" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="uploadfile.jsp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/uploadfile.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="79" selection-start="1271" selection-end="1271" vertical-scroll-proportion="-15.041667">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="randomhome.jsp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/randomhome.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="213" column="23" selection-start="6774" selection-end="6774" vertical-scroll-proportion="-2.632653">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="displayNew.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/static/js/displayNew.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="54" column="1" selection-start="1467" selection-end="1467" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ViewService.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Minty/services/ViewService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="44" column="16" selection-start="1271" selection-end="1271" vertical-scroll-proportion="0.75090253">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TweetController.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Minty/controller/TweetController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="13" selection-start="917" selection-end="917" vertical-scroll-proportion="0.0">
+            <state line="23" column="55" selection-start="596" selection-end="596" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -178,26 +128,86 @@
       <file leaf-file-name="TweetService.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Minty/services/TweetService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="44" column="81" selection-start="2064" selection-end="2064" vertical-scroll-proportion="0.0">
+            <state line="59" column="72" selection-start="2763" selection-end="2763" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="appendItem.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/static/js/appendItem.js">
+      <file leaf-file-name="JdbcTemplate.class" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-jdbc/3.0.5.RELEASE/spring-jdbc-3.0.5.RELEASE.jar!/org/springframework/jdbc/core/JdbcTemplate.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="139" column="4" selection-start="4221" selection-end="4262" vertical-scroll-proportion="0.0">
+            <state line="130" column="5" selection-start="9633" selection-end="9842" vertical-scroll-proportion="-7.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UploadFileController.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Minty/controller/UploadFileController.java">
+      <file leaf-file-name="ValidatorService.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Minty/services/ValidatorService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="53" column="65" selection-start="1867" selection-end="1867" vertical-scroll-proportion="0.0">
+            <state line="21" column="75" selection-start="597" selection-end="597" vertical-scroll-proportion="0.0">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DBAccessService.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Minty/services/DBAccessService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="64" column="56" selection-start="2187" selection-end="2187" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MintyConfig.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Minty/configuration/MintyConfig.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="31" column="67" selection-start="662" selection-end="1011" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FeedUpdater.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Minty/services/FeedUpdater.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="0" selection-start="220" selection-end="220" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ImageStore.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Minty/services/ImageStore.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="68" column="68" selection-start="2124" selection-end="2124" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EmailValidator.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Minty/services/EmailValidator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="24" column="73" selection-start="650" selection-end="650" vertical-scroll-proportion="0.64426875">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RESTHelper.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Minty/services/RESTHelper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="34" column="25" selection-start="981" selection-end="981" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -218,22 +228,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/main/webapp/static/ejs/newtweet.ejs" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/Minty/configuration/MintyConfig.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/static/ejs/tweet.ejs" />
-        <option value="$PROJECT_DIR$/src/main/webapp/static/Todos.txt" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/index.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/dispatcher-servlet.xml" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/login.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/Minty/services/UserService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Minty/controller/SignupController.java" />
         <option value="$PROJECT_DIR$/src/main/java/Minty/controller/ProfileViewController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/almostthere.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/randomhome.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/static/js/getUpdates.js" />
-        <option value="$PROJECT_DIR$/src/main/java/Minty/services/TweetService.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/tweetpage.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/static/ejs/tweet.ejs" />
         <option value="$PROJECT_DIR$/src/main/webapp/static/js/displayNew.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/static/js/addTweetNow.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/static/js/appendItem.js" />
+        <option value="$PROJECT_DIR$/src/main/java/Minty/services/ViewService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Minty/services/ValidatorService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Minty/services/DBAccessService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Minty/services/UserService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Minty/services/TweetService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Minty/services/FeedUpdater.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Minty/services/RESTHelper.java" />
       </list>
     </option>
   </component>
@@ -324,8 +334,8 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-1" />
     <option name="y" value="27" />
-    <option name="width" value="1368" />
-    <option name="height" value="719" />
+    <option name="width" value="1922" />
+    <option name="height" value="927" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -521,6 +531,36 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ejs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="speakOUT" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="speakOUT" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -586,6 +626,36 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="model" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="speakOUT" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="speakOUT" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Minty" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="interceptor" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -727,6 +797,113 @@
       <recent name="$PROJECT_DIR$/src/main/java" />
       <recent name="$PROJECT_DIR$/src/main" />
     </key>
+  </component>
+  <component name="RestoreUpdateTree">
+    <UpdateInfo date="Moments ago" ActionInfo="_Update">
+      <UpdatedFiles>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Updated from server" />
+          <option name="myStatusName" value="Changed on server" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="CHANGED_ON_SERVER" />
+          <FILE-GROUP>
+            <option name="myUpdateName" value="Updated" />
+            <option name="myStatusName" value="Changed" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" value="UPDATED" />
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/public.jsp</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/randomhome.jsp</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/tweetpage.jsp</PATH>
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" value="Created" />
+            <option name="myStatusName" value="Created" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" value="CREATED" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" value="Deleted" />
+            <option name="myStatusName" value="Deleted" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="true" />
+            <option name="myId" value="REMOVED_FROM_REPOSITORY" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" value="Restored" />
+            <option name="myStatusName" value="Will be restored" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" value="RESTORED" />
+          </FILE-GROUP>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Modified" />
+          <option name="myStatusName" value="Modified" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="MODIFIED" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Skipped" />
+          <option name="myStatusName" value="Skipped" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="SKIPPED" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Merged with conflicts" />
+          <option name="myStatusName" value="Will be merged with conflicts" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="MERGED_WITH_CONFLICTS" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Merged with tree conflicts" />
+          <option name="myStatusName" value="Merged with tree conflicts" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Merged" />
+          <option name="myStatusName" value="Will be merged" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="MERGED" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Not in repository" />
+          <option name="myStatusName" value="Not in repository" />
+          <option name="mySupportsDeletion" value="true" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="UNKNOWN" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Locally added" />
+          <option name="myStatusName" value="Locally added" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="LOCALLY_ADDED" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Locally removed" />
+          <option name="myStatusName" value="Locally removed" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="LOCALLY_REMOVED" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Switched" />
+          <option name="myStatusName" value="Switched" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="SWITCHED" />
+        </FILE-GROUP>
+      </UpdatedFiles>
+    </UpdateInfo>
   </component>
   <component name="RunManager" selected="Maven.Minty [org.mortbay.jetty:jetty-maven-plugin:7.4.2.v20110526:run]">
     <configuration default="false" name="Javafile" type="Application" factoryName="Application" temporary="true">
@@ -1037,7 +1214,15 @@
       <created>1344893536304</created>
       <updated>1344893536304</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="tweet update problem fixed. everything should be working fine">
+      <created>1344893587049</created>
+      <updated>1344893587049</updated>
+    </task>
+    <task id="LOCAL-00022" summary="tweet update problem fixed. everything should be working fine">
+      <created>1344893837149</created>
+      <updated>1344893837149</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1061,7 +1246,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="27" width="1368" height="719" extended-state="6" />
+    <frame x="-1" y="27" width="1922" height="927" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1072,15 +1257,15 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39974126" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31453362" sideWeight="0.11305007" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.20886752" sideWeight="0.14100906" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329718" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32920355" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.15575221" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.0" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15477997" sideWeight="0.6336283" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.10897436" sideWeight="0.7322122" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39984825" sideWeight="0.6713533" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29666162" sideWeight="0.6336283" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3663717" sideWeight="0.8816388" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20886752" sideWeight="0.7322122" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26778784" sideWeight="0.8816388" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Phing Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -1201,54 +1386,16 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/Minty/controller/HomePageController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Minty/model/TweetData.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="106" column="102" selection-start="3842" selection-end="3842" vertical-scroll-proportion="0.0">
+        <state line="14" column="13" selection-start="296" selection-end="296" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/login.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Minty/model/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="100" column="101" selection-start="3327" selection-end="3327" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/dispatcher-servlet.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="47" selection-start="1417" selection-end="1417" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="com.intellij.spring.perspectives.SpringBeansStructureEditorProvider">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Minty/controller/LoginController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="13" selection-start="684" selection-end="684" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Minty/controller/ProfileViewController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="136" column="33" selection-start="4787" selection-end="4787" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Minty/controller/UploadFileController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="65" selection-start="1867" selection-end="1867" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/almostthere.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="70" column="62" selection-start="2423" selection-end="2423" vertical-scroll-proportion="-4.5416665">
+        <state line="24" column="75" selection-start="588" selection-end="588" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -1260,58 +1407,113 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/uploadfile.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Minty/controller/LoginController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="79" selection-start="1271" selection-end="1271" vertical-scroll-proportion="-15.041667">
+        <state line="62" column="52" selection-start="1713" selection-end="1713" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/js/appendItem.js">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Minty/controller/RESTController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="139" column="4" selection-start="4221" selection-end="4262" vertical-scroll-proportion="0.0">
+        <state line="32" column="42" selection-start="948" selection-end="948" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Minty/configuration/MintyConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="67" selection-start="662" selection-end="1011" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Minty/services/ViewService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="65" selection-start="470" selection-end="470" vertical-scroll-proportion="0.2964427">
+          <folding>
+            <marker date="1344944408000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..USERS..." />
+            <marker date="1344944408000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..TWEETS..." />
+            <marker date="1344944408000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..TWEETS..." />
+            <marker date="1344944408000" expanded="true" signature="-1:-1" placeholder="SELECT menti..mentions..." />
+            <marker date="1344944408000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..users..." />
+            <marker date="1344944408000" expanded="true" signature="-1:-1" placeholder="SELECT follo..following..." />
+            <marker date="1344944408000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..users..." />
+            <marker date="1344944408000" expanded="true" signature="-1:-1" placeholder="SELECT follo..following..." />
+            <marker date="1344944408000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..tweets..." />
+            <marker date="1344944408000" expanded="true" signature="-1:-1" placeholder="SELECT tweet..USERFEED..." />
+            <marker date="1344944408000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..tweets..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Minty/services/ValidatorService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="75" selection-start="597" selection-end="597" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/js/getUpdates.js">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-jdbc/3.0.5.RELEASE/spring-jdbc-3.0.5.RELEASE.jar!/org/springframework/jdbc/core/JdbcTemplate.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="51" selection-start="162" selection-end="162" vertical-scroll-proportion="0.31034482">
+        <state line="130" column="5" selection-start="9633" selection-end="9842" vertical-scroll-proportion="-7.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/randomhome.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Minty/services/DBAccessService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="213" column="23" selection-start="6774" selection-end="6774" vertical-scroll-proportion="-2.632653">
+        <state line="64" column="56" selection-start="2187" selection-end="2187" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Minty/services/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="55" selection-start="596" selection-end="596" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Minty/controller/TweetController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Minty/services/FeedUpdater.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="13" selection-start="917" selection-end="917" vertical-scroll-proportion="0.0">
+        <state line="10" column="0" selection-start="220" selection-end="220" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Minty/services/TweetService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="81" selection-start="2064" selection-end="2064" vertical-scroll-proportion="0.0">
+        <state line="59" column="72" selection-start="2763" selection-end="2763" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/js/displayNew.js">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Minty/services/RESTHelper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="1" selection-start="1467" selection-end="1467" vertical-scroll-proportion="0.0">
+        <state line="34" column="25" selection-start="981" selection-end="981" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Minty/services/ImageStore.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="68" column="68" selection-start="2124" selection-end="2124" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Minty/services/ViewService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Minty/services/EmailValidator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="16" selection-start="1271" selection-end="1271" vertical-scroll-proportion="0.75090253">
+        <state line="24" column="73" selection-start="650" selection-end="650" vertical-scroll-proportion="0.64426875">
           <folding />
         </state>
       </provider>

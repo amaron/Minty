@@ -49,6 +49,7 @@ function displayNew(form){
             var tweetItemLI = $(new EJS({url: '/static/ejs/tweet.ejs'}).render(temp)).data("tweetID", (temp).tweet_id);
             var tweetItemLI =preComputeOnTweet(temp);
             $('#tweetList').prepend(tweetItemLI);
+            $('#tweetItem'+data.tweet_id).show('slow');
 
         }
     });

@@ -4,7 +4,6 @@ import Minty.model.TweetData;
 import Minty.model.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -12,12 +11,12 @@ import java.util.List;
 @Service
 public class ViewService {
     private final ThreadLocal<Long> userID;
-    public JdbcTemplate db;
+    public DBAccessService db;
 
     @Autowired
-    public ViewService(@Qualifier("userID") ThreadLocal<Long> userID, JdbcTemplate template) {
+    public ViewService(@Qualifier("userID") ThreadLocal<Long> userID, DBAccessService db) {
         this.userID = userID;
-        db = template;
+        this.db = db;
     }
     
     public Long getUserId(String handle){
