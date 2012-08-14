@@ -15,7 +15,6 @@ import Minty.services.ValidatorService;
 import net.tanesha.recaptcha.ReCaptchaImpl;
 import net.tanesha.recaptcha.ReCaptchaResponse;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
@@ -28,12 +27,10 @@ import java.util.Hashtable;
 
 @Controller
 public class SignupController {
-    public final JdbcTemplate db;
-    public final UserService userService;
+    private final UserService userService;
     private final ValidatorService validatorService;
     @Autowired
-    public SignupController(JdbcTemplate db, UserService userService, ValidatorService validatorService) {
-        this.db = db;
+    public SignupController(UserService userService, ValidatorService validatorService) {
         this.userService=userService;
         this.validatorService=validatorService;
     }

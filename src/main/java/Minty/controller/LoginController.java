@@ -11,7 +11,6 @@ package Minty.controller;
 import Minty.model.User;
 import Minty.services.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -23,12 +22,11 @@ import java.util.logging.Logger;
 
 @Controller
 public class LoginController {
-    private final JdbcTemplate db;
     private final UserService userService;
     private final Logger logger;
     @Autowired
-    public LoginController(JdbcTemplate db, UserService userService, Logger logger) {
-        this.db = db;
+    public LoginController( UserService userService, Logger logger) {
+
         this.userService=userService;
         this.logger= logger;
     }

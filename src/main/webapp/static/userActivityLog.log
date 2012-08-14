@@ -1570,3 +1570,47 @@ INFO: user ktweeted 127
 INFO: user ktweeted 128
 14 Aug, 2012 2:20:11 PM Minty.controller.TweetController create
 INFO: user ktweeted 129
+14 Aug, 2012 5:11:53 PM Minty.configuration.MintyConfig logger
+INFO: -------------------------------------------------------------------------------------------
+14 Aug, 2012 5:11:53 PM Minty.configuration.MintyConfig logger
+INFO: -------------------------------------------------------------------------------------------
+14 Aug, 2012 5:11:53 PM Minty.configuration.MintyConfig logger
+INFO: Minty Server log
+14 Aug, 2012 5:14:10 PM Minty.controller.LoginController login
+INFO: user amaronlogged in successfully
+14 Aug, 2012 5:14:39 PM Minty.controller.TweetController create
+INFO: user amarontweeted 130
+14 Aug, 2012 5:14:56 PM Minty.controller.TweetController create
+INFO: user amarontweeted 131
+14 Aug, 2012 6:18:48 PM Minty.configuration.MintyConfig logger
+INFO: -------------------------------------------------------------------------------------------
+14 Aug, 2012 6:18:48 PM Minty.configuration.MintyConfig logger
+INFO: -------------------------------------------------------------------------------------------
+14 Aug, 2012 6:18:48 PM Minty.configuration.MintyConfig logger
+INFO: Minty Server log
+14 Aug, 2012 6:22:06 PM Minty.configuration.MintyConfig logger
+INFO: -------------------------------------------------------------------------------------------
+14 Aug, 2012 6:22:06 PM Minty.configuration.MintyConfig logger
+INFO: -------------------------------------------------------------------------------------------
+14 Aug, 2012 6:22:06 PM Minty.configuration.MintyConfig logger
+INFO: Minty Server log
+14 Aug, 2012 6:23:31 PM Minty.configuration.MintyConfig logger
+INFO: -------------------------------------------------------------------------------------------
+14 Aug, 2012 6:23:31 PM Minty.configuration.MintyConfig logger
+INFO: -------------------------------------------------------------------------------------------
+14 Aug, 2012 6:23:31 PM Minty.configuration.MintyConfig logger
+INFO: Minty Server log
+14 Aug, 2012 6:26:04 PM Minty.configuration.MintyConfig logger
+INFO: -------------------------------------------------------------------------------------------
+14 Aug, 2012 6:26:04 PM Minty.configuration.MintyConfig logger
+INFO: -------------------------------------------------------------------------------------------
+14 Aug, 2012 6:26:04 PM Minty.configuration.MintyConfig logger
+INFO: Minty Server log
+14 Aug, 2012 6:28:37 PM Minty.configuration.MintyConfig logger
+INFO: -------------------------------------------------------------------------------------------
+14 Aug, 2012 6:28:37 PM Minty.configuration.MintyConfig logger
+INFO: -------------------------------------------------------------------------------------------
+14 Aug, 2012 6:28:37 PM Minty.configuration.MintyConfig logger
+INFO: Minty Server log
+14 Aug, 2012 6:33:34 PM Minty.controller.TweetController create
+INFO: user kunjantweeted 132

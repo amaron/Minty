@@ -1,9 +1,5 @@
 package Minty.services;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.jdbc.core.JdbcTemplate;
-
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
@@ -12,14 +8,7 @@ import java.io.*;
 
 @Service
 public class ImageStore {
-    private final ThreadLocal<Long> userID;
-    public JdbcTemplate db;
 
-    @Autowired
-    public ImageStore(@Qualifier("userID") ThreadLocal<Long> userID, JdbcTemplate template) {
-        this.userID = userID;
-        db = template;
-    }
 
     public boolean createUserDirectory(long id,String path) throws IOException{
         File newUserDir=new File(path+"\\static\\img\\"+id);
