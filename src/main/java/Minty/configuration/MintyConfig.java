@@ -1,9 +1,8 @@
 package Minty.configuration;
 
-import org.apache.commons.dbcp.BasicDataSource;
+import Minty.services.DBAccessService;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.jdbc.core.JdbcTemplate;
 
 import java.io.IOException;
 import java.util.logging.FileHandler;
@@ -21,17 +20,21 @@ import java.util.logging.SimpleFormatter;
 
     @Configuration
     public class MintyConfig {
+/*
+    @Autowired
+    private DBAccessService db;
+*/
 
-        @Bean
-        public JdbcTemplate jdbcTemplate() {
-            BasicDataSource dataSource = new BasicDataSource();
-            dataSource.setUrl("jdbc:postgresql://127.0.0.1:5432/mydb2");
-            dataSource.setDriverClassName("org.postgresql.Driver");
-            dataSource.setUsername("postgres");
-            dataSource.setPassword("postgres");
-            JdbcTemplate db = new JdbcTemplate(dataSource);
+/*
+    @Autowired
+    public MintyConfig (DBAccessService db){
+        this.db=db;
+    }
+*/
+         @Bean
+         public DBAccessService db() {
 
-
+             DBAccessService db = new DBAccessService();
             try {
                 int a =  db.queryForInt("SELECT COUNT(*) FROM USERS;");
             }

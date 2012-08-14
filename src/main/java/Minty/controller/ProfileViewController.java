@@ -70,7 +70,7 @@ public class ProfileViewController {
             else mv.addObject("message","follow");
 
             mv.addObject("User",userService.getUser(handle));
-            mv.addObject("handle",handle);
+            mv.addObject("handle",userName);
             mv.addObject("List", viewService.listUserTweets(handle,0,10));
 
             logger.info("user "+userName + " visited " + handle + "'s profile");

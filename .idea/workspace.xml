@@ -40,19 +40,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c784c63d-b7b4-4e4d-a4f9-0fe82e90cf56" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/Minty/services/DBAccessService.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Minty/services/FeedUpdater.java" afterPath="$PROJECT_DIR$/src/main/java/Minty/services/FeedUpdater.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Minty/services/RESTHelper.java" afterPath="$PROJECT_DIR$/src/main/java/Minty/services/RESTHelper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Minty/services/TweetService.java" afterPath="$PROJECT_DIR$/src/main/java/Minty/services/TweetService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Minty/services/UserService.java" afterPath="$PROJECT_DIR$/src/main/java/Minty/services/UserService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Minty/services/ValidatorService.java" afterPath="$PROJECT_DIR$/src/main/java/Minty/services/ValidatorService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Minty/services/ViewService.java" afterPath="$PROJECT_DIR$/src/main/java/Minty/services/ViewService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/tweetpage.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/tweetpage.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/static/ejs/tweet.ejs" afterPath="$PROJECT_DIR$/src/main/webapp/static/ejs/tweet.ejs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/static/js/addTweetNow.js" afterPath="$PROJECT_DIR$/src/main/webapp/static/js/addTweetNow.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/static/js/appendItem.js" afterPath="$PROJECT_DIR$/src/main/webapp/static/js/appendItem.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/static/js/displayNew.js" afterPath="$PROJECT_DIR$/src/main/webapp/static/js/displayNew.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Minty/configuration/MintyConfig.java" afterPath="$PROJECT_DIR$/src/main/java/Minty/configuration/MintyConfig.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Minty/controller/LoginController.java" afterPath="$PROJECT_DIR$/src/main/java/Minty/controller/LoginController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Minty/controller/ProfileViewController.java" afterPath="$PROJECT_DIR$/src/main/java/Minty/controller/ProfileViewController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Minty/controller/SignupController.java" afterPath="$PROJECT_DIR$/src/main/java/Minty/controller/SignupController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Minty/services/DBAccessService.java" afterPath="$PROJECT_DIR$/src/main/java/Minty/services/DBAccessService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Minty/services/ImageStore.java" afterPath="$PROJECT_DIR$/src/main/java/Minty/services/ImageStore.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/static/userActivityLog.log" afterPath="$PROJECT_DIR$/src/main/webapp/static/userActivityLog.log" />
     </list>
     <ignored path="sampleapp2.iws" />
@@ -116,37 +110,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="UserService.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Minty/services/UserService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="55" selection-start="596" selection-end="596" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="TweetService.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Minty/services/TweetService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="59" column="72" selection-start="2763" selection-end="2763" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="JdbcTemplate.class" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-jdbc/3.0.5.RELEASE/spring-jdbc-3.0.5.RELEASE.jar!/org/springframework/jdbc/core/JdbcTemplate.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="130" column="5" selection-start="9633" selection-end="9842" vertical-scroll-proportion="-7.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ValidatorService.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Minty/services/ValidatorService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="75" selection-start="597" selection-end="597" vertical-scroll-proportion="0.0">
+            <state line="15" column="77" selection-start="458" selection-end="458" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -155,7 +122,7 @@
       <file leaf-file-name="DBAccessService.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Minty/services/DBAccessService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="64" column="56" selection-start="2187" selection-end="2187" vertical-scroll-proportion="0.0">
+            <state line="17" column="2" selection-start="399" selection-end="399" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -166,36 +133,7 @@
       <file leaf-file-name="MintyConfig.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Minty/configuration/MintyConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="67" selection-start="662" selection-end="1011" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FeedUpdater.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Minty/services/FeedUpdater.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="0" selection-start="220" selection-end="220" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ImageStore.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Minty/services/ImageStore.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="68" column="68" selection-start="2124" selection-end="2124" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EmailValidator.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Minty/services/EmailValidator.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="73" selection-start="650" selection-end="650" vertical-scroll-proportion="0.64426875">
+            <state line="32" column="53" selection-start="676" selection-end="676" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -204,10 +142,64 @@
       <file leaf-file-name="RESTHelper.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Minty/services/RESTHelper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="25" selection-start="981" selection-end="981" vertical-scroll-proportion="0.0">
+            <state line="46" column="43" selection-start="1273" selection-end="1273" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserService.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Minty/services/UserService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="20" column="40" selection-start="533" selection-end="533" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AuthInterceptor.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Minty/interceptor/AuthInterceptor.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="37" column="38" selection-start="1279" selection-end="1279" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ImageStore.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Minty/services/ImageStore.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="4" selection-start="185" selection-end="185" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LoginController.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Minty/controller/LoginController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="28" column="0" selection-start="812" selection-end="812" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SignupController.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Minty/controller/SignupController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="54" column="51" selection-start="1829" selection-end="1829" vertical-scroll-proportion="0.044315994">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TweetController.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Minty/controller/TweetController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="43" column="53" selection-start="1330" selection-end="1330" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -228,22 +220,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/Minty/controller/ProfileViewController.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/almostthere.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/randomhome.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/static/js/getUpdates.js" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/tweetpage.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/static/ejs/tweet.ejs" />
         <option value="$PROJECT_DIR$/src/main/webapp/static/js/displayNew.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/static/js/addTweetNow.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/static/js/appendItem.js" />
         <option value="$PROJECT_DIR$/src/main/java/Minty/services/ViewService.java" />
         <option value="$PROJECT_DIR$/src/main/java/Minty/services/ValidatorService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Minty/services/DBAccessService.java" />
         <option value="$PROJECT_DIR$/src/main/java/Minty/services/UserService.java" />
         <option value="$PROJECT_DIR$/src/main/java/Minty/services/TweetService.java" />
         <option value="$PROJECT_DIR$/src/main/java/Minty/services/FeedUpdater.java" />
         <option value="$PROJECT_DIR$/src/main/java/Minty/services/RESTHelper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Minty/controller/ProfileViewController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Minty/services/DBAccessService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Minty/configuration/MintyConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Minty/services/ImageStore.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Minty/controller/LoginController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Minty/controller/SignupController.java" />
       </list>
     </option>
   </component>
@@ -420,126 +412,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WEB-INF" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="speakOUT" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="speakOUT" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WEB-INF" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jsp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="speakOUT" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="speakOUT" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="speakOUT" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="speakOUT" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="speakOUT" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="speakOUT" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ejs" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1222,7 +1094,11 @@
       <created>1344893837149</created>
       <updated>1344893837149</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Seperated the Data Access layer">
+      <created>1344944468143</created>
+      <updated>1344944468143</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1247,12 +1123,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="27" width="1922" height="927" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32743362" sideWeight="0.46813354" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32341528" sideWeight="0.4969651" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39974126" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31453362" sideWeight="0.11305007" order="7" side_tool="true" content_ui="tabs" />
@@ -1265,14 +1142,13 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.10897436" sideWeight="0.7322122" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39984825" sideWeight="0.6713533" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20886752" sideWeight="0.7322122" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26778784" sideWeight="0.8816388" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26778784" sideWeight="0.8816388" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Phing Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32389382" sideWeight="0.4969651" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="TeamCity" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="EJB" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
@@ -1316,7 +1192,7 @@
     <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="tweet update problem fixed. everything should be working fine" />
+    <option name="LAST_COMMIT_MESSAGE" value="Seperated the Data Access layer" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -1343,6 +1219,7 @@
     <MESSAGE value="Retweet done!" />
     <MESSAGE value="Retweet done! - final version with dual boot working" />
     <MESSAGE value="tweet update problem fixed. everything should be working fine" />
+    <MESSAGE value="Seperated the Data Access layer" />
   </component>
   <component name="VssConfiguration">
     <option name="CLIENT_PATH" value="" />
@@ -1386,88 +1263,74 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/Minty/model/TweetData.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Minty/services/EmailValidator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="13" selection-start="296" selection-end="296" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Minty/model/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="75" selection-start="588" selection-end="588" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Minty/model/UploadItem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="13" selection-start="107" selection-end="107" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Minty/controller/LoginController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="62" column="52" selection-start="1713" selection-end="1713" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Minty/controller/RESTController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="42" selection-start="948" selection-end="948" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Minty/configuration/MintyConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="67" selection-start="662" selection-end="1011" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Minty/services/ViewService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="65" selection-start="470" selection-end="470" vertical-scroll-proportion="0.2964427">
-          <folding>
-            <marker date="1344944408000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..USERS..." />
-            <marker date="1344944408000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..TWEETS..." />
-            <marker date="1344944408000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..TWEETS..." />
-            <marker date="1344944408000" expanded="true" signature="-1:-1" placeholder="SELECT menti..mentions..." />
-            <marker date="1344944408000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..users..." />
-            <marker date="1344944408000" expanded="true" signature="-1:-1" placeholder="SELECT follo..following..." />
-            <marker date="1344944408000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..users..." />
-            <marker date="1344944408000" expanded="true" signature="-1:-1" placeholder="SELECT follo..following..." />
-            <marker date="1344944408000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..tweets..." />
-            <marker date="1344944408000" expanded="true" signature="-1:-1" placeholder="SELECT tweet..USERFEED..." />
-            <marker date="1344944408000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..tweets..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Minty/services/ValidatorService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="75" selection-start="597" selection-end="597" vertical-scroll-proportion="0.0">
+        <state line="20" column="58" selection-start="595" selection-end="595" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-jdbc/3.0.5.RELEASE/spring-jdbc-3.0.5.RELEASE.jar!/org/springframework/jdbc/core/JdbcTemplate.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="130" column="5" selection-start="9633" selection-end="9842" vertical-scroll-proportion="-7.0">
+        <state line="130" column="5" selection-start="9633" selection-end="9842" vertical-scroll-proportion="0.36382535">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Minty/services/FeedUpdater.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="64" selection-start="472" selection-end="472" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Minty/services/ValidatorService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="114" selection-start="989" selection-end="989" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Minty/controller/ProfileViewController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="58" column="64" selection-start="1789" selection-end="1789" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Minty/interceptor/HomeInterceptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="13" selection-start="376" selection-end="376" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Minty/interceptor/AuthInterceptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="38" selection-start="1279" selection-end="1279" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Minty/services/TweetService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="77" selection-start="458" selection-end="458" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Minty/services/DBAccessService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="64" column="56" selection-start="2187" selection-end="2187" vertical-scroll-proportion="0.0">
+        <state line="17" column="2" selection-start="399" selection-end="399" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Minty/services/RESTHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="46" column="43" selection-start="1273" selection-end="1273" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1476,44 +1339,42 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Minty/services/UserService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="55" selection-start="596" selection-end="596" vertical-scroll-proportion="0.0">
+        <state line="20" column="40" selection-start="533" selection-end="533" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Minty/services/FeedUpdater.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Minty/configuration/MintyConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="0" selection-start="220" selection-end="220" vertical-scroll-proportion="0.0">
+        <state line="32" column="53" selection-start="676" selection-end="676" vertical-scroll-proportion="0.0">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Minty/services/TweetService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="72" selection-start="2763" selection-end="2763" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Minty/services/RESTHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="25" selection-start="981" selection-end="981" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Minty/services/ImageStore.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="68" column="68" selection-start="2124" selection-end="2124" vertical-scroll-proportion="0.0">
+        <state line="11" column="4" selection-start="185" selection-end="185" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Minty/services/EmailValidator.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Minty/controller/TweetController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="73" selection-start="650" selection-end="650" vertical-scroll-proportion="0.64426875">
+        <state line="43" column="53" selection-start="1330" selection-end="1330" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Minty/controller/LoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="0" selection-start="812" selection-end="812" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Minty/controller/SignupController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="54" column="51" selection-start="1829" selection-end="1829" vertical-scroll-proportion="0.044315994">
           <folding />
         </state>
       </provider>
