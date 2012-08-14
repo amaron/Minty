@@ -1,6 +1,6 @@
 <component name="ArtifactManager">
   <artifact type="exploded-war" name="Minty:war exploded">
-    <output-path>$PROJECT_DIR$/target/Minty</output-path>
+    <output-path>$PROJECT_DIR$/target/sampleapp2</output-path>
     <root id="root">
       <element id="javaee-facet-resources" facet="Minty/web/Web" />
       <element id="directory" name="WEB-INF">
@@ -8,6 +8,8 @@
           <element id="module-output" name="Minty" />
         </element>
         <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: commons-fileupload:commons-fileupload:1.2" />
+          <element id="library" level="project" name="Maven: org.apache.commons:commons-io:1.3.2" />
           <element id="library" level="project" name="Maven: commons-dbcp:commons-dbcp:1.4" />
           <element id="library" level="project" name="Maven: commons-pool:commons-pool:1.5.4" />
           <element id="library" level="project" name="Maven: net.tanesha.recaptcha4j:recaptcha4j:0.0.7" />

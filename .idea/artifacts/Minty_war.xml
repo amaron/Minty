@@ -1,7 +1,7 @@
 <component name="ArtifactManager">
   <artifact type="war" name="Minty:war">
     <output-path>$PROJECT_DIR$/target</output-path>
-    <root id="archive" name="Minty.war">
+    <root id="archive" name="sampleapp2.war">
       <element id="artifact" artifact-name="Minty:war exploded" />
     </root>
   </artifact>
