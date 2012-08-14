@@ -2,11 +2,21 @@
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
 
+
+
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
 <head>
+    <link rel="stylesheet" href="/static/css/bootstrap.css">
+    <script type="text/javascript" src="/static/js/jquery.min.js"></script>
+    <script type="text/javascript" src="/static/js/ejs_production.js"></script>
+    <script type="text/javascript" src="/static/js/timeDifference.js"></script>
+    <script type="text/javascript" src="/static/js/appendItem.js"></script>
+    <script type="text/javascript" src="/static/js/getJSTimestamp.js"></script>
+    <script type="text/javascript" src='/static/js/addTweet.js'></script>
     <meta charset="utf-8">
-    <title>${User.username}'s profile</title>
+    <title>Bootstrap, from Twitter</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -101,7 +111,7 @@
             padding-top: 30px;
         }
         .followbutton {
-            padding-top:5px;
+            padding-top:20px;
         }
         .count {
             padding-top:20px;
@@ -119,40 +129,6 @@
     <![endif]-->
 
     <!-- Le fav and touch icons -->
-    <link rel="stylesheet" href="/static/css/bootstrap.css">
-
-    <script type="text/javascript" src="/static/js/jquery.min.js"></script>
-    <script type="text/javascript" src="/static/js/ejs_production.js"></script>
-    <script type="text/javascript" src="/static/js/timeDifference.js"></script>
-    <script type="text/javascript" src="/static/js/appendItem.js"></script>
-    <script type="text/javascript" src="/static/js/getJSTimestamp.js"></script>
-
-    <script type="text/javascript" src='/static/js/follow.js'></script>
-    <script type="text/javascript" src='/static/js/addTweet.js'></script>
-    <script type="text/javascript">var num_followers=${User.num_followers};</script>
-    <script type="text/javascript">
-        var cur_offset_tweets=10;
-        var cur_handle='${User.username}';
-        function getMoreUserTweets(){
-
-            $.ajax({
-                type: 'GET',
-                url: '/user/'+cur_handle+'/getMoreUserTweets.json',
-                data: $.param({ offset: cur_offset_tweets, handle: cur_handle}),
-                success: function(data) {
-                    if(data.length==0) $('#moreTweetsBtn').hide();
-                    for(var k=0;k<data.length;k++){
-                        //alert(JSON.stringify(data.List[k]));
-                        appendItem(data[k]);
-                    }
-                    cur_offset_tweets+=data.length;
-                }
-            });
-        }
-    </script>
-
-
-
     <link rel="shortcut icon" href="../assets/ico/favicon.ico">
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
@@ -173,18 +149,18 @@
             <a class="brand" href="#">Minty</a>
             <div class="btn-group pull-right">
                 <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
-                    <i class="icon-user"></i> Username
+                    <i class="icon-user"></i> ${handle}
                     <span class="caret"></span>
                 </a>
                 <ul class="dropdown-menu">
-                    <li><a href="#">Profile</a></li>
+                    <li><a href="/user/${handle}">Profile</a></li>
                     <li class="divider"></li>
-                    <li><a href="#">Sign Out</a></li>
+                    <li><a href="/user/logout">Logout</a></li>
                 </ul>
             </div>
             <div class="nav-collapse">
                 <ul class="nav">
-                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="/home">Home</a></li>
                     <li><a href="#about">Mentions</a></li>
                     <li><a href="#contact">Public</a></li>
                 </ul>
@@ -200,22 +176,21 @@
             <div class="hero-unit">
                 <div class="row fluid">
                     <div class="span2">
-                        <span class="tweetimage"><img src="img/gaurav.jpg" width="128px" height="128px"/></span>
+                        <span class="tweetimage"><img src="/static/img/Woo/${User.username}.jpg" width="128px" height="128px"/></span>
                     </div>
 
                     <div class="span4">
                         <legend><h2>${User.username}</h2></legend>
-                        <div class="mintbio">I will stop the motor of the world. Btw try to answer, who is John Galt?</div>
+                        <div class="mintbio">${User.bio}</div>
 
                     </div>
                     <div class="span4">
-
-                        <form class="followbutton" action="" onsubmit="follow('${handle}'); return false;">
+                        <div class="followbutton"><form class="followbutton" action="" onsubmit="follow('${handle}'); return false;">
 
                             <input type="submit" class="btn-success btn-large" value="${message}" name="unfollow" id="followBtn"/>
 
-                        </form>
-                        <div class="smalldetails">Mumbai - http://gauravmunjal.com - Software Engineer - Atheist - Lover boy
+                        </form></div>
+                        <div class="smalldetails">${User.place} - ${User.website}
                         </div></div>
                     <div class="span2"><div class="count">Followers ${User.num_followers}</div>
                         <div class="count">Following ${User.num_following}</div>
@@ -237,9 +212,10 @@
                 <ul class="nav nav-list">
 
 
-                    <li class="active"><a href="">Tweets</a></li>
-                    <li><a href="#">Followers</a></li>
-                    <li><a href="#">Following</a></li>
+                    <%//TODO:Similar to this user%>
+                    <li>Popular users<span class="smalltext"></li>
+                    <div class="mintbio">We are here to create a dent in the universe, otherwise, why even be here.</div>
+
 
 
                 </ul>
@@ -264,12 +240,14 @@
 
 
                 <div class="well" id="tweetList">
+
                     <c:forEach var='item' items='${List}'>
 
                         <script type="text/javascript">
                             appendItem({tweet_id:${item.tweet_id}, tweet:'${item.tweet}', username:'${item.username}', pushtime:'${item.pushtime}'});
                         </script>
                     </c:forEach>
+
 
                     <div class="tweet" onmouseover="document.getElementById('re').style.display = 'block';" onmouseout="document.getElementById('re').style.display = 'none';">
                         <div class="span1"><span class="tweetimage"><img src="img/gaurav.jpg" height="58px" width="58px"/></span></div>
@@ -314,9 +292,7 @@
             </div>
         </div>
 
-        <div class="span9">
-            <button class="btn btn-success" id="moreTweetsBtn" onclick="getMoreUserTweets();return false">load more...</button>
-        </div>
+
 
 
     </div>
@@ -331,19 +307,39 @@
 <!-- Le javascript
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
-<script src="js/jquery.js"></script>
-<script src="js/bootstrap-transition.js"></script>
-<script src="js/bootstrap-alert.js"></script>
-<script src="js/bootstrap-modal.js"></script>
-<script src="js/bootstrap-dropdown.js"></script>
-<script src="js/bootstrap-scrollspy.js"></script>
-<script src="js/bootstrap-tab.js"></script>
-<script src="js/bootstrap-tooltip.js"></script>
-<script src="js/bootstrap-popover.js"></script>
-<script src="js/bootstrap-button.js"></script>
-<script src="js/bootstrap-collapse.js"></script>
-<script src="js/bootstrap-carousel.js"></script>
-<script src="js/bootstrap-typeahead.js"></script>
+<script src="/static/js/bootstrap/jquery.js"></script>
+<script src="/static/js/bootstrap/bootstrap-transition.js"></script>
+<script src="/static/js/bootstrap/bootstrap-alert.js"></script>
+<script src="/static/js/bootstrap/bootstrap-modal.js"></script>
+<script src="/static/js/bootstrap/bootstrap-dropdown.js"></script>
+<script src="/static/js/bootstrap/bootstrap-scrollspy.js"></script>
+<script src="/static/js/bootstrap/bootstrap-tab.js"></script>
+<script src="/static/js/bootstrap/bootstrap-tooltip.js"></script>
+<script src="/static/js/bootstrap/bootstrap-popover.js"></script>
+<script src="/static/js/bootstrap/bootstrap-button.js"></script>
+<script src="/static/js/bootstrap/bootstrap-collapse.js"></script>
+<script src="/static/js/bootstrap/bootstrap-carousel.js"></script>
+<script src="/static/js/bootstrap/bootstrap-typeahead.js"></script>
+<script type="text/javascript">
+    var cur_offset_tweets=10;
+    var cur_handle='${User.username}';
+    function getMoreUserTweets(){
+
+        $.ajax({
+            type: 'GET',
+            url: '/user/'+cur_handle+'/getMoreUserTweets.json',
+            data: $.param({ offset: cur_offset_tweets, handle: cur_handle}),
+            success: function(data) {
+                if(data.length==0) $('#moreTweetsBtn').hide();
+                for(var k=0;k<data.length;k++){
+                    //alert(JSON.stringify(data.List[k]));
+                    appendItem(data[k]);
+                }
+                cur_offset_tweets+=data.length;
+            }
+        });
+    }
+</script>
 
 </body>
 </html>

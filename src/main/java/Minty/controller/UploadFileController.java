@@ -38,9 +38,10 @@ public class UploadFileController {
     }
 
     @RequestMapping(method = RequestMethod.GET)
-    public String getUploadForm(Model model) {
+    public String getUploadForm(Model model, HttpSession session) {
         System.out.print("Blag");
         model.addAttribute(new UploadItem());
+        model.addAttribute("username", session.getAttribute("userName"));
         return "uploadfile";
     }
 
@@ -59,7 +60,7 @@ public class UploadFileController {
         imageStore.addPic(request.getRealPath("/"),uploadItem.getFileData(),(String)session.getAttribute("userName"));
         //session.setAttribute("uploadFile", uploadItem.getFileData().getOriginalFilename());
 
-        return "redirect:uploadfileindex";
+        return "redirect:uploadfile";
     }
 
 }

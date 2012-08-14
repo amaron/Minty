@@ -176,7 +176,7 @@
 
                 <ul class="nav nav-list">
 
-                    <legend>Gaurav Munjal<span class="smalltext"><a href="/user/${User.username}">View my profile</a></span></legend></li>
+                    <legend>${User.realname}<span class="smalltext"><a href="/user/${User.username}">View my profile</a></span></legend></li>
                     <div class="mintbio">${User.bio}</div>
 
 
@@ -218,17 +218,16 @@
                     <c:forEach var='item' items='${List}'>
 
                         <script type="text/javascript">
-                            appendItem({tweet_id:${item.tweet_id}, tweet:'${item.tweet}', username:'${item.username}', pushtime:'${item.pushtime}'});
+                            appendItem({tweet_id:${item.tweet_id}, tweet:"${item.tweet}", username:"${item.username}", pushtime:"${item.pushtime}"});
                         </script>
                     </c:forEach>
 
                 </div><!--/span-->
             </div>
+            <button class="btn btn-success" id="moreTweetsBtn" onclick="getMoreTweets(this);return false">More...</button>
         </div>
 
-        <div class="span9">
-        <button class="btn btn-success" id="moreTweetsBtn" onclick="getMoreTweets(this);return false">load more...</button>
-        </div>
+
 
 
     </div>

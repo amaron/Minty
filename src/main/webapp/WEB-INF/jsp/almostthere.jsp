@@ -123,7 +123,7 @@
 
 
         <div class="span6">
-            <img src="img/almost.jpg" />
+            <img src="/static/img/almost.jpg" />
         </div><!--/span-->
     </div>
 

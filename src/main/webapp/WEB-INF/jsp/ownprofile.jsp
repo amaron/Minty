@@ -193,7 +193,7 @@ User ${handle}'s Tweets ${User.num_tweets}
             </div>
             <div class="nav-collapse">
                 <ul class="nav">
-                    <li class="active"><a href="/home">Home</a></li>
+                    <li><a href="/home">Home</a></li>
                     <li><a href="#about">Mentions</a></li>
                     <li><a href="#contact">Public</a></li>
                 </ul>
@@ -209,17 +209,17 @@ User ${handle}'s Tweets ${User.num_tweets}
             <div class="hero-unit">
                 <div class="row fluid">
                     <div class="span2">
-                        <span class="tweetimage"><img src="img/gaurav.jpg" width="128px" height="128px"/></span>
+                        <span class="tweetimage"><img src="/static/img/Woo/${User.username}.jpg" width="128px" height="128px"/></span>
                     </div>
 
                     <div class="span4">
-                        <legend><h2>${User.username}</h2></legend>
-                        <div class="mintbio">I will stop the motor of the world. Btw try to answer, who is John Galt?</div>
+                        <legend><h2>@${User.username}</h2></legend>
+                        <div class="mintbio">${User.bio}</div>
 
                     </div>
                     <div class="span4">
                         <div class="followbutton"><button type="submit" class="btn-large btn-inverse">Edit my profile</button></div>
-                        <div class="smalldetails">Mumbai - http://gauravmunjal.com - Software Engineer - Atheist - Lover boy
+                        <div class="smalldetails">${User.place} - ${User.website}
                         </div></div>
                     <div class="span2"><div class="count">Followers ${User.num_followers}</div>
                         <div class="count">Following ${User.num_following}</div>
@@ -241,9 +241,10 @@ User ${handle}'s Tweets ${User.num_tweets}
                 <ul class="nav nav-list">
 
 
-                    <li class="active"><a href="">Tweets</a></li>
-                    <li><a href="#">Followers</a></li>
-                    <li><a href="#">Following</a></li>
+                    <%//TODO:Similar to this user%>
+                    <li>Popular users<span class="smalltext"></li>
+                    <div class="mintbio">We are here to create a dent in the universe, otherwise, why even be here.</div>
+
 
 
                 </ul>
@@ -272,31 +273,12 @@ User ${handle}'s Tweets ${User.num_tweets}
                     <c:forEach var='item' items='${List}'>
 
                         <script type="text/javascript">
-                            appendItem({tweet_id:${item.tweet_id}, tweet:'${item.tweet}', username:'${item.username}', pushtime:'${item.pushtime}'});
+                            appendItem({tweet_id:${item.tweet_id}, tweet:"${item.tweet}", username:"${item.username}", pushtime:"${item.pushtime}"});
                         </script>
                     </c:forEach>
 
 
-                    <div class="tweet" onmouseover="document.getElementById('re').style.display = 'block';" onmouseout="document.getElementById('re').style.display = 'none';">
-                        <div class="span1"><span class="tweetimage"><img src="img/gaurav.jpg" height="58px" width="58px"/></span></div>
-                        <div class="span11">
-                            <span class="time">5 mins ago</span>
 
-                            <span class="tweetheader">Gaurav Munjal</span><br>
-                            <span class="tweettext">Hey, we are here to create a dent in the universe, otherwise, why even be here. And by the way who the fuck is John Galt? Err what the hell you are saying man!</span>
-                            <span class="reply"><a id="re" href="#" style="display: none;">Reply</a></span>
-                        </div>
-                    </div>
-                    <div class="tweet" onmouseover="this.getElementById('re').style.display = 'block';" onmouseout="this.getElementById('re').style.display = 'none';">
-                        <div class="span1"><span class="tweetimage"><img src="img/gaurav.jpg" height="58px" width="58px"/></span></div>
-                        <div class="span11">
-                            <span class="time">5 mins ago</span>
-
-                            <span class="tweetheader">Gaurav Munjal</span><br>
-                            <span class="tweettext">Hey, we are here to create a dent in the universe, otherwise, why even be here. And by the way who the fuck is John Galt? Err what the hell you are saying man!</span>
-                            <span class="reply"><a id="re" href="#" style="display: none;">Reply</a></span>
-                        </div>
-                    </div>
 
                     <!-- 				<form class="well form-inline" id="replyform">
 
@@ -306,16 +288,7 @@ User ${handle}'s Tweets ${User.num_tweets}
 
          </form>-->
 
-                    <div class="tweet" onmouseover="document.getElementById('re').style.display = 'block';" onmouseout="document.getElementById('re').style.display = 'none';">
-                        <div class="span1"><span class="tweetimage"><img src="img/gaurav.jpg" height="58px" width="58px"/></span></div>
-                        <div class="span11">
-                            <span class="time">5 mins ago</span>
 
-                            <span class="tweetheader">Gaurav Munjal</span><br>
-                            <span class="tweettext">Hey, we are here to create a dent in the universe, otherwise, why even be here. And by the way who the fuck is John Galt? Err what the hell you are saying man!</span>
-                            <span class="reply"><a id="re" href="#" style="display: none;">Reply</a></span>
-                        </div>
-                    </div>
                 </div><!--/span-->
             </div>
         </div>
