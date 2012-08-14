@@ -3,7 +3,6 @@ package Minty.services;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.dao.EmptyResultDataAccessException;
-import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Service;
 
 import java.net.MalformedURLException;
@@ -21,10 +20,10 @@ import java.util.UUID;
 @Service
 public class RESTHelper {
     private final ThreadLocal<Long> userID;
-    public JdbcTemplate db;
+    public DBAccessService db;
 
     @Autowired
-    public RESTHelper(@Qualifier("userID") ThreadLocal<Long> userID, JdbcTemplate template) {
+    public RESTHelper(@Qualifier("userID") ThreadLocal<Long> userID, DBAccessService template) {
         this.userID = userID;
         db = template;
     }

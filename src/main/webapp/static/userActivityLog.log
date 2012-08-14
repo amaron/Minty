@@ -1504,3 +1504,69 @@ INFO: user amaronlogged in successfully
 INFO: user kdudelogged in successfully
 14 Aug, 2012 2:58:17 AM Minty.controller.TweetController create
 INFO: user kdudetweeted 109
+14 Aug, 2012 3:09:07 AM Minty.configuration.MintyConfig logger
+INFO: -------------------------------------------------------------------------------------------
+14 Aug, 2012 3:09:07 AM Minty.configuration.MintyConfig logger
+INFO: -------------------------------------------------------------------------------------------
+14 Aug, 2012 3:09:07 AM Minty.configuration.MintyConfig logger
+INFO: Minty Server log
+14 Aug, 2012 3:09:55 AM Minty.controller.LoginController login
+INFO: user amaronlogged in successfully
+14 Aug, 2012 3:10:02 AM Minty.controller.TweetController create
+INFO: user amarontweeted 110
+14 Aug, 2012 3:10:05 AM Minty.controller.TweetController create
+INFO: user amarontweeted 111
+14 Aug, 2012 3:10:21 AM Minty.controller.TweetController create
+INFO: user amarontweeted 112
+14 Aug, 2012 3:14:01 AM Minty.controller.LoginController login
+INFO: user amaronlogged in successfully
+14 Aug, 2012 3:19:34 AM Minty.controller.LoginController logout
+INFO: user amaron logged out successfully
+14 Aug, 2012 3:21:52 AM Minty.controller.LoginController logout
+INFO: user amaron logged out successfully
+14 Aug, 2012 3:21:56 AM Minty.controller.LoginController login
+INFO: user kdudelogged in successfully
+14 Aug, 2012 1:21:52 PM Minty.configuration.MintyConfig logger
+INFO: -------------------------------------------------------------------------------------------
+14 Aug, 2012 1:21:52 PM Minty.configuration.MintyConfig logger
+INFO: -------------------------------------------------------------------------------------------
+14 Aug, 2012 1:21:52 PM Minty.configuration.MintyConfig logger
+INFO: Minty Server log
+14 Aug, 2012 1:22:18 PM Minty.controller.LoginController login
+INFO: user amaronlogged in successfully
+14 Aug, 2012 1:22:30 PM Minty.controller.TweetController create
+INFO: user amarontweeted 113
+14 Aug, 2012 1:25:21 PM Minty.controller.TweetController create
+INFO: user amarontweeted 114
+14 Aug, 2012 1:29:15 PM Minty.controller.TweetController create
+INFO: user amarontweeted 115
+14 Aug, 2012 1:34:27 PM Minty.controller.LoginController logout
+INFO: user amaron logged out successfully
+14 Aug, 2012 1:36:02 PM Minty.controller.TweetController create
+INFO: user ktweeted 117
+14 Aug, 2012 1:36:26 PM Minty.controller.TweetController create
+INFO: user ktweeted 118
+14 Aug, 2012 1:36:29 PM Minty.controller.ProfileViewController ViewUser
+INFO: user k visited amaron's profile
+14 Aug, 2012 1:37:13 PM Minty.controller.TweetController create
+INFO: user ktweeted 119
+14 Aug, 2012 1:37:19 PM Minty.controller.TweetController create
+INFO: user ktweeted 120
+14 Aug, 2012 1:38:44 PM Minty.controller.TweetController create
+INFO: user ktweeted 121
+14 Aug, 2012 1:38:52 PM Minty.controller.TweetController create
+INFO: user ktweeted 122
+14 Aug, 2012 1:39:50 PM Minty.controller.TweetController create
+INFO: user ktweeted 123
+14 Aug, 2012 2:06:03 PM Minty.controller.TweetController create
+INFO: user ktweeted 124
+14 Aug, 2012 2:06:12 PM Minty.controller.TweetController create
+INFO: user ktweeted 125
+14 Aug, 2012 2:08:56 PM Minty.controller.TweetController create
+INFO: user ktweeted 126
+14 Aug, 2012 2:09:19 PM Minty.controller.TweetController create
+INFO: user ktweeted 127
+14 Aug, 2012 2:18:27 PM Minty.controller.TweetController create
+INFO: user ktweeted 128
+14 Aug, 2012 2:20:11 PM Minty.controller.TweetController create
+INFO: user ktweeted 129

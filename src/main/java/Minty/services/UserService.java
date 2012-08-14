@@ -3,7 +3,6 @@ package Minty.services;
 import Minty.model.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.EmptyResultDataAccessException;
-import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Service;
 
 /**
@@ -15,10 +14,10 @@ import org.springframework.stereotype.Service;
  */
 @Service
 public class UserService {
-    public JdbcTemplate db;
+    public DBAccessService db;
 
     @Autowired
-    public UserService(JdbcTemplate db) {
+    public UserService(DBAccessService db) {
         this.db = db;
     }
 

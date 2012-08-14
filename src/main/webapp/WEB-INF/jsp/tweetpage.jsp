@@ -28,7 +28,7 @@
         });
     </script>
     <meta charset="utf-8">
-    <title>Bootstrap, from Twitter</title>
+    <title>LTweet ${ist[0].tweet_id}></title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -172,7 +172,7 @@
 
                 <div class="well">
 
-                    <ul id="tweetList">
+
                     <ul id="tweetList">
 
                         <c:forEach var='item' items='${List}'>

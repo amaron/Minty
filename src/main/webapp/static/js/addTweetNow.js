@@ -38,6 +38,7 @@ function addTweetNow(form) {
 
         var tweetItemLI= preComputeOnTweet(data);
         $('#tweetList').prepend(tweetItemLI);
+        $('#tweetItem'+data.tweet_id).show('slow');
 
 
     });
