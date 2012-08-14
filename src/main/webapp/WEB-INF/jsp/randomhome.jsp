@@ -215,10 +215,10 @@
 
                 <div class="well" id="tweetList">
 
-                    <c:forEach var='item' items='${List}'>
+                    <c:forEach var='item' items='${List}' varStatus="loop">
 
                         <script type="text/javascript">
-                            appendItem({tweet_id:${item.tweet_id}, tweet:"${item.tweet}", username:"${item.username}", pushtime:"${item.pushtime}"});
+                            appendItem({tweet_id:${item.tweet_id}, tweet:"${item.tweet}", username:"${item.username}", pushtime:"${item.pushtime}"},${loop.index});
                         </script>
                     </c:forEach>
 

@@ -135,4 +135,14 @@ public class RESTHelper {
         return true;
 
     }
+
+
+    public String logoutUser(String p_key, String u_key, String username) {
+
+        if(validate(p_key,u_key,username).equals("success")){
+            db.update("delete from restusers where u_key = ? and username = ?", u_key, username);
+            return "success";
+        }
+        else return "iproper credentials, logout operation not performed";
+    }
 }

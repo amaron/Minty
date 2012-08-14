@@ -132,6 +132,11 @@ public class RESTController {
            return new ModelAndView("restlogin");
     }
 
+    @RequestMapping(value="/logout", method=RequestMethod.GET)
+    public String getRESTlogout(@RequestParam String u_key,@RequestParam String p_key, @RequestParam final String username){
+
+        return restHelper.logoutUser(p_key,u_key,username);
+    }
 
     @RequestMapping(value="/register",method=RequestMethod.GET)
     public ModelAndView reg3rdparty(){

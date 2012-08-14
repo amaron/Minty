@@ -60,7 +60,8 @@ function callRetweet(id){
                     addToMentions(u_list,data.tweet_id);
                     var tweetItemLI= preComputeOnTweet(data);
                     $('#tweetList').prepend(tweetItemLI);
-                    $('#tweetItem'+data.tweet_id).show('slow');
+
+                   $('#tweetItem'+data.tweet_id).fadeIn(3000);
                 }
             })
         }
@@ -125,10 +126,14 @@ function preComputeOnTweet(data){
     return tweetItemLI;
 
 }
-function appendItem(data) {
+
+
+
+function appendItem(data,delay) {
 
     var tweetItemLI =preComputeOnTweet(data);
 
     $('#tweetList').append(tweetItemLI)
-    $('#tweetItem'+data.tweet_id).show('slow');
+    $('#tweetItem'+data.tweet_id).show("slow");
+
 }
