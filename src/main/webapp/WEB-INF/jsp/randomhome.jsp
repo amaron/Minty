@@ -176,7 +176,7 @@
 
                 <ul class="nav nav-list">
 
-                    <legend>${User.realname}<span class="smalltext"><a href="/user/${User.username}">View my profile</a></span></legend></li>
+                    <legend><img src="/static/img/Woo/${User.username}.jpg" width="56px" height="56px"> <a href="/user/${User.username}">@${User.username}</a></legend></li>
                     <div class="mintbio">${User.bio}</div>
 
 

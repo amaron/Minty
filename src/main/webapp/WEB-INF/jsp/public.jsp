@@ -156,6 +156,9 @@
         a:active {
             color: #51A351;
         }
+        .popularimage {
+            padding-top: 2px;
+        }
     </style>
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
@@ -215,7 +218,7 @@
 
                     <c:forEach var='item' items='${popular}'>
 
-                        <img src="/static/img/Woo/${item.username}.jpg" width="56px" height="56px"></span>
+                       <div class="popularimage"><img src="/static/img/Woo/${item.username}.jpg" width="56px" height="56px"><span class="tweetheader"><a href="/user/${item.username}"> @${item.username}</a> </span></div>
 
 
                     </c:forEach>

@@ -106,7 +106,7 @@ public class ViewService {
     }
 
     public List<User> getPopularUsers(){
-        return db.query("SELECT * from Users order by num_tweets offset 0 limit 5",User.rowMapper);
+        return db.query("SELECT * from Users order by num_tweets desc offset 0 limit 5",User.rowMapper);
     }
 
     public void unfollowUser(Long following_user_id){

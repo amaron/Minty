@@ -119,7 +119,7 @@ public class ProfileViewController {
         mv.addObject("label","Users who follow " + handle);
         mv.addObject("User",userService.getUser((String) Session.getAttribute("userName")));
         mv.addObject("List",viewService.getFollowers(handle));
-
+        mv.addObject("popular", viewService.getPopularUsers());
         mv.addObject("handle",handle);
         return mv;
     }
@@ -146,6 +146,7 @@ public class ProfileViewController {
         mv.addObject("label","Users whom " + handle +" follows");
         mv.addObject("User",userService.getUser((String) Session.getAttribute("userName")));
         mv.addObject("List",viewService.getFollowing(handle));
+        mv.addObject("popular", viewService.getPopularUsers());
         mv.addObject("handle",handle);
         return mv;
     }

@@ -175,11 +175,11 @@
             <div class="well sidebar-nav">
 
                 <ul class="nav nav-list">
-                    <%//TODO:Similar to this user%>
+
                     <legend>Popular users<span class="smalltext"></legend></li>
-                    <div class="mintbio">We are here to create a dent in the universe, otherwise, why even be here.</div>
-
-
+                    <c:forEach var='item' items='${popular}'>
+                        <div class="popularimage"><img src="/static/img/Woo/${item.username}.jpg" width="56px" height="56px"><span class="tweetheader"><a href="/user/${item.username}"> @${item.username}</a> </span></div>
+                    </c:forEach>
 
                 </ul>
 
@@ -208,7 +208,7 @@
                 <div class="well" id="tweetList">
                     <c:forEach var='item' items='${List}'>
                         <div class="tweet">
-                            <div class="span1"><span class="tweetimage"><img src="/static/img/gaurav.jpg" height="58px" width="58px"/></span></div>
+                            <div class="span1"><span class="tweetimage"><img src="/static/img/Woo/${item.username}.jpg" height="58px" width="58px"/></span></div>
                             <div class="span11">
                                 <span class="tweetheader">${item.realname}</span><br>
                                 <span class="tweettext">@${item.username}</span>
