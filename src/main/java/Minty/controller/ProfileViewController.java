@@ -143,7 +143,7 @@ public class ProfileViewController {
     @RequestMapping(value="{handle}/following",method=RequestMethod.GET)
     public ModelAndView getFollowering(@PathVariable final String handle,HttpSession Session){
         ModelAndView mv= new ModelAndView("userlist");
-        mv.addObject("label","Users following " + handle);
+        mv.addObject("label","Users whom " + handle +" follows");
         mv.addObject("User",userService.getUser((String) Session.getAttribute("userName")));
         mv.addObject("List",viewService.getFollowing(handle));
         mv.addObject("handle",handle);

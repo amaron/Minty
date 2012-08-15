@@ -212,7 +212,13 @@
                 <ul class="nav nav-list">
                     <%//TODO:Similar to this user%>
                     <legend>Popular users<span class="smalltext"></legend></li>
-                    <div class="mintbio">We are here to create a dent in the universe, otherwise, why even be here.</div>
+
+                    <c:forEach var='item' items='${popular}'>
+
+                        <img src="/static/img/Woo/${item.username}.jpg" width="56px" height="56px"></span>
+
+
+                    </c:forEach>
 
 
 
@@ -237,7 +243,7 @@
                     <c:forEach var='item' items='${List}'>
 
                         <script type="text/javascript">
-                            appendItem({tweet_id:${item.tweet_id}, tweet:'${item.tweet}', username:'${item.username}', pushtime:'${item.pushtime}'});
+                            appendItem({tweet_id:${item.tweet_id}, tweet:"${item.tweet}", username:"${item.username}", pushtime:"${item.pushtime}"});
                         </script>
                     </c:forEach>
 

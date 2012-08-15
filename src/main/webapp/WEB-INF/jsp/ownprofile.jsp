@@ -110,11 +110,11 @@
             padding-top: 30px;
         }
         .followbutton {
-            padding-top:20px;
+            padding-top:10px;
         }
         .count {
             padding-top:20px;
-            text-align: right;
+
             font-family: "Arial Black";
             font-size: 22px;
 
@@ -187,9 +187,9 @@
                         <div class="followbutton"><a href="/user/edit"><button type="submit" class="btn-large btn-inverse">Edit my profile</button></a></div>
                         <div class="smalldetails">${User.place} - ${User.website}
                         </div></div>
-                    <div class="span2"><div class="count">Followers ${User.num_followers}</div>
-                        <div class="count">Following ${User.num_following}</div>
-                        <div class="count">Tweets ${User.num_tweets}</div>
+                    <div class="span2"><div class="count"><a href="/user/${User.username}/followers">${User.num_followers}</a> Followers </div>
+                        <div class="count"><a href="/user/${User.username}/following">${User.num_following}</a> Following </div>
+                        <div class="count">${User.num_tweets} Tweets </div>
 
 
                     </div>
@@ -209,7 +209,7 @@
 
                     <%//TODO:Similar to this user%>
                     <li>Popular users<span class="smalltext"></li>
-                    <div class="mintbio">We are here to create a dent in the universe, otherwise, why even be here.</div>
+                    <div class="mintbio"></div>
 
 
 

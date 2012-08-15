@@ -72,6 +72,7 @@ public class HomePageController {
     @RequestMapping(value="/public",method=RequestMethod.GET)
     public ModelAndView allTweets(){
         return new ModelAndView("public"){{
+            addObject("popular", viewService.getPopularUsers());
             addObject("List",tweetStore.listAllTweets(0,10));
         }};
 

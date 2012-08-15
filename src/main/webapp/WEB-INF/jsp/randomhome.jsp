@@ -222,6 +222,40 @@
                         </script>
                     </c:forEach>
 
+
+                    <div class="tweet" onmouseover="this.getElementById('re').style.display = 'block';" onmouseout="this.getElementById('re').style.display = 'none';">
+                        <div class="span1"><span class="tweetimage"><img src="/static/img/minty.jpg" height="58px" width="58px"/></span></div>
+                        <div class="span11">
+                            <span class="time">Forever</span>
+
+                            <span class="tweetheader">Minty</span><br>
+                            <span class="tweettext">Hey ${User.realname}, Minty welcomes you! And will be there to help you throughout. </span>
+                            <span class="reply"><a id="re" href="#" style="display: none;">Reply</a></span>
+                        </div>
+                    </div>
+
+                    <div class="tweet" onmouseover="this.getElementById('re').style.display = 'block';" onmouseout="this.getElementById('re').style.display = 'none';">
+                        <div class="span1"><span class="tweetimage"><img src="/static/img/minty.jpg" height="58px" width="58px"/></span></div>
+                        <div class="span11">
+                            <span class="time">Forever</span>
+
+                            <span class="tweetheader">Minty</span><br>
+                            <span class="tweettext">Check out the Public Mintline and see who the popular users are and read others' Mintees!</span>
+                            <span class="reply"><a id="re" href="#" style="display: none;">Reply</a></span>
+                        </div>
+                    </div>
+
+                    <div class="tweet" onmouseover="this.getElementById('re').style.display = 'block';" onmouseout="this.getElementById('re').style.display = 'none';">
+                        <div class="span1"><span class="tweetimage"><img src="/static/img/minty.jpg" height="58px" width="58px"/></span></div>
+                        <div class="span11">
+                            <span class="time">Forever</span>
+
+                            <span class="tweetheader">Minty</span><br>
+                            <span class="tweettext">But before that, share a Mintee with Minty! Minty has been lonely for a long time. </span>
+                            <span class="reply"><a id="re" href="#" style="display: none;">Reply</a></span>
+                        </div>
+                    </div>
+
                 </div><!--/span-->
             </div>
             <button class="btn btn-success" id="moreTweetsBtn" onclick="getMoreTweets(this);return false">More...</button>
