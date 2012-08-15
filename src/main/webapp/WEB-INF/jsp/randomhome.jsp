@@ -191,7 +191,7 @@
             </div><!--/.well -->
 
 
-            <form class="well" onsubmit="addTweetNow(this); return false;">
+            <form class="well" onsubmit="addTweetNow(this); this.reset(); return false;">
 
 
                 <textarea class="span12" id="tweet" name ="tweet" rows="2" placeholder="Add a new Minty!" maxlength="128" > </textarea>

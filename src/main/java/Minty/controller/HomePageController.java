@@ -106,7 +106,7 @@ public class HomePageController {
     {
         final String handle = (String) session.getAttribute("userName");
         return new ModelAndView("homementions"){{
-            addObject("User", (String) session.getAttribute(handle));
+            addObject("User", userService.getUser(handle));
             addObject("List",viewService.listUserMentions(handle,0,10));
         }
         };

@@ -176,8 +176,8 @@
 
                 <ul class="nav nav-list">
 
-                    <legend>{User.username}<span class="smalltext"><a href="View my profile">View my profile</a></span></legend></li>
-                    <div class="mintbio">We are here to create a dent in the universe, otherwise, why even be here.</div>
+                    <legend><img src="/static/img/Woo/${User.username}.jpg" width="56px" height="56px"> <a href="/user/${User.username}">@${User.username}</a></legend></li>
+                    <div class="mintbio">${User.bio}</div>
 
 
 
