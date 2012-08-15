@@ -177,7 +177,7 @@
 
                         <c:forEach var='item' items='${List}'>
                             <script type="text/javascript">
-                                appendItem({tweet_id:${item.tweet_id}, tweet:'${item.tweet}', username:'${item.username}', pushtime:'${item.pushtime}'})
+                                appendItem({tweet_id:${item.tweet_id}, tweet:"${item.tweet}", username:"${item.username}", pushtime:"${item.pushtime}"})
                             </script>
                         </c:forEach>
 

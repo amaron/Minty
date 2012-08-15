@@ -147,6 +147,7 @@
                 <span class="icon-bar"></span>
             </a>
             <a class="brand" href="#">Minty</a>
+
             <div class="btn-group pull-right">
                 <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
                     <i class="icon-user"></i> ${User.username}
@@ -165,6 +166,9 @@
                     <li><a href="/public">Public</a></li>
                 </ul>
             </div><!--/.nav-collapse -->
+            <form class="navbar-search pull-left" action="/search">
+                <input type="text" name="searchtext" class="search-query" placeholder="Search">
+            </form>
         </div>
     </div>
 </div>
