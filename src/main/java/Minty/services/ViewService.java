@@ -34,7 +34,6 @@ public class ViewService {
     public String addToMentions(String[] u_list, int tweet_id)
     {
         if(u_list==null)return null;
-        System.out.println("mentions array "+ u_list);
         int i;
         Integer count=0;
         for(i=0;i<u_list.length;i++){

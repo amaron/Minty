@@ -28,7 +28,6 @@ public class AuthInterceptor extends HandlerInterceptorAdapter {
             String userName = (String) session.getAttribute("userName");
             if (userName != null) {
                 userID.set((Long) session.getAttribute("userID"));
-                System.out.println("checking if authinterceptor works, user id is "+ userID + request.getRequestURL()+" with value:"+userID.get());
                 return true;
             }
         }

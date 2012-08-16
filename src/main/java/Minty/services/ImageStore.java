@@ -33,7 +33,6 @@ public class ImageStore {
                 fileWrite(inputStream, fileName);
                 return true;
             }
-            System.out.println("hellohere");
             return false;
 
 

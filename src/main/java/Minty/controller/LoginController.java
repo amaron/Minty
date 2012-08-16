@@ -2,7 +2,7 @@ package Minty.controller;
 
 /**
  * Created with IntelliJ IDEA.
- * User: kunjan
+ * User: karthik
  * Date: 24/7/12
  * Time: 8:38 PM
  * To change this template use File | Settings | File Templates.
@@ -59,18 +59,18 @@ public class LoginController {
         User userData = userService.getUser(user.getUsername());
 
         if(userData==null){
-            mv.addObject("message"," provided username/email id " + user.getUsername() +" does not exist, please register");
+            mv.addObject("message"," Provided username/email id " + user.getUsername() +" does not exist, please register!");
             return mv;
         }
 
         if (!userData.equals(null) && !userData.getUser_password().equals(user.getUser_password())) {
-            mv.addObject("message", "Invalid password");
+            mv.addObject("message", "Invalid password!");
             return mv;
         }
         userID =  userData.getUser_id();
 
 
-        logger.info("user "+ user.getUsername() + "logged in successfully");
+        logger.info("user "+ user.getUsername() + "Logged in successfully!");
 
         session.setAttribute("userName", user.getUsername());
         session.setAttribute("userID", (long)userID);

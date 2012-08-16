@@ -210,8 +210,12 @@
                         <div class="tweet">
                             <div class="span1"><span class="tweetimage"><img src="/static/img/Woo/${item.username}.jpg" height="58px" width="58px"/></span></div>
                             <div class="span11">
-                                <span class="tweetheader">${item.realname}</span><br>
-                                <span class="tweettext">@${item.username}</span>
+                                <span class="tweetheader">${item.realname}</span>(<span class="tweettext"><a href="/user/${item.username}">@${item.username}</a></span>)<br>
+                                <span class="tweettext">${item.bio} </span> <br>
+                                <span class="tweettext">Followers: <a href="/user/${item.username}/followers"> ${item.num_followers}</a> </span>
+                                <span class="tweettext">Following: <a href="/user/${item.username}/following"> ${item.num_following}</a> </span>
+                                <span class="tweettext">Tweets: ${item.num_tweets} </span>    <br>
+
                                 <span class="reply"></span>
                             </div>
                         </div>

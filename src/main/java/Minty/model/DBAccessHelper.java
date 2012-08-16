@@ -9,7 +9,7 @@ import java.util.Map;
 
 /**
  * Created with IntelliJ IDEA.
- * User: karthik.s
+ * User: karthik
  * Date: 14/8/12
  * Time: 3:21 PM
  * To change this template use File | Settings | File Templates.
@@ -25,7 +25,7 @@ public class DBAccessHelper {
         dataSource.setUrl("jdbc:postgresql://127.0.0.1:5432/mydb2");
         dataSource.setDriverClassName("org.postgresql.Driver");
         dataSource.setUsername("postgres");
-        dataSource.setPassword("postgres");
+        dataSource.setPassword("crossword");
         JdbcTemplate db = new JdbcTemplate(dataSource);
 
         this.jdbcTemplate = new JdbcTemplate(dataSource);

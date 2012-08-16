@@ -49,7 +49,7 @@ public class RESTHelper {
 
     }
 
-    private String check3rdPartyRegistration(String remote_party){
+    public String check3rdPartyRegistration(String remote_party){
         try {
             db.queryForMap("SELECT * FROM registered3rdparty WHERE pkey=?",decrypt(remote_party));
 
@@ -60,7 +60,7 @@ public class RESTHelper {
         return "yes";
     }
 
-    private String checkRESTUserRegistration(String user_key, String username){
+    public String checkRESTUserRegistration(String user_key, String username){
 
         try {
             db.queryForMap("SELECT * FROM restusers WHERE pkey=? AND username=?",decrypt(user_key), username);

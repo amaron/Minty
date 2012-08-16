@@ -22,8 +22,15 @@
     <script type="text/javascript" src="/static/js/appendItem.js"></script>
     <script type="text/javascript" src="/static/js/getMoreTweets.js"></script>
     <script type="text/javascript" src="/static/js/displayNew.js"></script>
-    <script type="text/javascript" src="/static/js/escapeHTML.js"></script>
     <script type="text/javascript">
+
+        function textCounter(field,cntfield,maxlimit) {
+            if (field.value.length > maxlimit)
+                field.value = field.value.substring(0, maxlimit);
+            else
+                cntfield.value = maxlimit - field.value.length;
+        }
+
     $(document).ready(function(){
 
     //custom usage
@@ -191,14 +198,15 @@
             </div><!--/.well -->
 
 
-            <form class="well" onsubmit="addTweetNow(this); this.reset(); return false;">
+            <form class="well" name="tweetBox" onsubmit="addTweetNow(this); this.reset(); return false;">
 
 
-                <textarea class="span12" id="tweet" name ="tweet" rows="2" placeholder="Add a new Minty!" maxlength="128" > </textarea>
-                <button type="submit" class="btn" name="Mintify">Mintify</button><span class="charleft">128</span>
+                <textarea class="span12" id="tweet" name ="tweet" rows="2" placeholder="Add a new Minty!" maxlength="128" onKeyDown="textCounter(document.tweetBox.tweet,document.tweetBox.remLen,128)"
+                          onKeyUp="textCounter(document.tweetBox.tweet,document.tweetBox.remLen,128)"> </textarea>
+                <button type="submit" class="btn btn-success" name="Mintify">Mintify</button> <input readonly type="text" name="remLen" value="128">
+
 
             </form>
-
 
 
 
@@ -214,7 +222,7 @@
              <legend>Home</legend>
 
                 <form action="/user/getNewTweet.json" onsubmit="displayNew(this);return false">
-                    <input type="submit" style="display:none" value="you have new tweets!" id="updateBtn"/>
+                    <input type="submit" class="btn btn-inverse" style="display:none" value="You have new tweets!" id="updateBtn"/>
                 </form>
 
                 <div class="well" id="tweetList">

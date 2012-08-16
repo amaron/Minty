@@ -76,10 +76,10 @@ function callRetweet(id){
 function idFinder(tweet){
     var idList=new Array();
     var count =0;
-    for(i=0;i<tweet.length;i++){
+    for(var i=0;i<tweet.length;i++){
         if(tweet[i]=='@'){
             var id="";
-            for(j=i+1;alnum.indexOf(tweet[j])!=-1;j++){
+            for(var j=i+1;alnum.indexOf(tweet[j])!=-1;j++){
                 id+=tweet[j];
             }
             id='@'+id;
@@ -101,7 +101,7 @@ function strip(html)
 
 function htmlAdder(tweet,idList){
 
-    for(i=0;i<idList.length;i++){
+    for(var i=0;i<idList.length;i++){
         var link="@\<a href='/user/placeholder'>placeholder</a> ";
         var cleanID=idList[i].substring(1);
         var userlink=link.replace(/placeholder/g,cleanID);
@@ -129,7 +129,7 @@ function preComputeOnTweet(data){
 
 
 
-function appendItem(data,delay) {
+function appendItem(data) {
 
     var tweetItemLI =preComputeOnTweet(data);
 

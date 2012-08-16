@@ -17,7 +17,7 @@ import java.util.logging.Logger;
 
 /**
  * Created with IntelliJ IDEA.
- * User: kunjan
+ * User: karthik
  * Date: 26/7/12
  * Time: 5:17 PM
  * To change this template use File | Settings | File Templates.
@@ -154,10 +154,15 @@ public class RESTController {
 
     @RequestMapping(value="/login", method=RequestMethod.POST)
     @ResponseBody
-    public String postRESTlogin(@RequestParam String cb_url, User user){
+    public String postRESTlogin(@RequestParam String cb_url, @RequestParam String p_key, User user){
+
 
         User userData = userService.getUser(user.getUsername());
         String post_data;
+        if(restHelper.check3rdPartyRegistration(p_key)==null){
+            post_data= " provided third party key " + p_key +" is not valid, please register.";
+
+        }else{
         if(userData==null){
             post_data= " provided username/email id " + user.getUsername() +" does not exist, please register";
 
@@ -170,9 +175,9 @@ public class RESTController {
         else{
                 post_data= restHelper.registerRESTUser(userData.getUsername());
         }
-
+        }
         if(restHelper.sendKeyTo3rdParty(cb_url,post_data))
-        return "done";
+        return "done " + restHelper.encrypt(post_data);
         else return "Failed to connect to cb_url" + cb_url;
 
     }

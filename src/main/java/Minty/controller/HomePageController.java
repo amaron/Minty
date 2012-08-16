@@ -118,8 +118,7 @@ public class HomePageController {
         Integer latestTweet=tweetStore.getLatestTweetId((Long) Session.getAttribute("userID"),0);
         Session.setAttribute("latestTweet",latestTweet);
         Session.setAttribute("offset", 10);
-        System.out.println("home latest tweet " + Session.getAttribute("userName") + latestTweet);
-        return new ModelAndView("randomhome"){{
+         return new ModelAndView("randomhome"){{
             addObject("User",userService.getUser((String) Session.getAttribute("userName")));
             addObject("List",tweetStore.listHomePageTweets(10, 0, (Long) Session.getAttribute("userID")));
         }

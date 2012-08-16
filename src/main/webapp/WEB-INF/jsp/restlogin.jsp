@@ -98,6 +98,12 @@
                         <input type="text" class="input-large" id="cb_url" name="cb_url" placeholder="cb_url">
                     </div>
                 </div>
+
+                <div class="control-group">
+                    <div class="controls">
+                        <input type="text" class="input-large" id="p_key" name="p_key" placeholder="p_key">
+                    </div>
+                </div>
             </form>
 
         </div><!--/span-->

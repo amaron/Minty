@@ -49,16 +49,13 @@ public class UploadFileController {
     public String create(UploadItem uploadItem,BindingResult result,
                          HttpServletRequest request, HttpServletResponse response,
                          HttpSession session) {
-//        error=new Errors();
+
         if (result.hasErrors()) {
             for (ObjectError errors : result.getAllErrors()) {
-//                error.addError("Upload","Error: " + errors.getCode() + " - "
-//                        + errors.getDefaultMessage());
-            }
+         }
             return "/uploadfile";
         }
         imageStore.addPic(request.getRealPath("/"),uploadItem.getFileData(),(String)session.getAttribute("userName"));
-        //session.setAttribute("uploadFile", uploadItem.getFileData().getOriginalFilename());
 
         return "redirect:uploadfile";
     }

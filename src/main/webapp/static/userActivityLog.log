@@ -1754,3 +1754,31 @@ INFO: user amarontweeted 141
 INFO: user amarontweeted 142
 14 Aug, 2012 11:16:49 PM Minty.controller.TweetController create
 INFO: user amarontweeted 143
+Aug 17, 2012 3:30:53 AM Minty.configuration.MintyConfig logger
+INFO: ----------------------------------------------------------------------------------------------------
+Aug 17, 2012 3:30:53 AM Minty.configuration.MintyConfig logger
+INFO: ----------------------------------------------------------------------------------------------------
+Aug 17, 2012 3:30:53 AM Minty.configuration.MintyConfig logger
+INFO: Minty Server log
+Aug 17, 2012 3:35:46 AM Minty.controller.LoginController login
+INFO: user ninadLogged in successfully!
+Aug 17, 2012 3:35:53 AM Minty.controller.LoginController logout
+INFO: user ninad logged out successfully
+Aug 17, 2012 3:36:32 AM Minty.controller.LoginController login
+INFO: user iamsrkLogged in successfully!
+Aug 17, 2012 3:36:39 AM Minty.controller.HomePageController Search
+INFO: User iamsrk searched for priyanka
+Aug 17, 2012 3:37:27 AM Minty.controller.LoginController logout
+INFO: user iamsrk logged out successfully
+Aug 17, 2012 3:38:05 AM Minty.controller.LoginController login
+INFO: user priyankaLogged in successfully!
+Aug 17, 2012 3:38:12 AM Minty.controller.HomePageController Search
+INFO: User priyanka searched for ninad
+Aug 17, 2012 3:38:17 AM Minty.controller.ProfileViewController ViewUser
+INFO: user priyanka visited ninad's profile
+Aug 17, 2012 3:38:59 AM Minty.configuration.MintyConfig logger
+INFO: ----------------------------------------------------------------------------------------------------
+Aug 17, 2012 3:38:59 AM Minty.configuration.MintyConfig logger
+INFO: ----------------------------------------------------------------------------------------------------
+Aug 17, 2012 3:38:59 AM Minty.configuration.MintyConfig logger
+INFO: Minty Server log

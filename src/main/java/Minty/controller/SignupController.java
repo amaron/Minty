@@ -2,7 +2,7 @@ package Minty.controller;
 
 /**
  * Created with IntelliJ IDEA.
- * User: kunjan
+ * User: karthik
  * Date: 24/7/12
  * Time: 8:38 PM
  * To change this template use File | Settings | File Templates.
@@ -41,12 +41,10 @@ public class SignupController {
     public String checkCaptcha( @RequestParam String challenge,
                                 @RequestParam String response, HttpServletRequest request)
     {
-        // Validate the reCAPTCHA
+
         String remoteAddr = request.getRemoteAddr();
         ReCaptchaImpl reCaptcha = new ReCaptchaImpl();
 
-        // Probably don't want to hardcode your private key here but
-        // just to get it working is OK...
         reCaptcha.setPrivateKey("6LepJNUSAAAAABKmm-ELb7dLNrHXmvHCrFPMNcMH ");
 
         ReCaptchaResponse reCaptchaResponse =
@@ -74,9 +72,8 @@ public class SignupController {
 
     @RequestMapping(value = "/user/{handle}/userdetails", method = RequestMethod.POST)
     public ModelAndView submituserDetailsForm(@PathVariable final String handle,final User user) {
-        System.out.println("user details post "+ user.getBio() +user.getWebsite()+user.getPlace());
         user.setUsername(handle);
-        userService.updateUser(user,handle);                 /// Gaurav you need to add this code with the photo upload code
+        userService.updateUser(user,handle);
         return new ModelAndView("redirect:/uploadfile");
     }
 
@@ -123,8 +120,6 @@ public class SignupController {
         userService.addFollowing(userID,userID);
         session.setAttribute("userName", user.getUsername());
         session.setAttribute("userID", userID);
-
-        //mv.setViewName("redirect:/user/" + user.getUsername()+"/userdetails");
 
         return new ModelAndView("almostthere"){{
             addObject("handle",user.getUsername());

@@ -11,7 +11,7 @@ import java.util.logging.SimpleFormatter;
 
 /**
  * Created with IntelliJ IDEA.
- * User: kunjan
+ * User: karthik
  * Date: 24/7/12
  * Time: 4:11 PM
  * To change this template use File | Settings | File Templates.
@@ -20,17 +20,7 @@ import java.util.logging.SimpleFormatter;
 
 @Configuration
 public class MintyConfig {
-/*
-    @Autowired
-    private DBAccessHelper db;
-*/
 
-    /*
-        @Autowired
-        public MintyConfig (DBAccessHelper db){
-            this.db=db;
-        }
-    */
     @Bean
     public DBAccessHelper db() {
 
@@ -39,7 +29,7 @@ public class MintyConfig {
             int a =  db.queryForInt("SELECT COUNT(*) FROM USERS;");
         }
         catch (Exception e) {
-            //TODO:Remove Sysout
+
             System.out.print(e.toString());
             db.update("CREATE TABLE users\n" +
                     "(\n" +
@@ -68,7 +58,7 @@ public class MintyConfig {
             int a =  db.queryForInt("SELECT COUNT(*) FROM TWEETS;");
         }
         catch (Exception e) {
-            //TODO:Remove Sysout
+
             System.out.print(e.toString());
             db.update("\n" +
                     "CREATE TABLE tweets\n" +
@@ -115,7 +105,7 @@ public class MintyConfig {
             int a =  db.queryForInt("SELECT COUNT(*) FROM FOLLOWING;");
         }
         catch (Exception e) {
-            //TODO:Remove Sysout
+
             System.out.print(e.toString());
             db.update("CREATE TABLE following\n" +
                     "(\n" +
@@ -138,7 +128,7 @@ public class MintyConfig {
             int a =  db.queryForInt("SELECT COUNT(*) FROM USERFEED;");
         }
         catch (Exception e) {
-            //TODO:Remove Sysout
+
             System.out.print(e.toString());
             db.update("\n" +
                     "CREATE TABLE userfeed\n" +
@@ -230,16 +220,12 @@ public class MintyConfig {
 
         try {
 
-            // This block configure the logger with handler and formatter
-            fh = new FileHandler("/home/kunjan/Karthik/speakOUT/src/main/webapp/static/userActivityLog.log",true);
+            fh = new FileHandler("/home/gauravmunjal/Programming/Mintyv1/Minty/src/main/webapp/static/userActivityLog.log",true);
             logger.addHandler(fh);
-            //logger.setLevel(Level.ALL);
             SimpleFormatter formatter = new SimpleFormatter();
             fh.setFormatter(formatter);
-
-            // the following statement is used to log any messages
-            logger.info("-------------------------------------------------------------------------------------------");
-            logger.info("-------------------------------------------------------------------------------------------");
+            logger.info("----------------------------------------------------------------------------------------------------");
+            logger.info("----------------------------------------------------------------------------------------------------");
             logger.info("Minty Server log");
 
         } catch (SecurityException e) {
@@ -248,7 +234,6 @@ public class MintyConfig {
             e.printStackTrace();
         }
 
-        //logger.info("Log Test");
         return logger;
 
     }

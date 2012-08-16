@@ -45,7 +45,7 @@ public class TweetController {
     public ModelAndView Viewtweet(@PathVariable final String handle, @PathVariable final int id) {
         if(viewService.getUserId(handle)==null){
             return new ModelAndView("errorpage") {{
-                addObject("message","user "+ handle+ " doesnt exist!");
+                addObject("message","User "+ handle+ " doesnt exist!");
             }};
         }
 
@@ -108,7 +108,6 @@ public class TweetController {
         Integer latestTweet= (Integer) Session.getAttribute("latestTweet");
         Hashtable h= new Hashtable();
         Integer update=tweetStore.getLatestTweetId((Long) Session.getAttribute("userID"), latestTweet);
-        System.out.println("latest tweet " + Session.getAttribute("userName")+ update);
         if(update>latestTweet){
 
             h.put("value", "yes");

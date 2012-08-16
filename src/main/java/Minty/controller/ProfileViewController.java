@@ -43,7 +43,7 @@ public class ProfileViewController {
     {
         boolean isUser=viewService.isUserExists(handle);
         if(!isUser){ return new ModelAndView("errorpage") {{
-            addObject("message","user "+ handle+ " doesnt exist!");
+            addObject("message","User "+ handle+ " doesnt exist!");
         }};
         }
 

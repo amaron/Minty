@@ -28,7 +28,6 @@ public class HomeInterceptor extends HandlerInterceptorAdapter {
             String userName = (String) session.getAttribute("userName");
             if (userName != null) {
                 userID.set((Long) session.getAttribute("userID"));
-                System.out.println("checking if homeinterceptor works, user id is "+ userID + request.getRequestURL()+" with value:"+userID.get());
                 response.sendRedirect("/home");
                 return false;
             }

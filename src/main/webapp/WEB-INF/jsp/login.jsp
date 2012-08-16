@@ -90,7 +90,7 @@
                 <div class="control-group">
                     <label class="control-label"></label>
                     <div class="controls">
-                        <button type="submit" class="btn btn-success" >Login</button> or <a href="#">Sign up here</a>
+                        <button type="submit" class="btn btn-success" >Login</button> or <a href="/user/register">Sign up here</a>
                     </div>
                 </div>
             </form>
